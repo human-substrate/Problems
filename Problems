@@ -31,3 +31,9 @@ Language Loss Among Australian Aboriginal Communities | PR-18264 | Of the 250 In
 Space Debris in Low Earth Orbit | PR-65907 | Over 128 million pieces of debris smaller than 1 cm orbit Earth, posing collision risks to operational satellites and future space missions.
 Pharmaceutical Pollution in Indian Waterways | PR-83142 | India's pharmaceutical industry releases high levels of antibiotics into waterways, contributing to antimicrobial resistance in densely populated regions.
 Declining Trust in US Democratic Institutions | PR-47596 | Public trust in the US government has fallen from 73% in 1958 to 20% in 2020, threatening social cohesion and democratic stability.
+P vs NP Problem | PR-742001 | Determine whether every problem whose solution can be quickly verified can also be solved quickly.
+Hodge Conjecture | PR-580034 | Make a precise mathematical statement of the relationship between algebraic cycles and cohomology classes in complex projective spaces.
+Riemann Hypothesis | PR-192837 | Verify the hypothesis that all non-trivial zeros of the analytic continuation of the Riemann zeta function have a real part of 1/2.
+Yang-Mills Existence and Mass Gap | PR-905478 | Prove that for any compact simple gauge group, a non-trivial quantum Yang-Mills theory exists with a positive mass gap.
+Navier-Stokes Existence and Smoothness | PR-367249 | Prove or provide a counter-example for the existence and smoothness of solutions to the Navier-Stokes equations for incompressible fluid flow.
+Birch and Swinnerton-Dyer Conjecture | PR-481295 | Prove that the rank of the group of rational points on an elliptic curve is related to the order of the zero of its L-function at 1.
