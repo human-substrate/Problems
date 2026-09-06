@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-06T22:03:13.067Z",
+ "generated": "2026-09-06T22:15:52.235Z",
  "dataset": "US-Employment-And-Jobs",
  "series": {
   "btosAiUseAnyFunction": {
@@ -30,7 +30,7 @@
    "annualRule": "annual average",
    "class": "outcome",
    "coverage": "2021-08–2026-07",
-   "fetched": "2026-09-06T22:03:13.067Z"
+   "fetched": "2026-09-06T22:15:52.235Z"
   },
   "canariesYoungExposed": {
    "name": "Young Workers in AI-Exposed Jobs (Stanford index)",
@@ -40,7 +40,7 @@
    "annualRule": "annual average",
    "class": "outcome",
    "coverage": "2021-08–2026-07",
-   "fetched": "2026-09-06T22:03:13.067Z"
+   "fetched": "2026-09-06T22:15:52.235Z"
   },
   "cesBusinessSupport": {
    "name": "Business Support Jobs (Call Centers)",
@@ -320,7 +320,7 @@
    "annualRule": "annual average",
    "class": "outcome",
    "coverage": "2022-11–2026-07",
-   "fetched": "2026-09-06T22:03:13.067Z"
+   "fetched": "2026-09-06T22:15:52.235Z"
   }
  }
 }

@@ -13,12 +13,12 @@
     "cadence": "monthly",
     "annualRule": "annual average",
     "class": "outcome",
-    "note": "Employment of workers aged 22–25 in the fifth of occupations most exposed to AI (Eloundou et al. exposure plus Anthropic usage), indexed to November 2022 = 100, from a balanced panel of firms using ADP payroll (3.5–5 million employees per month), published and updated monthly by the authors. The authors: \"early, descriptive indicators—canaries in the coal mine—rather than causal estimates\"; the patterns \"attenuate when controlling for education, show some divergent trends predating generative AI, and are more pronounced in the ADP analysis sample than in national survey benchmarks.\" A research index from a balanced firm panel, not an official statistic; it begins August 2021, so there is no 2019 baseline, and because it is normalized to November 2022 the change since the marker is the index minus 100 by construction. The companion row for ages 35–40 is the comparison the authors draw.",
+    "note": "Employment of workers aged 22–25 in the fifth of occupations most exposed to AI (Eloundou et al. exposure plus Anthropic usage), indexed to November 2022 = 100, from a balanced panel of firms using ADP payroll (3.5–5 million employees per month), published and updated monthly by the authors. The authors: \"early, descriptive indicators—canaries in the coal mine—rather than causal estimates\"; the patterns \"attenuate when controlling for education, show some divergent trends predating generative AI, and are more pronounced in the ADP analysis sample than in national survey benchmarks, with some evidence of consistent patterns in government administrative data.\" A research index from a balanced firm panel, not an official statistic; it begins August 2021, so there is no 2019 baseline, and because it is normalized to November 2022 the change since the marker is the index minus 100 by construction. The companion row for ages 35–40 is the comparison the authors draw.",
     "partialYear": 2026,
     "partialThrough": "2026-07",
     "coverage": "2022–2026",
     "nativeCoverage": "2021-08–2026-07",
-    "fetched": "2026-09-06T22:03:13.067Z"
+    "fetched": "2026-09-06T22:15:52.235Z"
   },
   "native": {
     "2021-08": 87,

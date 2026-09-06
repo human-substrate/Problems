@@ -12,12 +12,12 @@
     "cadence": "monthly",
     "annualRule": "annual average",
     "class": "outcome",
-    "note": "A Duncan dissimilarity index of how much the occupational composition of the US labor force has shifted against a rolling 12-month baseline, computed from monthly Current Population Survey microdata by the Yale Budget Lab and updated with each CPS release (repository data file, all sectors, rolling variant). The Budget Lab's reading as of July 2026 CPS: churn \"remains flat, lies within historical ranges, or continues along pre-AI trends.\" A rise would mean the mix of jobs is changing faster; it does not say why. Begins January 2022; October 2025 CPS is missing (federal shutdown).",
+    "note": "A Duncan dissimilarity index of how much the occupational composition of the US labor force has shifted against a rolling 12-month baseline, computed from monthly Current Population Survey microdata by the Yale Budget Lab and updated with each CPS release (repository data file, all sectors, rolling variant). The Budget Lab's reading on the tracker page (updated August 19, 2026): \"The occupational mix is not yet changing in ways that clearly align with the introduction of AI into the workforce.\" A rise would mean the mix of jobs is changing faster; it does not say why. Begins January 2022; October 2025 CPS is missing (federal shutdown).",
     "partialYear": 2026,
     "partialThrough": "2026-07",
     "coverage": "2023–2026",
     "nativeCoverage": "2022-11–2026-07",
-    "fetched": "2026-09-06T22:03:13.067Z"
+    "fetched": "2026-09-06T22:15:52.235Z"
   },
   "native": {
     "2022-11": 2.83,
