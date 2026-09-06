@@ -4,6 +4,26 @@ This file tracks all datasets added to the Substrate Data directory.
 
 ---
 
+## 2026-09-06 - U.S. Employment & Jobs (the AI era)
+
+**Dataset**: US-Employment-And-Jobs (new, 32 series)
+**Status**: Active
+**Coverage**: outcome series 1939/1967/1990/2000→2026 at native cadence; phenomenon series from their instruments' start (2019, 2023, 2024)
+**Source**: BLS (CES, JOLTS, OEWS), US Employment and Training Administration (claims), Federal Reserve Bank of New York (recent-graduate labor market), Census Bureau (BTOS AI questions), Real-Time Population Survey via the St. Louis Fed/FRED, Indeed Hiring Lab (postings indices and AI Tracker), Gallup, Challenger Gray & Christmas, Ramp Economics Lab, Stanford Digital Economy Lab (Canaries index), Yale Budget Lab (occupational churn), Upwork and Fiverr SEC filings
+
+### Contents
+- `series/<key>.json` × 32, each with a `_meta` provenance block carrying `cadence`, `annualRule`, and `class` (outcome vs phenomenon), the publisher's own cadence in `native` (monthly / quarterly / biweekly) and the derived annual `data`
+- `update.ts` — one re-runnable fetcher, no API keys: FRED, the NY Fed CSVs, the two Census BTOS workbooks (two question wordings, never joined; the SHUTDOWN gap honored), the Indeed AI Tracker CSV, the Stanford zip, the Yale repository CSV, the Ramp page payload; checked-in citation JSON under `data/` for publishers with no endpoint (Gallup tables, Challenger PDFs, BLS OEWS workbooks with file hashes, SEC filings with per-value URLs), each re-verified on refresh where a source can be read
+- `SUMMARY.md` / `README.md` / `source.md` — regenerated from the data by `docs.ts`
+- Research provenance: `research/us-employment-jobs-2026-09/` (filter and rider, every candidate's disposition, the studies quoted with their hedges, the deterministic 2019 → Nov 2022 → latest table)
+
+### Notes
+- Two series classes by design: outcome series need a pre-AI baseline; phenomenon series (adoption, AI-attributed cuts, AI in postings) begin when their instrument began
+- No note, kicker, or README sentence attributes a movement to AI beyond what the publisher or a named study states; the studies are the interpretation layer
+- Powers the new **Employment & Jobs** section of **https://usstats.io** (native-cadence charts from 2019 with a ChatGPT reference marker; https://usstats.io/data/stats-native.csv)
+
+---
+
 ## 2026-08-31 - U.S. Societal Health: education-efficacy expansion
 
 **Dataset**: US-Societal-Health (expanded 68 → 84 series)

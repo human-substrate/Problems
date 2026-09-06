@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "key": "oewsDataEntryKeyers",
+    "name": "Data Entry Keyers Employed",
+    "unit": "employed, May of each year",
+    "source": "BLS Occupational Employment and Wage Statistics (SOC 43-9021)",
+    "sourceUrl": "https://www.bls.gov/oes/tables.htm",
+    "historicalSourceUrls": [
+      "https://www.bls.gov/oes/special-requests/oesm25nat.zip"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "outcome",
+    "note": "National employment from the OEWS national workbook for each May (TOT_EMP, detailed occupation). BLS cautions that OEWS estimates are not designed for year-to-year comparison: the survey pools three years of samples, and model-based (MB3) estimation began with May 2021. Values read from the seven national workbooks (2019–2025) and checked in with each file's hash.",
+    "coverage": "2019–2025",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "data": {
+    "2019": 159930,
+    "2020": 151520,
+    "2021": 147170,
+    "2022": 157380,
+    "2023": 154230,
+    "2024": 135280,
+    "2025": 127080
+  }
+}

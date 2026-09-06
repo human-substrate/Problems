@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "key": "publicExpectsFewerJobs",
+    "name": "Expect AI to Reduce Jobs",
+    "unit": "percent of U.S. adults expecting AI to reduce the total number of U.S. jobs over the next 10 years",
+    "source": "Bentley University–Gallup Business in Society study",
+    "sourceUrl": "https://news.gallup.com/poll/712751/americans-cool-toward.aspx",
+    "historicalSourceUrls": [
+      "https://news.gallup.com/poll/648953/americans-express-real-concerns-artificial-intelligence.aspx"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "phenomenon",
+    "note": "Annual Gallup Panel survey of U.S. adults (not workers), fielded each spring since 2023 with identical wording: 75% (2023), 75% (2024), 73% (2025), 79% (2026). Values read from Gallup's published table.",
+    "coverage": "2023–2026",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "data": {
+    "2023": 75,
+    "2024": 75,
+    "2025": 73,
+    "2026": 79
+  }
+}

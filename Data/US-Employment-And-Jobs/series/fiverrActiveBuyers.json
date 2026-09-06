@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "key": "fiverrActiveBuyers",
+    "name": "Fiverr Active Buyers",
+    "unit": "thousands of buyers who ordered in the prior 12 months, at year-end",
+    "source": "Fiverr International Ltd., Forms 20-F and 6-K (SEC EDGAR)",
+    "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1762301&type=20-F",
+    "historicalSourceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/1762301/000117891326000858/zk2634486.htm"
+    ],
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "outcome",
+    "note": "Buyers who ordered on Fiverr's marketplace in the prior twelve months, as of December 31, from its annual reports; 2026 is as of June 30. DEFINITION BREAK at 2022: the FY2024 report narrowed the metric to marketplace Gigs and restated 2022–2023, so 2022 onward share one definition and 2019–2021 are the earlier, slightly broader one. Fiverr's July 2026 guidance cites \"AI-related demand and traffic headwinds\" — management's attribution, not ours.",
+    "partialYear": 2026,
+    "partialThrough": "2026-06",
+    "coverage": "2019–2026",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "data": {
+    "2019": 2352,
+    "2020": 3418,
+    "2021": 4217,
+    "2022": 4201,
+    "2023": 4027,
+    "2024": 3630,
+    "2025": 3135,
+    "2026": 2676
+  }
+}

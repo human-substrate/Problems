@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "key": "upworkGsv",
+    "name": "Upwork Gross Services Volume",
+    "unit": "thousands of US dollars transacted per year",
+    "source": "Upwork Inc., Form 10-K key metrics (SEC EDGAR)",
+    "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1627475&type=10-K",
+    "historicalSourceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/1627475/000162747526000012/upwk-20251231.htm"
+    ],
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "outcome",
+    "note": "Total dollar value of work transacted on Upwork each fiscal year, as printed in its Form 10-K, 2016–2025. The largest US freelance marketplace's own measure of demand for freelance work; growth stalled after 2022 (4.10B → 4.03B in 2025) and Upwork's Q2 2026 10-Q attributes its decline to \"the evolving impact of AI on certain categories of freelance work\" and macroeconomic uncertainty — management's attribution, not ours. The FY2025 10-K widened the definition to include AI-based services, Connects purchases, payment processing, memberships, and currency services without restating prior years.",
+    "coverage": "2016–2025",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "data": {
+    "2016": 1148363,
+    "2017": 1373161,
+    "2018": 1756289,
+    "2019": 2087055,
+    "2020": 2523649,
+    "2021": 3546774,
+    "2022": 4104891,
+    "2023": 4142252,
+    "2024": 4008107,
+    "2025": 4028386
+  }
+}

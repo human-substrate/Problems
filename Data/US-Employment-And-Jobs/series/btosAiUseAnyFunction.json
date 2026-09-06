@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "key": "btosAiUseAnyFunction",
+    "name": "Firms Using AI (Any Function)",
+    "unit": "percent of U.S. businesses, prior two weeks",
+    "source": "Census Bureau, Business Trends and Outlook Survey (National file)",
+    "sourceUrl": "https://www.census.gov/hfp/btos/data",
+    "historicalSourceUrls": [
+      "https://www.census.gov/hfp/btos/downloads/National.xlsx"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "biweekly",
+    "annualRule": "annual average",
+    "class": "phenomenon",
+    "note": "Share of businesses answering yes to \"In the last two weeks, did this business use Artificial Intelligence (AI) in any of its business functions?\" — the BTOS question as reworded from cycle 202524 (collection from November 17, 2025). Census: \"Due to a level shift observed in conjunction with the new question wording, the decision was made to create a new time series for the AI questions, beginning with data released on December 4, 2025.\" Cycles 202521–202523 (October to mid-November 2025) have no estimates; the workbook labels them SHUTDOWN. Dated by the end of each reference period. Annual figure is the average of the year's cycles.",
+    "partialYear": 2026,
+    "partialThrough": "2026-08",
+    "coverage": "2026–2026",
+    "nativeCoverage": "2025-11-16–2026-08-09",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "native": {
+    "2025-11-16": 17.3,
+    "2025-11-30": 17.2,
+    "2025-12-14": 17.8,
+    "2025-12-28": 17.7,
+    "2026-01-11": 18.2,
+    "2026-01-25": 18.9,
+    "2026-02-08": 17.5,
+    "2026-02-22": 18.2,
+    "2026-03-08": 18.9,
+    "2026-03-22": 19.1,
+    "2026-04-05": 19.8,
+    "2026-04-19": 19.8,
+    "2026-05-03": 19.5,
+    "2026-05-17": 20.6,
+    "2026-05-31": 20.6,
+    "2026-06-14": 20.6,
+    "2026-06-28": 21.7,
+    "2026-07-12": 21.5,
+    "2026-07-26": 21.8,
+    "2026-08-09": 22.4
+  },
+  "data": {
+    "2026": 19.9
+  }
+}

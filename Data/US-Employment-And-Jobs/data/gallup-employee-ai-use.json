@@ -1,0 +1,22 @@
+{
+  "publisher": "Gallup, workforce study (Gallup Panel, employed U.S. adults 18+, self-administered web)",
+  "instrument": "How often do you use AI in your role? — three published cuts: daily; a few times a week or more (frequent); a few times a year or more (total users)",
+  "sourceUrl": "https://www.gallup.com/workplace/712736/organizational-adoption-jumps-six-points.aspx",
+  "historicalSourceUrls": [
+    "https://www.gallup.com/workplace/701195/frequent-workplace-continued-rise.aspx",
+    "https://www.gallup.com/workplace/704225/rising-adoption-spurs-workforce-changes.aspx"
+  ],
+  "readDate": "2026-09-06",
+  "readBy": "table 'Half of All U.S. Employees Now Use AI' on the June 2026 article (712736), cross-checked against the Q4-2025 article (701195) table 'How Much Are U.S. Workers Using AI?'",
+  "fieldDates": { "2023-Q2": "May 11-25, 2023 (n=18,871)", "2024-Q2": "May 11-25, 2024 (n=21,543)", "2025-Q2": "May 7-16, 2025 (n=19,043)", "2025-Q3": "Aug 5-19, 2025 (n=23,068)", "2025-Q4": "Oct 30-Nov 14, 2025 (n=22,368)", "2026-Q1": "Feb 4-19, 2026 (n=23,717)", "2026-Q2": "May 6-20, 2026 (n=22,573)" },
+  "note": "Asked once a year in Q2 of 2023 and 2024, quarterly from Q2 2025. Gallup's own earlier trend table (June 2025 article 691643) printed frequent use as 10 and 11 for 2023 and 2024 where the later tables print 11 and 12; the most recent table is used here.",
+  "waves": {
+    "2023-04": { "daily": 4, "frequent": 11, "any": 21 },
+    "2024-04": { "daily": 4, "frequent": 12, "any": 27 },
+    "2025-04": { "daily": 8, "frequent": 19, "any": 40 },
+    "2025-07": { "daily": 10, "frequent": 23, "any": 45 },
+    "2025-10": { "daily": 12, "frequent": 26, "any": 46 },
+    "2026-01": { "daily": 13, "frequent": 28, "any": 50 },
+    "2026-04": { "daily": 15, "frequent": 30, "any": 52 }
+  }
+}

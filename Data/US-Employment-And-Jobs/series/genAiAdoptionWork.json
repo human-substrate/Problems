@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "key": "genAiAdoptionWork",
+    "name": "Workers Using GenAI for Work",
+    "unit": "percent of employed adults 18–64",
+    "source": "Real-Time Population Survey (Bick, Blandin & Deming), via FRED RPSGENAIUSAGESHAREWORK",
+    "sourceUrl": "https://fred.stlouisfed.org/series/RPSGENAIUSAGESHAREWORK",
+    "historicalSourceUrls": [
+      "https://genaiadoptiontracker.com/"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "quarterly",
+    "annualRule": "annual average",
+    "class": "phenomenon",
+    "note": "Share of employed adults (18–64) who report using generative AI for their job, from the Real-Time Population Survey's quarterly generative-AI module (Bick, Blandin & Deming; hosted by the St. Louis Fed on FRED as release 6). Waves from August 2024, stamped by FRED at the start of each quarter. An online panel with a stated method, not a federal statistical agency product. Annual figure is the average of the year's waves.",
+    "partialYear": 2026,
+    "partialThrough": "2026-04",
+    "coverage": "2024–2026",
+    "nativeCoverage": "2024-07–2026-04",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "native": {
+    "2024-07": 33.3,
+    "2024-10": 31,
+    "2025-01": 32.7,
+    "2025-04": 35.1,
+    "2025-07": 37.4,
+    "2025-10": 40.7,
+    "2026-01": 43.4,
+    "2026-04": 45.2
+  },
+  "data": {
+    "2024": 32.1,
+    "2025": 36.5,
+    "2026": 44.3
+  }
+}

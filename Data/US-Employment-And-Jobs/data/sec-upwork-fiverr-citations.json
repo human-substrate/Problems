@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "fetched": "2026-09-06",
+    "method": "Every value read from the primary document on sec.gov (curl with User-Agent 'substrate-research <email>'), HTML stripped to text, table row quoted verbatim. No value from memory or news.",
+    "edgar_base": "https://www.sec.gov/Archives/edgar/data/"
+  },
+  "upwork_gsv": {
+    "unit": "thousands of US dollars, as printed",
+    "series": {"2016": 1148363, "2017": 1373161, "2018": 1756289, "2019": 2087055, "2020": 2523649, "2021": 3546774, "2022": 4104891, "2023": 4142252, "2024": 4008107, "2025": 4028386},
+    "partial_2026": {"q2_2026_three_months": 966439, "h1_2026_six_months": 1952461, "q2_2025_three_months": 1002650, "h1_2025_six_months": 1990363},
+    "citations": [
+      {"year": 2016, "value": 1148363, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747519000007/upwk-12312018x10k.htm", "form": "10-K FY2018, Item 6 Selected Financial Data (columns 2018 | 2017 | 2016)", "quotedLine": "GSV (5) | $ | 1,756,289 | $ | 1,373,161 | $ | 1,148,363"},
+      {"year": 2017, "value": 1373161, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747520000006/upwk-20191231.htm", "form": "10-K FY2019, Key Financial and Operational Metrics (2019 | 2018 | 2017)", "quotedLine": "GSV | $ | 2,087,055 | $ | 1,756,289 | $ | 1,373,161"},
+      {"year": 2018, "value": 1756289, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747519000007/upwk-12312018x10k.htm", "form": "10-K FY2018, Key Financial and Operational Metrics (2018 | 2017 | 2016)", "quotedLine": "GSV | $ | 1,756,289 | $ | 1,373,161 | $ | 1,148,363"},
+      {"year": 2019, "value": 2087055, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747520000006/upwk-20191231.htm", "form": "10-K FY2019", "quotedLine": "GSV | $ | 2,087,055 | $ | 1,756,289 | $ | 1,373,161"},
+      {"year": 2020, "value": 2523649, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747521000015/upwk-20201231.htm", "form": "10-K FY2020", "quotedLine": "GSV | $ | 2,523,649 | $ | 2,087,055 | $ | 1,756,289"},
+      {"year": 2021, "value": 3546774, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747522000009/upwk-20211231.htm", "form": "10-K FY2021", "quotedLine": "GSV | $ | 3,546,774 | 41 | % | $ | 2,523,649 | 21 | % | $ | 2,087,055 | 19 | %"},
+      {"year": 2022, "value": 4104891, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747523000010/upwk-20221231.htm", "form": "10-K FY2022", "quotedLine": "GSV | $ | 4,104,891 | 16 | % | $ | 3,546,774 | 41 | % | $ | 2,523,649 | 21 | %"},
+      {"year": 2023, "value": 4142252, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747524000012/upwk-20231231.htm", "form": "10-K FY2023", "quotedLine": "GSV | $ | 4,142,252 | 1 | % | $ | 4,104,891 | 16 | % | $ | 3,546,774 | 41 | %"},
+      {"year": 2024, "value": 4008107, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747525000011/upwk-20241231.htm", "form": "10-K FY2024", "quotedLine": "GSV | $ | 4,008,107 | (3) | % | $ | 4,142,252 | 1 | % | $ | 4,104,891 | 16 | %"},
+      {"year": 2025, "value": 4028386, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747526000012/upwk-20251231.htm", "form": "10-K FY2025 (header: 'In thousands, except GSV per active client and percentages')", "quotedLine": "GSV | $ | 4,028,386 | 1 | % | $ | 4,008,107 | (3) | % | $ | 4,142,252 | 1 | %"},
+      {"year": "Q2 2026", "value": 966439, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747526000047/upwk-20260630.htm", "form": "10-Q for quarter ended 2026-06-30 (filed 2026-08-10); columns: 3M 2026 | 3M 2025 | change | 6M 2026 | 6M 2025 | change", "quotedLine": "GSV | $ | 966,439 | $ | 1,002,650 | (4) | % | $ | 1,952,461 | $ | 1,990,363 | (2) | %"}
+    ],
+    "cross_check": "Every overlapping year agrees across consecutive 10-Ks (2017 in FY2018/FY2019; 2018 in FY2018/FY2019/FY2020; ... 2023 and 2024 in FY2024/FY2025). The FY2025 definition widening did not restate prior years.",
+    "definition_fy2018": {
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747519000007/upwk-12312018x10k.htm",
+      "footnote_item1": "GSV represents the total amount that clients spend on both our marketplace offerings and our managed services offering as well as additional fees we charge to users for other services.",
+      "mdna_key_metrics": "GSV includes both client spend and additional fees charged for other services. Client spend—the total amount that clients spend on both our marketplace offerings and our managed services offering—is the primary component of GSV. GSV also includes additional fees charged to both clients and freelancers for other services, such as freelancer withdrawals and foreign currency exchange."
+    },
+    "definition_fy2025": {
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747526000012/upwk-20251231.htm",
+      "item1": "We measure economic activity across our portfolio of platforms and other workforce solutions using Gross Services Volume, which we refer to as GSV. GSV represents the total dollar value transacted through all Upwork platforms and other workforce solutions, including client spend for talent services. GSV also includes other client and talent value-added services, such as AI-based solutions, purchases of Connects (which are virtual tokens that are required for talent to bid on projects and purchase ads products on the Upwork Marketplace), payment processing, memberships, and currency services.",
+      "mdna_key_metrics": "GSV represents the total dollar value transacted through all Upwork platforms and other workforce solutions. The primary component of GSV is client spend, which we define as the total dollar amount that clients spend for talent services through such platforms and other workforce solutions. GSV also includes other client and talent value-added services, such as AI-based services, purchases of Connects, payment processing, memberships, and currency services."
+    }
+  },
+  "upwork_active_clients": {
+    "unit": "thousands of clients, as of December 31 (table header: 'In thousands, except percentages')",
+    "series": {"2021": 771, "2022": 814, "2023": 851, "2024": 832, "2025": 785},
+    "partial_2026": {"as_of_2026_06_30": 763, "as_of_2025_06_30": 796},
+    "earlier_as_printed_backcomputed": {"2019": 540, "2020": 633, "note": "Printed in the FY2021 10-K comparison columns; the metric was first reported in Q3 2021, so 2019/2020 are retrospective."},
+    "citations": [
+      {"year": 2021, "value": 771, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747522000009/upwk-20211231.htm", "quotedLine": "Active clients | 771 | 22 | % | 633 | 17 | % | 540 | 9 | %"},
+      {"year": 2022, "value": 814, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747523000010/upwk-20221231.htm", "quotedLine": "Active clients | 814 | 6 | % | 771 | 22 | % | 633 | 17 | %"},
+      {"year": 2023, "value": 851, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747524000012/upwk-20231231.htm", "quotedLine": "Active clients | 851 | 5 | % | 814 | 6 | % | 771 | 22 | %"},
+      {"year": 2024, "value": 832, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747525000011/upwk-20241231.htm", "quotedLine": "Active clients | 832 | (2) | % | 851 | 5 | % | 814 | 6 | %"},
+      {"year": 2025, "value": 785, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747526000012/upwk-20251231.htm", "quotedLine": "Active clients | 785 | (6) | % | 832 | (2) | % | 851 | 5 | %"},
+      {"year": "Q2 2026", "value": 763, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1627475/000162747526000047/upwk-20260630.htm", "quotedLine": "(Active clients are in thousands) | 2026 | 2025 | ... Active clients | 763 | 796 | (4) | %"}
+    ],
+    "definition_fy2025": "We define an active client as a client that has had spend activity on any Upwork platform or other workforce solution during the 12 months preceding the date of measurement.",
+    "core_clients_note": {
+      "definition_fy2018": "We define a core client as a client that has spent in the aggregate at least $5,000 since it began using our platform and also had spend-activity on our platform during the twelve months preceding the date of measurement.",
+      "switch_fy2021_10k": "beginning in the third quarter of 2021, we ceased reporting the performance metrics tracking the number of core clients and client spend retention, and instead began reporting last quarter the performance metrics tracking the number of active clients and GSV per active client.",
+      "core_clients_as_printed_thousands": {"2016": 76.5, "2017": 86.4, "2018": 105.5, "2019": 124.4},
+      "warning": "Core clients ($5,000 lifetime-spend threshold) is NOT the same metric as active clients (any spend in trailing 12 months). Do not chain them."
+    }
+  },
+  "fiverr_active_buyers": {
+    "unit": "thousands of buyers as of December 31; spend per buyer in US dollars (trailing-12-month GMV / active buyers)",
+    "series_as_printed_in_each_years_20F": {"2019": 2352, "2020": 3418, "2021": 4217, "2022": 4275, "2023": 4077, "2024": 3630, "2025": 3135},
+    "spend_per_buyer_as_printed": {"2019": 170, "2020": 205, "2021": 242, "2022": 262, "2023": 278, "2024": 302, "2025": 342},
+    "restated_in_fy2024_20F_marketplace_only": {"2022": 4201, "2023": 4027, "spend_per_buyer": {"2022": 261, "2023": 278}, "quoted_reason": "The Company is updating the definitions of certain of its key financial and operating metrics, including annual active buyers and annual spend per buyer to align with our supplemental revenue presentation, which disaggregates revenue into two components, marketplace revenue and services revenue. These metrics will now exclusively reflect the marketplace, as amounts related to services previously included in these metrics are deemed immaterial."},
+    "partial_2026": {"as_of_2026_06_30": 2676, "as_of_2025_06_30": 3425, "spend_per_buyer_2026_06_30": 368, "spend_per_buyer_2025_06_30": 318},
+    "earlier_as_printed": {"2017": 1790, "2018": 2019, "spend_per_buyer": {"2017": 119, "2018": 145}, "source": "20-F FY2019 Selected Other Data (2019 | 2018 | 2017)"},
+    "citations": [
+      {"year": 2019, "value": 2352, "spendPerBuyer": 170, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1762301/000110465920041146/tm203275-1_20f.htm", "quotedLine": "Active buyers (in thousands) | 2,352 | 2,019 | 1,790 / Spend per buyer | $ 170 | $ 145 | $ 119"},
+      {"year": 2020, "value": 3418, "spendPerBuyer": 205, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1762301/000117891321000690/fvrr20f1220.htm", "quotedLine": "As of December 31, | 2020 | 2019 | Active buyers (in thousands) | 3,418 | 2,352 | Spend per buyer | $ | 205"},
+      {"year": 2021, "value": 4217, "spendPerBuyer": 242, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1762301/000117891322000725/zk2227154.htm", "quotedLine": "Active buyers (in thousands) | 4,217 | 3,418 / Spend per buyer | $ | 242 | $ | 205"},
+      {"year": 2022, "value": 4275, "spendPerBuyer": 262, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1762301/000117891323001230/zk2329264.htm", "quotedLine": "As of December 31, | 2022 | 2021 | Active buyers (in thousands) | 4,275 | 4,217 | Spend per buyer | $ | 262"},
+      {"year": 2023, "value": 4077, "spendPerBuyer": 278, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1762301/000117891324000697/zk2430936.htm", "quotedLine": "As of December 31, | 2023 | 2022 | Active buyers (in thousands) | 4,077 | 4,275 | Spend per buyer | $ | 278"},
+      {"year": 2024, "value": 3630, "spendPerBuyer": 302, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1762301/000117891325000559/zk2532679.htm", "quotedLine": "| 2024 | 2023 | 2022 | Annual active buyers (in thousands) | 3,630 | 4,027 | 4,201 | Annual spend per buyer | $ | 302 | $ | 278 | $ | 261"},
+      {"year": 2025, "value": 3135, "spendPerBuyer": 342, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1762301/000117891326000858/zk2634486.htm", "quotedLine": "| 2025 | 2024 | 2023 | Annual active buyers (in thousands) | 3,135 | 3,630 | 4,027 | Annual spend per buyer | $ | 342 | $ | 302"},
+      {"year": "Q2 2026", "value": 2676, "spendPerBuyer": 368, "filingUrl": "https://www.sec.gov/Archives/edgar/data/1762301/000117891326003624/exhibit_99-1.htm", "form": "6-K furnished 2026-07-29, Exhibit 99.1 (Q2 2026 press release)", "quotedLine": "Annual active buyers as of June 30, 2026, were 2.7 million, compared to 3.4 million as of June 30, 2025, a decline of 21.9% year over year. / Annual spend per buyer as of June 30, 2026, reached $368, compared to $318 as of June 30, 2025 / table: Annual Active Buyers | 2,676 | 3,425 ; Annual Spend per Buyer | $ 368 | $ 318"}
+    ],
+    "definition_2019_20F": "\"Active buyers\" as of any given date means buyers who have ordered a Gig or other services on our platform within the last 12-month period, irrespective of cancellations. ... \"Spend per buyer\" as of any given date is calculated by dividing our GMV within the last 12-month period by the number of active buyers as of such date.",
+    "definition_2024_20F": "\"Annual active buyers\" as of any given date means buyers who have ordered a Gig on our marketplace within the last 12-month period, irrespective of cancellations. \"Annual spend per buyer\" as of any given date is calculated by dividing our GMV within the last 12-month period by the number of annual active buyers as of such date."
+  },
+  "not_found_or_uncertain": [
+    "Nothing requested is missing. FY2016 and FY2017 Upwork GSV come from the FY2018 10-K Selected Financial Data (Item 6) rather than a Key Metrics table, because Upwork's first 10-K is FY2018.",
+    "Fiverr has a definition break in the FY2024 20-F: 'active buyers' (Gig or other services) became 'annual active buyers' (marketplace Gigs only), and 2022/2023 were restated downward (4,275 -> 4,201; 4,077 -> 4,027). The as-printed series and the restated values are kept in separate blocks; do not blend them without labeling.",
+    "Upwork's FY2025 10-K widened the GSV definition (adds AI-based solutions, Connects, payment processing, memberships, currency services) but did not restate 2023/2024, which are identical in the FY2024 and FY2025 10-Ks."
+  ]
+}

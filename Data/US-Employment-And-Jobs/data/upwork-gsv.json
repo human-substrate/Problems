@@ -1,0 +1,25 @@
+{
+ "publisher": "Upwork Inc., Forms 10-K (CIK 1627475), Key Financial and Operational Metrics",
+ "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1627475&type=10-K",
+ "readDate": "2026-09-06",
+ "readBy": "each fiscal year's 10-K GSV line as printed (thousands of USD); FY2016–2017 from the FY2018 10-K Selected Financial Data; every overlapping year agrees across consecutive 10-Ks; per-value filing URLs in sec-upwork-fiverr-citations.json; FY2025 10-K re-read by the lead (4,028,386 / 4,008,107 / 4,142,252)",
+ "definitionBreak": "FY2018 10-K: GSV = client spend on the marketplace and managed services plus fees for withdrawals and currency exchange. FY2025 10-K: GSV = the total dollar value transacted through all Upwork platforms and other workforce solutions, including AI-based services, Connects purchases, payment processing, memberships, and currency services. Prior years were not restated.",
+ "data": {
+  "2016": 1148363,
+  "2017": 1373161,
+  "2018": 1756289,
+  "2019": 2087055,
+  "2020": 2523649,
+  "2021": 3546774,
+  "2022": 4104891,
+  "2023": 4142252,
+  "2024": 4008107,
+  "2025": 4028386
+ },
+ "latestQuarter": {
+  "period": "Q2 2026",
+  "value": 966439,
+  "priorYear": 1002650,
+  "source": "https://www.sec.gov/Archives/edgar/data/1627475/000162747526000047/upwk-20260630.htm"
+ }
+}

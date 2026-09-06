@@ -1,0 +1,326 @@
+{
+ "generated": "2026-09-06T21:59:53.900Z",
+ "dataset": "US-Employment-And-Jobs",
+ "series": {
+  "btosAiUseAnyFunction": {
+   "name": "Firms Using AI (Any Function)",
+   "unit": "percent of U.S. businesses, prior two weeks",
+   "source": "Census Bureau, Business Trends and Outlook Survey (National file)",
+   "cadence": "biweekly",
+   "annualRule": "annual average",
+   "class": "phenomenon",
+   "coverage": "2025-11-16–2026-08-09",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "btosAiUseOriginal": {
+   "name": "Firms Using AI (Original Question)",
+   "unit": "percent of U.S. businesses, prior two weeks",
+   "source": "Census Bureau, Business Trends and Outlook Survey (AI Core Questions file)",
+   "cadence": "biweekly",
+   "annualRule": "annual average",
+   "class": "phenomenon",
+   "coverage": "2023-09-10–2025-09-21",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "canariesMidCareerExposed": {
+   "name": "Mid-Career Workers in AI-Exposed Jobs",
+   "unit": "employment index, ages 35–40 in the most AI-exposed occupation quintile, November 2022 = 100",
+   "source": "Stanford Digital Economy Lab, AI Economic Indicators (Brynjolfsson, Chandar & Chen, \"Canaries in the Coal Mine\")",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "2021-08–2026-07",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "canariesYoungExposed": {
+   "name": "Young Workers in AI-Exposed Jobs",
+   "unit": "employment index, ages 22–25 in the most AI-exposed occupation quintile, November 2022 = 100",
+   "source": "Stanford Digital Economy Lab, AI Economic Indicators (Brynjolfsson, Chandar & Chen, \"Canaries in the Coal Mine\")",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "2021-08–2026-07",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "cesBusinessSupport": {
+   "name": "Business Support Jobs (Call Centers)",
+   "unit": "employees, thousands, seasonally adjusted",
+   "source": "BLS Current Employment Statistics, via FRED CES6056140001",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "1990-01–2026-08",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "cesComputerSystemsDesign": {
+   "name": "Computer Systems Design Jobs",
+   "unit": "employees, thousands, seasonally adjusted",
+   "source": "BLS Current Employment Statistics, via FRED CES6054150001",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "1990-01–2026-08",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "cesComputingInfrastructure": {
+   "name": "Computing Infrastructure Jobs",
+   "unit": "employees, thousands, seasonally adjusted",
+   "source": "BLS Current Employment Statistics, via FRED CES5051800001",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "1990-01–2026-08",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "cesInformation": {
+   "name": "Information Sector Jobs",
+   "unit": "employees, thousands, seasonally adjusted",
+   "source": "BLS Current Employment Statistics, via FRED USINFO",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "1939-01–2026-08",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "cesTemporaryHelp": {
+   "name": "Temporary Help Jobs",
+   "unit": "employees, thousands, seasonally adjusted",
+   "source": "BLS Current Employment Statistics, via FRED TEMPHELPS",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "1990-01–2026-08",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "challengerAiJobCuts": {
+   "name": "Job Cuts Attributed to AI",
+   "unit": "announced job cuts per year citing artificial intelligence as the reason",
+   "source": "Challenger, Gray & Christmas, Job Cut Announcement Report",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "phenomenon",
+   "coverage": "2023-12–2026-12",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "fiverrActiveBuyers": {
+   "name": "Fiverr Active Buyers",
+   "unit": "thousands of buyers who ordered in the prior 12 months, at year-end",
+   "source": "Fiverr International Ltd., Forms 20-F and 6-K (SEC EDGAR)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "outcome",
+   "coverage": "2019-12–2026-12",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "gallupAiUseAny": {
+   "name": "Employees Using AI at Work",
+   "unit": "percent of U.S. employees using AI in their role at least a few times a year",
+   "source": "Gallup workforce study",
+   "cadence": "quarterly",
+   "annualRule": "annual average",
+   "class": "phenomenon",
+   "coverage": "2023-04–2026-04",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "gallupAiUseDaily": {
+   "name": "Employees Using AI Daily",
+   "unit": "percent of U.S. employees using AI in their role daily",
+   "source": "Gallup workforce study",
+   "cadence": "quarterly",
+   "annualRule": "annual average",
+   "class": "phenomenon",
+   "coverage": "2023-04–2026-04",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "genAiAdoptionWork": {
+   "name": "Workers Using GenAI for Work",
+   "unit": "percent of employed adults 18–64",
+   "source": "Real-Time Population Survey (Bick, Blandin & Deming), via FRED RPSGENAIUSAGESHAREWORK",
+   "cadence": "quarterly",
+   "annualRule": "annual average",
+   "class": "phenomenon",
+   "coverage": "2024-07–2026-04",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "indeedAiPostingsShare": {
+   "name": "Job Postings Mentioning AI (Indeed)",
+   "unit": "percent of US job postings, monthly average of daily values",
+   "source": "Indeed Hiring Lab AI Tracker (GitHub, CC BY 4.0)",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "phenomenon",
+   "coverage": "2019-01–2026-07",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "indeedPostingsAll": {
+   "name": "Job Postings Index (Indeed)",
+   "unit": "index, February 1, 2020 = 100, monthly average of daily values, seasonally adjusted",
+   "source": "Indeed Hiring Lab, via FRED IHLIDXUS",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "2020-02–2026-08",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "indeedPostingsCustomerService": {
+   "name": "Customer Service Postings (Indeed)",
+   "unit": "index, February 1, 2020 = 100, monthly average of daily values, seasonally adjusted",
+   "source": "Indeed Hiring Lab, via FRED IHLIDXUSTPCUSTSERV",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "2020-02–2026-08",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "indeedPostingsSoftware": {
+   "name": "Software Postings Index (Indeed)",
+   "unit": "index, February 1, 2020 = 100, monthly average of daily values, seasonally adjusted",
+   "source": "Indeed Hiring Lab, via FRED IHLIDXUSTPSOFTDEVE",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "2020-02–2026-08",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "initialClaims": {
+   "name": "Initial Jobless Claims",
+   "unit": "initial claims per week, seasonally adjusted, monthly average",
+   "source": "US Employment and Training Administration, via FRED ICSA",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "1967-01–2026-08",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "joltsHires": {
+   "name": "Hires",
+   "unit": "hires per month, thousands, seasonally adjusted",
+   "source": "BLS Job Openings and Labor Turnover Survey, via FRED JTSHIL",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "2000-12–2026-07",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "joltsLayoffs": {
+   "name": "Layoffs & Discharges",
+   "unit": "layoffs and discharges per month, thousands, seasonally adjusted",
+   "source": "BLS Job Openings and Labor Turnover Survey, via FRED JTSLDL",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "2000-12–2026-07",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "joltsOpenings": {
+   "name": "Job Openings",
+   "unit": "openings, thousands, seasonally adjusted, last business day of month",
+   "source": "BLS Job Openings and Labor Turnover Survey, via FRED JTSJOL",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "2000-12–2026-07",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "oewsComputerProgrammers": {
+   "name": "Computer Programmers Employed",
+   "unit": "employed, May of each year",
+   "source": "BLS Occupational Employment and Wage Statistics (SOC 15-1251)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "outcome",
+   "coverage": "2019-05–2025-05",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "oewsCustomerServiceReps": {
+   "name": "Customer Service Reps Employed",
+   "unit": "employed, May of each year",
+   "source": "BLS Occupational Employment and Wage Statistics (SOC 43-4051)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "outcome",
+   "coverage": "2019-05–2025-05",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "oewsDataEntryKeyers": {
+   "name": "Data Entry Keyers Employed",
+   "unit": "employed, May of each year",
+   "source": "BLS Occupational Employment and Wage Statistics (SOC 43-9021)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "outcome",
+   "coverage": "2019-05–2025-05",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "oewsSoftwareDevelopers": {
+   "name": "Software Developers Employed",
+   "unit": "employed, May of each year",
+   "source": "BLS Occupational Employment and Wage Statistics (SOC 15-1252)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "outcome",
+   "coverage": "2021-05–2025-05",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "publicExpectsFewerJobs": {
+   "name": "Expect AI to Reduce Jobs",
+   "unit": "percent of U.S. adults expecting AI to reduce the total number of U.S. jobs over the next 10 years",
+   "source": "Bentley University–Gallup Business in Society study",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "phenomenon",
+   "coverage": "2023-06–2026-06",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "rampAiIndex": {
+   "name": "Businesses Paying for AI (Ramp)",
+   "unit": "percent of US businesses on Ramp with a paid AI transaction in the month",
+   "source": "Ramp Economics Lab, Ramp AI Index",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "phenomenon",
+   "coverage": "2023-01–2026-07",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "recentGradUnderemployment": {
+   "name": "Recent Grad Underemployment",
+   "unit": "percent working in jobs that do not typically require a college degree, ages 22–27 with a bachelor's degree or higher",
+   "source": "Federal Reserve Bank of New York, The Labor Market for Recent College Graduates",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "1990-01–2026-06",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "recentGradUnemployment": {
+   "name": "Recent Grad Unemployment",
+   "unit": "percent, ages 22–27 with a bachelor's degree or higher, seasonally adjusted 3-month average",
+   "source": "Federal Reserve Bank of New York, The Labor Market for Recent College Graduates",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "1990-01–2026-06",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "upworkGsv": {
+   "name": "Upwork Gross Services Volume",
+   "unit": "thousands of US dollars transacted per year",
+   "source": "Upwork Inc., Form 10-K key metrics (SEC EDGAR)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "outcome",
+   "coverage": "2016-12–2025-12",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "yaleOccupationalChurn": {
+   "name": "Occupational Churn",
+   "unit": "dissimilarity index, percentage-point shift in the occupational mix over the prior 12 months, 12-month moving average",
+   "source": "Yale Budget Lab, Tracking the Impact of AI on the Labor Market (from CPS microdata)",
+   "cadence": "monthly",
+   "annualRule": "annual average",
+   "class": "outcome",
+   "coverage": "2022-11–2026-07",
+   "fetched": "2026-09-06T21:59:53.900Z"
+  }
+ }
+}

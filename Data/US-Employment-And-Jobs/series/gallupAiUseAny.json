@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "key": "gallupAiUseAny",
+    "name": "Employees Using AI at Work",
+    "unit": "percent of U.S. employees using AI in their role at least a few times a year",
+    "source": "Gallup workforce study",
+    "sourceUrl": "https://www.gallup.com/workplace/712736/organizational-adoption-jumps-six-points.aspx",
+    "historicalSourceUrls": [
+      "https://www.gallup.com/workplace/701195/frequent-workplace-continued-rise.aspx"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "quarterly",
+    "annualRule": "annual average",
+    "class": "phenomenon",
+    "note": "Gallup Panel workforce study, employed U.S. adults, ~19,000–24,000 per wave. Asked in Q2 of 2023 and 2024, then every quarter from Q2 2025, so the early points are a year apart. Values read from Gallup's published trend table; the checked-in citation file records fielding dates and Gallup's own one-point discrepancy between its 2025 and 2026 trend tables for the frequent-use cut. Annual figure is the average of the year's waves.",
+    "partialYear": 2026,
+    "partialThrough": "2026-04",
+    "coverage": "2023–2026",
+    "nativeCoverage": "2023-04–2026-04",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "native": {
+    "2023-04": 21,
+    "2024-04": 27,
+    "2025-04": 40,
+    "2025-07": 45,
+    "2025-10": 46,
+    "2026-01": 50,
+    "2026-04": 52
+  },
+  "data": {
+    "2023": 21,
+    "2024": 27,
+    "2025": 44,
+    "2026": 51
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "publisher": "BLS Occupational Employment and Wage Statistics (OEWS), national estimates, May reference month",
+  "sourceUrl": "https://www.bls.gov/oes/tables.htm",
+  "files": {
+    "2019": { "zip": "https://www.bls.gov/oes/special-requests/oesm19nat.zip", "sheet": "national_M2019_dl.xlsx", "sha256_16": "850891ca753bc0c2" },
+    "2020": { "zip": "https://www.bls.gov/oes/special-requests/oesm20nat.zip", "sheet": "national_M2020_dl.xlsx", "sha256_16": "cabe67638fdf72be" },
+    "2021": { "zip": "https://www.bls.gov/oes/special-requests/oesm21nat.zip", "sheet": "national_M2021_dl.xlsx", "sha256_16": "83ad09f19e62104a" },
+    "2022": { "zip": "https://www.bls.gov/oes/special-requests/oesm22nat.zip", "sheet": "national_M2022_dl.xlsx", "sha256_16": "725348e28b50bf6a" },
+    "2023": { "zip": "https://www.bls.gov/oes/special-requests/oesm23nat.zip", "sheet": "national_M2023_dl.xlsx", "sha256_16": "8ce5e8277c3ba68a" },
+    "2024": { "zip": "https://www.bls.gov/oes/special-requests/oesm24nat.zip", "sheet": "national_M2024_dl.xlsx", "sha256_16": "5fa368aa034ca784" },
+    "2025": { "zip": "https://www.bls.gov/oes/special-requests/oesm25nat.zip", "sheet": "national_M2025_dl.xlsx", "sha256_16": "b5855a37f3e03e77" }
+  },
+  "readDate": "2026-09-06",
+  "readBy": "TOT_EMP column of each year's national workbook, rows OCC_CODE = the SOC code below, O_GROUP = detailed; bls.gov serves the zips only to a real browser (curl gets 403), so the values are checked in and update.ts re-verifies them against any workbook present under work/",
+  "note": "OEWS is a May-reference survey; BLS says its estimates are not designed for year-to-year comparison, and the 2018 SOC was adopted in stages: May 2019 and May 2020 used the hybrid code 15-1256 (Software Developers and Software QA Analysts and Testers), so Software Developers (15-1252) begins in May 2021.",
+  "occupations": {
+    "oewsComputerProgrammers": { "soc": "15-1251", "title": "Computer Programmers", "data": { "2019": 199540, "2020": 178140, "2021": 152610, "2022": 132740, "2023": 120370, "2024": 109870, "2025": 92230 } },
+    "oewsSoftwareDevelopers": { "soc": "15-1252", "title": "Software Developers", "data": { "2021": 1364180, "2022": 1534790, "2023": 1656880, "2024": 1654440, "2025": 1687890 }, "excluded": { "2019": { "soc": "15-1256", "value": 1406870 }, "2020": { "soc": "15-1256", "value": 1476800 } } },
+    "oewsCustomerServiceReps": { "soc": "43-4051", "title": "Customer Service Representatives", "data": { "2019": 2919230, "2020": 2833250, "2021": 2787070, "2022": 2879840, "2023": 2858710, "2024": 2725930, "2025": 2595750 } },
+    "oewsDataEntryKeyers": { "soc": "43-9021", "title": "Data Entry Keyers", "data": { "2019": 159930, "2020": 151520, "2021": 147170, "2022": 157380, "2023": 154230, "2024": 135280, "2025": 127080 } }
+  }
+}

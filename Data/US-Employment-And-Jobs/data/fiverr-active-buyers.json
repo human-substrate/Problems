@@ -1,0 +1,23 @@
+{
+ "publisher": "Fiverr International Ltd., Forms 20-F and 6-K (CIK 1762301)",
+ "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1762301&type=20-F",
+ "readDate": "2026-09-06",
+ "readBy": "active buyers (thousands) as of December 31 from each year's 20-F; 2022 and 2023 taken as RESTATED in the FY2024 20-F (marketplace-only definition) so 2022–2026 share one definition; 2019–2021 as printed on the earlier definition; FY2025 20-F re-read by the lead (3,135 / 3,630 / 4,027); per-value filing URLs in sec-upwork-fiverr-citations.json",
+ "definitionBreak": "FY2024 20-F renamed the metric annual active buyers and narrowed it to marketplace Gigs (services excluded), restating 2022 from 4,275 to 4,201 and 2023 from 4,077 to 4,027. 2019–2021 (2,352; 3,418; 4,217) are on the earlier definition, which included other services Fiverr now calls immaterial.",
+ "data": {
+  "2019": 2352,
+  "2020": 3418,
+  "2021": 4217,
+  "2022": 4201,
+  "2023": 4027,
+  "2024": 3630,
+  "2025": 3135,
+  "2026": 2676
+ },
+ "partialYear": 2026,
+ "partialThrough": "2026-06",
+ "asPrinted": {
+  "2022": 4275,
+  "2023": 4077
+ }
+}

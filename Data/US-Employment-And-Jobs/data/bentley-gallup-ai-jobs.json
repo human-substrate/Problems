@@ -1,0 +1,10 @@
+{
+  "publisher": "Bentley University–Gallup Business in Society study (Gallup Panel, U.S. adults 18+)",
+  "instrument": "Over the next 10 years, do you think AI will increase the total number of jobs in the United States, have no impact, or reduce the total number of jobs? — share answering 'reduce'",
+  "sourceUrl": "https://news.gallup.com/poll/712751/americans-cool-toward.aspx",
+  "historicalSourceUrls": ["https://news.gallup.com/poll/648953/americans-express-real-concerns-artificial-intelligence.aspx"],
+  "readDate": "2026-09-06",
+  "readBy": "table 'Americans Expect AI to Reduce Jobs' on the 2026 article (712751): Reduce the total number of jobs 75 / 75 / 73 / 79",
+  "fieldDates": { "2023": "May 8-15, 2023 (n=5,458)", "2024": "Apr 29-May 6, 2024 (n=5,835)", "2025": "May 2025 (fielding dates not printed on the 2026 page)", "2026": "May 4-11, 2026 (n=3,270)" },
+  "data": { "2023": 75, "2024": 75, "2025": 73, "2026": 79 }
+}

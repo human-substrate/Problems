@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "key": "oewsSoftwareDevelopers",
+    "name": "Software Developers Employed",
+    "unit": "employed, May of each year",
+    "source": "BLS Occupational Employment and Wage Statistics (SOC 15-1252)",
+    "sourceUrl": "https://www.bls.gov/oes/tables.htm",
+    "historicalSourceUrls": [
+      "https://www.bls.gov/oes/special-requests/oesm25nat.zip"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "outcome",
+    "note": "National employment from the OEWS national workbook for each May (TOT_EMP, detailed occupation). BLS cautions that OEWS estimates are not designed for year-to-year comparison: the survey pools three years of samples, and model-based (MB3) estimation began with May 2021. Values read from the seven national workbooks (2019–2025) and checked in with each file's hash. Begins May 2021: May 2019 and 2020 published the hybrid code 15-1256 (developers plus QA analysts and testers), which is not the same occupation and is excluded.",
+    "coverage": "2021–2025",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "data": {
+    "2021": 1364180,
+    "2022": 1534790,
+    "2023": 1656880,
+    "2024": 1654440,
+    "2025": 1687890
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "key": "gallupAiUseDaily",
+    "name": "Employees Using AI Daily",
+    "unit": "percent of U.S. employees using AI in their role daily",
+    "source": "Gallup workforce study",
+    "sourceUrl": "https://www.gallup.com/workplace/712736/organizational-adoption-jumps-six-points.aspx",
+    "historicalSourceUrls": [
+      "https://www.gallup.com/workplace/701195/frequent-workplace-continued-rise.aspx"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "quarterly",
+    "annualRule": "annual average",
+    "class": "phenomenon",
+    "note": "Same Gallup instrument and waves as Employees Using AI at Work, the daily-use cut. Q2 2023 and Q2 2024 are annual points; quarterly from Q2 2025. Annual figure is the average of the year's waves.",
+    "partialYear": 2026,
+    "partialThrough": "2026-04",
+    "coverage": "2023–2026",
+    "nativeCoverage": "2023-04–2026-04",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "native": {
+    "2023-04": 4,
+    "2024-04": 4,
+    "2025-04": 8,
+    "2025-07": 10,
+    "2025-10": 12,
+    "2026-01": 13,
+    "2026-04": 15
+  },
+  "data": {
+    "2023": 4,
+    "2024": 4,
+    "2025": 10,
+    "2026": 14
+  }
+}

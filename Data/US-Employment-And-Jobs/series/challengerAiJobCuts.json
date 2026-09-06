@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "key": "challengerAiJobCuts",
+    "name": "Job Cuts Attributed to AI",
+    "unit": "announced job cuts per year citing artificial intelligence as the reason",
+    "source": "Challenger, Gray & Christmas, Job Cut Announcement Report",
+    "sourceUrl": "https://www.challengergray.com/blog/category/job-cuts-report/",
+    "historicalSourceUrls": [
+      "https://www.challengergray.com/wp-content/uploads/2026/09/Challenger-Report-August-2026.pdf"
+    ],
+    "goodDirection": "down",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "phenomenon",
+    "note": "Job cuts announced by US employers with artificial intelligence as the stated reason, from the outplacement firm's monthly report (tracked since 1993; AI as a reason since 2023). Announced cuts, not realized layoffs, and the reason is the employer's own; Challenger's parallel Technological Update category changed labels each year. 2026 is year-to-date through August. Values read from the December 2023, 2024, and 2025 and the August 2026 report tables, and cross-checked against the since-2023 cumulative printed in the December 2025 report.",
+    "partialYear": 2026,
+    "partialThrough": "2026-08",
+    "coverage": "2023–2026",
+    "fetched": "2026-09-06T21:59:53.900Z"
+  },
+  "data": {
+    "2023": 4247,
+    "2024": 12742,
+    "2025": 54836,
+    "2026": 116175
+  }
+}

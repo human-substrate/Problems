@@ -1,0 +1,33 @@
+{
+ "publisher": "Challenger, Gray & Christmas, monthly Job Cut Announcement Report, table Job Cuts by Reason, row Artificial Intelligence",
+ "sourceUrl": "https://www.challengergray.com/blog/category/job-cuts-report/",
+ "readDate": "2026-09-06",
+ "files": {
+  "2023": {
+   "url": "https://www.challengergray.com/wp-content/uploads/2024/01/Challenger-Report-December-2023.pdf",
+   "quoted": "Artificial Intelligence 150 4,247"
+  },
+  "2024": {
+   "url": "https://www.challengergray.com/wp-content/uploads/2025/01/The-Challenger-Report-December-2024.pdf",
+   "quoted": "Artificial Intelligence [monthly blank] 12,742 (table Job Cuts by Reason; the PDF text renders the word with a broken ligature) — also confirmed by the December 2025 report's since-2023 cumulative (4,247 + 12,742 + 54,836 = 71,825)"
+  },
+  "2025": {
+   "url": "https://www.challengergray.com/wp-content/uploads/2026/01/Challenger-Report-December-2025.pdf",
+   "quoted": "Artificial Intelligence 142 54,836"
+  },
+  "2026": {
+   "url": "https://www.challengergray.com/wp-content/uploads/2026/09/Challenger-Report-August-2026.pdf",
+   "quoted": "Artificial Intelligence 3,462 116,175 (year to date through August)",
+   "partialThrough": "2026-08"
+  }
+ },
+ "note": "Employer-stated reason in announced job cuts tracked by Challenger since 1993; AI first tracked as a reason in 2023. Announced cuts are not realized layoffs, and Challenger also carries a parallel Technological Update reason whose label changed (2024 not AI, 2025 possibly AI, 2026 automation), so the AI attribution boundary is the employer's.",
+ "data": {
+  "2023": 4247,
+  "2024": 12742,
+  "2025": 54836,
+  "2026": 116175
+ },
+ "partialYear": 2026,
+ "partialThrough": "2026-08"
+}
