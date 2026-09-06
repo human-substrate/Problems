@@ -12,9 +12,9 @@
     "cadence": "annual",
     "annualRule": "annual (publisher)",
     "class": "outcome",
-    "note": "Total dollar value of work transacted on Upwork each fiscal year, as printed in its Form 10-K, 2016–2025. The largest US freelance marketplace's own measure of demand for freelance work; growth stalled after 2022 (4.10B → 4.03B in 2025) and Upwork's Q2 2026 10-Q attributes its decline to \"the evolving impact of AI on certain categories of freelance work\" and macroeconomic uncertainty — management's attribution, not ours. The FY2025 10-K widened the definition to include AI-based services, Connects purchases, payment processing, memberships, and currency services without restating prior years.",
+    "note": "Total dollar value of work transacted on Upwork each fiscal year, as printed in its Form 10-K, 2016–2025. The largest US freelance marketplace's own measure of demand for freelance work; GSV peaked in 2023 (4.14B) and was 4.03B in 2025 and Upwork's Q2 2026 10-Q attributes its decline to \"the evolving impact of AI on certain categories of freelance work\" and macroeconomic uncertainty — management's attribution, not ours. The FY2025 10-K widened the definition to include AI-based services, Connects purchases, payment processing, memberships, and currency services without restating prior years.",
     "coverage": "2016–2025",
-    "fetched": "2026-09-06T21:59:53.900Z"
+    "fetched": "2026-09-06T22:03:13.067Z"
   },
   "data": {
     "2016": 1148363,

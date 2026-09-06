@@ -12,12 +12,12 @@
     "cadence": "monthly",
     "annualRule": "annual average",
     "class": "phenomenon",
-    "note": "Share of businesses using Ramp's corporate cards and bill pay (30,000+, skewed toward younger and technology-forward firms by Ramp's own description) with a transaction for an AI product or service in the month, identified from merchant and line-item text. Spend-based, so free tools and personal accounts are invisible. Monthly from January 2023; Ramp publishes the series only inside its page, so the values are checked in and re-parsed on refresh.",
+    "note": "Share of businesses using Ramp's corporate cards and bill pay (30,000+, skewed toward younger and technology-forward firms by Ramp's own description) with a transaction for an AI product or service in the month, identified from merchant and line-item text. Spend-based, so free tools and personal accounts are invisible. Monthly from January 2023. Ramp publishes the series only inside its web page, not as a file, so the values are checked in and re-parsed on refresh; this is the one row in the section that depends on a page layout rather than a published file.",
     "partialYear": 2026,
     "partialThrough": "2026-07",
     "coverage": "2023–2026",
     "nativeCoverage": "2023-01–2026-07",
-    "fetched": "2026-09-06T21:59:53.900Z"
+    "fetched": "2026-09-06T22:03:13.067Z"
   },
   "native": {
     "2023-01": 7.46,

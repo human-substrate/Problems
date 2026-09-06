@@ -1,7 +1,7 @@
 {
   "_meta": {
     "key": "canariesMidCareerExposed",
-    "name": "Mid-Career Workers in AI-Exposed Jobs",
+    "name": "Mid-Career Workers in AI-Exposed Jobs (Stanford index)",
     "unit": "employment index, ages 35–40 in the most AI-exposed occupation quintile, November 2022 = 100",
     "source": "Stanford Digital Economy Lab, AI Economic Indicators (Brynjolfsson, Chandar & Chen, \"Canaries in the Coal Mine\")",
     "sourceUrl": "https://digitaleconomy.stanford.edu/project/indicators/canaries-dashboard/",
@@ -17,7 +17,7 @@
     "partialThrough": "2026-07",
     "coverage": "2022–2026",
     "nativeCoverage": "2021-08–2026-07",
-    "fetched": "2026-09-06T21:59:53.900Z"
+    "fetched": "2026-09-06T22:03:13.067Z"
   },
   "native": {
     "2021-08": 91.1,

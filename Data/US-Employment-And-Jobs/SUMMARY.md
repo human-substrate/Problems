@@ -8,8 +8,8 @@
 |--------|-------|------------|--------------|
 | **Firms Using AI (Any Function)** | **22.4 (2026-08-09)** | 85% | 2026-09-06 |
 | **Firms Using AI (Original Question)** | **10 (2025-09-21)** | 85% | 2026-09-06 |
-| **Mid-Career Workers in AI-Exposed Jobs** | **109 (2026-07)** | 95% | 2026-09-06 |
-| **Young Workers in AI-Exposed Jobs** | **88.5 (2026-07)** | 95% | 2026-09-06 |
+| **Mid-Career Workers in AI-Exposed Jobs (Stanford index)** | **109 (2026-07)** | 95% | 2026-09-06 |
+| **Young Workers in AI-Exposed Jobs (Stanford index)** | **88.5 (2026-07)** | 95% | 2026-09-06 |
 | **Business Support Jobs (Call Centers)** | **623.6 (2026-08)** | 95% | 2026-09-06 |
 | **Computer Systems Design Jobs** | **2362.7 (2026-08)** | 95% | 2026-09-06 |
 | **Computing Infrastructure Jobs** | **453.3 (2026-08)** | 95% | 2026-09-06 |
@@ -37,7 +37,7 @@
 | **Recent Grad Underemployment** | **41.95 (2026-06)** | 95% | 2026-09-06 |
 | **Recent Grad Unemployment** | **5.7 (2026-06)** | 95% | 2026-09-06 |
 | **Upwork Gross Services Volume** | **4028386 (2025)** | 95% | 2026-09-06 |
-| **Occupational Churn** | **3.42 (2026-07)** | 95% | 2026-09-06 |
+| **Occupational Churn (Yale index)** | **3.42 (2026-07)** | 95% | 2026-09-06 |
 
 **One-liner:** 32 primary-sourced US labor series, native cadence, chosen to show whether AI shows in jobs.
 

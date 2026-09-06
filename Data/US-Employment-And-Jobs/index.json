@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-06T21:59:53.900Z",
+ "generated": "2026-09-06T22:03:13.067Z",
  "dataset": "US-Employment-And-Jobs",
  "series": {
   "btosAiUseAnyFunction": {
@@ -23,24 +23,24 @@
    "fetched": "2026-09-06T21:59:53.900Z"
   },
   "canariesMidCareerExposed": {
-   "name": "Mid-Career Workers in AI-Exposed Jobs",
+   "name": "Mid-Career Workers in AI-Exposed Jobs (Stanford index)",
    "unit": "employment index, ages 35–40 in the most AI-exposed occupation quintile, November 2022 = 100",
    "source": "Stanford Digital Economy Lab, AI Economic Indicators (Brynjolfsson, Chandar & Chen, \"Canaries in the Coal Mine\")",
    "cadence": "monthly",
    "annualRule": "annual average",
    "class": "outcome",
    "coverage": "2021-08–2026-07",
-   "fetched": "2026-09-06T21:59:53.900Z"
+   "fetched": "2026-09-06T22:03:13.067Z"
   },
   "canariesYoungExposed": {
-   "name": "Young Workers in AI-Exposed Jobs",
+   "name": "Young Workers in AI-Exposed Jobs (Stanford index)",
    "unit": "employment index, ages 22–25 in the most AI-exposed occupation quintile, November 2022 = 100",
    "source": "Stanford Digital Economy Lab, AI Economic Indicators (Brynjolfsson, Chandar & Chen, \"Canaries in the Coal Mine\")",
    "cadence": "monthly",
    "annualRule": "annual average",
    "class": "outcome",
    "coverage": "2021-08–2026-07",
-   "fetched": "2026-09-06T21:59:53.900Z"
+   "fetched": "2026-09-06T22:03:13.067Z"
   },
   "cesBusinessSupport": {
    "name": "Business Support Jobs (Call Centers)",
@@ -110,7 +110,7 @@
    "annualRule": "annual (publisher)",
    "class": "outcome",
    "coverage": "2019-12–2026-12",
-   "fetched": "2026-09-06T21:59:53.900Z"
+   "fetched": "2026-09-06T22:03:13.067Z"
   },
   "gallupAiUseAny": {
    "name": "Employees Using AI at Work",
@@ -280,7 +280,7 @@
    "annualRule": "annual average",
    "class": "phenomenon",
    "coverage": "2023-01–2026-07",
-   "fetched": "2026-09-06T21:59:53.900Z"
+   "fetched": "2026-09-06T22:03:13.067Z"
   },
   "recentGradUnderemployment": {
    "name": "Recent Grad Underemployment",
@@ -310,17 +310,17 @@
    "annualRule": "annual (publisher)",
    "class": "outcome",
    "coverage": "2016-12–2025-12",
-   "fetched": "2026-09-06T21:59:53.900Z"
+   "fetched": "2026-09-06T22:03:13.067Z"
   },
   "yaleOccupationalChurn": {
-   "name": "Occupational Churn",
+   "name": "Occupational Churn (Yale index)",
    "unit": "dissimilarity index, percentage-point shift in the occupational mix over the prior 12 months, 12-month moving average",
    "source": "Yale Budget Lab, Tracking the Impact of AI on the Labor Market (from CPS microdata)",
    "cadence": "monthly",
    "annualRule": "annual average",
    "class": "outcome",
    "coverage": "2022-11–2026-07",
-   "fetched": "2026-09-06T21:59:53.900Z"
+   "fetched": "2026-09-06T22:03:13.067Z"
   }
  }
 }

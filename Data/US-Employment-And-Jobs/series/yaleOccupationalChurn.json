@@ -1,7 +1,7 @@
 {
   "_meta": {
     "key": "yaleOccupationalChurn",
-    "name": "Occupational Churn",
+    "name": "Occupational Churn (Yale index)",
     "unit": "dissimilarity index, percentage-point shift in the occupational mix over the prior 12 months, 12-month moving average",
     "source": "Yale Budget Lab, Tracking the Impact of AI on the Labor Market (from CPS microdata)",
     "sourceUrl": "https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market",
@@ -17,7 +17,7 @@
     "partialThrough": "2026-07",
     "coverage": "2023–2026",
     "nativeCoverage": "2022-11–2026-07",
-    "fetched": "2026-09-06T21:59:53.900Z"
+    "fetched": "2026-09-06T22:03:13.067Z"
   },
   "native": {
     "2022-11": 2.83,

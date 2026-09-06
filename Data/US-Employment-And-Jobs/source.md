@@ -22,7 +22,7 @@ Every series, its publisher, the exact endpoint or document `update.ts` reads, c
 - **Coverage:** 2023-09-10–2025-09-21
 - **Method & caveats:** Share of businesses answering yes to "In the last two weeks, did this business use Artificial Intelligence (AI) in producing goods or services?" — the Census Bureau's biweekly BTOS, ~1.2 million businesses sampled per year, each responding quarterly. Cycles from September 2023 (cycle 202319) through September 2025 (202520), dated here by the end of each reference period. Census retired this wording after 202520 and started a NEW series for the reworded question (see Firms Using AI (Any Function)); the two are never joined. Annual figure is the average of the year's cycles.
 
-## Mid-Career Workers in AI-Exposed Jobs (`canariesMidCareerExposed`)
+## Mid-Career Workers in AI-Exposed Jobs (Stanford index) (`canariesMidCareerExposed`)
 
 - **Publisher:** Stanford Digital Economy Lab, AI Economic Indicators (Brynjolfsson, Chandar & Chen, "Canaries in the Coal Mine")
 - **Source URL:** https://digitaleconomy.stanford.edu/project/indicators/canaries-dashboard/
@@ -32,7 +32,7 @@ Every series, its publisher, the exact endpoint or document `update.ts` reads, c
 - **Coverage:** 2021-08–2026-07
 - **Method & caveats:** Same index as the young-worker row, for ages 35–40 in the most AI-exposed occupation quintile (November 2022 = 100): the comparison group in the authors' headline that young workers' employment in exposed occupations sits below where it would be had it kept pace with experienced workers. Same source, same caveats.
 
-## Young Workers in AI-Exposed Jobs (`canariesYoungExposed`)
+## Young Workers in AI-Exposed Jobs (Stanford index) (`canariesYoungExposed`)
 
 - **Publisher:** Stanford Digital Economy Lab, AI Economic Indicators (Brynjolfsson, Chandar & Chen, "Canaries in the Coal Mine")
 - **Source URL:** https://digitaleconomy.stanford.edu/project/indicators/canaries-dashboard/
@@ -41,7 +41,7 @@ Every series, its publisher, the exact endpoint or document `update.ts` reads, c
 - **Unit:** employment index, ages 22–25 in the most AI-exposed occupation quintile, November 2022 = 100
 - **Cadence:** monthly · annual rule: annual average · class: outcome
 - **Coverage:** 2021-08–2026-07
-- **Method & caveats:** Employment of workers aged 22–25 in the fifth of occupations most exposed to AI (Eloundou et al. exposure plus Anthropic usage), indexed to November 2022 = 100, from a balanced panel of firms using ADP payroll (3.5–5 million employees per month), published and updated monthly by the authors. The authors: "early, descriptive indicators—canaries in the coal mine—rather than causal estimates"; the ADP panel is not the national workforce and the series begins August 2021, so there is no 2019 baseline. The companion row for ages 35–40 is the comparison the authors draw.
+- **Method & caveats:** Employment of workers aged 22–25 in the fifth of occupations most exposed to AI (Eloundou et al. exposure plus Anthropic usage), indexed to November 2022 = 100, from a balanced panel of firms using ADP payroll (3.5–5 million employees per month), published and updated monthly by the authors. The authors: "early, descriptive indicators—canaries in the coal mine—rather than causal estimates"; the patterns "attenuate when controlling for education, show some divergent trends predating generative AI, and are more pronounced in the ADP analysis sample than in national survey benchmarks." A research index from a balanced firm panel, not an official statistic; it begins August 2021, so there is no 2019 baseline, and because it is normalized to November 2022 the change since the marker is the index minus 100 by construction. The companion row for ages 35–40 is the comparison the authors draw.
 
 ## Business Support Jobs (Call Centers) (`cesBusinessSupport`)
 
@@ -272,7 +272,7 @@ Every series, its publisher, the exact endpoint or document `update.ts` reads, c
 - **Unit:** percent of US businesses on Ramp with a paid AI transaction in the month
 - **Cadence:** monthly · annual rule: annual average · class: phenomenon
 - **Coverage:** 2023-01–2026-07
-- **Method & caveats:** Share of businesses using Ramp's corporate cards and bill pay (30,000+, skewed toward younger and technology-forward firms by Ramp's own description) with a transaction for an AI product or service in the month, identified from merchant and line-item text. Spend-based, so free tools and personal accounts are invisible. Monthly from January 2023; Ramp publishes the series only inside its page, so the values are checked in and re-parsed on refresh.
+- **Method & caveats:** Share of businesses using Ramp's corporate cards and bill pay (30,000+, skewed toward younger and technology-forward firms by Ramp's own description) with a transaction for an AI product or service in the month, identified from merchant and line-item text. Spend-based, so free tools and personal accounts are invisible. Monthly from January 2023. Ramp publishes the series only inside its web page, not as a file, so the values are checked in and re-parsed on refresh; this is the one row in the section that depends on a page layout rather than a published file.
 
 ## Recent Grad Underemployment (`recentGradUnderemployment`)
 
@@ -302,9 +302,9 @@ Every series, its publisher, the exact endpoint or document `update.ts` reads, c
 - **Unit:** thousands of US dollars transacted per year
 - **Cadence:** annual · annual rule: annual (publisher) · class: outcome
 - **Coverage:** 2016–2025
-- **Method & caveats:** Total dollar value of work transacted on Upwork each fiscal year, as printed in its Form 10-K, 2016–2025. The largest US freelance marketplace's own measure of demand for freelance work; growth stalled after 2022 (4.10B → 4.03B in 2025) and Upwork's Q2 2026 10-Q attributes its decline to "the evolving impact of AI on certain categories of freelance work" and macroeconomic uncertainty — management's attribution, not ours. The FY2025 10-K widened the definition to include AI-based services, Connects purchases, payment processing, memberships, and currency services without restating prior years.
+- **Method & caveats:** Total dollar value of work transacted on Upwork each fiscal year, as printed in its Form 10-K, 2016–2025. The largest US freelance marketplace's own measure of demand for freelance work; GSV peaked in 2023 (4.14B) and was 4.03B in 2025 and Upwork's Q2 2026 10-Q attributes its decline to "the evolving impact of AI on certain categories of freelance work" and macroeconomic uncertainty — management's attribution, not ours. The FY2025 10-K widened the definition to include AI-based services, Connects purchases, payment processing, memberships, and currency services without restating prior years.
 
-## Occupational Churn (`yaleOccupationalChurn`)
+## Occupational Churn (Yale index) (`yaleOccupationalChurn`)
 
 - **Publisher:** Yale Budget Lab, Tracking the Impact of AI on the Labor Market (from CPS microdata)
 - **Source URL:** https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market
