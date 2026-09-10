@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "key": "fluAllAges",
+    "unit": "percent",
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC FluVaxView",
+    "sourceUrl": "https://data.cdc.gov/resource/vh55-3he6.json",
+    "name": "Seasonal influenza vaccination, ≥6 months, national",
+    "note": "CDC FluVaxView national season estimate for people aged at least six months. Season or school year is mapped to the calendar year it ends (e.g. '2023-24' -> 2024). Uses the maximum cumulative coverage per season, verified against the latest observation in July-to-June month order. The 2009-10 H1N1 season, which FluVaxView reports with three different end-of-season figures per age group, is excluded; the series begins with 2010-11. The 2023-24 season, which the dataset labels differently, is included under the same age group.",
+    "breaks": "none known beyond survey and reporting-completeness changes.",
+    "coverage": "2011–2025",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "2011": 43,
+    "2012": 41.8,
+    "2013": 45,
+    "2014": 46.2,
+    "2015": 47.1,
+    "2016": 45.6,
+    "2017": 46.8,
+    "2018": 41.7,
+    "2019": 49.2,
+    "2020": 51.8,
+    "2021": 52.1,
+    "2022": 51.4,
+    "2023": 49.3,
+    "2024": 47.2,
+    "2025": 43.8
+  }
+}

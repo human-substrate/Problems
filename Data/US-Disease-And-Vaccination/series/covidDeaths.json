@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "key": "covidDeaths",
+    "unit": "deaths",
+    "source": "National Center for Health Statistics, Provisional COVID-19 Death Counts by Week Ending Date and State",
+    "sourceUrl": "https://data.cdc.gov/resource/r8kw-7aab.json",
+    "historicalSourceUrls": [
+      "https://data.cdc.gov/resource/6rkc-nb2q.json",
+      "https://data.cdc.gov/resource/489q-934x.json"
+    ],
+    "goodDirection": "down",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "mortality",
+    "name": "COVID-19 deaths",
+    "note": "Weekly provisional COVID-19 death counts by week-ending date are summed to calendar year here, assigning each whole week to the year its ending date falls in. NCHS revises recent weeks upward as death certificates are processed, so the most recent 1–2 years may rise on a later refresh. The provisional flag identifies the latest calendar year when fewer than 52 weeks are present; revisions are ongoing, not a one-time event, and unflagged recent years can also change. This series begins in 2020 by definition.",
+    "breaks": "Disease did not exist before 2020; ICD code U07.1 introduced 2020.",
+    "provisional": [
+      2026
+    ],
+    "coverage": "2020–2026",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "2020": 367923,
+    "2021": 471027,
+    "2022": 256290,
+    "2023": 75725,
+    "2024": 47494,
+    "2025": 20840,
+    "2026": 6178
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "key": "kindergartenMmr",
+    "unit": "percent",
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC School Vaccination Assessment (SchoolVaxView)",
+    "sourceUrl": "https://data.cdc.gov/resource/ijqb-a7ye.json",
+    "breaks": "none known beyond state-reporting-completeness changes; national estimate absent for school year 2010-11 (2011 in the year-ending convention).",
+    "name": "MMR coverage among kindergartners, national",
+    "note": "CDC national school-assessment MMR coverage among kindergartners. State reporting completeness can vary; the national estimate is absent for 2010-11. Season or school year is mapped to the calendar year it ends (e.g. '2023-24' -> 2024).",
+    "coverage": "2010–2026",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "2010": 94.4,
+    "2012": 94.7,
+    "2013": 94.1,
+    "2014": 94,
+    "2015": 94,
+    "2016": 94.7,
+    "2017": 95,
+    "2018": 95,
+    "2019": 94.7,
+    "2020": 95.2,
+    "2021": 93.9,
+    "2022": 93,
+    "2023": 93.1,
+    "2024": 92.7,
+    "2025": 92.5,
+    "2026": 92.4
+  }
+}

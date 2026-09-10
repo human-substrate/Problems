@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "key": "kindergartenNonMedicalExemption",
+    "unit": "percent",
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC School Vaccination Assessment (SchoolVaxView)",
+    "sourceUrl": "https://data.cdc.gov/resource/ijqb-a7ye.json",
+    "breaks": "none known beyond state-reporting-completeness changes; national estimate absent for school year 2010-11 (2011 in the year-ending convention).",
+    "name": "Kindergartners with a non-medical vaccination exemption",
+    "note": "CDC national school-assessment percentage with dose category 'Non-Medical Exemption'. This dataset does not characterize whether a rise or fall in exemptions is good or bad. State reporting completeness can vary. Season or school year is mapped to the calendar year it ends (e.g. '2023-24' -> 2024).",
+    "coverage": "2010–2026",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "2010": 1.5,
+    "2012": 1.4,
+    "2013": 1.7,
+    "2014": 2,
+    "2015": 2,
+    "2016": 1.9,
+    "2017": 1.8,
+    "2018": 1.9,
+    "2019": 2.2,
+    "2020": 2.2,
+    "2021": 1.9,
+    "2022": 2.3,
+    "2023": 2.8,
+    "2024": 3.1,
+    "2025": 3.4,
+    "2026": 4
+  }
+}

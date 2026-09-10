@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "key": "childDtap4_1935",
+    "unit": "percent",
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC NIS-Child, Health, United States Table 031 (1998–2017) and the HUS 2011 trend table (1995–1997)",
+    "sourceUrl": "https://data.cdc.gov/resource/nkri-ptxd.json",
+    "historicalSourceUrls": [
+      "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/Health_US/hus18tables/Table031.xlsx"
+    ],
+    "breaks": "2011 NIS-Child added a cell-phone sample to the historically landline-only frame; series ends 2017 when NCIRD moved routine reporting to birth-cohort estimates.",
+    "name": "DTaP ≥4 doses, children 19–35 months",
+    "note": "Share receiving at least four diphtheria, tetanus, and acellular pertussis doses. CDC NIS-Child estimates for children 19–35 months are assigned to survey year. A cell-phone sample was added in 2011. This series ends in 2017 and must not be spliced to the birth-cohort series at 24 months.",
+    "coverage": "1995–2017",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "1995": 78,
+    "1996": 81,
+    "1997": 82,
+    "1998": 83.9,
+    "1999": 83.3,
+    "2000": 81.7,
+    "2001": 82.1,
+    "2002": 81.6,
+    "2003": 84.8,
+    "2004": 85.5,
+    "2005": 85.7,
+    "2006": 85.2,
+    "2007": 84.5,
+    "2008": 84.6,
+    "2009": 83.9,
+    "2010": 84.4,
+    "2011": 84.6,
+    "2012": 82.5,
+    "2013": 83.1,
+    "2014": 84.2,
+    "2015": 84.6,
+    "2016": 83.4,
+    "2017": 83.2
+  }
+}

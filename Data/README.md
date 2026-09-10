@@ -25,6 +25,7 @@ The Data directory contains curated, ground-truth datasets about important aspec
 | [Vulnerability & Breach Data](./Vulnerability-And-Breach-Data/SUMMARY.md) | 48,185 CVEs · 3,322 breaches (2025) | Vulns and breaches hit records; no dataset attributes either to AI |
 | [US National Debt](./US-National-Debt/SUMMARY.md) | $39.93T gross (2026-08-14) | Three-quarters of US debt is held domestically; powers usdebt.io |
 | [US Long-Run Indicators](./US-Long-Run-Indicators/SUMMARY.md) | 51 primary-sourced series | Fifty years of US life in numbers; powers usstats.io with US-Societal-Health |
+| [US Disease & Vaccination](./US-Disease-And-Vaccination/SUMMARY.md) | 35 primary-sourced series | Reported disease incidence 1950→, infectious-disease deaths 1900→, and vaccination coverage 1989→; powers the Disease & Vaccination section of usstats.io |
 
 ### Schema Structure
 

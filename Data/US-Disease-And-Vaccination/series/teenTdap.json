@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "key": "teenTdap",
+    "unit": "percent",
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC NIS-Teen (TeenVaxView), National Immunization Survey",
+    "sourceUrl": "https://data.cdc.gov/resource/ee48-w5t6.json",
+    "name": "Tdap ≥1 dose, ages 13–17 years",
+    "note": "CDC NIS-Teen survey-year percentage of adolescents aged 13–17 years receiving at least one tetanus, diphtheria, and acellular pertussis (Tdap) dose. This is a single survey-year coverage series.",
+    "breaks": "none known.",
+    "coverage": "2006–2025",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "2006": 10.8,
+    "2007": 30.4,
+    "2008": 40.8,
+    "2009": 55.6,
+    "2010": 68.7,
+    "2011": 78.2,
+    "2012": 84.6,
+    "2013": 86,
+    "2014": 87.6,
+    "2015": 86.4,
+    "2016": 88,
+    "2017": 88.7,
+    "2018": 88.9,
+    "2019": 90.2,
+    "2020": 90.1,
+    "2021": 89.6,
+    "2022": 89.9,
+    "2023": 89,
+    "2024": 91.3,
+    "2025": 88.8
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "source": "CDC, Measles Cases and Outbreaks (National Center for Immunization and Respiratory Diseases)",
+  "sourceUrl": "https://www.cdc.gov/measles/data-research/index.html",
+  "readDate": "2026-09-09",
+  "method": "Read through a real browser on 2026-09-09; www.cdc.gov refuses non-browser fetchers. The page states full-year confirmed case totals for the two most recent complete years and a year-to-date total for the current year. These are the measles program's confirmed-case counts, which CDC itself cites as the annual totals; they can differ by a handful of cases from the NNDSS annual table once that table is finalized (the program's 2019 total is 1,274 against the NNDSS 1,275).",
+  "quotes": {
+    "2024": "For comparison, 16 outbreaks were reported during 2024 and 69% of cases (198 of 285) were outbreak-associated.",
+    "2025": "For the full year of 2025, a total of 2,289 confirmed* measles cases were reported in the United States.",
+    "2026": "As of September 3, 2026, 3,134 confirmed* measles cases were reported in the United States in 2026."
+  },
+  "fullYear": { "2024": 285, "2025": 2289 },
+  "yearToDate": { "year": 2026, "through": "2026-09", "asOf": "2026-09-03", "count": 3134 }
+}

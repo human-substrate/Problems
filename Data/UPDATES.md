@@ -4,6 +4,27 @@ This file tracks all datasets added to the Substrate Data directory.
 
 ---
 
+## 2026-09-09 - U.S. Disease & Vaccination
+
+**Dataset**: US-Disease-And-Vaccination (new, 35 series)
+**Status**: Active
+**Coverage**: reported incidence 1950/1960/1970/1985/1990/2008→2023 (measles →2026 year-to-date), deaths 1900/1987→2024, vaccination coverage 1989/1995/2006/2008/2010/2011→2022/2024/2025/2026
+**Source**: NCHS (Health, United States trend tables IDNotif, SlctMort, and the NIS-Child and NHIS coverage tables; the age-adjusted death-rate and provisional-mortality datasets on data.cdc.gov; weekly COVID-19 death counts), CDC NNDSS (WONDER final annual case counts 2016–2023), CDC WONDER Underlying Cause of Death 2018–2024, CDC NCIRD coverage datasets (School Vaccination Assessment, NIS-Child, NIS-Teen, FluVaxView, BRFSS adult coverage), the CDC measles program page, Census population via FRED
+
+### Contents
+- `series/<key>.json` × 35, each with a `_meta` block carrying class (incidence · mortality · coverage), `breaks` (never empty), `provisional` years where any, and a method note that states the year-mapping rule and the 2020→ rate construction where they apply
+- `update.ts` — one re-runnable fetcher, no API keys: ftp.cdc.gov workbooks, data.cdc.gov JSON, FRED; browser-read tables (WONDER, the measles page) checked in under `data/` with URL, quotes, and read date; overlap invariants (IDNotif = WONDER counts 2016–2019; 6rkc-nb2q = SlctMort; final WONDER rates = Health US 2018–2019)
+- `SUMMARY.md` / `README.md` / `source.md` — regenerated from the data by `docs.ts`
+- Research provenance: `research/us-disease-vaccination-2026-09/` (filter and rider, year-mapping rule, every candidate's disposition, sources by path)
+
+### Notes
+- Seasons and school years map to the calendar year they end; birth cohorts to the birth year; two survey instruments measuring the same thing in different eras are two series (NIS-Child 19–35 months by survey year vs by age 24 months by birth year; NHIS vs FluVaxView/BRFSS for adults 65+)
+- Provisional and year-to-date values are flagged in the data; no weekly provisional NNDSS table was used as an annual total
+- No note attributes a movement in cases to vaccination or the reverse
+- Powers the new **Disease & Vaccination** section of **https://usstats.io**
+
+---
+
 ## 2026-09-06 - U.S. Employment & Jobs (the AI era)
 
 **Dataset**: US-Employment-And-Jobs (new, 32 series)

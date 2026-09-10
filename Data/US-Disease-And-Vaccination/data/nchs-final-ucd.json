@@ -1,0 +1,8 @@
+{
+  "source": "CDC WONDER, Underlying Cause of Death 2018-2024, Single Race (final data); age-adjusted rate per 100,000, 2000 U.S. standard population; ICD-10 113 Cause List",
+  "sourceUrl": "https://wonder.cdc.gov/ucd-icd10-expanded.html",
+  "readDate": "2026-09-09",
+  "method": "Query grouped by Year and ICD-10 113 Cause List with age-adjusted rates enabled, read through a real browser (wonder.cdc.gov refuses non-browser clients). The 2018 and 2019 values equal the Health, United States SlctMort table (14.9 / 12.3 influenza and pneumonia; 1.5 / 1.4 HIV disease), which is the overlap check.",
+  "fluPneumoniaDeathRate": { "cause": "Influenza and pneumonia (J09-J18)", "deaths": { "2018": 59120, "2019": 49783, "2020": 53544, "2021": 41917, "2022": 47052, "2023": 45185, "2024": 48139 }, "data": { "2020": 13.0, "2021": 10.5, "2022": 11.3, "2023": 10.9, "2024": 11.2 } },
+  "hivDeathRate": { "cause": "Human immunodeficiency virus (HIV) disease (B20-B24)", "deaths": { "2018": 5425, "2019": 5044, "2020": 5115, "2021": 4977, "2022": 4941, "2023": 4748, "2024": 4589 }, "data": { "2020": 1.4, "2021": 1.3, "2022": 1.3, "2023": 1.3, "2024": 1.2 } }
+}

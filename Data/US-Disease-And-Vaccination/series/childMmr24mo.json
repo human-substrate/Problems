@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "key": "childMmr24mo",
+    "unit": "percent",
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC NIS-Child (ChildVaxView), National Immunization Survey",
+    "sourceUrl": "https://data.cdc.gov/resource/fhky-rtsk.json",
+    "breaks": "Different instrument and cohort definition than the paired 19–35-month series (birth-year cohort at exactly 24 months vs. survey-year snapshot of children 19–35 months); the two are a paired comparison, not a continuous series.",
+    "name": "MMR ≥1 dose by 24 months",
+    "note": "CDC NIS-Child share receiving at least one MMR dose by age 24 months. Cohort is the birth year (children by age 24 months, by birth year). This is a paired comparison with the survey-year 19–35-month series, not a continuation of it.",
+    "coverage": "2011–2022",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "2011": 90.1,
+    "2012": 90.6,
+    "2013": 90.3,
+    "2014": 89.8,
+    "2015": 90.8,
+    "2016": 90.8,
+    "2017": 90.4,
+    "2018": 92.3,
+    "2019": 91.5,
+    "2020": 90.2,
+    "2021": 90.2,
+    "2022": 91.4
+  }
+}

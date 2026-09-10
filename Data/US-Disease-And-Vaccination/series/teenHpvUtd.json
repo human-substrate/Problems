@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "key": "teenHpvUtd",
+    "unit": "percent",
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC NIS-Teen (TeenVaxView), National Immunization Survey",
+    "sourceUrl": "https://data.cdc.gov/resource/ee48-w5t6.json",
+    "name": "HPV up-to-date, males and females aged 13–17 years",
+    "note": "CDC NIS-Teen survey-year share of males and females aged 13–17 years meeting the publisher's HPV up-to-date definition. Paired with teenHpv1DoseFemales, which measures at least one dose in females only; both dose definition and sex scope differ.",
+    "breaks": "Different dose definition and sex scope from teenHpv1DoseFemales; use the publisher's up-to-date definition for each survey year.",
+    "coverage": "2016–2025",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "2016": 43.4,
+    "2017": 48.6,
+    "2018": 51.1,
+    "2019": 54.2,
+    "2020": 58.6,
+    "2021": 61.7,
+    "2022": 62.6,
+    "2023": 61.4,
+    "2024": 62.9,
+    "2025": 63.4
+  }
+}

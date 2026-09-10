@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "key": "teenHpv1DoseFemales",
+    "unit": "percent",
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC NIS-Teen (TeenVaxView), National Immunization Survey",
+    "sourceUrl": "https://data.cdc.gov/resource/ee48-w5t6.json",
+    "name": "HPV ≥1 dose, females aged 13–17 years",
+    "note": "CDC NIS-Teen survey-year share of females aged 13–17 years receiving at least one HPV dose. Paired with teenHpvUtd, which uses both a different dose definition (up-to-date) and different sex scope (males and females); these are not one continuous series.",
+    "breaks": "Different dose definition and sex scope from teenHpvUtd.",
+    "coverage": "2006–2025",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "2006": 1,
+    "2007": 25.1,
+    "2008": 37.2,
+    "2009": 44.3,
+    "2010": 48.7,
+    "2011": 53,
+    "2012": 53.8,
+    "2013": 57.3,
+    "2014": 60,
+    "2015": 62.8,
+    "2016": 65.1,
+    "2017": 68.6,
+    "2018": 69.9,
+    "2019": 73.2,
+    "2020": 77.1,
+    "2021": 78.5,
+    "2022": 77.8,
+    "2023": 78.5,
+    "2024": 79.1,
+    "2025": 78.7
+  }
+}

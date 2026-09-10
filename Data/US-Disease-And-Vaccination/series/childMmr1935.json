@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "key": "childMmr1935",
+    "unit": "percent",
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC NIS-Child, Health, United States Table 031 (1998–2017) and the HUS 2011 trend table (1995–1997)",
+    "sourceUrl": "https://data.cdc.gov/resource/nkri-ptxd.json",
+    "historicalSourceUrls": [
+      "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/Health_US/hus18tables/Table031.xlsx"
+    ],
+    "breaks": "2011 NIS-Child added a cell-phone sample to the historically landline-only frame; series ends 2017 when NCIRD moved routine reporting to birth-cohort estimates.",
+    "name": "MMR ≥1 dose, children 19–35 months",
+    "note": "Share receiving at least one measles, mumps, and rubella vaccine dose. CDC NIS-Child estimates for children 19–35 months are assigned to survey year. A cell-phone sample was added in 2011. This series ends in 2017 and must not be spliced to the birth-cohort series at 24 months.",
+    "coverage": "1995–2017",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "1995": 90,
+    "1996": 91,
+    "1997": 90,
+    "1998": 92,
+    "1999": 91.5,
+    "2000": 90.5,
+    "2001": 91.4,
+    "2002": 91.6,
+    "2003": 93,
+    "2004": 93,
+    "2005": 91.5,
+    "2006": 92.3,
+    "2007": 92.3,
+    "2008": 92.1,
+    "2009": 90,
+    "2010": 91.5,
+    "2011": 91.6,
+    "2012": 90.8,
+    "2013": 91.9,
+    "2014": 91.5,
+    "2015": 91.9,
+    "2016": 91.1,
+    "2017": 91.5
+  }
+}

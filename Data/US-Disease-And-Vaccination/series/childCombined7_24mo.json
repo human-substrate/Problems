@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "key": "childCombined7_24mo",
+    "unit": "percent",
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "coverage",
+    "source": "CDC NIS-Child (ChildVaxView), National Immunization Survey",
+    "sourceUrl": "https://data.cdc.gov/resource/fhky-rtsk.json",
+    "breaks": "Different instrument and cohort definition than the paired 19–35-month series (birth-year cohort at exactly 24 months vs. survey-year snapshot of children 19–35 months); the two are a paired comparison, not a continuous series.",
+    "name": "Combined 7-vaccine series by 24 months",
+    "note": "CDC NIS-Child share completing the combined series covering DTaP, polio, MMR, Hib, hepatitis B, varicella, and PCV by age 24 months. Cohort is the birth year (children by age 24 months, by birth year). This is a paired comparison with the survey-year 19–35-month series, not a continuation of it.",
+    "coverage": "2011–2022",
+    "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "data": {
+    "2011": 67.7,
+    "2012": 69,
+    "2013": 68.3,
+    "2014": 68.5,
+    "2015": 68.3,
+    "2016": 69.7,
+    "2017": 69.8,
+    "2018": 70.1,
+    "2019": 70.1,
+    "2020": 68,
+    "2021": 67,
+    "2022": 69
+  }
+}

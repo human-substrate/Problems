@@ -1,0 +1,291 @@
+PASS population: 68 July values, 1959–2026
+PASS count measlesRate 2016: IDNotif=85 WONDER=85
+PASS rate measlesRate 2016: computed=0.03 published=0.03 abs=0.00 rel=0.0000%
+PASS count measlesRate 2017: IDNotif=120 WONDER=120
+PASS rate measlesRate 2017: computed=0.04 published=0.04 abs=0.00 rel=0.0000%
+PASS count measlesRate 2018: IDNotif=375 WONDER=375
+PASS rate measlesRate 2018: computed=0.11 published=0.11 abs=0.00 rel=0.0000%
+PASS count measlesRate 2019: IDNotif=1275 WONDER=1275
+PASS rate measlesRate 2019: computed=0.39 published=0.39 abs=0.00 rel=0.0000%
+PASS measles page: {"2024":285,"2025":2289} + 2026 YTD 3134 thru 2026-09
+PASS bounds measlesRate: min=0 max=245.42 bounds=[0,300]; breaks=59 chars
+✓ measlesRate                  1950–2026 (44y)  latest 0.91
+PASS count pertussisRate 2016: IDNotif=17972 WONDER=17972
+PASS rate pertussisRate 2016: computed=5.54 published=5.56 abs=0.02 rel=0.3597%
+PASS count pertussisRate 2017: IDNotif=18975 WONDER=18975
+PASS rate pertussisRate 2017: computed=5.8 published=5.83 abs=0.03 rel=0.5146%
+PASS count pertussisRate 2018: IDNotif=15609 WONDER=15609
+PASS rate pertussisRate 2018: computed=4.75 published=4.77 abs=0.02 rel=0.4193%
+PASS count pertussisRate 2019: IDNotif=18617 WONDER=18617
+PASS rate pertussisRate 2019: computed=5.63 published=5.67 abs=0.04 rel=0.7055%
+PASS bounds pertussisRate: min=0.64 max=79.82 bounds=[0,300]; breaks=95 chars
+✓ pertussisRate                1950–2023 (41y)  latest 2.09
+PASS count tbRate 2016: IDNotif=9272 WONDER=9272
+PASS rate tbRate 2016: computed=2.86 published=2.87 abs=0.01 rel=0.3484%
+PASS count tbRate 2017: IDNotif=9105 WONDER=9105
+PASS rate tbRate 2017: computed=2.78 published=2.8 abs=0.02 rel=0.7143%
+PASS count tbRate 2018: IDNotif=9025 WONDER=9025
+PASS rate tbRate 2018: computed=2.74 published=2.76 abs=0.02 rel=0.7246%
+PASS count tbRate 2019: IDNotif=8916 WONDER=8916
+PASS rate tbRate 2019: computed=2.7 published=2.72 abs=0.02 rel=0.7353%
+PASS bounds tbRate: min=2.16 max=30.83 bounds=[0,300]; breaks=90 chars
+✓ tbRate                       1960–2023 (40y)  latest 2.86
+PASS count syphilisPsRate 2016: IDNotif=27814 WONDER=27814
+PASS rate syphilisPsRate 2016: computed=8.57 published=8.61 abs=0.04 rel=0.4646%
+PASS count syphilisPsRate 2017: IDNotif=30644 WONDER=30644
+PASS rate syphilisPsRate 2017: computed=9.37 published=9.41 abs=0.04 rel=0.4251%
+PASS count syphilisPsRate 2018: IDNotif=35063 WONDER=35063
+PASS rate syphilisPsRate 2018: computed=10.66 published=10.72 abs=0.06 rel=0.5597%
+PASS count syphilisPsRate 2019: IDNotif=38992 WONDER=38992
+PASS rate syphilisPsRate 2019: computed=11.8 published=11.92 abs=0.12 rel=1.0067%
+PASS bounds syphilisPsRate: min=2.12 max=20.26 bounds=[0,300]; breaks=79 chars
+✓ syphilisPsRate               1950–2023 (41y)  latest 15.72
+PASS count congenitalSyphilisCases 2016: IDNotif=641 WONDER=628 diff=13
+PASS count congenitalSyphilisCases 2017: IDNotif=941 WONDER=918 diff=23
+PASS count congenitalSyphilisCases 2018: IDNotif=1323 WONDER=1306 diff=17
+PASS count congenitalSyphilisCases 2019: IDNotif=1870 WONDER=1870 diff=0
+PASS bounds congenitalSyphilisCases: min=277 max=13377 bounds=[0,15000]; breaks=77 chars
+✓ congenitalSyphilisCases      1950–2023 (41y)  latest 3882
+PASS count gonorrheaRate 2016: IDNotif=468514 WONDER=468514
+PASS rate gonorrheaRate 2016: computed=144.29 published=144.99 abs=0.70 rel=0.4828%
+PASS count gonorrheaRate 2017: IDNotif=555608 WONDER=555608
+PASS rate gonorrheaRate 2017: computed=169.94 published=170.58 abs=0.64 rel=0.3752%
+PASS count gonorrheaRate 2018: IDNotif=583405 WONDER=583405
+PASS rate gonorrheaRate 2018: computed=177.4 published=178.32 abs=0.92 rel=0.5159%
+PASS count gonorrheaRate 2019: IDNotif=616392 WONDER=616392
+PASS rate gonorrheaRate 2019: computed=186.47 published=188.4 abs=1.93 rel=1.0244%
+PASS bounds gonorrheaRate: min=98.1 max=442.1 bounds=[0,1000]; breaks=58 chars
+✓ gonorrheaRate                1950–2023 (41y)  latest 178.34
+PASS count chlamydiaRate 2016: IDNotif=1598354 WONDER=1598354
+PASS rate chlamydiaRate 2016: computed=492.26 published=494.65 abs=2.39 rel=0.4832%
+PASS count chlamydiaRate 2017: IDNotif=1708569 WONDER=1708569
+PASS rate chlamydiaRate 2017: computed=522.6 published=524.55 abs=1.95 rel=0.3717%
+PASS count chlamydiaRate 2018: IDNotif=1758668 WONDER=1758668
+PASS rate chlamydiaRate 2018: computed=534.77 published=537.54 abs=2.77 rel=0.5153%
+PASS count chlamydiaRate 2019: IDNotif=1808703 WONDER=1808703
+PASS rate chlamydiaRate 2019: computed=547.17 published=552.84 abs=5.67 rel=1.0256%
+PASS bounds chlamydiaRate: min=17.42 max=552.84 bounds=[0,1000]; breaks=232 chars
+✓ chlamydiaRate                1985–2023 (37y)  latest 488.94
+PASS count lymeRate 2016: IDNotif=36429 WONDER=36429
+PASS rate lymeRate 2016: computed=11.22 published=11.32 abs=0.10 rel=0.8834%
+PASS count lymeRate 2017: IDNotif=42743 WONDER=42743
+PASS rate lymeRate 2017: computed=13.07 published=13.18 abs=0.11 rel=0.8346%
+PASS count lymeRate 2018: IDNotif=33666 WONDER=33666
+PASS rate lymeRate 2018: computed=10.24 published=10.34 abs=0.10 rel=0.9671%
+PASS count lymeRate 2019: IDNotif=34945 WONDER=34945
+PASS rate lymeRate 2019: computed=10.57 published=10.69 abs=0.12 rel=1.1225%
+PASS bounds lymeRate: min=5.42 max=26.54 bounds=[0,300]; breaks=104 chars
+✓ lymeRate                     2008–2023 (16y)  latest 26.54
+PASS count hepAAcuteRate 2016: IDNotif=2007 WONDER=2007
+PASS rate hepAAcuteRate 2016: computed=0.62 published=0.62 abs=0.00 rel=0.0000%
+PASS count hepAAcuteRate 2017: IDNotif=3365 WONDER=3365
+PASS rate hepAAcuteRate 2017: computed=1.03 published=1.03 abs=0.00 rel=0.0000%
+PASS count hepAAcuteRate 2018: IDNotif=12474 WONDER=12474
+PASS rate hepAAcuteRate 2018: computed=3.79 published=3.81 abs=0.02 rel=0.5249%
+PASS count hepAAcuteRate 2019: IDNotif=18846 WONDER=18846
+PASS rate hepAAcuteRate 2019: computed=5.7 published=5.74 abs=0.04 rel=0.6969%
+PASS bounds hepAAcuteRate: min=0.39 max=27.87 bounds=[0,300]; breaks=40 chars
+✓ hepAAcuteRate                1970–2023 (39y)  latest 0.49
+PASS count hepBAcuteRate 2016: IDNotif=3218 WONDER=3218
+PASS rate hepBAcuteRate 2016: computed=0.99 published=1 abs=0.01 rel=1.0000%
+PASS count hepBAcuteRate 2017: IDNotif=3409 WONDER=3409
+PASS rate hepBAcuteRate 2017: computed=1.04 published=1.05 abs=0.01 rel=0.9524%
+PASS count hepBAcuteRate 2018: IDNotif=3322 WONDER=3322
+PASS rate hepBAcuteRate 2018: computed=1.01 published=1.02 abs=0.01 rel=0.9804%
+PASS count hepBAcuteRate 2019: IDNotif=3544 WONDER=3544
+PASS rate hepBAcuteRate 2019: computed=1.07 published=1.09 abs=0.02 rel=1.8349%
+PASS bounds hepBAcuteRate: min=0.61 max=11.5 bounds=[0,300]; breaks=30 chars
+✓ hepBAcuteRate                1970–2023 (39y)  latest 0.66
+PASS count hepCAcuteRate 2016: IDNotif=2942 WONDER=2942
+PASS rate hepCAcuteRate 2016: computed=0.91 published=0.97 abs=0.06 rel=6.1856%
+PASS count hepCAcuteRate 2017: IDNotif=4225 WONDER=4225
+PASS rate hepCAcuteRate 2017: computed=1.29 published=1.36 abs=0.07 rel=5.1471%
+PASS count hepCAcuteRate 2018: IDNotif=4768 WONDER=4768
+PASS rate hepCAcuteRate 2018: computed=1.45 published=1.54 abs=0.09 rel=5.8442%
+PASS count hepCAcuteRate 2019: IDNotif=5479 WONDER=5479
+PASS rate hepCAcuteRate 2019: computed=1.66 published=1.74 abs=0.08 rel=4.5977%
+PASS bounds hepCAcuteRate: min=0.23 max=2.36 bounds=[0,300]; breaks=134 chars
+✓ hepCAcuteRate                1990–2023 (34y)  latest 1.64
+PASS count mumpsRate 2016: IDNotif=6369 WONDER=6369
+PASS rate mumpsRate 2016: computed=1.96 published=1.97 abs=0.01 rel=0.5076%
+PASS count mumpsRate 2017: IDNotif=6109 WONDER=6109
+PASS rate mumpsRate 2017: computed=1.87 published=1.88 abs=0.01 rel=0.5319%
+PASS count mumpsRate 2018: IDNotif=2515 WONDER=2515
+PASS rate mumpsRate 2018: computed=0.76 published=0.77 abs=0.01 rel=1.2987%
+PASS count mumpsRate 2019: IDNotif=3780 WONDER=3780
+PASS rate mumpsRate 2019: computed=1.14 published=1.15 abs=0.01 rel=0.8696%
+PASS bounds mumpsRate: min=0.06 max=55.55 bounds=[0,300]; breaks=30 chars
+✓ mumpsRate                    1970–2023 (39y)  latest 0.13
+PASS count meningococcalRate 2016: IDNotif=375 WONDER=375
+PASS rate meningococcalRate 2016: computed=0.12 published=0.12 abs=0.00 rel=0.0000%
+PASS count meningococcalRate 2017: IDNotif=353 WONDER=353
+PASS rate meningococcalRate 2017: computed=0.11 published=0.11 abs=0.00 rel=0.0000%
+PASS count meningococcalRate 2018: IDNotif=327 WONDER=327
+PASS rate meningococcalRate 2018: computed=0.1 published=0.1 abs=0.00 rel=0.0000%
+PASS count meningococcalRate 2019: IDNotif=371 WONDER=371
+PASS rate meningococcalRate 2019: computed=0.11 published=0.11 abs=0.00 rel=0.0000%
+PASS bounds meningococcalRate: min=0.06 max=1.3 bounds=[0,300]; breaks=30 chars
+✓ meningococcalRate            1970–2023 (39y)  latest 0.13
+PASS count hibRate 2016: IDNotif=4895 WONDER=4895
+PASS rate hibRate 2016: computed=1.51 published=1.51 abs=0.00 rel=0.0000%
+PASS count hibRate 2017: IDNotif=5548 WONDER=5548
+PASS rate hibRate 2017: computed=1.7 published=1.7 abs=0.00 rel=0.0000%
+PASS count hibRate 2018: IDNotif=5573 WONDER=5573
+PASS rate hibRate 2018: computed=1.69 published=1.7 abs=0.01 rel=0.5882%
+PASS count hibRate 2019: IDNotif=6143 WONDER=6143
+PASS rate hibRate 2019: computed=1.86 published=1.87 abs=0.01 rel=0.5348%
+PASS bounds hibRate: min=0.44 max=2.02 bounds=[0,300]; breaks=133 chars
+✓ hibRate                      1991–2023 (33y)  latest 2.02
+PASS attribution salmonellosisRate 2016: label=Salmonellosis; nonzeroLabels=1
+PASS count salmonellosisRate 2016: IDNotif=53850 WONDER=53850
+PASS rate salmonellosisRate 2016: computed=16.58 published=16.67 abs=0.09 rel=0.5399%
+PASS attribution salmonellosisRate 2017: label=Salmonellosis; nonzeroLabels=1
+PASS count salmonellosisRate 2017: IDNotif=54285 WONDER=54285
+PASS rate salmonellosisRate 2017: computed=16.6 published=16.67 abs=0.07 rel=0.4199%
+PASS attribution salmonellosisRate 2018: label=Salmonellosis (excluding paratyphoid fever and typhoid fever); nonzeroLabels=1
+PASS count salmonellosisRate 2018: IDNotif=60999 WONDER=60999
+PASS rate salmonellosisRate 2018: computed=18.55 published=18.64 abs=0.09 rel=0.4828%
+PASS attribution salmonellosisRate 2019: label=Salmonellosis (excluding S. Typhi infection and S. Paratyphi infection); nonzeroLabels=1
+PASS count salmonellosisRate 2019: IDNotif=58371 WONDER=58371
+PASS rate salmonellosisRate 2019: computed=17.66 published=17.78 abs=0.12 rel=0.6749%
+PASS attribution salmonellosisRate 2020: label=Salmonellosis (excluding S. Typhi infection and S. Paratyphi infection); nonzeroLabels=1
+PASS attribution salmonellosisRate 2021: label=Salmonellosis (excluding S. Typhi infection and S. Paratyphi infection); nonzeroLabels=1
+PASS attribution salmonellosisRate 2022: label=Salmonellosis (excluding S. Typhi infection and S. Paratyphi infection); nonzeroLabels=1
+PASS attribution salmonellosisRate 2023: label=Salmonellosis (excluding S. Typhi infection and S. Paratyphi infection); nonzeroLabels=1
+PASS bounds salmonellosisRate: min=3.85 max=27.37 bounds=[0,300]; breaks=178 chars
+✓ salmonellosisRate            1960–2023 (40y)  latest 18.07
+PASS rate fluPneumoniaDeathRate 1950: 6rkc=48.1 SlctMort=48.1
+PASS rate fluPneumoniaDeathRate 1960: 6rkc=53.7 SlctMort=53.7
+PASS rate fluPneumoniaDeathRate 1970: 6rkc=41.7 SlctMort=41.7
+PASS rate fluPneumoniaDeathRate 1980: 6rkc=31.4 SlctMort=31.4
+PASS rate fluPneumoniaDeathRate 1981: 6rkc=30 SlctMort=30
+PASS rate fluPneumoniaDeathRate 1982: 6rkc=26.5 SlctMort=26.5
+PASS rate fluPneumoniaDeathRate 1983: 6rkc=29.8 SlctMort=29.8
+PASS rate fluPneumoniaDeathRate 1984: 6rkc=30.6 SlctMort=30.6
+PASS rate fluPneumoniaDeathRate 1985: 6rkc=34.5 SlctMort=34.5
+PASS rate fluPneumoniaDeathRate 1986: 6rkc=34.8 SlctMort=34.8
+PASS rate fluPneumoniaDeathRate 1987: 6rkc=33.8 SlctMort=33.8
+PASS rate fluPneumoniaDeathRate 1988: 6rkc=37.3 SlctMort=37.3
+PASS rate fluPneumoniaDeathRate 1989: 6rkc=35.9 SlctMort=35.9
+PASS rate fluPneumoniaDeathRate 1990: 6rkc=36.8 SlctMort=36.8
+PASS rate fluPneumoniaDeathRate 1991: 6rkc=34.9 SlctMort=34.7
+PASS rate fluPneumoniaDeathRate 1992: 6rkc=33.1 SlctMort=32.8
+PASS rate fluPneumoniaDeathRate 1993: 6rkc=35.2 SlctMort=35
+PASS rate fluPneumoniaDeathRate 1994: 6rkc=33.9 SlctMort=33.6
+PASS rate fluPneumoniaDeathRate 1995: 6rkc=33.8 SlctMort=33.4
+PASS rate fluPneumoniaDeathRate 1996: 6rkc=33.2 SlctMort=32.9
+PASS rate fluPneumoniaDeathRate 1997: 6rkc=33.6 SlctMort=33.3
+PASS rate fluPneumoniaDeathRate 1998: 6rkc=34.6 SlctMort=34.6
+PASS rate fluPneumoniaDeathRate 1999: 6rkc=23.5 SlctMort=23.5
+PASS rate fluPneumoniaDeathRate 2000: 6rkc=23.7 SlctMort=23.7
+PASS rate fluPneumoniaDeathRate 2001: 6rkc=22.2 SlctMort=22.2
+PASS rate fluPneumoniaDeathRate 2002: 6rkc=23.2 SlctMort=23.2
+PASS rate fluPneumoniaDeathRate 2003: 6rkc=22.6 SlctMort=22.6
+PASS rate fluPneumoniaDeathRate 2004: 6rkc=20.4 SlctMort=20.4
+PASS rate fluPneumoniaDeathRate 2005: 6rkc=21 SlctMort=21
+PASS rate fluPneumoniaDeathRate 2006: 6rkc=18.4 SlctMort=18.4
+PASS rate fluPneumoniaDeathRate 2007: 6rkc=16.8 SlctMort=16.8
+PASS rate fluPneumoniaDeathRate 2008: 6rkc=17.6 SlctMort=17.6
+PASS rate fluPneumoniaDeathRate 2009: 6rkc=16.5 SlctMort=16.5
+PASS rate fluPneumoniaDeathRate 2010: 6rkc=15.1 SlctMort=15.1
+PASS rate fluPneumoniaDeathRate 2011: 6rkc=15.7 SlctMort=15.7
+PASS rate fluPneumoniaDeathRate 2012: 6rkc=14.4 SlctMort=14.4
+PASS rate fluPneumoniaDeathRate 2013: 6rkc=15.9 SlctMort=15.9
+PASS rate fluPneumoniaDeathRate 2014: 6rkc=15.1 SlctMort=15.1
+PASS rate fluPneumoniaDeathRate 2015: 6rkc=15.2 SlctMort=15.2
+PASS rate fluPneumoniaDeathRate 2016: 6rkc=13.5 SlctMort=13.5
+PASS rate fluPneumoniaDeathRate 2017: 6rkc=14.3 SlctMort=14.3
+PASS rate fluPneumoniaDeathRate 2018: 6rkc=14.9 SlctMort=14.9
+PASS provisional fluPneumoniaDeathRate: []; cause=Influenza%20and%20pneumonia
+PASS bounds fluPneumoniaDeathRate: min=10.5 max=612.4 bounds=[0,700]; breaks=175 chars
+✓ fluPneumoniaDeathRate        1900–2024 (125y)  latest 11.2
+PASS provisional hivDeathRate: []; cause=HIV%20disease
+PASS bounds hivDeathRate: min=1.2 max=16.2 bounds=[0,20]; breaks=116 chars
+✓ hivDeathRate                 1987–2024 (38y)  latest 1.2
+PASS COVID weeks: rows=348 byYear={"2020":52,"2021":52,"2022":53,"2023":52,"2024":52,"2025":52,"2026":35}
+PASS provisional covidDeaths: [2026]
+PASS bounds covidDeaths: min=6178 max=471027 bounds=[0,500000]; breaks=66 chars
+✓ covidDeaths                  2020–2026 (7y)  latest 6178
+PASS MMR 1998 boundary: Table031=92 nkri-ptxd=92 difference=0 tolerance=0.5
+fhky-rtsk distinct (vaccine, dose): [["Combined 7 Series",""],["DTaP","≥3 Doses"],["DTaP","≥4 Doses"],["Hep A","≥1 Dose"],["Hep A","≥2 Doses"],["Hep B","≥3 Doses"],["Hib","Full Series"],["Hib","Primary Series"],["Hib","≥3 Doses"],["Influenza",""],["PCV","≥3 Doses"],["PCV","≥4 Doses"],["Polio","≥3 Doses"],["≥1 Dose MMR",""],["≥1 Dose Varicella",""]]
+PASS fhky matched childMmr24mo: ["≥1 Dose MMR",""]; single-year rows=12
+PASS fhky matched childCombined7_24mo: ["Combined 7 Series",""]; single-year rows=12
+PASS fhky matched childDtap4_24mo: ["DTaP","≥4 Doses"]; single-year rows=12
+PASS bounds childCombined7_1935: min=44.3 max=72.2 bounds=[0,100]; breaks=160 chars
+✓ childCombined7_1935          2009–2017 (9y)  latest 70.4
+PASS bounds childDtap4_1935: min=78 max=85.7 bounds=[0,100]; breaks=160 chars
+✓ childDtap4_1935              1995–2017 (23y)  latest 83.2
+PASS bounds childMmr1935: min=90 max=93 bounds=[0,100]; breaks=160 chars
+✓ childMmr1935                 1995–2017 (23y)  latest 91.5
+PASS bounds childMmr24mo: min=89.8 max=92.3 bounds=[0,100]; breaks=227 chars
+✓ childMmr24mo                 2011–2022 (12y)  latest 91.4
+PASS bounds childCombined7_24mo: min=67 max=70.1 bounds=[0,100]; breaks=227 chars
+✓ childCombined7_24mo          2011–2022 (12y)  latest 69
+PASS bounds childDtap4_24mo: min=79.6 max=82.3 bounds=[0,100]; breaks=227 chars
+✓ childDtap4_24mo              2011–2022 (12y)  latest 80.9
+RAW ijqb-a7ye kindergartenMmr: {"vaccine":"MMR","dose":"","geography_type":"National","geography":"United States","year_season":"2022-23","coverage_estimate":"93.1","population_sample_size":"3832381","percent_surveyed":"92.9"}
+PASS bounds kindergartenMmr: min=92.4 max=95.2 bounds=[0,100]; breaks=142 chars
+✓ kindergartenMmr              2010–2026 (16y)  latest 92.4
+RAW ijqb-a7ye kindergartenAnyExemption: {"vaccine":"Exemption","dose":"Any Exemption","geography_type":"National","geography":"United States","year_season":"2022-23","coverage_estimate":"3.0","population_sample_size":"3832381","percent_surveyed":"96.9","number_of_exemptions":"115575"}
+PASS bounds kindergartenAnyExemption: min=1.6 max=4.2 bounds=[0,100]; breaks=142 chars
+✓ kindergartenAnyExemption     2010–2026 (16y)  latest 4.2
+RAW ijqb-a7ye kindergartenNonMedicalExemption: {"vaccine":"Exemption","dose":"Non-Medical Exemption","geography_type":"National","geography":"United States","year_season":"2022-23","coverage_estimate":"2.8","population_sample_size":"3832381","percent_surveyed":"96.9","number_of_exemptions":"106466"}
+PASS bounds kindergartenNonMedicalExemption: min=1.4 max=4 bounds=[0,100]; breaks=142 chars
+✓ kindergartenNonMedicalExemption 2010–2026 (16y)  latest 4
+RAW table068.xlsx header: {"A":"Characteristic","B":"1989","C":"SE","D":"1991","E":"SE","F":"1993","G":"SE","H":"1994","I":"SE","J":"1995","K":"SE","L":"1997","M":"SE","N":"1998","O":"SE","P":"1999","Q":"SE","R":"2000","S":"SE","T":"2001","U":"SE","V":"2002","W":"SE","X":"2003","Y":"SE","Z":"2004","AA":"SE","AB":"2005","AC":"SE","AD":"2006","AE":"SE","AF":"2007","AG":"SE","AH":"2008","AI":"SE","AJ":"2009","AK":"SE","AL":"2010","AM":"SE","AN":"2011","AO":"SE","AP":"2012","AQ":"SE","AR":"2013","AS":"SE","AT":"2014","AU":"SE","AV":"2015","AW":"SE","AX":"2016","AY":"SE"}; matched: {"A":"65 years and over","B":"30.4","C":"0.5","D":"41.7","E":"0.7","F":"52","G":"0.9","H":"55.3","I":"0.9","J":"58.2","K":"0.9","L":"63.2","M":"0.7","N":"63.3","O":"0.7","P":"65.7","Q":"0.8","R":"64.400000000000006","S":"0.7","T":"63.1","U":"0.7","V":"65.7","W":"0.7","X":"65.5","Y":"0.7","Z":"64.599999999999994","AA":"0.7","AB":"59.7","AC":"0.8","AD":"64.3","AE":"0.9","AF":"66.7","AG":"0.8","AH":"67.2","AI":"0.9","AJ":"66.8","AK":"0.8","AL":"63.9","AM":"0.8","AN":"66.900000000000006","AO":"0.7","AP":"66.5","AQ":"0.8","AR":"67.900000000000006","AS":"0.7","AT":"70.099999999999994","AU":"0.7","AV":"69.099999999999994","AW":"0.7","AX":"67.5","AY":"0.7"}
+PASS bounds flu65Nhis: min=30.4 max=70.1 bounds=[0,100]; breaks=90 chars
+✓ flu65Nhis                    1989–2016 (25y)  latest 67.5
+RAW table069.xlsx header: {"A":"Characteristic","B":"1989","C":"SE","D":"1991","E":"SE","F":"1993","G":"SE","H":"1994","I":"SE","J":"1995","K":"SE","L":"1997","M":"SE","N":"1998","O":"SE","P":"1999","Q":"SE","R":"2000","S":"SE","T":"2001","U":"SE","V":"2002","W":"SE","X":"2003","Y":"SE","Z":"2004","AA":"SE","AB":"2005","AC":"SE","AD":"2006","AE":"SE","AF":"2007","AG":"SE","AH":"2008","AI":"SE","AJ":"2009","AK":"SE","AL":"2010","AM":"SE","AN":"2011","AO":"SE","AP":"2012","AQ":"SE","AR":"2013","AS":"SE","AT":"2014","AU":"SE","AV":"2015","AW":"SE","AX":"2016","AY":"SE"}; matched: {"A":"65 years and over","B":"14.1","C":"0.4","D":"21.2","E":"0.6","F":"28.2","G":"0.8","H":"29.7","I":"0.8","J":"34","K":"0.9","L":"42.4","M":"0.7","N":"46","O":"0.8","P":"49.7","Q":"0.8","R":"53.1","S":"0.8","T":"54","U":"0.8","V":"56","W":"0.8","X":"55.6","Y":"0.8","Z":"56.8","AA":"0.8","AB":"56.2","AC":"0.7","AD":"57.1","AE":"0.9","AF":"57.7","AG":"0.9","AH":"60","AI":"0.9","AJ":"60.6","AK":"0.8","AL":"59.7","AM":"0.8","AN":"62.3","AO":"0.7","AP":"59.9","AQ":"0.8","AR":"59.7","AS":"0.8","AT":"61.3","AU":"0.7","AV":"63.6","AW":"0.7","AX":"66.900000000000006","AY":"0.7"}
+PASS bounds pneumococcal65Nhis: min=14.1 max=66.9 bounds=[0,100]; breaks=98 chars
+✓ pneumococcal65Nhis           1989–2016 (25y)  latest 66.9
+RAW vh55-3he6 fluAllAges: {"vaccine":"Seasonal Influenza","geography_type":"HHS Regions/National","geography":"United States","fips":"100","year_season":"2022-23","month":"7","dimension_type":"Age","dimension":">=6 Months","coverage_estimate":"0.6","_95_ci":"0.6 to 0.6","population_sample_size":"428510"}
+PASS flu selection fluAllAges 2022-23: max=49.3 month=5; December=42.2; latest agrees
+PASS flu selection fluAllAges 2015-16: max=45.6 month=5; December=39.5; latest agrees
+PASS flu selection fluAllAges 2016-17: max=46.8 month=5; December=39.8; latest agrees
+PASS flu selection fluAllAges 2017-18: max=41.7 month=5; December=35.5; latest agrees
+PASS flu selection fluAllAges 2018-19: max=49.2 month=5; December=41.7; latest agrees
+PASS flu selection fluAllAges 2019-20: max=51.8 month=5; December=45.4; latest agrees
+PASS flu selection fluAllAges 2020-21: max=52.1 month=5; December=44.8; latest agrees
+PASS flu selection fluAllAges 2021-22: max=51.4 month=5; December=42.8; latest agrees
+PASS flu selection fluAllAges 2010-11: max=43.0 month=5; December=37.8; latest agrees
+PASS flu selection fluAllAges 2011-12: max=41.8 month=5; December=37.2; latest agrees
+PASS flu selection fluAllAges 2012-13: max=45.0 month=5; December=38.0; latest agrees
+PASS flu selection fluAllAges 2013-14: max=46.2 month=5; December=40.4; latest agrees
+PASS flu selection fluAllAges 2014-15: max=47.1 month=5; December=41.7; latest agrees
+PASS flu selection fluAllAges 2023-24: max=47.2 month=5; December=40.2; latest agrees
+PASS flu selection fluAllAges 2024-25: max=43.8 month=5; December=36.8; latest agrees
+PASS bounds fluAllAges: min=41.7 max=52.1 bounds=[0,100]; breaks=60 chars
+✓ fluAllAges                   2011–2025 (15y)  latest 43.8
+RAW vh55-3he6 flu65Season: {"vaccine":"Seasonal Influenza","geography_type":"HHS Regions/National","geography":"United States","fips":"100","year_season":"2022-23","month":"7","dimension_type":"Age","dimension":">=65 Years","coverage_estimate":"0.5","_95_ci":"0.5 to 0.5","population_sample_size":"113956"}
+PASS flu selection flu65Season 2022-23: max=69.7 month=5; December=60.5; latest agrees
+PASS flu selection flu65Season 2014-15: max=66.7 month=5; December=59.6; latest agrees
+PASS flu selection flu65Season 2015-16: max=63.4 month=5; December=56.1; latest agrees
+PASS flu selection flu65Season 2016-17: max=65.3 month=5; December=57.0; latest agrees
+PASS flu selection flu65Season 2017-18: max=59.6 month=5; December=52.3; latest agrees
+PASS flu selection flu65Season 2018-19: max=68.1 month=5; December=58.9; latest agrees
+PASS flu selection flu65Season 2019-20: max=69.8 month=5; December=63.1; latest agrees
+PASS flu selection flu65Season 2020-21: max=75.2 month=5; December=63.9; latest agrees
+PASS flu selection flu65Season 2021-22: max=73.9 month=5; December=61.8; latest agrees
+PASS flu selection flu65Season 2010-11: max=66.6 month=5; December=60.8; latest agrees
+PASS flu selection flu65Season 2011-12: max=64.9 month=5; December=59.4; latest agrees
+PASS flu selection flu65Season 2012-13: max=66.2 month=5; December=58.7; latest agrees
+PASS flu selection flu65Season 2013-14: max=65.0 month=5; December=59.1; latest agrees
+PASS flu selection flu65Season 2023-24: max=69.7 month=5; December=59.4; latest agrees
+PASS flu selection flu65Season 2024-25: max=63.8 month=5; December=54.0; latest agrees
+PASS bounds flu65Season: min=59.6 max=75.2 bounds=[0,100]; breaks=72 chars
+✓ flu65Season                  2011–2025 (15y)  latest 63.8
+RAW aetd-68ew pneumococcal65: {"vaccine":"Pneumococcal","dose":"","geography_type":"HHS Regions/National","geography":"United States","fips":"100","year_season":"2022","dimension_type":">=65 Years","dimension":"Overall","coverage_estimate":"70.0","_95_ci":"69.4 to 70.5","population_sample_size":"137759"}
+PASS bounds pneumococcal65: min=65.8 max=74.7 bounds=[0,100]; breaks=74 chars
+✓ pneumococcal65               2008–2024 (17y)  latest 70.3
+RAW ee48-w5t6 teenHpv1DoseFemales: {"vaccine":"HPV","dose":"≥1 Dose, Females","geography_type":"HHS Regions/National","geography":"United States","year_season":"2023","dimension_type":"Age","dimension":"13-17 Years","coverage_estimate":"78.5","_95_ci":"76.7 to 80.2","population_sample_size":"7857"}
+PASS bounds teenHpv1DoseFemales: min=1 max=79.1 bounds=[0,100]; breaks=56 chars
+✓ teenHpv1DoseFemales          2006–2025 (20y)  latest 78.7
+RAW ee48-w5t6 teenHpvUtd: {"vaccine":"HPV","dose":"Up-to-Date, Males and Females","geography_type":"HHS Regions/National","geography":"United States","year_season":"2023","dimension_type":"Age","dimension":"13-17 Years","coverage_estimate":"61.4","_95_ci":"59.9 to 63.0","population_sample_size":"16568"}
+PASS bounds teenHpvUtd: min=43.4 max=63.4 bounds=[0,100]; breaks=129 chars
+✓ teenHpvUtd                   2016–2025 (10y)  latest 63.4
+RAW ee48-w5t6 teenTdap: {"vaccine":"Tetanus","dose":"≥1 Dose Tdap","geography_type":"HHS Regions/National","geography":"United States","year_season":"2023","dimension_type":"Age","dimension":"13-17 Years","coverage_estimate":"89.0","_95_ci":"87.9 to 90.0","population_sample_size":"16568"}
+PASS bounds teenTdap: min=10.8 max=91.3 bounds=[0,100]; breaks=11 chars
+✓ teenTdap                     2006–2025 (20y)  latest 88.8
+
+wrote 35 series
+05.536Z wrote 35 series

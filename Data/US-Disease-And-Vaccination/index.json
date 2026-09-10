@@ -1,0 +1,356 @@
+{
+ "generated": "2026-09-10T06:42:05.536Z",
+ "dataset": "US-Disease-And-Vaccination",
+ "series": {
+  "childCombined7_1935": {
+   "name": "Combined 7-vaccine series, children 19–35 months",
+   "unit": "percent",
+   "source": "CDC NIS-Child, Health, United States Table 031 (1998–2017) and the HUS 2011 trend table (1995–1997)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2009–2017",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "childCombined7_24mo": {
+   "name": "Combined 7-vaccine series by 24 months",
+   "unit": "percent",
+   "source": "CDC NIS-Child (ChildVaxView), National Immunization Survey",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2011–2022",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "childDtap4_1935": {
+   "name": "DTaP ≥4 doses, children 19–35 months",
+   "unit": "percent",
+   "source": "CDC NIS-Child, Health, United States Table 031 (1998–2017) and the HUS 2011 trend table (1995–1997)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "1995–2017",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "childDtap4_24mo": {
+   "name": "DTaP ≥4 doses by 24 months",
+   "unit": "percent",
+   "source": "CDC NIS-Child (ChildVaxView), National Immunization Survey",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2011–2022",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "childMmr1935": {
+   "name": "MMR ≥1 dose, children 19–35 months",
+   "unit": "percent",
+   "source": "CDC NIS-Child, Health, United States Table 031 (1998–2017) and the HUS 2011 trend table (1995–1997)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "1995–2017",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "childMmr24mo": {
+   "name": "MMR ≥1 dose by 24 months",
+   "unit": "percent",
+   "source": "CDC NIS-Child (ChildVaxView), National Immunization Survey",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2011–2022",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "chlamydiaRate": {
+   "name": "Chlamydia",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1985–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "congenitalSyphilisCases": {
+   "name": "Congenital syphilis",
+   "unit": "reported cases",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1950–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "covidDeaths": {
+   "name": "COVID-19 deaths",
+   "unit": "deaths",
+   "source": "National Center for Health Statistics, Provisional COVID-19 Death Counts by Week Ending Date and State",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "mortality",
+   "coverage": "2020–2026",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "flu65Nhis": {
+   "name": "Seasonal influenza vaccination, ≥65 years, NHIS",
+   "unit": "percent",
+   "source": "National Health Interview Survey (NHIS), Health, United States Table 068",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "1989–2016",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "flu65Season": {
+   "name": "Seasonal influenza vaccination, ≥65 years, FluVaxView",
+   "unit": "percent",
+   "source": "CDC FluVaxView",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2011–2025",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "fluAllAges": {
+   "name": "Seasonal influenza vaccination, ≥6 months, national",
+   "unit": "percent",
+   "source": "CDC FluVaxView",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2011–2025",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "fluPneumoniaDeathRate": {
+   "name": "Influenza and pneumonia",
+   "unit": "age-adjusted deaths per 100,000 population (2000 U.S. standard population)",
+   "source": "NCHS Health, United States (Table SlctMort) · CDC WONDER Underlying Cause of Death (final)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "mortality",
+   "coverage": "1900–2024",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "gonorrheaRate": {
+   "name": "Gonorrhea",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1950–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "hepAAcuteRate": {
+   "name": "Acute hepatitis A viral infection",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1970–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "hepBAcuteRate": {
+   "name": "Acute hepatitis B viral infection",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1970–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "hepCAcuteRate": {
+   "name": "Acute hepatitis C viral infection",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1990–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "hibRate": {
+   "name": "Haemophilus influenzae, invasive disease, all serotypes, all ages",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1991–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "hivDeathRate": {
+   "name": "Human immunodeficiency virus (HIV) disease",
+   "unit": "age-adjusted deaths per 100,000 population (2000 U.S. standard population)",
+   "source": "NCHS Health, United States (Table SlctMort) · CDC WONDER Underlying Cause of Death (final)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "mortality",
+   "coverage": "1987–2024",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "kindergartenAnyExemption": {
+   "name": "Kindergartners with any vaccination exemption",
+   "unit": "percent",
+   "source": "CDC School Vaccination Assessment (SchoolVaxView)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2010–2026",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "kindergartenMmr": {
+   "name": "MMR coverage among kindergartners, national",
+   "unit": "percent",
+   "source": "CDC School Vaccination Assessment (SchoolVaxView)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2010–2026",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "kindergartenNonMedicalExemption": {
+   "name": "Kindergartners with a non-medical vaccination exemption",
+   "unit": "percent",
+   "source": "CDC School Vaccination Assessment (SchoolVaxView)",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2010–2026",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "lymeRate": {
+   "name": "Lyme disease",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "2008–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "measlesRate": {
+   "name": "Measles (rubeola)",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1950–2026",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "meningococcalRate": {
+   "name": "Meningococcal disease",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1970–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "mumpsRate": {
+   "name": "Mumps",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1970–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "pertussisRate": {
+   "name": "Pertussis (whooping cough)",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1950–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "pneumococcal65": {
+   "name": "Pneumococcal vaccination, ≥65 years, CDC adult coverage",
+   "unit": "percent",
+   "source": "CDC adult vaccination coverage",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2008–2024",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "pneumococcal65Nhis": {
+   "name": "Pneumococcal vaccination, ever received, ≥65 years, NHIS",
+   "unit": "percent",
+   "source": "Health, United States Table 069",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "1989–2016",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "salmonellosisRate": {
+   "name": "Salmonellosis (excluding Salmonella Typhi and Salmonella Paratyphi infections)",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1960–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "syphilisPsRate": {
+   "name": "Syphilis, Primary and secondary",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1950–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "tbRate": {
+   "name": "Tuberculosis",
+   "unit": "reported cases per 100,000 population",
+   "source": "NCHS Health, United States (Table IDNotif) · CDC NNDSS annual summary via WONDER",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "incidence",
+   "coverage": "1960–2023",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "teenHpv1DoseFemales": {
+   "name": "HPV ≥1 dose, females aged 13–17 years",
+   "unit": "percent",
+   "source": "CDC NIS-Teen (TeenVaxView), National Immunization Survey",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2006–2025",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "teenHpvUtd": {
+   "name": "HPV up-to-date, males and females aged 13–17 years",
+   "unit": "percent",
+   "source": "CDC NIS-Teen (TeenVaxView), National Immunization Survey",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2016–2025",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  },
+  "teenTdap": {
+   "name": "Tdap ≥1 dose, ages 13–17 years",
+   "unit": "percent",
+   "source": "CDC NIS-Teen (TeenVaxView), National Immunization Survey",
+   "cadence": "annual",
+   "annualRule": "annual (publisher)",
+   "class": "coverage",
+   "coverage": "2006–2025",
+   "fetched": "2026-09-10T06:42:05.536Z"
+  }
+ }
+}
