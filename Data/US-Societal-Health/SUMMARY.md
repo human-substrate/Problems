@@ -28,7 +28,7 @@
 
 ## Quick Context
 
-84 annual national US series on the non-economic side of how the country is doing: happiness and optimism, trust in people and institutions, substance use, health access, and household financial stress. Every value is read from the organization that produces it (NORC, Gallup, Michigan, SAMHSA, NIAAA, CDC/NCHS, …), the GSS items directly from NORC's public microdata. Nothing is interpolated or smoothed; where a survey skipped a year the series skips it too.
+89 annual national US series on the non-economic side of how the country is doing: happiness and optimism, trust in people and institutions, substance use, health access, and household financial stress. Every value is read from the organization that produces it (NORC, Gallup, Michigan, SAMHSA, NIAAA, CDC/NCHS, …), the GSS items directly from NORC's public microdata. Nothing is interpolated or smoothed; where a survey skipped a year the series skips it too.
 
 Confidence: **Very High (95%+)** for published agency/survey figures copied as-is; **High (85–94%)** for the GSS items, which are computed here from the microdata with NORC's weight (the computation is reproducible by `update.ts` and was cross-checked against an independent computation to the decimal).
 
@@ -55,7 +55,7 @@ Confidence: **Very High (95%+)** for published agency/survey figures copied as-i
 | Monitoring the Future (via NCHS) | annual | ~1 year |
 | NIAAA per-capita alcohol | annual report each spring | ~16 months |
 
-Last regenerated: 2026-08-31.
+Last regenerated: 2026-09-10.
 
 ---
 
@@ -63,4 +63,4 @@ Last regenerated: 2026-08-31.
 
 | Date | Change | Reason |
 |------|--------|--------|
-| 2026-08-21 | Dataset created with 84 series | Powers the Happiness & Outlook, Trust & Institutions, and Substance Use sections of https://usstats.io |
+| 2026-08-21 | Dataset created with 89 series | Powers the Happiness & Outlook, Trust & Institutions, and Substance Use sections of https://usstats.io |

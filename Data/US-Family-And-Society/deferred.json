@@ -1,0 +1,3 @@
+{
+  "foreignBornShare": "No CENSUS_API_KEY found via `has CENSUS_API_KEY` (returned CENSUS_API_KEY no); environment key absent. Annual ACS B05002_013E / B05002_001E requires the key under this task contract. Intended endpoint: https://api.census.gov/data/<year>/acs/acs1?get=B05002_001E,B05002_013E&for=us:1. Supply CENSUS_API_KEY to enable the annual line; the decennial series is retained separately."
+}

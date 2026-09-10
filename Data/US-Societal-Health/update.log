@@ -9,3 +9,8 @@
 2026-08-24T16:21:54.867Z wrote 68 series; errors: none
 2026-08-31T20:21:01.514Z wrote 15 series; errors: none
 2026-08-31T20:22:21.007Z wrote 22 series; errors: none
+2026-09-10T20:21:00.516Z wrote 4 series; errors: gallup-dw: Error: InvariantViolation: gallupEconomicConfidence 2020-04: overlap mismatch -32 vs -33
+2026-09-10T20:25:01.596Z wrote 0 series; errors: michigan-ics: Error: Unable to connect. Is the computer able to access the url? | gallup-dw: Error: Unable to connect. Is the computer able to access the url?
+2026-09-10T20:25:10.670Z wrote 4 series; errors: gallup-dw: Error: InvariantViolation: gallupEconomicConfidence 2003-03-01: conflicting readings in one source
+2026-09-10T20:25:41.501Z wrote 4 series; errors: gallup-dw: Error: InvariantViolation: gallupEconomicConfidence: only 28 overlap dates
+2026-09-10T20:25:51.860Z wrote 5 series; errors: none

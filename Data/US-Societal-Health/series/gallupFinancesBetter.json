@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "key": "gallupFinancesBetter",
+    "name": "Personal Finances Getting Better (Gallup)",
+    "unit": "percent saying their financial situation is getting better",
+    "source": "Gallup, Personal Finances Getting Better (Gallup)",
+    "sourceUrl": "https://datawrapper.dwcdn.net/w92AE/1/dataset.csv",
+    "historicalSourceUrls": [
+      "https://datawrapper.dwcdn.net/w92AE/1/dataset.csv"
+    ],
+    "goodDirection": "up",
+    "note": "\"Right now, do you think that your financial situation as a whole is getting better or getting worse?\" Question wording from the chart title (w92AE/2). The latest poll in each calendar year is kept, matching the dataset's yearSeries convention. This is Gallup's question, distinct from the NORC GSS financesBetter series. The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.",
+    "method": "Datawrapper w92AE/1, named column Getting better; latest published poll per year",
+    "coverage": "2001–2025",
+    "fetched": "2026-09-10T20:25:51.860Z"
+  },
+  "data": {
+    "2001": 59,
+    "2002": 52,
+    "2003": 43,
+    "2004": 53,
+    "2005": 49,
+    "2006": 47,
+    "2007": 51,
+    "2008": 32,
+    "2009": 34,
+    "2010": 39,
+    "2011": 29,
+    "2012": 42,
+    "2013": 47,
+    "2014": 43,
+    "2015": 52,
+    "2016": 47,
+    "2017": 54,
+    "2018": 55,
+    "2019": 57,
+    "2020": 41,
+    "2021": 52,
+    "2022": 37,
+    "2023": 37,
+    "2024": 43,
+    "2025": 38
+  }
+}

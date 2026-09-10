@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T20:22:21.007Z",
+  "generated": "2026-09-10T20:25:51.860Z",
   "series": {
     "alcoholPerCapita": {
       "name": "Alcohol Consumption per Capita",
@@ -148,6 +148,13 @@
       "coverage": "1973–2024",
       "fetched": "2026-08-31T20:22:21.007Z"
     },
+    "consumerSentiment": {
+      "name": "Consumer Sentiment Index (University of Michigan)",
+      "unit": "index, 1966 Q1 = 100",
+      "source": "University of Michigan Surveys of Consumers",
+      "coverage": "1961–2026",
+      "fetched": "2026-09-10T20:25:51.860Z"
+    },
     "creditCardDelinquency": {
       "name": "Credit Card Delinquency Rate",
       "unit": "percent of credit card balances 30+ days past due, all commercial banks, annual average",
@@ -218,6 +225,20 @@
       "coverage": "1993–2026",
       "fetched": "2026-08-24T16:21:54.867Z"
     },
+    "gallupEconomicConfidence": {
+      "name": "Gallup Economic Confidence Index",
+      "unit": "index, net percent (can range roughly -100 to +100)",
+      "source": "Gallup, Gallup Economic Confidence Index",
+      "coverage": "1996–2026",
+      "fetched": "2026-09-10T20:25:51.860Z"
+    },
+    "gallupFinancesBetter": {
+      "name": "Personal Finances Getting Better (Gallup)",
+      "unit": "percent saying their financial situation is getting better",
+      "source": "Gallup, Personal Finances Getting Better (Gallup)",
+      "coverage": "2001–2025",
+      "fetched": "2026-09-10T20:25:51.860Z"
+    },
     "gallupLabor": {
       "name": "Confidence in Organized Labor",
       "unit": "percent with a great deal or quite a lot of confidence",
@@ -231,6 +252,13 @@
       "source": "Gallup, Confidence in Institutions",
       "coverage": "1975–2026",
       "fetched": "2026-08-24T16:21:54.867Z"
+    },
+    "gallupMentalHealthExcellent": {
+      "name": "Rate Their Mental Health Excellent",
+      "unit": "percent of adults rating their own mental health excellent",
+      "source": "Gallup, Rate Their Mental Health Excellent",
+      "coverage": "2001–2025",
+      "fetched": "2026-09-10T20:25:51.860Z"
     },
     "gallupMilitary": {
       "name": "Confidence in the Military",
@@ -266,6 +294,13 @@
       "source": "Gallup, Confidence in Institutions",
       "coverage": "1973–2026",
       "fetched": "2026-08-24T16:21:54.867Z"
+    },
+    "gallupQualityJob": {
+      "name": "Good Time to Find a Quality Job",
+      "unit": "percent saying now is a good time to find a quality job",
+      "source": "Gallup, Good Time to Find a Quality Job",
+      "coverage": "2001–2026",
+      "fetched": "2026-09-10T20:25:51.860Z"
     },
     "gallupReligion": {
       "name": "Confidence in Organized Religion",

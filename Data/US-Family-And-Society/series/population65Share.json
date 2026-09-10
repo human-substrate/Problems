@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "key": "population65Share",
+    "name": "Resident population age 65 and older",
+    "unit": "%",
+    "source": "U.S. Census Bureau, Population Estimates Program",
+    "sourceUrl": "https://www2.census.gov/programs-surveys/popest/tables/2020-2025/national/asrh/nc-est2025-agesex.xlsx",
+    "historicalSourceUrls": [
+      "https://www2.census.gov/programs-surveys/popest/tables/2000-2010/intercensal/national/us-est00int-01.xls",
+      "https://www2.census.gov/programs-surveys/popest/tables/2010-2020/intercensal/national/asrh/nc-est2020int-agesex.xlsx"
+    ],
+    "note": "Computed from all-sexes age-65-and-older counts divided by all-sexes total resident population. Vintage list: 2000–2010 intercensal estimates for 2000–2009; 2010–2020 intercensal estimates for 2010–2019; Vintage 2025 estimates for 2020–2025. Newer vintage wins at 2010 and 2020. A22 compares April 1 census/base observations at the same dates, allowing 0.3 years or 0.2 percentage points. 1970–1999 extension DEFERRED: the linked 1970s workbook https://www2.census.gov/programs-surveys/popest/tables/1900-1980/national/asrh/pe-11-1970s.xls returned HTTP 200 but its title specifies Resident Population plus Armed Forces Overseas, unlike the resident-only series here, and provides single-year ages rather than a published median. The 1990s table https://www2.census.gov/programs-surveys/popest/tables/1990-2000/national/totals/nat-agesex.txt returned HTTP 200 text/html with Request Rejected: The requested URL was rejected. Its linked nat-agesex-doc.txt returned HTTP 404, U.S. Census Bureau: Page not found. The 1980s dataset page links quarterly age/race/sex ZIP files, but their resident-only annual extraction and derived-median methodology have not been validated. Resolution requires verified resident-only annual age distributions and a documented median derivation, or published historical resident medians/shares. No historical values are interpolated.",
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "July 1 resident population estimate; one observation per calendar year.",
+    "class": "population",
+    "breaks": "Intercensal/vintage splice at 2010 and 2020; census-base revisions can change estimates. July annual estimates are not replaced by April census/base observations.",
+    "coverage": "2000–2025",
+    "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "data": {
+    "2000": 12.43,
+    "2001": 12.38,
+    "2002": 12.35,
+    "2003": 12.36,
+    "2004": 12.36,
+    "2005": 12.4,
+    "2006": 12.46,
+    "2007": 12.56,
+    "2008": 12.75,
+    "2009": 12.92,
+    "2010": 13.09,
+    "2011": 13.28,
+    "2012": 13.75,
+    "2013": 14.13,
+    "2014": 14.51,
+    "2015": 14.87,
+    "2016": 15.25,
+    "2017": 15.63,
+    "2018": 16.03,
+    "2019": 16.47,
+    "2020": 16.87,
+    "2021": 17.3,
+    "2022": 17.7,
+    "2023": 18.1,
+    "2024": 18.47,
+    "2025": 18.91
+  }
+}

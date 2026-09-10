@@ -1,0 +1,176 @@
+{
+ "generated": "2026-09-10T20:27:33.082Z",
+ "dataset": "US-Family-And-Society",
+ "series": {
+  "adultsMarried": {
+   "name": "Married population aged 15 and older",
+   "unit": "percent",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1950–2025",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "childlessWomen40to44": {
+   "name": "Women aged 40–44 who are childless",
+   "unit": "percent",
+   "source": "U.S. Census Bureau, CPS June fertility supplement, Historical Table 1",
+   "cadence": "annual",
+   "annualRule": "survey year; biennial and irregular gaps retained",
+   "class": "births",
+   "coverage": "1976–2024",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "childrenWithTwoParents": {
+   "name": "Children living with two parents",
+   "unit": "percent of children under 18",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1960–2025",
+   "fetched": "2026-09-10T20:27:33.082Z"
+  },
+  "cohabitingCouples": {
+   "name": "Unmarried opposite-sex couples, direct measure",
+   "unit": "thousands of couples",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1996–2023",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "cohabitingCouplesPosslq": {
+   "name": "Opposite-sex adults sharing living quarters, POSSLQ",
+   "unit": "thousands of couples",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1960–2006",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "foreignBornShareDecennial": {
+   "name": "Foreign-born population, decennial census",
+   "unit": "percent",
+   "source": "U.S. Census Bureau, Working Paper 81, Table 1",
+   "cadence": "annual",
+   "annualRule": "decennial observation year; no interpolation",
+   "class": "migration",
+   "coverage": "1850–2000",
+   "fetched": "2026-09-10T20:27:33.082Z"
+  },
+  "gssAttendWeekly": {
+   "name": "Attend religious services nearly weekly or more",
+   "unit": "percent of valid weighted adult responses",
+   "source": "NORC General Social Survey",
+   "cadence": "annual",
+   "annualRule": "survey year; unsurveyed years omitted",
+   "class": "religion",
+   "coverage": "1972–2024",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "gssNoReligion": {
+   "name": "No religious preference",
+   "unit": "percent of valid weighted adult responses",
+   "source": "NORC General Social Survey",
+   "cadence": "annual",
+   "annualRule": "survey year; unsurveyed years omitted",
+   "class": "religion",
+   "coverage": "1972–2024",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "gssSocialFriends": {
+   "name": "Social evenings with friends at least several times a month",
+   "unit": "percent of valid weighted adult responses",
+   "source": "NORC General Social Survey",
+   "cadence": "annual",
+   "annualRule": "survey year; unsurveyed years omitted",
+   "class": "religion",
+   "coverage": "1974–2024",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "householdSize": {
+   "name": "Average household size",
+   "unit": "people per household",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1940–2025",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "medianAge": {
+   "name": "Median age of the resident population",
+   "unit": "years",
+   "source": "U.S. Census Bureau, Population Estimates Program",
+   "cadence": "annual",
+   "annualRule": "July 1 resident population estimate; one observation per calendar year.",
+   "class": "population",
+   "coverage": "2000–2025",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "medianAgeFirstMarriageMen": {
+   "name": "Median age at first marriage, men",
+   "unit": "years",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1890–2025",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "medianAgeFirstMarriageWomen": {
+   "name": "Median age at first marriage, women",
+   "unit": "years",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1890–2025",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "oneParentFamilies": {
+   "name": "One-parent families with own children under 18",
+   "unit": "percent of families with own children under 18",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1950–2025",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "onePersonHouseholds": {
+   "name": "One-person households",
+   "unit": "percent of households",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1960–2025",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "population65Share": {
+   "name": "Resident population age 65 and older",
+   "unit": "%",
+   "source": "U.S. Census Bureau, Population Estimates Program",
+   "cadence": "annual",
+   "annualRule": "July 1 resident population estimate; one observation per calendar year.",
+   "class": "population",
+   "coverage": "2000–2025",
+   "fetched": "2026-09-10T20:26:53.353Z"
+  },
+  "youngAdultsWithParents": {
+   "name": "Adults aged 25–34 living with parents",
+   "unit": "percent",
+   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "cadence": "annual",
+   "annualRule": "publisher survey/census year; sparse historical observations retained",
+   "class": "living",
+   "coverage": "1960–2025",
+   "fetched": "2026-09-10T20:27:33.082Z"
+  }
+ }
+}

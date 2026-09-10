@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "key": "gallupQualityJob",
+    "name": "Good Time to Find a Quality Job",
+    "unit": "percent saying now is a good time to find a quality job",
+    "source": "Gallup, Good Time to Find a Quality Job",
+    "sourceUrl": "https://datawrapper.dwcdn.net/gZ2wl/4/dataset.csv",
+    "historicalSourceUrls": [
+      "https://datawrapper.dwcdn.net/8YPmK/1/dataset.csv",
+      "https://datawrapper.dwcdn.net/gZ2wl/4/dataset.csv"
+    ],
+    "goodDirection": "up",
+    "note": "\"Thinking about the job situation in America today, would you say that it is now a good time or a bad time to find a quality job?\" Question wording from the chart metadata (gZ2wl/9). Annual mean of published monthly values; multiple polls within a month are averaged before averaging months. Recent polling is roughly quarterly, not monthly; unpublished months are absent, never interpolated. All overlapping readings must agree exactly. The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.",
+    "method": "Datawrapper 8YPmK/1 + gZ2wl/4, named column % Good time / % Good time; exact overlap checks, mean within month then mean of published months per year",
+    "partialYear": 2026,
+    "partialThrough": "2026-04",
+    "coverage": "2001–2026",
+    "fetched": "2026-09-10T20:25:51.860Z"
+  },
+  "data": {
+    "2001": 27.8,
+    "2002": 25.8,
+    "2003": 21.3,
+    "2004": 32,
+    "2005": 37.3,
+    "2006": 41.3,
+    "2007": 42.5,
+    "2008": 20.3,
+    "2009": 9.9,
+    "2010": 10.9,
+    "2011": 11.8,
+    "2012": 18.8,
+    "2013": 24.3,
+    "2014": 29.6,
+    "2015": 42.1,
+    "2016": 42.2,
+    "2017": 56.3,
+    "2018": 64.8,
+    "2019": 66.8,
+    "2020": 38.8,
+    "2021": 54,
+    "2022": 68.5,
+    "2023": 59,
+    "2024": 48.3,
+    "2025": 40,
+    "2026": 35.5
+  }
+}

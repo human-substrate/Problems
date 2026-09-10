@@ -1,6 +1,6 @@
 # US Societal Health
 
-**84 long-run annual US series on happiness and optimism, trust in people and institutions, substance use, health access, and household financial stress — every value from its primary publisher, in one machine-readable place.**
+**89 long-run annual US series on happiness and optimism, trust in people and institutions, substance use, health access, and household financial stress — every value from its primary publisher, in one machine-readable place.**
 
 Companion to [US-Common-Metrics](../US-Common-Metrics/) (economic indicators) and [US-National-Debt](../US-National-Debt/). Powers the societal-health sections of the live almanac **https://usstats.io** (each row there links to a page with the full series and these sources).
 
@@ -162,7 +162,12 @@ Rules this dataset runs on:
 | [Can Name All Three Branches (phone era)](series/appcBranchesPhone.json) | 47% (2022) | 33% (2006) | 2006–2022 · 12 pts | Annenberg Public Policy Center, Constitution Day Civics Survey |
 | [Can Name All Three Branches of Government](series/appcBranchesWeb.json) | 70% (2025) | 72% (2022) | 2022–2025 · 4 pts | Annenberg Public Policy Center, Constitution Day Civics Survey |
 | [Books Read per Year](series/booksPerYear.json) | 12.6% (2021) | 15.3% (1990) | 1990–2021 · 7 pts | Gallup |
+| [Consumer Sentiment Index (University of Michigan)](series/consumerSentiment.json) | 52.2% (2026) | 91.5% (1961) | 1961–2026 · 66 pts | University of Michigan Surveys of Consumers |
 | [Firearm Deaths](series/firearmDeaths.json) | 12.6% (2025) | 13.1% (1970) | 1970–2025 · 45 pts | CDC/NCHS Health, United States 2017 Table 31; CDC Injury Center firearm mortality (NVSS) |
+| [Gallup Economic Confidence Index](series/gallupEconomicConfidence.json) | -26.3% (2026) | 13.8% (1996) | 1996–2026 · 31 pts | Gallup, Gallup Economic Confidence Index |
+| [Personal Finances Getting Better (Gallup)](series/gallupFinancesBetter.json) | 38% (2025) | 59% (2001) | 2001–2025 · 25 pts | Gallup, Personal Finances Getting Better (Gallup) |
+| [Rate Their Mental Health Excellent](series/gallupMentalHealthExcellent.json) | 29% (2025) | 43% (2001) | 2001–2025 · 25 pts | Gallup, Rate Their Mental Health Excellent |
+| [Good Time to Find a Quality Job](series/gallupQualityJob.json) | 35.5% (2026) | 27.8% (2001) | 2001–2026 · 26 pts | Gallup, Good Time to Find a Quality Job |
 | [Math Score, Age 13 (NAEP LTT)](series/lttMath13.json) | 270.7% (2023) | 264.1% (1978) | 1978–2023 · 13 pts | NCES, National Assessment of Educational Progress |
 | [Math Score, Age 9 (NAEP LTT)](series/lttMath9.json) | 233.9% (2022) | 218.6% (1978) | 1978–2022 · 13 pts | NCES, National Assessment of Educational Progress |
 | [Reading Score, Age 13 (NAEP LTT)](series/lttReading13.json) | 255.7% (2023) | 255.2% (1971) | 1971–2023 · 15 pts | NCES, National Assessment of Educational Progress |
@@ -201,4 +206,4 @@ See [source.md](source.md). Publishers: NORC (GSS), Gallup, University of Michig
 
 ---
 
-*Last regenerated 2026-08-31 by `docs.ts`.*
+*Last regenerated 2026-09-10 by `docs.ts`.*

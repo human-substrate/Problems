@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "key": "gallupMentalHealthExcellent",
+    "name": "Rate Their Mental Health Excellent",
+    "unit": "percent of adults rating their own mental health excellent",
+    "source": "Gallup, Rate Their Mental Health Excellent",
+    "sourceUrl": "https://datawrapper.dwcdn.net/f9It9/6/dataset.csv",
+    "historicalSourceUrls": [
+      "https://datawrapper.dwcdn.net/f9It9/6/dataset.csv"
+    ],
+    "goodDirection": "up",
+    "note": "\"How would you describe your own mental health or emotional wellbeing at this time? Would you say it is — excellent, good, only fair or poor?\" Question wording from the chart metadata (f9It9/8); only Excellent, not Excellent/Good. Annual published observations. The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.",
+    "method": "Datawrapper f9It9/6, named column % Excellent; latest published poll per year",
+    "coverage": "2001–2025",
+    "fetched": "2026-09-10T20:25:51.860Z"
+  },
+  "data": {
+    "2001": 43,
+    "2002": 43,
+    "2003": 43,
+    "2004": 51,
+    "2005": 42,
+    "2006": 45,
+    "2007": 45,
+    "2008": 45,
+    "2009": 43,
+    "2010": 45,
+    "2011": 46,
+    "2012": 48,
+    "2013": 47,
+    "2014": 45,
+    "2015": 43,
+    "2016": 44,
+    "2017": 45,
+    "2018": 43,
+    "2019": 43,
+    "2020": 34,
+    "2021": 34,
+    "2022": 31,
+    "2023": 33,
+    "2024": 31,
+    "2025": 29
+  }
+}

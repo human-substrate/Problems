@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "key": "foreignBornShareDecennial",
+    "name": "Foreign-born population, decennial census",
+    "unit": "percent",
+    "source": "U.S. Census Bureau, Working Paper 81, Table 1",
+    "sourceUrl": "https://www2.census.gov/library/working-papers/2006/demo/pop-twps0081/tab01.xls",
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "decennial observation year; no interpolation",
+    "class": "migration",
+    "breaks": "Alaska and Hawaii included from 1960; historical geography and nativity coverage vary.",
+    "note": "Sixteen decennial observations from 1850–2000, not annual ACS. Published percentage in the foreign-born column. For 1850/1860 the source assumes enslaved people were native-born; 1890 excludes certain Indian Territory/reservation populations. 1970 uses the 15-percent sample.",
+    "coverage": "1850–2000",
+    "fetched": "2026-09-10T20:27:33.082Z"
+  },
+  "data": {
+    "1850": 9.7,
+    "1860": 13.2,
+    "1870": 14.4,
+    "1880": 13.3,
+    "1890": 14.8,
+    "1900": 13.6,
+    "1910": 14.7,
+    "1920": 13.2,
+    "1930": 11.6,
+    "1940": 8.8,
+    "1950": 6.9,
+    "1960": 5.4,
+    "1970": 4.7,
+    "1980": 6.2,
+    "1990": 7.9,
+    "2000": 11.1
+  }
+}

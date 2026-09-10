@@ -692,6 +692,126 @@ await run("citations", async () => {
   }
 });
 
+// ================= University of Michigan Index of Consumer Sentiment =================
+await run("michigan-ics", async () => {
+  const annualUrl = "https://www.sca.isr.umich.edu/files/tbyics.csv", monthlyUrl = "https://www.sca.isr.umich.edu/files/tbmics.csv";
+  const lines = (await getText(annualUrl)).trimEnd().split(/\r?\n/);
+  invariant(lines[0] === "Month,YYYY,ICS_ALL", `Michigan annual: unexpected header ${lines[0]}`);
+  invariant(lines.length >= 41, `Michigan annual: only ${lines.length - 1} rows`);
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const data: Record<string, number> = {};
+  const ty = new Date().getFullYear();
+  let partialThrough: string | undefined;
+  for (const line of lines.slice(1)) {
+    const r = line.split(","), y = r[1], v = Number(r[2]), m = months.indexOf(r[0]) + 1;
+    invariant(r.length === 3 && /^\d{4}$/.test(y) && Number(y) <= ty && m > 0 && r[2] !== "" && Number.isFinite(v), `Michigan annual: invalid row ${line}`);
+    invariant(!(y in data), `Michigan annual: duplicate year ${y}`);
+    data[y] = v;
+    if (Number(y) === ty && m < 12) partialThrough = `${y}-${String(m).padStart(2, "0")}`;
+  }
+  if (!(String(ty) in data)) {
+    const monthly = (await getText(monthlyUrl)).trimEnd().split(/\r?\n/);
+    invariant(monthly[0] === "Month,YYYY,ICS_ALL", `Michigan monthly: unexpected header ${monthly[0]}`);
+    invariant(monthly.length >= 501, `Michigan monthly: only ${monthly.length - 1} rows`);
+    const current: Record<string, number> = {};
+    for (const line of monthly.slice(1)) {
+      const r = line.split(","), y = r[1], v = Number(r[2]), m = months.indexOf(r[0]) + 1;
+      invariant(r.length === 3 && /^\d{4}$/.test(y) && Number(y) <= ty && m > 0 && r[2] !== "" && Number.isFinite(v), `Michigan monthly: invalid row ${line}`);
+      if (Number(y) !== ty) continue;
+      const date = `${y}-${String(m).padStart(2, "0")}`;
+      invariant(!(date in current), `Michigan monthly: duplicate ${date}`);
+      current[date] = v;
+    }
+    const dates = Object.keys(current).sort(), vs = Object.values(current);
+    if (vs.length) { data[String(ty)] = round(vs.reduce((a, b) => a + b, 0) / vs.length); partialThrough = dates[dates.length - 1]; }
+  }
+  await save("consumerSentiment", {
+    name: "Consumer Sentiment Index (University of Michigan)", unit: "index, 1966 Q1 = 100", source: "University of Michigan Surveys of Consumers", sourceUrl: annualUrl, historicalSourceUrls: [monthlyUrl], goodDirection: "up",
+    note: "Index summarizing a survey of ~500 households on personal finances, business conditions, and buying conditions. Annual figures as published by the Survey Research Center; the annual CSV begins in 1961, while the monthly history begins in 1952. Michigan's Surveys of Consumers moved increasingly online through 2017–2024, which Michigan documents as a level effect. A current-year annual row is marked partial through its published month; if absent, the mean of published current-year months is used.",
+    method: "tbyics.csv, ICS_ALL by YYYY; tbmics.csv current-year monthly mean only when that year is absent from the annual file", partialYear: partialThrough ? ty : undefined, partialThrough,
+  }, data, [40, 120], 40);
+});
+
+// ================= Gallup public Datawrapper exports =================
+await run("gallup-dw", async () => {
+  const specs: { key: string; name: string; unit: string; files: string[]; columns: string[]; minRows: number[]; monthly: boolean; note: string; bounds: [number, number] }[] = [
+    { key: "gallupMentalHealthExcellent", name: "Rate Their Mental Health Excellent", unit: "percent of adults rating their own mental health excellent", files: ["f9It9/6"], columns: ["% Excellent"], minRows: [25], monthly: false, bounds: [0, 100],
+      note: "\"How would you describe your own mental health or emotional wellbeing at this time? Would you say it is — excellent, good, only fair or poor?\" Question wording from the chart metadata (f9It9/8); only Excellent, not Excellent/Good. Annual published observations." },
+    { key: "gallupFinancesBetter", name: "Personal Finances Getting Better (Gallup)", unit: "percent saying their financial situation is getting better", files: ["w92AE/1"], columns: ["Getting better"], minRows: [40], monthly: false, bounds: [0, 100],
+      note: "\"Right now, do you think that your financial situation as a whole is getting better or getting worse?\" Question wording from the chart title (w92AE/2). The latest poll in each calendar year is kept, matching the dataset's yearSeries convention. This is Gallup's question, distinct from the NORC GSS financesBetter series." },
+    { key: "gallupQualityJob", name: "Good Time to Find a Quality Job", unit: "percent saying now is a good time to find a quality job", files: ["8YPmK/1", "gZ2wl/4"], columns: ["% Good time", "% Good time"], minRows: [200, 20], monthly: true, bounds: [0, 100],
+      note: "\"Thinking about the job situation in America today, would you say that it is now a good time or a bad time to find a quality job?\" Question wording from the chart metadata (gZ2wl/9). Annual mean of published monthly values; multiple polls within a month are averaged before averaging months. Recent polling is roughly quarterly, not monthly; unpublished months are absent, never interpolated. All overlapping readings must agree exactly." },
+    { key: "gallupEconomicConfidence", name: "Gallup Economic Confidence Index", unit: "index, net percent (can range roughly -100 to +100)", files: ["y7uQi/2", "6VwvN/4"], columns: ["Index", "Economic Confidence Index"], minRows: [200, 70], monthly: true, bounds: [-100, 100],
+      note: "Gallup's Economic Confidence Index is the average of two components: current conditions (% excellent or good minus % poor) and economic outlook (% getting better minus % getting worse), net positive minus negative. Gallup does not publish the verbatim question wording on this chart; this paraphrase follows its title and description (6VwvN/6). Annual mean of published monthly values; multiple polls within a month are averaged before averaging months. Historical coverage is irregular and missing months are not interpolated. All overlapping readings must agree exactly." },
+  ];
+  for (const sp of specs) {
+    const urls = sp.files.map((f) => `https://datawrapper.dwcdn.net/${f}/dataset.csv`);
+    const sources: Record<string, number[]>[] = [];
+    let annual: Record<string, number> = {};
+    for (let i = 0; i < urls.length; i++) {
+      // Datawrapper calls these CSV exports but currently serves tabs; preserve the blank date header.
+      const lines = (await getText(urls[i])).trimEnd().split(/\r?\n/), sep = lines[0].includes("\t") ? "\t" : ",";
+      const hdr = lines[0].split(sep).map((s) => s.trim());
+      invariant(hdr.some((h) => h.toLowerCase().includes(sp.columns[i].toLowerCase())), `${sp.key}: expected ${sp.columns[i]} in header ${lines[0]}`);
+      const col = hdr.findIndex((h) => h.toLowerCase() === sp.columns[i].toLowerCase()), dateCol = hdr.findIndex((h) => h === "" || h === "Formatted Date");
+      invariant(col >= 0 && dateCol >= 0 && col !== dateCol && new Set(hdr).size === hdr.length, `${sp.key}: ambiguous columns in header ${lines[0]}`);
+      invariant(lines.length - 1 >= sp.minRows[i], `${sp.key}: only ${lines.length - 1} rows from ${urls[i]}`);
+      const rows: string[][] = [], daily: Record<string, number[]> = {};
+      for (const line of lines.slice(1)) {
+        const r = line.split(sep).map((s) => s.trim());
+        invariant(r.length === hdr.length, `${sp.key}: row width ${line}`);
+        if (sp.key === "gallupFinancesBetter" && r[dateCol] === "" && r.slice(1).every((s) => s === "%")) continue;
+        const label = r[dateCol], v = Number(r[col]);
+        invariant(label !== "" && r[col] !== "" && Number.isFinite(v) && v >= sp.bounds[0] && v <= sp.bounds[1], `${sp.key}: invalid value ${line}`);
+        if (!sp.monthly) {
+          invariant(sp.key === "gallupMentalHealthExcellent" ? /^\d{4}$/.test(label) : /^\d{4} [A-Z][a-z]{2} \d/.test(label), `${sp.key}: invalid date ${label}`);
+          rows.push([label, r[col]]); continue;
+        }
+        invariant(/^[A-Z][a-z]{2} \d{1,2} \d{4}$/.test(label) || /^\d{1,2}\/\d{1,2}\/\d{4}$/.test(label), `${sp.key}: invalid date ${label}`);
+        const d = new Date(label);
+        invariant(Number.isFinite(d.getTime()), `${sp.key}: invalid date ${label}`);
+        const date = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+        (daily[date] ??= []).push(v);
+      }
+      if (sp.monthly) sources.push(daily); else {
+        annual = yearSeries(rows, 1);
+        if (sp.key === "gallupMentalHealthExcellent") invariant(rows.length === Object.keys(annual).length, `${sp.key}: duplicate year`);
+      }
+    }
+    let partialThrough: string | undefined;
+    const ty = new Date().getFullYear();
+    if (sp.monthly) {
+      const merged = { ...sources[0] };
+      let overlap = 0;
+      for (const [date, vs] of Object.entries(sources[1])) {
+        if (date in merged) {
+          for (const a of merged[date]) for (const b of vs) invariant(a === b, `${sp.key} ${date}: overlap mismatch ${a} vs ${b}`);
+          overlap++;
+        } else merged[date] = vs;
+      }
+      invariant(overlap >= (sp.key === "gallupEconomicConfidence" ? 28 : 11), `${sp.key}: only ${overlap} overlap dates`);
+      const monthly: Record<string, number[]> = {};
+      for (const [date, vs] of Object.entries(merged)) (monthly[date.slice(0, 7)] ??= []).push(...vs);
+      const by: Record<string, number[]> = {};
+      for (const [month, vs] of Object.entries(monthly)) {
+        (by[month.slice(0, 4)] ??= []).push(vs.reduce((a, b) => a + b, 0) / vs.length);
+        if (month.startsWith(String(ty)) && (!partialThrough || month > partialThrough)) partialThrough = month;
+      }
+      for (const [y, vs] of Object.entries(by)) annual[y] = round(vs.reduce((a, b) => a + b, 0) / vs.length);
+      console.log(`✓ ${sp.key}: ${overlap} overlap dates agree exactly`);
+    }
+    if (sp.key === "gallupMentalHealthExcellent") {
+      invariant(annual["2001"] === 43, `${sp.key}: 2001 = ${annual["2001"]}, expected 43`);
+      invariant(annual["2025"] === 29, `${sp.key}: 2025 = ${annual["2025"]}, expected 29`);
+    }
+    await save(sp.key, {
+      name: sp.name, unit: sp.unit, source: `Gallup, ${sp.name}`, sourceUrl: urls[urls.length - 1], historicalSourceUrls: urls, goodDirection: "up",
+      note: `${sp.note} The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.`,
+      method: `Datawrapper ${sp.files.join(" + ")}, named column ${sp.columns.join(" / ")}; ${sp.monthly ? "exact overlap checks, mean within month then mean of published months per year" : "latest published poll per year"}`, partialYear: partialThrough ? ty : undefined, partialThrough,
+    }, annual, sp.bounds, 15);
+  }
+});
+
 // ================= index + log =================
 const keys = (await Array.fromAsync(new Bun.Glob("*.json").scan(SERIES))).map((f) => f.replace(/\.json$/, "")).sort();
 const index: Record<string, unknown> = {};
