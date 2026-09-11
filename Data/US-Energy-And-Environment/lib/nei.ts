@@ -18,7 +18,8 @@ export async function buildNei(p:Pipeline):Promise<void>{
       for(const[c,y]of Object.entries(yearRow)){if(!/^(19|20)\d{2}$/.test(y)||+y>2025)continue;const raw=totals[0][c];if(raw===undefined||raw.trim()===""||/^NA|^--$/.test(raw))continue;put(data,y,numeric(raw,`NEI ${key} ${y}`));}
     }
     const evidence=editionNotes.join("\n");invariant(/interpolat|project/i.test(evidence),"NEI edition estimation notes missing");
-    const meta=metadata(key,"U.S. EPA National Emissions Inventory trends",url,`Pollutant-specific worksheet, Total without wildfires row, annual year columns. Publisher estimates retained; no interpolation performed here. Workbook methodology: ${evidence}`);
+    await Bun.write(new URL("../work/nei-edition-notes.txt",import.meta.url),evidence);
+    const meta=metadata(key,"U.S. EPA National Emissions Inventory trends",url,`Pollutant-specific worksheet, Total without wildfires row, annual year columns. EPA's own estimates throughout: 1970–2001 five-yearly then annual NEI/trends values, 2002–2019 EQUATES-modeled, and the years after the latest full NEI (2020 onward) interpolated or projected by EPA; no interpolation performed here. The workbook's edition notes are retained in work/nei-edition-notes.txt.`);
     await p.save({key,data,bounds:SPECS[key].bounds,meta});
   });
 }

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T21:31:37.623Z",
+  "generated": "2026-09-11T21:49:53.550Z",
   "series": {
     "alcoholPerCapita": {
       "name": "Alcohol Consumption per Capita",
@@ -10,10 +10,10 @@
     },
     "antidepressantUse": {
       "name": "Antidepressant Use in the Past Month (NHANES)",
-      "unit": "percent of persons, age population changes",
+      "unit": "percent of adults aged 18 and over",
       "source": "NCHS, NHANES, Data Briefs 283 and 377",
-      "coverage": "2002–2018",
-      "fetched": "2026-09-11T21:31:37.623Z"
+      "coverage": "2010–2018",
+      "fetched": "2026-09-11T21:49:53.550Z"
     },
     "appcBranchesPhone": {
       "name": "Can Name All Three Branches (phone era)",

@@ -159,7 +159,7 @@ Rules this dataset runs on:
 
 | Series | Latest | First | Coverage | Publisher |
 |---|---|---|---|---|
-| [Antidepressant Use in the Past Month (NHANES)](series/antidepressantUse.json) | 13.8% (2018) | 7.7% (2002) | 2002–2018 · 7 pts | NCHS, NHANES, Data Briefs 283 and 377 |
+| [Antidepressant Use in the Past Month (NHANES)](series/antidepressantUse.json) | 13.8% (2018) | 10.6% (2010) | 2010–2018 · 5 pts | NCHS, NHANES, Data Briefs 283 and 377 |
 | [Can Name All Three Branches (phone era)](series/appcBranchesPhone.json) | 47% (2022) | 33% (2006) | 2006–2022 · 12 pts | Annenberg Public Policy Center, Constitution Day Civics Survey |
 | [Can Name All Three Branches of Government](series/appcBranchesWeb.json) | 70% (2025) | 72% (2022) | 2022–2025 · 4 pts | Annenberg Public Policy Center, Constitution Day Civics Survey |
 | [Books Read per Year](series/booksPerYear.json) | 12.6% (2021) | 15.3% (1990) | 1990–2021 · 7 pts | Gallup |

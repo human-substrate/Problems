@@ -13,10 +13,10 @@
     "cadence": "annual",
     "annualRule": "survey/end year of the one-year movement interval",
     "class": "living",
-    "breaks": "Question wording changed in 2004; 1972–75 and 1977–80 lack comparable one-year estimates. CPS seams are in METHODOLOGY.md.",
+    "breaks": "Question wording changed in 2004; 1972–75 and 1977–80 lack comparable one-year estimates. 2014 ASEC redesign; 2004 question wording change; 1972–75 and 1977–80 not collected; 2020-controls revision of 2020.",
     "note": "PERCENT panel, Total movers column. Uses the later-method population-control row, listed first, for duplicate years. The current workbook reaches 2023. Its 2020-controls estimate for 2020 is 9.2%; the 2010-controls row is 9.3%, explaining the task's older anchor. No interpolation.",
     "coverage": "1948–2023",
-    "fetched": "2026-09-11T02:23:47.946Z"
+    "fetched": "2026-09-11T21:49:24.465Z"
   },
   "data": {
     "1948": 20.2,

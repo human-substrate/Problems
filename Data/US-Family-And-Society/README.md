@@ -1,6 +1,6 @@
 # US Family and Society
 
-**26 long-run annual US series on marriage, households, living arrangements, births, child welfare, religion and social connection, and immigration - every value from its primary publisher, in one machine-readable place.**
+**30 long-run annual US series on marriage, households, living arrangements, births, child welfare, religion and social connection, and immigration - every value from its primary publisher, in one machine-readable place.**
 
 Companion to [US-Societal-Health](../US-Societal-Health/) and [US-Common-Metrics](../US-Common-Metrics/). Powers the family-and-society sections of the live almanac **https://usstats.io** (each row there links to a page with the full series and these sources).
 
@@ -123,6 +123,15 @@ Rules this dataset runs on:
 |---|---|---|---|---|
 | [Median age of the resident population](series/medianAge.json) | 39.4 yrs (2025) | 35.36 yrs (2000) | 2000–2025 · 26 pts | U.S. Census Bureau, Population Estimates Program |
 | [Resident population age 65 and older](series/population65Share.json) | 18.91% (2025) | 12.43% (2000) | 2000–2025 · 26 pts | U.S. Census Bureau, Population Estimates Program |
+
+### Other
+
+| Series | Latest | First | Coverage | Publisher |
+|---|---|---|---|---|
+| [Time caring for household children](series/atusChildcare.json) | 0.36 (2025) | 0.42 (2003) | 2003–2025 · 22 pts | BLS American Time Use Survey Table A-1 and public API |
+| [Time sleeping](series/atusSleep.json) | 9.03 (2025) | 8.57 (2003) | 2003–2025 · 22 pts | BLS American Time Use Survey Table A-1 and public API |
+| [Time socializing and communicating](series/atusSocializing.json) | 0.58 (2025) | 0.78 (2003) | 2003–2025 · 22 pts | BLS American Time Use Survey Table A-1 and public API |
+| [Time watching television](series/atusTelevision.json) | 2.61 (2025) | 2.58 (2003) | 2003–2025 · 22 pts | BLS American Time Use Survey Table A-1 and public API |
 
 ## Not included, and why
 

@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "key": "atusChildcare",
+    "name": "Time caring for household children",
+    "unit": "hours/day",
+    "source": "BLS American Time Use Survey Table A-1 and public API",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v1/timeseries/data/TUU10101AA01010710",
+    "historicalSourceUrls": [
+      "https://www.bls.gov/tus/tables.htm"
+    ],
+    "note": "All persons age 15+, average hours per day including people who did not perform the activity. No 2020 annual estimate was published because pandemic-related collection gaps prevented a comparable annual estimate.",
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "Annual average, all days of week; 2020 omitted.",
+    "class": "time",
+    "breaks": "2020 is absent because ATUS data collection was suspended during part of the year; activity and population definitions follow each annual table.",
+    "coverage": "2003–2025",
+    "fetched": "2026-09-11T21:49:24.465Z"
+  },
+  "data": {
+    "2003": 0.42,
+    "2004": 0.43,
+    "2005": 0.42,
+    "2006": 0.41,
+    "2007": 0.42,
+    "2008": 0.42,
+    "2009": 0.43,
+    "2010": 0.4,
+    "2011": 0.39,
+    "2012": 0.4,
+    "2013": 0.41,
+    "2014": 0.41,
+    "2015": 0.4,
+    "2016": 0.4,
+    "2017": 0.4,
+    "2018": 0.39,
+    "2019": 0.37,
+    "2021": 0.37,
+    "2022": 0.36,
+    "2023": 0.38,
+    "2024": 0.38,
+    "2025": 0.36
+  }
+}

@@ -12,7 +12,7 @@
     "breaks": "2021 push-to-web pandemic design; 2022 and 2024 mixed mode differ from historical in-person interviews.",
     "note": "Computed from cumulative Stata public microdata, WTSSPS-weighted numerator divided by valid weighted denominator, minimum 200 weighted responses per year. ATTEND positive codes 6,7,8 (nearly every week; every week; several times a week); valid codes 0,1,2,3,4,5,6,7,8. Missing years are not interpolated. SOCFREND concerns evenings with friends outside the neighborhood.",
     "coverage": "1972–2024",
-    "fetched": "2026-09-11T21:32:14.167Z"
+    "fetched": "2026-09-11T21:49:24.465Z"
   },
   "data": {
     "1972": 40.42,

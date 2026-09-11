@@ -51,7 +51,10 @@ export async function fbi(defer:(key:string,error:string)=>void):Promise<Result[
       const horizon=payload?.cde_properties?.max_data_date?.UCR;
       const coverage=payload?.tooltips?.['Percent of Population Coverage']?.['United States'];
       invariant(horizon!==undefined&&coverage!==undefined,`${key}: missing horizon or coverage`);
-      META[key].note=`${baseNotes[key]} Recorded max_data_date.UCR: ${JSON.stringify(horizon)}. Recorded Percent of Population Coverage, United States (percent, as supplied): ${JSON.stringify(coverage)}.`;
+      const covVals=Object.values(coverage as Record<string,number>).map(Number).filter(Number.isFinite);
+      const cov2021=Object.entries(coverage as Record<string,number>).filter(([m])=>m.endsWith("-2021")).map(([,v])=>Number(v));
+      await write(`work/coverage-${key}.json`,JSON.stringify({maxDataDate:horizon,percentOfPopulationCoverage:coverage},null,1));
+      META[key].note=`${baseNotes[key]} Agency coverage of the U.S. population ranged ${Math.min(...covVals).toFixed(1)}–${Math.max(...covVals).toFixed(1)}% across 2000–2024 (${cov2021.length?Math.min(...cov2021).toFixed(1)+"–"+Math.max(...cov2021).toFixed(1)+"% during the 2021 NIBRS transition":"2021 not reported"}); the monthly coverage map is kept in work/coverage-${key}.json. Data horizon: ${horizon}.`;
       const expected=key==='robberyRate'?60.6:key==='aggravatedAssaultRate'?256.1:undefined;
       if(expected!==undefined&&data[2024]!==expected){
         const row=`| FBI ${key}, 2024 | ${expected} | ${path}: sum of twelve actuals / December participated population × 100,000, rounded to one decimal = ${data[2024]??'missing (incomplete year)'}. Preserve source calculation; do not substitute candidate value. |`;

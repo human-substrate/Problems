@@ -9,10 +9,10 @@
     "cadence": "annual",
     "annualRule": "publisher survey/census year; sparse historical observations retained",
     "class": "living",
-    "breaks": "CPS ASEC control and questionnaire seams, and the later-method duplicate-year selection, are documented once in METHODOLOGY.md.",
+    "breaks": "2014 ASEC questionnaire redesign; decennial population-control revisions (the publisher's lettered r rows, taken over the original); 2021 appears twice in the tables (the later-method row is taken); 2025 uses Vintage-2025 population controls; 2019 onward includes same-sex married couples.",
     "note": "Publisher average population per household, all households; not average family size.",
     "coverage": "1940–2025",
-    "fetched": "2026-09-11T02:23:47.946Z"
+    "fetched": "2026-09-11T21:49:24.465Z"
   },
   "data": {
     "1940": 3.67,

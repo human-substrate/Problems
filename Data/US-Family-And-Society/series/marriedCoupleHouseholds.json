@@ -9,10 +9,10 @@
     "cadence": "annual",
     "annualRule": "publisher survey/census year; sparse historical observations retained",
     "class": "living",
-    "breaks": "CPS ASEC control and questionnaire seams, and the later-method duplicate-year selection, are documented once in METHODOLOGY.md.",
+    "breaks": "2014 ASEC questionnaire redesign; decennial population-control revisions (the publisher's lettered r rows, taken over the original); 2021 appears twice in the tables (the later-method row is taken); 2025 uses Vintage-2025 population controls; 2019 onward includes same-sex married couples.",
     "note": "Computed from married-couple households divided by all households. Counts use householder person weights, not the Housing Vacancy Survey housing-unit weights. HH-1 lists 1980, 1984, 1988, 1993, 2011 and 2021 twice: a footnote-lettered row (1980r, 1984b, 1988a, 1993r) or 'r'-suffixed row (2011r, 2021r) plus a plain row for the same year. The lettered/r-suffixed row is always the later-method value — HH-1's own footnotes read 'a Data based on 1988 revised processing', 'b Incorporates Hispanic-origin population controls', 'r Revised based on population from the most recent decennial census' — so it is selected deterministically over the plain row (annualRows in lib/census.ts).",
     "coverage": "1940–2025",
-    "fetched": "2026-09-11T02:23:47.946Z"
+    "fetched": "2026-09-11T21:49:24.465Z"
   },
   "data": {
     "1940": 76.03,

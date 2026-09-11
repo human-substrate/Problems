@@ -29,7 +29,7 @@
 
 ## Quick Context
 
-26 long-run annual US series on marriage, households, living arrangements, births, child welfare, religion and social connection, and immigration. Every value is read from the organization that produces it (U.S. Census Bureau, CDC/NCHS, ACF Children's Bureau, NORC GSS, DHS Office of Homeland Security Statistics). Nothing is interpolated or smoothed; where a survey skipped a year, or a wartime gap exists in the publisher's own table (CPS did not run 1941-1946), the series skips it too.
+30 long-run annual US series on marriage, households, living arrangements, births, child welfare, religion and social connection, and immigration. Every value is read from the organization that produces it (U.S. Census Bureau, CDC/NCHS, ACF Children's Bureau, NORC GSS, DHS Office of Homeland Security Statistics). Nothing is interpolated or smoothed; where a survey skipped a year, or a wartime gap exists in the publisher's own table (CPS did not run 1941-1946), the series skips it too.
 
 Confidence: **Very High (95%+)** for published agency/survey figures copied as-is; **High (85-94%)** for the GSS items and the married/cohabiting shares, which are computed here from microdata or two publisher columns with the exact formula named in each series' `note`.
 
@@ -50,10 +50,6 @@ Confidence: **Very High (95%+)** for published agency/survey figures copied as-i
 | Key | Why not (yet) |
 |---|---|
 | `foreignBornShare` | The annual ACS one-year estimate (table B05002) requires a registered CENSUS_API_KEY, which is not present in this environment. The decennial series (1850-2000) ships separately as foreignBornShareDecennial. |
-| `atusSocializing` | No BLS_API_KEY is registered; the keyless v1/v2 API hit its daily request threshold, and bls.gov's HTML ATUS tables return HTTP 403 to a browser-UA fetch. |
-| `atusTelevision` | Same BLS API-key/quota and bls.gov 403 blockers as atusSocializing. |
-| `atusChildcare` | Same BLS API-key/quota and bls.gov 403 blockers as atusSocializing. |
-| `atusSleep` | Same BLS API-key/quota and bls.gov 403 blockers as atusSocializing. |
 | `mothersLaborForce` | bls.gov returns HTTP 403 to the Women in the Labor Force Databook page carrying March CPS Table 7; the annual-average famee Table 5 is a different, non-substitutable series. |
 | `abortionRate` | cdc.gov returns HTTP 403 Access Denied to scripted fetches of the MMWR surveillance summary; no accessible primary table with ≥15 machine-readable years was found. |
 
@@ -78,4 +74,4 @@ Last regenerated: 2026-09-11.
 
 | Date | Change | Reason |
 |------|--------|--------|
-| 2026-09-10 | Dataset created with 26 series | Powers the Family & Society section of https://usstats.io |
+| 2026-09-10 | Dataset created with 30 series | Powers the Family & Society section of https://usstats.io |

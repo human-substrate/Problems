@@ -64,7 +64,7 @@ const V9_BREAKS: Record<string, string> = {
   brfssFrequentMentalDistress: "2011 raking and cell-phone sampling; pre-2011 not comparable; CDC state median, not population-weighted",
   yrbsPersistentSadness: "biennial; 2021 fielded in fall 2021", yrbsConsideredSuicide: "biennial; 2021 fielded in fall 2021",
   nhisPsychologicalDistress: "2019 NHIS redesign; K6 not collected 2019, 2020, 2022; ends at the 2015–2016 pool",
-  antidepressantUse: "population break: 2002–2006 cycles cover ages 12+, 2010–2018 adults 18+; 2019–2020 cycle incomplete; NHIS 2023 item is a different instrument, never stitched",
+  antidepressantUse: "five two-year NHANES cycles 2009–2018, adults 18+ only (the 12-and-over cycles in Data Brief 283 are a different population and are not joined); 2019–2020 cycle incomplete; NHIS 2023 item is a different instrument, never stitched",
 };
 const V9_COMPUTED = new Set(["gssMarriageVeryHappy", "gssJobVerySatisfied", "gssPeopleHelpful", "gssPeopleFair", "gssLotOfAverageManWorse", "gssNotTooHappy"]);
 async function save(key: string, meta: Meta, data: Record<string, number>, bounds: [number, number], min = 10) {
@@ -1095,14 +1095,15 @@ await run("nhanes-antidepressant", async () => {
     }
     invariant(Object.keys(recentData).length === 5, "NHANES db377: expected five Both sexes rows");
     for (const [y, v] of Object.entries(checks)) invariant(recentData[y] === v, `NHANES db377 ${y}: sample check failed`);
+    for (const k of Object.keys(data)) delete data[k]; // adults 18+ only: the 12+ cycles from db283 are read and checked but never joined (rule 2)
     Object.assign(data, recentData);
   }
   await save("antidepressantUse", {
-    name: "Antidepressant Use in the Past Month (NHANES)", unit: "percent of persons, age population changes", source: "NCHS, NHANES, Data Briefs 283 and 377", sourceUrl: localOnly ? "https://www.cdc.gov/nchs/data/databriefs/db283.pdf" : url,
+    name: "Antidepressant Use in the Past Month (NHANES)", unit: "percent of adults aged 18 and over", source: "NCHS, NHANES, Data Briefs 283 and 377", sourceUrl: localOnly ? "https://www.cdc.gov/nchs/data/databriefs/db283.pdf" : url,
     historicalSourceUrls: ["https://www.cdc.gov/nchs/data/databriefs/db283.pdf"], goodDirection: "neutral",
-    note: `Sparse survey cycles keyed to cycle END year, a named exception to usual annual density expectations; no interpolation. ${localOnly ? "Partial local-only output: two points, 1999–2002 and 2003–2006, ages 12 and over. The five recent cycles are omitted because --local-only was requested; run without that flag to fetch the companion table." : "Seven points across approximately 20 years. The early 1999–2002 and 2003–2006 pools cover ages 12 and over; the 2009–2010 through 2017–2018 cycles cover ages 18 and over. This is a genuine population break at the 2006→2010 gap, not a directly comparable change."} Later db283 pools are excluded because they overlap db377's cycles. The early PDF is SHA256-verified against data/cdc/READ.md. Antidepressant use alone does not distinguish treatment access from illness prevalence.`,
+    note: `Sparse survey cycles keyed to cycle END year, a named exception to usual annual density expectations; no interpolation. ${localOnly ? "Partial local-only output: two points, 1999–2002 and 2003–2006, ages 12 and over. The five recent cycles are omitted because --local-only was requested; run without that flag to fetch the companion table." : "Five points, adults aged 18 and over, the 2009–2010 through 2017–2018 NHANES cycles from Data Brief 377's data table. Data Brief 283's 1999–2002 and 2003–2006 pools cover ages 12 and over, a different population; they are read and checked but never joined to this line."} Later db283 pools are excluded because they overlap db377's cycles. The early PDF is SHA256-verified against data/cdc/READ.md. Antidepressant use alone does not distinguish treatment access from illness prevalence.`,
     method: `db283 Figure 4, PDF page ${page}, TSV chart coordinates, middle of three sex-specific labels per early cycle; ${localOnly ? "explicit local-only partial output" : "db377 Figure 4 companion data table, Both sexes intersections by TSV coordinates"}`,
-  }, data, [0, 100], localOnly ? 2 : 7);
+  }, data, [0, 100], localOnly ? 2 : 5);
 });
 
 // ================= index + log =================

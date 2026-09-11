@@ -68,10 +68,10 @@ monitoringthefuture.org (403 to every fetcher) · www.cdc.gov, wonder.cdc.gov, s
 
 - **Publisher:** NCHS, NHANES, Data Briefs 283 and 377
 - **Where:** <https://www.cdc.gov/nchs/data/databriefs/db377-tables-508.pdf#4> · <https://www.cdc.gov/nchs/data/databriefs/db283.pdf>
-- **Unit:** percent of persons, age population changes
-- **Coverage:** 2002–2018
+- **Unit:** percent of adults aged 18 and over
+- **Coverage:** 2010–2018
 - **Method:** db283 Figure 4, PDF page 4, TSV chart coordinates, middle of three sex-specific labels per early cycle; db377 Figure 4 companion data table, Both sexes intersections by TSV coordinates
-- **Note:** Sparse survey cycles keyed to cycle END year, a named exception to usual annual density expectations; no interpolation. Seven points across approximately 20 years. The early 1999–2002 and 2003–2006 pools cover ages 12 and over; the 2009–2010 through 2017–2018 cycles cover ages 18 and over. This is a genuine population break at the 2006→2010 gap, not a directly comparable change. Later db283 pools are excluded because they overlap db377's cycles. The early PDF is SHA256-verified against data/cdc/READ.md. Antidepressant use alone does not distinguish treatment access from illness prevalence.
+- **Note:** Sparse survey cycles keyed to cycle END year, a named exception to usual annual density expectations; no interpolation. Five points, adults aged 18 and over, the 2009–2010 through 2017–2018 NHANES cycles from Data Brief 377's data table. Data Brief 283's 1999–2002 and 2003–2006 pools cover ages 12 and over, a different population; they are read and checked but never joined to this line. Later db283 pools are excluded because they overlap db377's cycles. The early PDF is SHA256-verified against data/cdc/READ.md. Antidepressant use alone does not distinguish treatment access from illness prevalence.
 
 ### Can Name All Three Branches (phone era) (`appcBranchesPhone`)
 

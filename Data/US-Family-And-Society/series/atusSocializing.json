@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "key": "atusSocializing",
+    "name": "Time socializing and communicating",
+    "unit": "hours/day",
+    "source": "BLS American Time Use Survey Table A-1 and public API",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v1/timeseries/data/TUU10101AA01013951",
+    "historicalSourceUrls": [
+      "https://www.bls.gov/tus/tables.htm"
+    ],
+    "note": "All persons age 15+, average hours per day including people who did not perform the activity. No 2020 annual estimate was published because pandemic-related collection gaps prevented a comparable annual estimate.",
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "Annual average, all days of week; 2020 omitted.",
+    "class": "time",
+    "breaks": "2020 is absent because ATUS data collection was suspended during part of the year; activity and population definitions follow each annual table.",
+    "coverage": "2003–2025",
+    "fetched": "2026-09-11T21:49:24.465Z"
+  },
+  "data": {
+    "2003": 0.78,
+    "2004": 0.76,
+    "2005": 0.75,
+    "2006": 0.76,
+    "2007": 0.73,
+    "2008": 0.71,
+    "2009": 0.7,
+    "2010": 0.7,
+    "2011": 0.7,
+    "2012": 0.74,
+    "2013": 0.72,
+    "2014": 0.71,
+    "2015": 0.68,
+    "2016": 0.65,
+    "2017": 0.65,
+    "2018": 0.64,
+    "2019": 0.64,
+    "2021": 0.57,
+    "2022": 0.56,
+    "2023": 0.57,
+    "2024": 0.59,
+    "2025": 0.58
+  }
+}

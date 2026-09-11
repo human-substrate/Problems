@@ -123,6 +123,6 @@ test("brfssFrequentMentalDistress matches published endpoints", async () => {
 
 test("antidepressantUse matches published endpoints", async () => {
   const d = await data("antidepressantUse");
-  expect(d["2002"]).toBe(7.7);
+  expect(d["2010"]).toBe(10.6);
   expect(d["2018"]).toBe(13.8);
 });

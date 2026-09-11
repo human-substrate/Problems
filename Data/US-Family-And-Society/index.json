@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-11T21:32:41.214Z",
+ "generated": "2026-09-11T21:50:50.249Z",
  "dataset": "US-Family-And-Society",
  "series": {
   "adultsMarried": {
@@ -10,7 +10,47 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1950–2025",
-   "fetched": "2026-09-11T21:32:41.214Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
+  },
+  "atusChildcare": {
+   "name": "Time caring for household children",
+   "unit": "hours/day",
+   "source": "BLS American Time Use Survey Table A-1 and public API",
+   "cadence": "annual",
+   "annualRule": "Annual average, all days of week; 2020 omitted.",
+   "class": "time",
+   "coverage": "2003–2025",
+   "fetched": "2026-09-11T21:49:24.465Z"
+  },
+  "atusSleep": {
+   "name": "Time sleeping",
+   "unit": "hours/day",
+   "source": "BLS American Time Use Survey Table A-1 and public API",
+   "cadence": "annual",
+   "annualRule": "Annual average, all days of week; 2020 omitted.",
+   "class": "time",
+   "coverage": "2003–2025",
+   "fetched": "2026-09-11T21:49:24.465Z"
+  },
+  "atusSocializing": {
+   "name": "Time socializing and communicating",
+   "unit": "hours/day",
+   "source": "BLS American Time Use Survey Table A-1 and public API",
+   "cadence": "annual",
+   "annualRule": "Annual average, all days of week; 2020 omitted.",
+   "class": "time",
+   "coverage": "2003–2025",
+   "fetched": "2026-09-11T21:49:24.465Z"
+  },
+  "atusTelevision": {
+   "name": "Time watching television",
+   "unit": "hours/day",
+   "source": "BLS American Time Use Survey Table A-1 and public API",
+   "cadence": "annual",
+   "annualRule": "Annual average, all days of week; 2020 omitted.",
+   "class": "time",
+   "coverage": "2003–2025",
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "births": {
    "name": "Live births",
@@ -20,7 +60,7 @@
    "annualRule": "One reported observation per calendar year, or federal fiscal year where specified.",
    "class": "births",
    "coverage": "1909–2024",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "borderEnforcementActions": {
    "name": "DHS initial enforcement actions",
@@ -30,7 +70,7 @@
    "annualRule": "Federal fiscal year; source year labels retained.",
    "class": "migration",
    "coverage": "1925–2023",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "childMaltreatmentRate": {
    "name": "Child maltreatment victims",
@@ -40,7 +80,7 @@
    "annualRule": "One reported observation per calendar year, or federal fiscal year where specified.",
    "class": "births",
    "coverage": "2005–2023",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "childlessWomen40to44": {
    "name": "Women aged 40–44 who are childless",
@@ -50,7 +90,7 @@
    "annualRule": "survey year; biennial and irregular gaps retained",
    "class": "births",
    "coverage": "1976–2024",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "childrenWithTwoParents": {
    "name": "Children living with two parents",
@@ -60,7 +100,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1960–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "cohabitingCouples": {
    "name": "Unmarried opposite-sex couples, direct measure",
@@ -70,7 +110,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1996–2023",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "cohabitingCouplesPosslq": {
    "name": "Opposite-sex adults sharing living quarters, POSSLQ",
@@ -80,7 +120,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1960–2006",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "foreignBornShareDecennial": {
    "name": "Foreign-born population, decennial census",
@@ -90,7 +130,7 @@
    "annualRule": "decennial observation year; no interpolation",
    "class": "migration",
    "coverage": "1850–2000",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "fosterCareChildren": {
    "name": "Children in foster care on September 30",
@@ -100,7 +140,7 @@
    "annualRule": "One reported observation per calendar year, or federal fiscal year where specified.",
    "class": "births",
    "coverage": "2009–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "gssAttendWeekly": {
    "name": "Attend religious services nearly weekly or more",
@@ -110,7 +150,7 @@
    "annualRule": "survey year; unsurveyed years omitted",
    "class": "religion",
    "coverage": "1972–2024",
-   "fetched": "2026-09-11T21:32:14.167Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "gssNoReligion": {
    "name": "No religious preference",
@@ -120,7 +160,7 @@
    "annualRule": "survey year; unsurveyed years omitted",
    "class": "religion",
    "coverage": "1972–2024",
-   "fetched": "2026-09-11T21:32:14.167Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "gssSocialFriends": {
    "name": "Social evenings with friends at least several times a month",
@@ -130,7 +170,7 @@
    "annualRule": "survey year; unsurveyed years omitted",
    "class": "religion",
    "coverage": "1974–2024",
-   "fetched": "2026-09-11T21:32:14.167Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "householdSize": {
    "name": "Average household size",
@@ -140,7 +180,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1940–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "marriedCoupleHouseholds": {
    "name": "Married-couple households",
@@ -150,7 +190,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1940–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "meanAgeFirstBirth": {
    "name": "Mean age of mother at first live birth",
@@ -160,7 +200,7 @@
    "annualRule": "One reported observation per calendar year, or federal fiscal year where specified.",
    "class": "births",
    "coverage": "1970–2024",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "medianAge": {
    "name": "Median age of the resident population",
@@ -170,7 +210,7 @@
    "annualRule": "July 1 resident population estimate; one observation per calendar year.",
    "class": "population",
    "coverage": "2000–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:50:50.249Z"
   },
   "medianAgeFirstMarriageMen": {
    "name": "Median age at first marriage, men",
@@ -180,7 +220,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1890–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "medianAgeFirstMarriageWomen": {
    "name": "Median age at first marriage, women",
@@ -190,7 +230,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1890–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "moversShare": {
    "name": "Moved residence in the preceding year",
@@ -200,7 +240,7 @@
    "annualRule": "survey/end year of the one-year movement interval",
    "class": "living",
    "coverage": "1948–2023",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "naturalizations": {
    "name": "Persons naturalized",
@@ -210,7 +250,7 @@
    "annualRule": "Federal fiscal year; source year labels retained.",
    "class": "migration",
    "coverage": "1907–2023",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "oneParentFamilies": {
    "name": "One-parent families with own children under 18",
@@ -220,7 +260,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1950–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "onePersonHouseholds": {
    "name": "One-person households",
@@ -230,7 +270,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1960–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "permanentResidents": {
    "name": "Persons obtaining lawful permanent resident status",
@@ -240,7 +280,7 @@
    "annualRule": "Federal fiscal year; source year labels retained.",
    "class": "migration",
    "coverage": "1820–2023",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   },
   "population65Share": {
    "name": "Resident population age 65 and older",
@@ -250,7 +290,7 @@
    "annualRule": "July 1 resident population estimate; one observation per calendar year.",
    "class": "population",
    "coverage": "2000–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:50:50.249Z"
   },
   "youngAdultsWithParents": {
    "name": "Adults aged 25–34 living with parents",
@@ -260,7 +300,7 @@
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1960–2025",
-   "fetched": "2026-09-11T21:32:41.214Z"
+   "fetched": "2026-09-11T21:49:24.465Z"
   }
  }
 }

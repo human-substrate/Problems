@@ -17,6 +17,10 @@ The same filter the earlier usstats.io batches ran on, with four riders for this
 
 Calendar year everywhere. EIA annual values are the publisher's annual row (the `YYYY13` row of the Monthly Energy Review). Fiscal-year series (DHS, BOP, USSC, FEMA declarations) are keyed to the fiscal year number and say so. A two-year survey pool (NHIS K6, NHANES cycles) is keyed to the pool's end year. A hurricane season is its calendar year. The Census mobility year "2019-20" is keyed to 2020.
 
+## Census CPS ASEC seams (Family & Society)
+
+Every Census historical family table (MS-1, MS-2, HH-1, HH-4, HH-6, CH-1, FM-1, AD-1, UC-1) shares four seams, named on each series: the 2014 ASEC questionnaire redesign; decennial population-control revisions, published as lettered rows (`r`, and `a`/`b` in the 1980s), where the later-method row is taken and the original dropped; 2021 appearing twice, where the later-method row is taken; and 2025 on Vintage-2025 population controls. Same-sex married couples are included from 2019. The geographic-mobility table adds its own: the 2004 question wording change, the 1972–75 and 1977–80 years not collected, and the 2020-controls revision of 2020.
+
 ## Where the lanes came from
 
 Four read-only verification lanes ran on 2026-09-10 (crime, family, happiness, energy), each instructed to fetch the publisher's actual file or API and report first year, last year, cadence, unit, breaks, login requirement, and a sample value. Their reports are summarized in the candidates table; every shipped series was then re-read by the lead against the publisher and the re-read values are the asserts in each dataset's `lib/checks.test.ts`.

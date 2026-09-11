@@ -3,7 +3,7 @@ import { xlsRows } from "./xls.ts";
 import { sheetRows } from "./xlsx.ts";
 import type { Pipeline, SeriesMeta } from "./meta.ts";
 const BASE="https://www2.census.gov/programs-surveys/demo/tables/families/time-series/";
-const CPS="CPS ASEC control and questionnaire seams, and the later-method duplicate-year selection, are documented once in METHODOLOGY.md.";
+const CPS="2014 ASEC questionnaire redesign; decennial population-control revisions (the publisher's lettered r rows, taken over the original); 2021 appears twice in the tables (the later-method row is taken); 2025 uses Vintage-2025 population controls; 2019 onward includes same-sex married couples.";
 type LivingSpec={key:string;file:string;name:string;unit:string;markers:string[];value:(r:Row)=>number;note:string;bounds:[number,number];section?:string;column?:string};
 const n=(r:Row,c:string)=>numeric(r[c],`${r.A} ${c}`);
 const share=(r:Row,a:string,b:string)=>{const numerator=n(r,a),denominator=n(r,b);invariant(denominator>0&&numerator<=denominator,`${r.A}: invalid ratio ${a}/${b}`);return round(100*numerator/denominator);};
@@ -101,7 +101,7 @@ export async function buildCensus(p:Pipeline):Promise<void>{
       invariant(n(r,"B")===100,`${year}: not the PERCENT panel`);
       data[year]=round(n(r,"D"),1);
     }
-    await p.save({key:"moversShare",data,bounds:[0,100],meta:{name:"Moved residence in the preceding year",unit:"percent of population aged 1 and older",source:"U.S. Census Bureau, CPS ASEC Geographic Mobility Table A-1",sourceUrl:url,historicalSourceUrls:[landing,fallback],goodDirection:"neutral",cadence:"annual",annualRule:"survey/end year of the one-year movement interval",class:"living",breaks:"Question wording changed in 2004; 1972–75 and 1977–80 lack comparable one-year estimates. CPS seams are in METHODOLOGY.md.",note:"PERCENT panel, Total movers column. Uses the later-method population-control row, listed first, for duplicate years. The current workbook reaches 2023. Its 2020-controls estimate for 2020 is 9.2%; the 2010-controls row is 9.3%, explaining the task's older anchor. No interpolation."}});
+    await p.save({key:"moversShare",data,bounds:[0,100],meta:{name:"Moved residence in the preceding year",unit:"percent of population aged 1 and older",source:"U.S. Census Bureau, CPS ASEC Geographic Mobility Table A-1",sourceUrl:url,historicalSourceUrls:[landing,fallback],goodDirection:"neutral",cadence:"annual",annualRule:"survey/end year of the one-year movement interval",class:"living",breaks:"Question wording changed in 2004; 1972–75 and 1977–80 lack comparable one-year estimates. 2014 ASEC redesign; 2004 question wording change; 1972–75 and 1977–80 not collected; 2020-controls revision of 2020.",note:"PERCENT panel, Total movers column. Uses the later-method population-control row, listed first, for duplicate years. The current workbook reaches 2023. Its 2020-controls estimate for 2020 is 9.2%; the 2010-controls row is 9.3%, explaining the task's older anchor. No interpolation."}});
   });
   await p.run("foreignBornShareDecennial",async()=>{
     const url="https://www2.census.gov/library/working-papers/2006/demo/pop-twps0081/tab01.xls";

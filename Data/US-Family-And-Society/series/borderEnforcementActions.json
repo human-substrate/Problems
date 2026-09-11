@@ -15,7 +15,7 @@
     "class": "migration",
     "breaks": "Definition widens: USBP apprehensions only before 1952; HSI administrative arrests added in 1952; ERO fugitive-program arrests added in 2006 and all ERO administrative arrests in 2008; OFO enforcement encounters/inadmissibles added in 2012; multiple same-day ERO arrests allowed from 2014. Title 42 expulsions included FY2020–23. Fiscal 1976 covers 15 months.",
     "coverage": "1925–2023",
-    "fetched": "2026-09-11T02:23:47.946Z"
+    "fetched": "2026-09-11T21:49:24.465Z"
   },
   "data": {
     "1925": 22200,

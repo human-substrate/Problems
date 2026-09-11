@@ -4,3 +4,4 @@
 2026-09-11T21:25:39.559Z wrote 1 series; only=co2Concentration; deferred=0; errors={}
 2026-09-11T21:27:18.413Z wrote 1 series; only=seaLevel; deferred=0; errors={}
 2026-09-11T21:29:37.756Z wrote 1 series; only=namedStorms; deferred=0; errors={}
+2026-09-11T21:49:21.102Z wrote 4 series; only=emissionsSo2,emissionsNox,emissionsPm25,emissionsVoc; deferred=0; errors={}
