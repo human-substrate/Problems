@@ -1,0 +1,25 @@
+| Key | Disposition | Coverage | Points | Latest | Assert |
+|---|---|---|---:|---:|---|
+| aggravatedAssaultRate | deferred | — | 0 | — | n/a |
+| burglaryRate | deferred | — | 0 | — | n/a |
+| correctionalSupervisionRate | shipped | 2003–2023 | 21 | 2100 | pass |
+| deathRowPopulation | shipped | 1953–2023 | 71 | 2192 | pass |
+| executions | shipped | 1930–2023 | 94 | 24 | pass |
+| federalOffendersSentenced | shipped | 2002–2025 | 24 | 66662 | pass |
+| federalPrisonPopulation | shipped | 1980–2025 | 46 | 155270 | pass |
+| fraudReports | shipped | 2001–2024 | 24 | 2600678 | pass |
+| gallupAfraidToWalk | shipped | 1965–2025 | 41 | 31 | pass |
+| gallupMoreCrime | shipped | 1989–2025 | 32 | 49 | pass |
+| gssCourtsNotHarsh | shipped | 1972–2024 | 34 | 59.2 | pass |
+| gssFavorDeathPenalty | shipped | 1974–2024 | 33 | 62.1 | pass |
+| gssFearWalking | shipped | 1973–2024 | 30 | 32.8 | pass |
+| gssGunInHome | shipped | 1973–2024 | 30 | 38.8 | pass |
+| ic3Complaints | shipped | 2011–2025 | 15 | 1008597 | pass |
+| ic3Losses | shipped | 2011–2025 | 15 | 20.877 | pass |
+| identityTheftReports | shipped | 2001–2024 | 24 | 1135291 | pass |
+| jailRate | shipped | 2012–2023 | 12 | 198 | pass |
+| motorVehicleTheftRate | deferred | — | 0 | — | n/a |
+| ncvsPropertyRate | shipped | 1993–2024 | 28 | 97.6 | pass |
+| ncvsReportedShare | shipped | 1993–2024 | 31 | 48.1 | pass |
+| ncvsViolentRate | shipped | 1993–2024 | 31 | 23.3 | pass |
+| robberyRate | deferred | — | 0 | — | n/a |

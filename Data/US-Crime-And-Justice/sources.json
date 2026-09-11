@@ -1,0 +1,1650 @@
+{
+  "note": "Offline cached primary-source snapshot; read and SHA-256 sealed on the date below. Preserve .cache with this dataset. Replacing any source requires explicit review and resealing with work/seal.ts.",
+  "files": {
+    ".cache/cv13/cv13f01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "86fd96fff9158ed11c9147539e3007b493e8f1b1bcb55079668a4b60b25486a1"
+    },
+    ".cache/cv13/cv13at08.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "580542dacfba352c460a5b87c6002b8b8045fdd74af59aece63d87ceaef5ae83"
+    },
+    ".cache/cv13/cv13at09.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "8f5db90d3defd44c67fafcc294f487e404c61ee7577247c63ce20989da73e0ba"
+    },
+    ".cache/cv13/cv13t08.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "ebb6bce292a074a7f1a82c3e75fb2ed77ebfea460941c8eca0023a99500e4ec4"
+    },
+    ".cache/cv13/cv13t09.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "1323810349fa9882abef09193b6d0533b5b073905c38df7918782778bb7de5b4"
+    },
+    ".cache/cv13/cv13t02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "f7151322f26a287bff88470dfca8aeb06d01eb4268d4caea1c9668d6c7c983b4"
+    },
+    ".cache/cv13/cv13at01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "d70887239b640119e045acc8e080989eaefef817ec30d6d5e81b443de390bb7f"
+    },
+    ".cache/cv13/cv13t03.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "a7931cdfaaeae463be9beb095dffb0891f77230dcfa8946cb070b7ebfdc88d1e"
+    },
+    ".cache/cv13/cv13t01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "f187f88470cc7e87f03f4e0c61ae2ea79e45d4abce0bfa6cee6a32744a50a534"
+    },
+    ".cache/cv13/cv13at02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "72b75498f57f8a807103e8cdf17ed27db76e72d0369468ed4585f32a021ed363"
+    },
+    ".cache/cv13/cv13at03.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "2eec649634632ffa95592bac772f9aff28bf765b7bcb00377c330b6b0a8228c6"
+    },
+    ".cache/cv13/cv13t10.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "97db39e358267a7c72fdee7eb4234eeb672a0cdb77292cf3c98800f109b11abd"
+    },
+    ".cache/cv13/cv13t04.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "fd8a611d954c17eaaf7df29c7b6fb2e2d67e1568b546b9600f6f2e9635adbe9f"
+    },
+    ".cache/cv13/cv13at07.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "9893a23fe5ab6c9f3f08b3a5f40071f882ee61d1f53e2f2ed743acb9f6f5c303"
+    },
+    ".cache/cv13/cv13at06.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "ed102a6b02fb5fbb9c654c084310da7bdd5570e096b5a3a461e02d68e21f75d3"
+    },
+    ".cache/cv13/cv13t05.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "f70f3a7a41a641ed83a5a0782a8428659ab19705f121ee20f70046a8b9c28a8f"
+    },
+    ".cache/cv13/cv13t11.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "c4debb41d26576e02c7c98908d2cd757d651b0720c58c24c52f7e6222fbde9c8"
+    },
+    ".cache/cv13/cv13t07.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "ed90c2e5f2a7ac3a87a47d9bf0c78e0bc847724ce1f0ea461c13a7c3ec65b8bc"
+    },
+    ".cache/cv13/cv13at04.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "a38647d7ff475ab1290d7d8d4340b94535ddf33b96d315ec22c991dbd53befa7"
+    },
+    ".cache/cv13/cv13at10.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "84961cc4e8e99068ae9e6f658ff099b97fb8e0e5341f9110bf8c3d835e1967cb"
+    },
+    ".cache/cv13/cv13at11.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "299af1bd46e58aa4463fe73b79a94590e59186322ec82440ef007af670306a62"
+    },
+    ".cache/cv13/cv13at05.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "0019b977b2c92e1016038ebfbc25f92b2539f6227aa029f89f2219f4315fc7f7"
+    },
+    ".cache/cv13/cv13t06.csv": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "f1d17bdd591c0b71f412ea4884f0b2c931d5710268da16f0bcd19ec121dc593a"
+    },
+    ".cache/cv22/cv22at15.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "19df5fbfa462cd8e4f3c3b77dec3fdfef12634690baf74fa5b22af43c3da3400"
+    },
+    ".cache/cv22/cv22at01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "6ca221fd9985090bd7a7c7eec7c85b27679dcfea265bed297846088319b9c7ce"
+    },
+    ".cache/cv22/cv22at14.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "da53fd807ae700fb2c9603149875b72fbf457c0a359cfadfe76cf333d922727f"
+    },
+    ".cache/cv22/cv22at02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "2d23875385abc0eb23aa33502411cf875cacb2ecb850bb7595af696bc16d20ce"
+    },
+    ".cache/cv22/cv22at16.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "434fc252f07b73185637f45d7f567e5153627a960488d1b07aa0502c9b04f428"
+    },
+    ".cache/cv22/cv22at17.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "a18e2a3bcad05b17b41728a3b8ff638ae9e8be3a03c8310845e2cc825bac8e53"
+    },
+    ".cache/cv22/cv22at03.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "73a4c62eca3b64fdd2242c69571b538419f253fc0523c9ca605aba285c3dee04"
+    },
+    ".cache/cv22/cv22at07.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "405c18022713bfe108b1bf36bb375f801fd31c33f4bdc713b77f859e79e84444"
+    },
+    ".cache/cv22/cv22at13.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "88dfdac5b15c50246bc1624193206cc0cfdfa9b9908b1c64743e289ae02c5492"
+    },
+    ".cache/cv22/cv22at12.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "b617646f2e7b6eca269fc619236b322e53909139b46b90520f90735823b958ad"
+    },
+    ".cache/cv22/cv22at06.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "8da2cd1f8ee9acf4c5129f089a9db7eb509996e8e9c8d4b3634999c5a8d852cc"
+    },
+    ".cache/cv22/cv22at10.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "65e7da796d70e22a9a4a86edefc1c07121d93e70609339a68549483dda98ec88"
+    },
+    ".cache/cv22/cv22at04.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "cb673ec0791a92f747fb72ea2ae147fad9c11f3c5bb4ee30ff9cd3dbb55efec7"
+    },
+    ".cache/cv22/cv22at05.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "e662bb5b34c15b74e843c3d7c1cb22621d64fcfee20c1edc1dc1d9bce1ad3d50"
+    },
+    ".cache/cv22/cv22at11.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "73cf77e5debc6a8285859293053536b03fe3c6288e8f43a47bc67813d26b71a9"
+    },
+    ".cache/cv22/cv22t03.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "1a1c28f0aaa19304e62dd13474652c8bec3f7fd20b991deaebdb78b3fb3744bd"
+    },
+    ".cache/cv22/cv22t16.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "2ea5c495a16a2951d08da870b6f5f2bb560c2b7e6005669fd68beec8642d6b67"
+    },
+    ".cache/cv22/cv22t02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "88aff6fc8d74f738d2baf4eed3bc93fb1471a91f0b70d82d2b0e8926f07ba964"
+    },
+    ".cache/cv22/cv22t14.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "f02b7742edfcb20ab2a687b80ad003f16b332676a5937ddf9538f0ea1d1f4b5c"
+    },
+    ".cache/cv22/cv22t01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "f0e448f85bd0d195acd7483507c61a74193f01d7a9f2183eaa0943d320a771ae"
+    },
+    ".cache/cv22/cv22t15.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "cdcdd5fe62f0f264b8bbbade4af14e194db10811976d961dba1d80a9467de338"
+    },
+    ".cache/cv22/cv22t11.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "90c5d8a98a330e3c32eb5bae71ee6b6f209fb3376257fdc79d0c578718d2ecc5"
+    },
+    ".cache/cv22/cv22t05.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "a8f71cb45f87133a79309a25e47f52062280d35dfe3529ee3e3af05b892afcce"
+    },
+    ".cache/cv22/cv22t04.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "90727093128c9cb1a6b49c2a0b40764eece6d1fe5cda9c83e0365f97001cd606"
+    },
+    ".cache/cv22/cv22t10.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "c796ea2ba170b3bf179d044817b77af84c9adb57da68a50dc2cb100091cef48c"
+    },
+    ".cache/cv22/cv22t06.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "4be4537efadf2afebd3089faa34b6d6d08a43507e11f6b64b3c8e95c0f6b1135"
+    },
+    ".cache/cv22/cv22t12.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "4af3a6c71ba6ee2774fefc68d859cf3b192b3a415ed7e79a346366339e4a3cd5"
+    },
+    ".cache/cv22/cv22t13.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "37b2b1ecd5f1c1b2df04a95f8f607ad91c23ca8f0b5bfa60d017a0295fa76ac6"
+    },
+    ".cache/cv22/cv22t07.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "d9377ab678fd7381f0e6dcfd52b6241ac433304384cdc54cd3abf5a5dbde73b5"
+    },
+    ".cache/cv22/cv22t09.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "5338b57aa35205525acf07ecde518fdb18098b99f8f416e4c96639a8d46692d7"
+    },
+    ".cache/cv22/cv22t08.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "1727a1eb0e663003186d5ab2a78176ac9dbde942cb02e233fc1722bd5be0cf4e"
+    },
+    ".cache/cv22/cv22at08.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "8f82a8423a0ec28fa5df2c02b6ba1bf4e4b7ec335eb234789526954673a50411"
+    },
+    ".cache/cv22/cv22at20.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "37d076efef7036e42150cc0b5bab7e5d60d0c207b65b5eddc7db25e6f7c6b686"
+    },
+    ".cache/cv22/cv22at09.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "09cb204acf0c652b673060bfed07d78d896b8fd452635015ee8513a127843e7f"
+    },
+    ".cache/cv22/cv22f01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "5a1501997e6a03f78e0a61e0cde733c6df4d72ace6a125c017b4f55ec903388d"
+    },
+    ".cache/cv22/cv22f02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "00e2313bf7d00d016f5cbacd35bfcfb606b9631ebb146ac3f4be95bcaaae5381"
+    },
+    ".cache/cv22/cv22at19.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "b65367f6a1e7672d3f911eda2e40f15120a5ef51afbcd531fb9315c7e29a4182"
+    },
+    ".cache/cv22/cv22at18.csv": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "8658de65b8e2eb6ad9ae76c24e1be00c1429bacf7dcb68141a58aa3f44dbd3a6"
+    },
+    ".cache/cv23/cv23at04.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "e3b5bee1d1cedaf4433875418ee5298f50d4ae1291c2308b45179cabe1ad451c"
+    },
+    ".cache/cv23/cv23at10.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "ea2c3aeb7f787a26c938c123b7bc5a2158305056a133967e9c2a19ff53db438e"
+    },
+    ".cache/cv23/cv23t08.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "54fa5d53af0946b7cdf6cc31a54b0dfb81564e50ca0ec8b739c2526e4900edfe"
+    },
+    ".cache/cv23/cv23t09.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "72520ce79e4135db609c3c80a679a109937541430120c49759ad22b4798d304f"
+    },
+    ".cache/cv23/cv23at11.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "8c7f296ab7907f0485fa9daf683b38149fa65d746a761f96bfca497a8694ce14"
+    },
+    ".cache/cv23/cv23at05.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "040992a419ef5f7d4c718bf74f2e0ad9090e3dd0ec5a607c5019bf696ac6d26b"
+    },
+    ".cache/cv23/cv23at13.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "862cf9e22e711677de873df4045aa9959dc042c3b9ead72633e106accfbc441a"
+    },
+    ".cache/cv23/cv23at07.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "3530c8f1f9dfc6647e7993b8d42aa4ffe4ba1da6641bc258364e86d3787d2dfe"
+    },
+    ".cache/cv23/cv23at06.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "eeec2160baa0a9be610ea1f2ad4dce77320e2c20b9c93f502fa4de1212ead0bc"
+    },
+    ".cache/cv23/cv23at12.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "c1df8a779f4b86f36760c84c6e770c87871f1598322f08988fce63d6facc850d"
+    },
+    ".cache/cv23/cv23at16.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "7b7f1b4c98e62c950305804140cc044dc63203a1e94d1fa4bf4459c01cd25226"
+    },
+    ".cache/cv23/cv23at02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "9fae9eea3e4739a2a8c27019017bdfc8f826f4aa727863779aa4f6fbe25a7298"
+    },
+    ".cache/cv23/cv23at03.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "888e6c89311e52930b93b47f39f9aeb34c64291dabc510bb1ff9a842ba2cfba4"
+    },
+    ".cache/cv23/cv23at17.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "cee9c11985031eb7073799df4a3ed7873ec5233a49fc945b9b2cb1ace9e8bcc6"
+    },
+    ".cache/cv23/cv23at01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "0d9f1a88f55a42fa865f1ffea967a3b53b8ed9e369b04e23abfae082e24208f9"
+    },
+    ".cache/cv23/cv23at15.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "9878c7d257428a3554d10c8e6e2e01b6a9f1df240ec30888d11d6fed8ae0030e"
+    },
+    ".cache/cv23/cv23at14.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "de5c6b4700e345d3484343a0164d11a3f1d8d63c43475e40a45bbdd25ad3a5ef"
+    },
+    ".cache/cv23/cv23f02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "8a5fafe3b1dcb71be72d0e2c43329f69e6b157cf77fcbc3ef1006d122fa52c68"
+    },
+    ".cache/cv23/cv23f01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "416447f0aeb7a6555f1e1151764f6949edc6ac97f6a136fc1ec45b6d6550c6dc"
+    },
+    ".cache/cv23/cv23at19.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "fd7a0296b9cfe4b259d0eec1251f859bc202741bdeecf1a1e0c8e4ed58c1a9ef"
+    },
+    ".cache/cv23/cv23t15.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "92a3c3e0eb806c56fbf728081663d34db5b0dd2feb814925fb260574a4130f25"
+    },
+    ".cache/cv23/cv23t01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "38bb5b2dcff74cde0089d52957ffb6c1524a5afb399704a39b56050fba7f1029"
+    },
+    ".cache/cv23/cv23t14.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "20f1d891a4e268cc59ced2f107846d60734df46fd3ebe31de8d6643a13fbca31"
+    },
+    ".cache/cv23/cv23at18.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "79f912949c3d1ba141ab85e3e4892ab585a0f4d4c2bc629141b551a04ee3b48e"
+    },
+    ".cache/cv23/cv23t02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "9a536915e3bd2dd01837965169891df0d7fdb3b5fab25a8b59fbf45467d03e9d"
+    },
+    ".cache/cv23/cv23t16.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "18b65322cd22e3fef17f0dd4d2e392015904771f5e9c5a884aabcdb2edb11b20"
+    },
+    ".cache/cv23/cv23t03.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "6d7a41d70c13d5c08dad6dbd81d50eafbfb20f209f348d79df4fbf3d971e52b7"
+    },
+    ".cache/cv23/cv23t07.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "1efeea70e23b9773fd572a6d85c5a140763c4ee6502855a629640758e0c76974"
+    },
+    ".cache/cv23/cv23t13.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "e98335054f403e79e67dd61ad59aebe372e4c5ba0072e5868fc24d40de740ead"
+    },
+    ".cache/cv23/cv23t12.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "a3e0991fa3cba1906ccdb43ee95a872da64b5e50568f7ae011db08becb0eb51b"
+    },
+    ".cache/cv23/cv23t06.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "d4184ed68244fc1257ab0f6f6175e12a1030506b91c30aeaa470c182294b6508"
+    },
+    ".cache/cv23/cv23at20.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "fd69f809deb6110acd858ef76640b41f26727f0113602f5c73dbc0c746787343"
+    },
+    ".cache/cv23/cv23at08.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "b75eb482ba860a6f2ae7177f267641994301423fded02a508254d67506475111"
+    },
+    ".cache/cv23/cv23t10.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "250817d5e7804aef74390d1428d787f23af6d91366bf34db96381039136b62a2"
+    },
+    ".cache/cv23/cv23t04.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "162be03b7d36569eb03cfbd64d95a3d3a765a5feb589a475433b971723afb586"
+    },
+    ".cache/cv23/cv23t05.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "2168fc7ae6258fc2f9fd280f350736f444df9eee69575b075c8424f8736c5a96"
+    },
+    ".cache/cv23/cv23t11.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "f56a6899b540b101e51bc9393cbd989a6d4fcdc5a3612cbce79c41b33ca3ec34"
+    },
+    ".cache/cv23/cv23at09.csv": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "754b37a6f429e3f5a081f0fea9cc68ba0fe386ffdce83c6b7fc40d67a5eb3728"
+    },
+    ".cache/cv24/cv24t01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "08a96e5597913995f054ea92b541173c02b431f0c3e2d9dccab24eb6f9475a57"
+    },
+    ".cache/cv24/cv24t15.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "21ebdd382ff28ed6a286f4db6f853bd7f4bbd1a333562562922d61dcc4bf70d9"
+    },
+    ".cache/cv24/cv24t14.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "9d85e130c345ce8f7e6bbd4edcc408adb1d229d4f73da1c9e7f849f270ecc79e"
+    },
+    ".cache/cv24/cv24t16.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "e7ad390b93a78e10b6d265c0e5349b6f1944b8424b2879a9355d88a0466d3fd4"
+    },
+    ".cache/cv24/cv24t02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "c3f7f7bb09153179ef2cc3e3e486b2c9b799035dc7e9d81249a7ffea90385616"
+    },
+    ".cache/cv24/cv24t03.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "1ce11306ea7bbd4f70124e3464175edf7be83f37e6f581c009979c1925bdc335"
+    },
+    ".cache/cv24/cv24t13.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "d398a135fef98ee9559a2a3e83344768d53e3a67429208257d20fe845e2f6a87"
+    },
+    ".cache/cv24/cv24t07.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "8b429b4e778d06e3cb86f423073329261e5839cc5ff2b5d6eca2c8dca5c3252f"
+    },
+    ".cache/cv24/cv24t06.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "e112af52c2dd9646b8f6d79381f6032f21c4691ac53baa7613a07c6c81089df5"
+    },
+    ".cache/cv24/cv24t12.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "26048743e2cc998b7412a9fc32667453f3015c209e649403f1c3721e25254a5e"
+    },
+    ".cache/cv24/cv24t04.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "85836164371164690c1afe0279b58e797d7f2418f4f2094c967fe5b2bdf812e0"
+    },
+    ".cache/cv24/cv24t10.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "fcc4bf9e7dd38540569937529ee26d1ddf74b97ce904cbda928ed3a7123ffcf3"
+    },
+    ".cache/cv24/cv24t11.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "58cf0d38344a3f1d8a660ec91f1e0add2aaa6dab7409bd7b9f51763934334a09"
+    },
+    ".cache/cv24/cv24t05.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "7e5b68f4480b8491c2600a7cff7621acc0a98ffc29234dd5dfd2cafe889ee958"
+    },
+    ".cache/cv24/cv24at18.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "54378b5f3bcd45c600386e1696f58364d251d5c94b069e9bbf9701c0a922c6c1"
+    },
+    ".cache/cv24/cv24at19.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "d97244cf704d9f5266cf962b89ee8035d02078253ccc46f46aef8c46cfe828ba"
+    },
+    ".cache/cv24/cv24at09.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "57c02897107119acf851be58173e382a9868fbaed47c3a5790e0307ceaad8aa9"
+    },
+    ".cache/cv24/cv24at08.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "49d507439234c7bd543b5027a4aa00e88d47e5d6cf0d8434402633e500ccdddc"
+    },
+    ".cache/cv24/cv24at20.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "23aec7726b901bff82f03a92a9634b81a0c9bd371b04c06f7bd0a514787e1238"
+    },
+    ".cache/cv24/cv24at06.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "3a769d8f762a0007d873c4f06f4503e27df6466dcae1706e5de83e5281421a03"
+    },
+    ".cache/cv24/cv24at12.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "d09742acf9d0767824628bfbf0e6d472cd3a694930fbb51f10f51b0cd10cbd57"
+    },
+    ".cache/cv24/cv24at13.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "bf33c29ddbc1d60aec9cf65ce242ca0c7110acd7850bd48d829d7d906f20fe68"
+    },
+    ".cache/cv24/cv24at07.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "95c51a304af77f6eab19fff69030dd93216b21d041f62ad4f50fa491419a884d"
+    },
+    ".cache/cv24/cv24f03.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "1a3923537e778b2642342e8caafa8cdc5eed5b618996e2ce9d094bd22fc940b7"
+    },
+    ".cache/cv24/cv24f01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "78c21d2353f73dca89b131165f508c56c7e3b80867ecb580ae108b04cf92d4ec"
+    },
+    ".cache/cv24/cv24at11.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "ba944484f67fba07fffa648ed59033dc69b159c693d211d087f016e1c1876b77"
+    },
+    ".cache/cv24/cv24at05.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "41efa4ce41bffff4f3e8437246a241952337dc2453157c7383cd694dd77d38c3"
+    },
+    ".cache/cv24/cv24at04.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "04ccb2b6e19acb327058ab0f00e3a4e39a9d831ea6a36539812c1d3985738389"
+    },
+    ".cache/cv24/cv24at10.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "b024576bfbe2ab3c99e6842ff563d0684755a8ee2ce6560d54edc6f2b998028c"
+    },
+    ".cache/cv24/cv24at14.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "ccffdfdf9c28142c1b314c2f67e6034440d5cf340f82bd3489ef70ac2b237fcf"
+    },
+    ".cache/cv24/cv24at01.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "e37e4e8961c2e9017eb6260757691b95b2664e6e60599ef91050de47f45a611c"
+    },
+    ".cache/cv24/cv24at15.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "09d0b56b45fe2371bff4a3fa96518ea899009805604d5057d7604f14c9cfbd1e"
+    },
+    ".cache/cv24/cv24at03.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "9e439e697f4b27d6dd41056b71bcdc47eefdcfc90f7618d1993188c52e2ed88d"
+    },
+    ".cache/cv24/cv24at17.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "5b25583cd2f7345d777d402238de49b4ff16b109e598ce8ed43dac9f05b7f80e"
+    },
+    ".cache/cv24/cv24at16.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "999ac5a1c2aae971c2e45b128ef689a956b7c475b86e01fbdeebfc7e7ed9b932"
+    },
+    ".cache/cv24/cv24at02.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "9a97b155781ed97f4f6773a7ee99821a70415d333985d676ca18d06580b76297"
+    },
+    ".cache/cv24/cv24t08.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "c34d1eaf35bd550ccf4eb1f3aa9e91ed48121240fb1579a806c6829a0d1c25bc"
+    },
+    ".cache/cv24/cv24t09.csv": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "7b8cf1b60aac989b92e6fa3e26741da5939b1560625cfe80a921ba9899dd107a"
+    },
+    ".cache/ji22st/ji22stf01.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "6c84537def8ebd947226be9e2ee8f6316be4a9ce2a2b21bd9cebedbf500ed4b2"
+    },
+    ".cache/ji22st/ji22stat04.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "9e2f9afa04187908ee1514beb1843c7fbaae3a13fa89a1a2c2a9b63519286e06"
+    },
+    ".cache/ji22st/ji22stat10.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "f2e3a2aa90bb980672d6f1bea6a32d255c86e2f8151d7373ac43a7f42c3ed66d"
+    },
+    ".cache/ji22st/ji22stat11.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "397fca629d3b4cb4e17ad976f05e3c03b1395fa68a755b6a1c111bbed131c80e"
+    },
+    ".cache/ji22st/ji22stat05.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "7b6e3d1da59fea573a7c1ebe064e92864abce9f2cc12a005735cc0f2b453d0cd"
+    },
+    ".cache/ji22st/ji22stat13.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "2beba091b7d27cb0403c0dbc48447dc691b2ee718176ce33ab8ac011dc83a8d6"
+    },
+    ".cache/ji22st/ji22stat07.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "861b9777aa4debddebff01c073b93192cc58fca9640783ef2e8bbea35a0e0e25"
+    },
+    ".cache/ji22st/ji22stat06.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "60105be913c2dc2467e0075306b961b0608d3b0f65ad25829a83b25ff5799325"
+    },
+    ".cache/ji22st/ji22stat12.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "923bf59d521943ee4ff262677b8829cb8db8761aa1523adfcbec7253cb7def3d"
+    },
+    ".cache/ji22st/ji22stat16.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "0710e758110d27732156e0bba415c2d436d6079f0b84e5a7dfc3542de93ed1a6"
+    },
+    ".cache/ji22st/ji22stat02.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "d7780bc582bacbb83fc5cdd613e8eaf960305e676904f6d6d1284f91db6dd18e"
+    },
+    ".cache/ji22st/ji22stat03.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "97f96fcae0d9d733332b0b0e7c3f0ab6fcd84c044bb65cd837daeb6a94401049"
+    },
+    ".cache/ji22st/ji22stat17.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "d937338d8259fe3a09e97427eb28dc3b6e60140780cdc84cfc8de26c40513592"
+    },
+    ".cache/ji22st/ji22stt09.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "7f99d46b88460cdb8ba82f462b86ea3f026b60f78b02f7759bf0e8075966b5f4"
+    },
+    ".cache/ji22st/ji22stat01.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "7941bb47bdffaf7645aec56ac5bb286495ea5f418d928af8f7fce070eca8a3a1"
+    },
+    ".cache/ji22st/ji22stat15.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "92ffa8747462161048830af8993ab547309132744e248c60b3912b44aea67044"
+    },
+    ".cache/ji22st/ji22stat14.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "7d50340e37e6f1bac03ebf845317c8c02d2ca145bd52e9d6a7c734cf36522c08"
+    },
+    ".cache/ji22st/ji22stt08.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "9f341fe9702e483828f75fc7dadac3dc39d00a0c07cdfd6d7624e4969592ef22"
+    },
+    ".cache/ji22st/ji22stt05.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "20c928f8e0dfcaafdede4093550a4f3dac94ffb4d1d24be1f4358a1da58a14bd"
+    },
+    ".cache/ji22st/ji22stt11.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "6ceff5bef0b2b64b38e2cef70877b504f4676e1d9de317acd61c682499172934"
+    },
+    ".cache/ji22st/ji22stat18.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "f82bb83479a3ac6e15b00ccf63abfe3021f9a63c4aad8bec3da29328d3fe1a47"
+    },
+    ".cache/ji22st/ji22stt10.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "c125f466d6d143cce6d49edfca86e03242b66c565f8f1507b0d6914f8fc8df9b"
+    },
+    ".cache/ji22st/ji22stt04.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "713e6c1c50f72a76535c2d41941da9bebad1b867c34b0864167b1a93304ea63b"
+    },
+    ".cache/ji22st/ji22stt12.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "47b752504a00d77bbf353c3294ae170bc795abfa777f14024c5378793871009e"
+    },
+    ".cache/ji22st/ji22stt06.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "76a3adf83a5d7b4ecab8e91b5fd8a2f86566a79c300024c57a76baea72dc273b"
+    },
+    ".cache/ji22st/ji22stt07.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "bd47c7dfb6508c3dc8fc701537635acfeca9b440cf9a29e7a08ebb02097296b1"
+    },
+    ".cache/ji22st/ji22stt13.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "bc9b42ebdf752e2591d76da4288ef537935788b9785ae6ef7a46d4f43434f18f"
+    },
+    ".cache/ji22st/ji22stt17.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "ee603922b0fe86a242def784eedd58c926095574de226d732bb54a5332c4d9e6"
+    },
+    ".cache/ji22st/ji22stt03.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "35a57e92007fa7601fcfd2a56da4e82ac0162bec356fe08bba581acc7e607b66"
+    },
+    ".cache/ji22st/ji22stt02.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "689721feca107f7ab8f9142a5b99713d895968af936838689d9d099b8099963c"
+    },
+    ".cache/ji22st/ji22stt16.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "aaaf2aa5df963b2a913bac4774ee12ed9b656077029ff5fa10f160799eede98b"
+    },
+    ".cache/ji22st/ji22stt14.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "36dc905b5660bdbd201a14c6fec1f1085ea55ab99b3a63e4895edc398f412d39"
+    },
+    ".cache/ji22st/ji22stat08.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "fda6c1937e6145762cc6e97404e333a02ca64caba07ee244f594a3f736eefc4e"
+    },
+    ".cache/ji22st/ji22stat09.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "cda73d04614e5f91ef150bc4490a9dfd31d09603b12c620a0e7d5b2cac66e14a"
+    },
+    ".cache/ji22st/ji22stt15.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "7670ac97af7756ea16c5de4aa2e725f1261c82be2e0c2634fc6437a55f7797bc"
+    },
+    ".cache/ji22st/ji22stt01.csv": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "e7de91c31c1d264bdaec8c0e40c5d5a2756c017c3d18cc43b92ab51fe16aafc9"
+    },
+    ".cache/ji23st/ji23stat01.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "48e2ca3976843e44ba75d70af5ce714e1ba58374b72b48fa846e7bc8b7f10d41"
+    },
+    ".cache/ji23st/ji23stt18.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "3ce4ae5aa99f0324b7b17e19b53000f16297ef94421a1a6adf432cc8252dba55"
+    },
+    ".cache/ji23st/ji23stt19.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "6ca368829ff4895b7737f2096f8319dd4652c97bf8d154cc0e9bfae76ef05900"
+    },
+    ".cache/ji23st/ji23stt22.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "7310e8be86295249fff8bc00fea44259e04af5fb81ae4d0d8ce39d2c0fafbd9b"
+    },
+    ".cache/ji23st/ji23stt09.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "bab66e13bd7bc52560c35096fd7ffc6abbd7c568bd147ba06fae9074876324b8"
+    },
+    ".cache/ji23st/ji23stt21.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "455501a3a164209d25c96e36dd82cfc42043212bec3aee1fb46bbe9a89b34de2"
+    },
+    ".cache/ji23st/ji23stt20.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "e5bf4cdcb218f1c5174dc0653055f01224158ba4d6637c625424f53723aa98cb"
+    },
+    ".cache/ji23st/ji23stt08.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "a1a809ce8c87e37ada3849908b402f317bd556093f2ecc96267df3b157b00a06"
+    },
+    ".cache/ji23st/ji23stt11.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "7cdac90626f72c7036ded5b5a1c20d94c89374b4934af70a693014e451ca438a"
+    },
+    ".cache/ji23st/ji23stt05.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "3736d8c17e8559f1b3db2bb606cc43388c6d2a4963460c5cc721bd628713bfa4"
+    },
+    ".cache/ji23st/ji23stt04.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "3c876de1cb48dfd6341a5c36db29e2f8de89544430609f916d94cd535d35363f"
+    },
+    ".cache/ji23st/ji23stt10.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "9bc37bc228f52a8330b3b850674262d740a83d742346f0106d4003cef6963b0c"
+    },
+    ".cache/ji23st/ji23stt06.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "272388e0817182285678489a3af3e0c2a385437e6b08aa92654cd07db17afe50"
+    },
+    ".cache/ji23st/ji23stt12.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "eb642260e5b63e5b8c85e6cf088dcbf5bcf7ad2b222dcccce3120c24e7531917"
+    },
+    ".cache/ji23st/ji23stt13.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "a43556fa8c36665711732b830b594b7dea6d7ee6e6e22d3b976c40a08845f5db"
+    },
+    ".cache/ji23st/ji23stt07.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "20104caf8a9401bf562a0b5b6a16b9f111ff9ba2f335520963e4e7b00d73fe74"
+    },
+    ".cache/ji23st/ji23stt03.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "ff5bc1d5639c615e6d1ec898d61588e623a1ba5e9a73f1a66a367710300a2315"
+    },
+    ".cache/ji23st/ji23stt17.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "fd7aa24dd066f2115588a3975febd07b0aa79c4fbce4c7bcf61cbdba287e9d37"
+    },
+    ".cache/ji23st/ji23stt16.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "8ea10f776cd92fe006d8a7bd2909948069f9300ee7489f290705bdb3bef6c5cd"
+    },
+    ".cache/ji23st/ji23stt02.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "1064115860f8243860b08f28d2140ffae0749fcce0466f68ba12a986057f3c00"
+    },
+    ".cache/ji23st/ji23stt14.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "c8330a387c853eb6ed7ce8ef9c2c2ed4037caa3567936281cf58645b8fdfaaa7"
+    },
+    ".cache/ji23st/ji23stt01.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "3959bf0a30f8f283eee22af3099010bbc9b428579efe96e5ce66828a901e7f73"
+    },
+    ".cache/ji23st/ji23stt15.csv": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "ece05681f35bf6eb881618cd6fc110e2040526b7fbea742d7e822383b367d57b"
+    },
+    ".cache/cpus23st/cpus23stt09.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "cd869d3769ce53e133891c9ca1c03c556fb8d6789f03364381007faff2532fd6"
+    },
+    ".cache/cpus23st/cpus23stt08.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "3f08e0608ef6aedcedc580e1a0f4d1550ea09c2129bb153103a649c08e3e4c99"
+    },
+    ".cache/cpus23st/cpus23stat04.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "0910060c5ea82232d43fce5e56f2987d8f81dbe9d7a470aaf496b7cea2bb7ef6"
+    },
+    ".cache/cpus23st/cpus23stf01.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "7d040b033992b3084d6ab0d40c2f3f41857d8106a20aba71b72fc75838334b74"
+    },
+    ".cache/cpus23st/cpus23stat03.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "386de5d087d1fa0f440dc53835b601314efac6f8f53dc328fbc48126b4d3895b"
+    },
+    ".cache/cpus23st/cpus23stat02.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "96d1c6b082d399e51afd908e7d33ff804b043717e22d63bf4220436311316784"
+    },
+    ".cache/cpus23st/cpus23stat01.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "1cd53e066d015086142b6c4e25450a5b3295ede996fd9ddf115a18a2a5cb5b86"
+    },
+    ".cache/cpus23st/cpus23stt01.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "528e2c0cbb048ed48e091ce26da0e71ed287de15b3338f04749c00bd353e486a"
+    },
+    ".cache/cpus23st/cpus23stt03.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "c2e15a587e9c28d11f494e885368fdff124d1f4150040344e096e7b4afaafe41"
+    },
+    ".cache/cpus23st/cpus23stt02.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "5089bc3d1a9e066a79ce9fe2f5d99d29e8c5bb4615482b923232d9433d68e5dd"
+    },
+    ".cache/cpus23st/cpus23stt06.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "f444da93da05791e5b1b569164e486caa8d639070aa13bdfa752176ed37df3f7"
+    },
+    ".cache/cpus23st/cpus23stt07.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "bfe3383eb3ca88ea1e405a6ed2d8ba84e68e773765694293ce06cf96a6e663c9"
+    },
+    ".cache/cpus23st/cpus23stt05.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "943689b0f609131455bb598e5a2deec264b39b6a43f32f1485ee5d77a8547751"
+    },
+    ".cache/cpus23st/cpus23stt04.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "536754c102a715e05f3759fa32b7f501b25faabb09f8079b8729773fbbd348c8"
+    },
+    ".cache/cpus23st/cpus23stt10.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "42a25e5c9a4d599d8089bb80f8aca39bc7bf2be0f4ae3b331133368c8cabedf9"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt09.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "97c0692a76da19fdcb9e85be689fdca607cee1743c30014888fbf4d596e2ce86"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt08.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "ca4f575a23ea1f51159a9879b9de0c3fe91ce8943168a8a0e5fcda991e7e9387"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stat03.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "bee8e7aabb26ad0c605419526a0b3db047acb420cb90b9b1c040410ee372819f"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stat02.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "5e3f1e239c9107597d4bfcb4029dbeda2a6938718259162e250169a47c96fc75"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stat01.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "e54fe0e5afff8e462a45e89e5d1e322266e358338b4b7d10ee9303bda2dad280"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stf01.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "c1651dbbc99ef246a20a0aecfc82e3611425a72b32fd4394705af59cbe9aa453"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt01.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "fe7dba4cc9da35a1571ab64b02e623f681bf063a5615c84c6ac12e126aeb27ca"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt03.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "96e428371afc862cdad462ee4307e1b70322e1f1c6c937ef62244ba0024a1f4a"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt02.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "4a79a1b046ff4febbaa5e018639152b188ad9834500ca747a1e3f5de7fb7933c"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt06.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "35028923e915b198a5d18488baa8455730ce3bc368785f4ac11547f3fe7658fd"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt07.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "c265a07428ef13bb3c0fc819439ac1f531e16df313685b0326ccd78163f42fe9"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt05.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "22b3650066d5338c45d426a1ccdb64bf395fd956fe57b0b57da633c3e9cb9a9f"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt10.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "49e934851d99b0bcb921154ab77f3cc01439df7d0e6f39c098adb4c22da22b32"
+    },
+    ".cache/cpus22st/cpus22st_revised/cpus22stt04.csv": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "22818a47dedf33d170047d5609054749bf784b5e2087979b69ada3c635dda484"
+    },
+    ".cache/cp23st/cp23stat01.csv": {
+      "url": "https://bjs.ojp.gov/document/cp23st.zip",
+      "read": "2026-09-10",
+      "sha256": "f976db4dbca0902a6ddfd5cda33cf367e43b59a44afadd4f1fe7729a543b3a5d"
+    },
+    ".cache/cp23st/cp23stat04.csv": {
+      "url": "https://bjs.ojp.gov/document/cp23st.zip",
+      "read": "2026-09-10",
+      "sha256": "4b8a6b1eeb90116e3990a7e43b8f3e47f48e3ab9e2988b0f57d98ac7f07cd6d0"
+    },
+    ".cache/bop-pop.csv": {
+      "url": "https://www.bop.gov/about/statistics/raw_stats/BOP_pastPopulationTotals.csv",
+      "read": "2026-09-10",
+      "sha256": "525a42b16262119a56566e5c54227ff48d1f1656d6b471df6e47163236dabe51"
+    },
+    ".cache/gallup-crime.html": {
+      "url": "https://news.gallup.com/poll/1603/crime.aspx",
+      "read": "2026-09-10",
+      "sha256": "2ed825c9f3b2971f7977de5537a8a2dc61c91fceaa9f37bad323cebf71efdb5f"
+    },
+    ".cache/gss_extracted/GSS_stata/gss7224_r3a.dta": {
+      "url": "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip",
+      "read": "2026-09-10",
+      "sha256": "a7622e03d9130e25968943b6f022f44dc0087baf0aa6b5cef150871152827344"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_State_Top_Ten_Report_Categories.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "7ea0cb2a0c3895d61e87e92b76b7b122753f7cfbce3ab3ba68fd5b2e5898a9e2"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Identity_Theft_Reports_by_Type.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "0408de480b457454f03c113c7640414d45236f93d57ddfe0d32872431906a43c"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Major_Data_Contributors.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "f0b28cadaf43dee651501f0715bd8bb7890cb4918d98b68f49ede2c3b72f016a"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Detailed_Report_Categories_over_Three_Years.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "ddfb879c48dd11cccc68ae51a7c2b80c5c108614e2050f1bdebd72f6c5ac5fab"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Number_of_Reports_by_Type.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "3c0131798df1b3473fb8b2577bb7b53c5b8fea9e36cf2882415c613d81d2691e"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Fraud_Reports_by_Payment_Method.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "ddd02b40fd9e48919de785a3448dcf1f88908ea42a725ec8e2aae5f7d56e7501"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Report_Categories.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "9bff1bf397a848d4c14cc4f8192b13d140e0ead40ce519389bf17541427af511"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_State_Rankings_Fraud_and_Other_Reports.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "563f29003f812ab65e472ba0a9bba9da3e3a2c7ed9d8e3037d45ea710cec04a5"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_State_Fraud_Reports_and_Losses.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "e091c96e8f68d829577672cebe4f71707936d973af5dd07fe0e4654b4aa1aa33"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Top_Three_Identity_Theft_Reports_by_Year.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "a2289b24172c8d4bc5c45dc8fb016777d1744ccb5cff1e5817316fac7c1c056e"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Fraud_Reports_by_Amount_Lost.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "efe8d073f152f6cfe6a39633931578739f622318196413f29d3eb70dc6706afc"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_State_Identity_Theft_Reports.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "29ab421def5f925a3fc2c98ec91ef8b938e0005466fa0d7ee567de2b8bb5b7c2"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Report_Categories_over_Three_Years.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "8871dd209c823deac4c94b5926ebe80bbd4420fa72ad1a8655f0e1d533c28f66"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Fraud, Identity Theft, and Other Reports by Military Consumers.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "9c45c2f625fae56ac0438ec519f57b2b3b549e66309c59c1c05f05f978dbc102"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Identity_Theft_Types_by_Age.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "648ba6f6dd653c43aea0dc6e7addbe6f06cac2d1fd1b3d59f00b218d4170bbc7"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Metropolitan_Areas_Fraud_and_Other_Reports.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "96916694364e84048d4d0db8e05ff8d803dd94c6192f740860ff90fd66078c1e"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Military_Consumer_Identity_Theft_Reports_by_Type.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "0202c457af94caac797e2c2579a4e83b835be7cb85d97c9bece3db38cc073ead"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Reports_by_Military_Consumers.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "930a7977512ab2fbd9d8a6cf13a353c7311d9a4f500908c6dfd7c44e52261646"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Report_Count.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "a726361b1eacd29bcad16b8e35cb96f618421832b3794b36587b4e233951e219"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_State_Rankings_Identity_Theft_Reports.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "99027f597cd5610a9c156f668f555f69e8a9f6be95991998e3e21733449b7365"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Metropolitan_Areas_Identity_Theft_Reports.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "b4a64e9c3809d3f4cb3dd90562b3713b14335a7298e0021e23ffca05584f8e25"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Data_Contributors.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "fcdbbdfbfce463f4b34a2797c9ef398cade63cc8c814c110af2d96c3b8f84a16"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Reported_Frauds_and_Losses_by_Age.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "ee32c78cc0050fd649774c012473b642c652ce152ba731256564718703310b0c"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Fraud_Reports_by_Contact_Method.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "6f43f4606464079a105c9bb27f242b45281db4f75e2849c5821c0b534dce3e83"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Report_Type.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "e973331606af0be020f99777e90848a79d90f0cc709f98847ce1ebe1b0b1b3e8"
+    },
+    ".cache/ftc-csn/CSVs/2024_CSN_Identity_Theft_Reports_by_Age.csv": {
+      "url": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+      "read": "2026-09-10",
+      "sha256": "d7339395ec0d3c71336961aab9f3c45361821c17e1208e6153b8d71f0bc6d309"
+    },
+    ".cache/ussc-2002.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2002",
+      "read": "2026-09-10",
+      "sha256": "ff4171312e25aedd9782382b0ee45f1999693a1ec1e14f1892f228a8ea172997"
+    },
+    ".cache/ussc-2003.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2003",
+      "read": "2026-09-10",
+      "sha256": "b0935e51555cdc8373533c4247a8b718b0c12996de2ed8f857104e6ecb0ce353"
+    },
+    ".cache/ussc-2004.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2004",
+      "read": "2026-09-10",
+      "sha256": "089963588fa9bdd3951c864e05bd6cb332cbe732017b884300bbb510fd6cb8c4"
+    },
+    ".cache/ussc-2005.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2005",
+      "read": "2026-09-10",
+      "sha256": "2b111ba206fe699fb489ab1ebabfcaaaedff307beb144134ae0c1e004a15f106"
+    },
+    ".cache/ussc-2006.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2006",
+      "read": "2026-09-10",
+      "sha256": "c2a71638f85f195131d48ef803f1da27929b447c0c2fca32e99a16f8d908b7a0"
+    },
+    ".cache/ussc-2007.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2007",
+      "read": "2026-09-10",
+      "sha256": "af11540318fb6bf0c9c9a39d8b02345a390d3e3c628668b4b9deb8bda318766b"
+    },
+    ".cache/ussc-2008.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2008",
+      "read": "2026-09-10",
+      "sha256": "4202fa19e2a1fec962bcec8c555f9ec34f8ae4acbfeb7457ae38eead0a77a6ac"
+    },
+    ".cache/ussc-2009.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2009",
+      "read": "2026-09-10",
+      "sha256": "a09b1b20faa3def1a6327e84c25f86248359453c89e158d7b1681d9c66da1339"
+    },
+    ".cache/ussc-2010.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2010",
+      "read": "2026-09-10",
+      "sha256": "beafd94e7407ccf36ae614bf5f4db5cfde656b3c4cf9382d60b8d22cc23edb8e"
+    },
+    ".cache/ussc-2011.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2011",
+      "read": "2026-09-10",
+      "sha256": "cd4fac82da71c55153de9a9a20e63ec3cae517606c50466eb34b601d0f671788"
+    },
+    ".cache/ussc-2012.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2012",
+      "read": "2026-09-10",
+      "sha256": "3ff118f255aae1ba14c78d7e1039561367cb760203f6e2e244445b6ca47a98e8"
+    },
+    ".cache/ussc-2013.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2013",
+      "read": "2026-09-10",
+      "sha256": "a20e96df32d82e27070409969f722c61a61296c3d227fbcc6c8ab8201882c8ad"
+    },
+    ".cache/ussc-2014.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2014",
+      "read": "2026-09-10",
+      "sha256": "7937a9f047b98cc0fda46d2e1fe99bb62fa1e0f6d46e18d92a1b39f85cd0d2b3"
+    },
+    ".cache/ussc-2015.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2015",
+      "read": "2026-09-10",
+      "sha256": "ad0ab380aaec99a490c3626ac7cd610162f21142954a0e8d919616a7639fd91c"
+    },
+    ".cache/ussc-2016.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2016",
+      "read": "2026-09-10",
+      "sha256": "2f71bd27cc10a4090511de493f73314944cbbefd6ce9b0744e770e71a30611a5"
+    },
+    ".cache/ussc-2017.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2017",
+      "read": "2026-09-10",
+      "sha256": "fd21a7aab4f0380a96c547a2d1a6ec50082f54045a1d6da1e90d8aab15cb8484"
+    },
+    ".cache/ussc-2018.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2018",
+      "read": "2026-09-10",
+      "sha256": "2bc29c442393090789917457249665332ab64cf64a8dc7827d7d18ecb6c0287b"
+    },
+    ".cache/ussc-2019.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2019",
+      "read": "2026-09-10",
+      "sha256": "c7e175915c5a6b507ce7537890717300c1f0078646567dc27bcd2b96ca6fc8b9"
+    },
+    ".cache/ussc-2020.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2020",
+      "read": "2026-09-10",
+      "sha256": "5cd5c04cf5b4376b879a779e0283282c5028d6789ea0a52ade2594261d345efa"
+    },
+    ".cache/ussc-2021.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2021",
+      "read": "2026-09-10",
+      "sha256": "7d98d444cc43bf5be76f0247c24572de9e353057c8f241afd8d54277e82bbc10"
+    },
+    ".cache/ussc-2022.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2022",
+      "read": "2026-09-10",
+      "sha256": "ddee3445361797252601d0a0d967d8b8ccb690cbe9099e1ce637e56e32e3ef47"
+    },
+    ".cache/ussc-2023.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2023",
+      "read": "2026-09-10",
+      "sha256": "4a59af777f7dc61111f7fb9d4c95e795f10305544cc6d5532dbb3d7e75efa173"
+    },
+    ".cache/ussc-2024.html": {
+      "url": "https://www.ussc.gov/research/sourcebook/archive/sourcebook-2024",
+      "read": "2026-09-10",
+      "sha256": "cae46fe7a00bc3ab9f2e2aa00abe23285ff60b36344d2c4bb706b8d7822ef56d"
+    },
+    ".cache/ussc.html": {
+      "url": "https://www.ussc.gov/research/sourcebook-2025",
+      "read": "2026-09-10",
+      "sha256": "fd0eced73aa7860239b8763f02ee59661ea23ad8ab8753a7313a020e4fe352b7"
+    },
+    ".cache/ic3/2011.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2011_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "2138753001899cd2c3d562d0580a2f3e81a05d62a0daba9ecaec1ae5b91e0c3b"
+    },
+    ".cache/ic3/2012.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2012_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "0406dd706fe9f80afe42feb9295a09793f23df937410b42910dbb05b874b9890"
+    },
+    ".cache/ic3/2013.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2013_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "886d3560ce67761c4312295bb36949890f7bb1222a499f036e2b0c413f9b0210"
+    },
+    ".cache/ic3/2014.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2014_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "c8be331a20cb518ce8d997de1919bd1976ad7615fca67bdfa26d03aac37a2070"
+    },
+    ".cache/ic3/2015.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2015_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "415f8fa41cd38ef61953dd53b5cf91a962d5e46f96f4f5a5a8840df7c5281b4a"
+    },
+    ".cache/ic3/2016.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2016_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "61cee665245989d5fab044402a27ef48fa74874bf07469ba1977254b04079d8a"
+    },
+    ".cache/ic3/2017.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2017_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "48092bf79b4480bc01c0a0d3bfa4c21905b66ee63ccb034c1798b95791e8b0a3"
+    },
+    ".cache/ic3/2018.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2018_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "e3615997a9e8d0a76d0dd83b034432d40c44f43056c37f09809c95c17d51da89"
+    },
+    ".cache/ic3/2019.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2019_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "979239e59eb3a4589c1c5fcaf76edc37f8e24f6fbebc63aa84674823ca47f6e6"
+    },
+    ".cache/ic3/2020.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2020_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "a5809593bcad61a2b97001dd0ae592e82f381c74b411c9103515e5847f750b91"
+    },
+    ".cache/ic3/2021.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2021_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "ccfb9b2294fd29bb3719870b7e33fcba0be2d361a4029016c40d7eadb9450c3e"
+    },
+    ".cache/ic3/2022.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2022_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "8620f0eeff049d3dbcae37c86d0bacd17ef66d090d75098dbc0780c2529f4f71"
+    },
+    ".cache/ic3/2023.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2023_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "5d562cc716b94343549e785977774115972eece5f6fa5e76c4a6b795a411d458"
+    },
+    ".cache/ic3/2024.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "71fd27c3bea62c99afd99d17fe3e9939e3203cb13fcf1d45494f497abbf5980e"
+    },
+    ".cache/ic3/2025.txt": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "eeb954fdb6c733f2cb6642b981d1b00b331e15e12c32535b4a1412ae104a90ba"
+    },
+    ".cache/ic3/2010.pdf": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2010_IC3Report.pdf",
+      "read": "2026-09-10",
+      "sha256": "b01100cdb04c4dee2576ead5e563febe149528c5fbfb75471047ad72dfef3c32"
+    },
+    ".cache/robbery_probe.json": {
+      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/robbery",
+      "read": "2026-09-10",
+      "sha256": "1fe780fd328e6919162bd8dfa32527b4446a1d3b55cc2c8f1b90c0489d5c4356"
+    },
+    ".cache/cpus22st.zip": {
+      "url": "https://bjs.ojp.gov/document/cpus22st.zip",
+      "read": "2026-09-10",
+      "sha256": "b912b4d85c3eb1ab7755c72888e3fe2106cdcf064b745d0d78a25fca54414be2"
+    },
+    ".cache/cv15.zip": {
+      "url": "https://bjs.ojp.gov/document/cv15.zip",
+      "read": "2026-09-10",
+      "sha256": "a0ec0d0c0e5151295e2356ac1eb6af5bc3010dd1396d15c0534902d866bffe9e"
+    },
+    ".cache/cv14.zip": {
+      "url": "https://bjs.ojp.gov/document/cv14.zip",
+      "read": "2026-09-10",
+      "sha256": "65ec5e1b6b39f1713a6f9f62c1b8412d323f342e720505afc02550c129e32407"
+    },
+    ".cache/cv16.zip": {
+      "url": "https://bjs.ojp.gov/document/cv16.zip",
+      "read": "2026-09-10",
+      "sha256": "c588f94a882bc7d52dd32fa73ae8d195cffdde85b5d9d75a86d3c21678771b31"
+    },
+    ".cache/cpus20st.zip": {
+      "url": "https://bjs.ojp.gov/document/cpus20st.zip",
+      "read": "2026-09-10",
+      "sha256": "beade8d7e36b7fbfbb29f5d21768e43129f0612fc644dda16253691b07574a58"
+    },
+    ".cache/cv17.zip": {
+      "url": "https://bjs.ojp.gov/document/cv17.zip",
+      "read": "2026-09-10",
+      "sha256": "5dbf33ffe77fbcb6b13f72fdece366f405a42ae75f12404827d63525b87923f8"
+    },
+    ".cache/cpus19st.zip": {
+      "url": "https://bjs.ojp.gov/document/cpus19st.zip",
+      "read": "2026-09-10",
+      "sha256": "4c2aa39683cac08e35dcd728586ec02ad98c6e29cda79d442010fb996fe6ef44"
+    },
+    ".cache/cv13.zip": {
+      "url": "https://bjs.ojp.gov/document/cv13.zip",
+      "read": "2026-09-10",
+      "sha256": "fffcbd686b41f90055f5644dce3e82c4adfdec70eadce503dbd174437fe63d0d"
+    },
+    ".cache/ji17st.zip": {
+      "url": "https://bjs.ojp.gov/document/ji17st.zip",
+      "read": "2026-09-10",
+      "sha256": "f94bbf6ce475c8a0cc346734c78b3db7e9bb71582e8c888e4f7d471a31e2056b"
+    },
+    ".cache/cpus21st.zip": {
+      "url": "https://bjs.ojp.gov/document/cpus21st.zip",
+      "read": "2026-09-10",
+      "sha256": "7bb945ff41eaff90377c313361a379f8ba54329e4474fc7ae3017b44a9c8ebaa"
+    },
+    ".cache/cpus23st.zip": {
+      "url": "https://bjs.ojp.gov/document/cpus23st.zip",
+      "read": "2026-09-10",
+      "sha256": "a6235c570673fed81e1906a73d7d78c434b3e8cd45d786c512bd6d06e3d61e06"
+    },
+    ".cache/cpus21_real.zip": {
+      "url": "https://bjs.ojp.gov/document/cpus21st.zip",
+      "read": "2026-09-10",
+      "sha256": "f5d3f28494a56ed3ab5f438bc52fb32e01f95d5f45532845863024113a5982e6"
+    },
+    ".cache/cpus18st.zip": {
+      "url": "https://bjs.ojp.gov/document/cpus18st.zip",
+      "read": "2026-09-10",
+      "sha256": "fb74a37fee303099f06bb29f00f8aa784d345333c2ec77b6819f206a5f04393c"
+    },
+    ".cache/ji18st.zip": {
+      "url": "https://bjs.ojp.gov/document/ji18st.zip",
+      "read": "2026-09-10",
+      "sha256": "9e4d4caab26a2c26b1cb8ae56e94f9c67c596eb931d2ee1c772f722661a64c3a"
+    },
+    ".cache/cpus16st.zip": {
+      "url": "https://bjs.ojp.gov/document/cpus16st.zip",
+      "read": "2026-09-10",
+      "sha256": "f6abbef7d43feca2abb422bfc2ede08633b9c250236fc48b0311c317bac4898b"
+    },
+    ".cache/ji23st.zip": {
+      "url": "https://bjs.ojp.gov/document/ji23st.zip",
+      "read": "2026-09-10",
+      "sha256": "8c4c86913178d6b42acbc31b90fcff18152628e42d949d4773bb0b69e6a01389"
+    },
+    ".cache/ji21st.zip": {
+      "url": "https://bjs.ojp.gov/document/ji21st.zip",
+      "read": "2026-09-10",
+      "sha256": "aa77feeb94f385ce25703e71b75578f0f5114e29f80b7f6c41fe985de077762a"
+    },
+    ".cache/cpus17st.zip": {
+      "url": "https://bjs.ojp.gov/document/cpus17st.zip",
+      "read": "2026-09-10",
+      "sha256": "91b723821cb733073ba635fa8c3244af6d09a0989915ca102db0994241ec3c6f"
+    },
+    ".cache/cv20.zip": {
+      "url": "https://bjs.ojp.gov/document/cv20.zip",
+      "read": "2026-09-10",
+      "sha256": "c2d6057e3d1e4155e001d6a2a3a97274004d876e1752da1e402fd99c47b3c75a"
+    },
+    ".cache/cv21.zip": {
+      "url": "https://bjs.ojp.gov/document/cv21.zip",
+      "read": "2026-09-10",
+      "sha256": "065b1a7236faeeda5ccc7f3f7ce493948839b6f1c19e170f6cc51157b237ae5b"
+    },
+    ".cache/ji19st.zip": {
+      "url": "https://bjs.ojp.gov/document/ji19st.zip",
+      "read": "2026-09-10",
+      "sha256": "21606e2819f13266d4d6c871835e9cd7fe231bf49767f53723a8ff69e786834f"
+    },
+    ".cache/cv23.zip": {
+      "url": "https://bjs.ojp.gov/document/cv23.zip",
+      "read": "2026-09-10",
+      "sha256": "6caeb6ba78ff7ca8adc2aa7850cbe6fd0cbff8df4a168854fe5e9fa065b27782"
+    },
+    ".cache/cv22.zip": {
+      "url": "https://bjs.ojp.gov/document/cv22.zip",
+      "read": "2026-09-10",
+      "sha256": "0175df07c00c40ba74ae81ab966c54d1d530a8d027b1a83c229a43cbc639553e"
+    },
+    ".cache/ji20st.zip": {
+      "url": "https://bjs.ojp.gov/document/ji20st.zip",
+      "read": "2026-09-10",
+      "sha256": "a1a8b0cfcf2d4245e6d70c93a7bad359933882ae500b3322aec706c469c46de2"
+    },
+    ".cache/cv19.zip": {
+      "url": "https://bjs.ojp.gov/document/cv19.zip",
+      "read": "2026-09-10",
+      "sha256": "f52c9f746fd9bff244d4dcffbd70e5416721e777cc6ad16d133a2215b937614b"
+    },
+    ".cache/ji22st.zip": {
+      "url": "https://bjs.ojp.gov/document/ji22st.zip",
+      "read": "2026-09-10",
+      "sha256": "cf035a145de198942f69531a63bcf86aecd1ecdf21c269e2bcaa7699e95d6d59"
+    },
+    ".cache/cv24.zip": {
+      "url": "https://bjs.ojp.gov/document/cv24.zip",
+      "read": "2026-09-10",
+      "sha256": "2b34ad21edaabd41ade8fbbe41572ecc69795384b49dc734e8af8b8a02c02fcd"
+    },
+    ".cache/cv18.zip": {
+      "url": "https://bjs.ojp.gov/document/cv18.zip",
+      "read": "2026-09-10",
+      "sha256": "e9ec0611c1a29a272d8f14d08d81d9cee51f6aee37939a519e20b86b24e4e4dc"
+    },
+    ".cache/cde-motor-vehicle-theft.json": {
+      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/motor-vehicle-theft?from=01-2000&to=12-2024",
+      "read": "2026-09-11",
+      "sha256": "ae6fd4aeb3dd3e4d5b34b828caf457841ab041b02143816fe7baf313f871085e"
+    },
+    ".cache/cde-burglary.json": {
+      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/burglary?from=01-2000&to=12-2024",
+      "read": "2026-09-11",
+      "sha256": "a33f2a790151090578fae9a569818b9f65f9b731dfb8d680198190b43a5bb91e"
+    },
+    ".cache/cde-robbery.json": {
+      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/robbery?from=01-2000&to=12-2024",
+      "read": "2026-09-11",
+      "sha256": "f13bad9b819fc27dbe296606b576a183fbbd51f356b85908b42a1c6efd5abbf1"
+    },
+    ".cache/cde-aggravated-assault.json": {
+      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/aggravated-assault?from=01-2000&to=12-2024",
+      "read": "2026-09-11",
+      "sha256": "d17e9f93309af9a2484682abd8d437018553e1f39c7a876ec9d190f25cba1f0e"
+    }
+  }
+}

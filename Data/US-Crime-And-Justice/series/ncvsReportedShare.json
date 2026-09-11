@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "key": "ncvsReportedShare",
+    "unit": "percent of violent victimizations reported to police",
+    "source": "Computed from Bureau of Justice Statistics, NCVS, Criminal Victimization 2024 Appendix table 1",
+    "sourceUrl": "https://bjs.ojp.gov/document/cv24.zip",
+    "historicalSourceUrls": [
+      "https://bjs.ojp.gov/library/publications/list?series_filter=Criminal%20Victimization"
+    ],
+    "goodDirection": "up",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "experienced",
+    "name": "Violent victimizations reported to police (share)",
+    "note": "What is reported: the share of NCVS violent victimizations that victims say were reported to police, computed from the Criminal Victimization, 2024 bulletin's Figure 1 as (rate reported to police) / (total violent victimization rate) x 100. Computed from BJS's own two published rates in the same table, not independently estimated. 2006 NCVS estimates are not comparable to other years (BJS data-collection change); 2016 sample redesign and a 2017 methodology change; 2024 used a split-sample design testing new methods. Self-report survey, not police-reported. The actual CSV is cv24at01.csv (estimates for Figure 1). Rounded input rates yield 2024=48.1% and 2023=44.9%, differing from the directly published shares 47.9% and 44.7%; this series implements the specified rate ratio. 2006 is omitted because this table publishes --.",
+    "breaks": "Computed from the two Figure 1 series in Criminal Victimization, 2024 (NCJ 310547); inherits both series' methodology breaks. 2006 NCVS estimates are not comparable to other years (BJS data-collection change); 2016 sample redesign and a 2017 methodology change; 2024 used a split-sample design testing new methods. Self-report survey, not police-reported.",
+    "method": "cv24at01.csv: 100 × reported rate (column 7) / total rate (column 1), rounded to 0.1 percentage point; rounded input rates differ from directly published percentages.",
+    "bounds": [
+      0,
+      100
+    ],
+    "coverage": "1993–2024",
+    "fetched": "2026-09-11T08:29:13.821Z",
+    "sourceRead": "2026-09-10"
+  },
+  "data": {
+    "1993": 42.4,
+    "1994": 40.5,
+    "1995": 40.9,
+    "1996": 40.3,
+    "1997": 41.9,
+    "1998": 45.5,
+    "1999": 43,
+    "2000": 45.9,
+    "2001": 49.1,
+    "2002": 50.8,
+    "2003": 47.4,
+    "2004": 50.4,
+    "2005": 45.8,
+    "2007": 44.9,
+    "2008": 46.6,
+    "2009": 43.9,
+    "2010": 51.3,
+    "2011": 49.1,
+    "2012": 44.1,
+    "2013": 45.7,
+    "2014": 45.8,
+    "2015": 46.2,
+    "2016": 43.7,
+    "2017": 44.7,
+    "2018": 42.7,
+    "2019": 41,
+    "2020": 40.2,
+    "2021": 45.5,
+    "2022": 41.3,
+    "2023": 44.9,
+    "2024": 48.1
+  }
+}

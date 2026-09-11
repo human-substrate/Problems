@@ -1,0 +1,57 @@
+PASS cache recovery audit; see work/recovery.md
+DEFERRED motorVehicleTheftRate: Cached probe .cache/robbery_probe.json: HTTP 429 OVER_RATE_LIMIT on DEMO_KEY. Body: {
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later or contact us for assistance: https://api.usa.gov:443"
+  }
+}
+Fresh retry evidence supplied in the task: a fresh unsandboxed retry from outside this build at 2026-09-10 ~14:0x PT got the identical 429 OVER_RATE_LIMIT on all four offense endpoints. Both attempts used DEMO_KEY. No FBI_API_KEY is configured; no API key available. No request attempted in this offline build.
+DEFERRED burglaryRate: Cached probe .cache/robbery_probe.json: HTTP 429 OVER_RATE_LIMIT on DEMO_KEY. Body: {
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later or contact us for assistance: https://api.usa.gov:443"
+  }
+}
+Fresh retry evidence supplied in the task: a fresh unsandboxed retry from outside this build at 2026-09-10 ~14:0x PT got the identical 429 OVER_RATE_LIMIT on all four offense endpoints. Both attempts used DEMO_KEY. No FBI_API_KEY is configured; no API key available. No request attempted in this offline build.
+DEFERRED robberyRate: Cached probe .cache/robbery_probe.json: HTTP 429 OVER_RATE_LIMIT on DEMO_KEY. Body: {
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later or contact us for assistance: https://api.usa.gov:443"
+  }
+}
+Fresh retry evidence supplied in the task: a fresh unsandboxed retry from outside this build at 2026-09-10 ~14:0x PT got the identical 429 OVER_RATE_LIMIT on all four offense endpoints. Both attempts used DEMO_KEY. No FBI_API_KEY is configured; no API key available. No request attempted in this offline build.
+DEFERRED aggravatedAssaultRate: Cached probe .cache/robbery_probe.json: HTTP 429 OVER_RATE_LIMIT on DEMO_KEY. Body: {
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later or contact us for assistance: https://api.usa.gov:443"
+  }
+}
+Fresh retry evidence supplied in the task: a fresh unsandboxed retry from outside this build at 2026-09-10 ~14:0x PT got the identical 429 OVER_RATE_LIMIT on all four offense endpoints. Both attempts used DEMO_KEY. No FBI_API_KEY is configured; no API key available. No request attempted in this offline build.
+PASS overlap NCVS property 2022/2023: 2019,2020,2021,2022
+PASS overlap NCVS property 2022-2023/2024: 2020,2021,2022,2023
+PASS ncvsViolentRate: 1993–2024 (31 points), latest 23.3
+PASS ncvsReportedShare: 1993–2024 (31 points), latest 48.1
+PASS ncvsPropertyRate: 1993–2024 (28 points), latest 97.6
+PASS overlap jail 2022/2023 editions: 2013,2014,2015,2016,2017,2018,2019,2020,2021,2022
+PASS jailRate: 2012–2023 (12 points), latest 198
+PASS correctionalSupervisionRate: 2003–2023 (21 points), latest 2100
+PASS executions: 1930–2023 (94 points), latest 24
+PASS deathRowPopulation: 1953–2023 (71 points), latest 2192
+PASS federalPrisonPopulation: 1980–2025 (46 points), latest 155270
+PASS federalOffendersSentenced: 2002–2025 (24 points), latest 66662
+PASS gallupMoreCrime: 1989–2025 (32 points), latest 49
+PASS gallupAfraidToWalk: 1965–2025 (41 points), latest 31
+PASS gssFearWalking: 1973–2024 (30 points), latest 32.8
+PASS gssFavorDeathPenalty: 1974–2024 (33 points), latest 62.1
+PASS gssCourtsNotHarsh: 1972–2024 (34 points), latest 59.2
+PASS gssGunInHome: 1973–2024 (30 points), latest 38.8
+PASS fraudReports: 2001–2024 (24 points), latest 2600678
+PASS identityTheftReports: 2001–2024 (24 points), latest 1135291
+PASS overlap IC3 2021: 5 complaint counts and 5 losses at chart precision
+PASS overlap IC3 2022: 5 complaint counts and 5 losses at chart precision
+PASS overlap IC3 2023: 5 complaint counts and 5 losses at chart precision
+PASS ic3Complaints: 2011–2025 (15 points), latest 1008597
+PASS ic3Losses: 2011–2025 (15 points), latest 20.877
+wrote 19 series; index 19; deferred 4; errors 0
+
+exit=0

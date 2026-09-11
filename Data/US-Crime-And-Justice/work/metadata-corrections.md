@@ -1,0 +1,15 @@
+# Draft metadata corrections
+
+- Removed unrequested hateCrimeIncidents, violentClearanceRate, and consumerSentinelReports metadata. Added the two requested FTC category series after locating their 24-year table. All other research candidates retain their dispositions in candidate-dispositions.md.
+- FBI draft notes asserted that summing monthly rates was appropriate without a payload. Replaced this with a deferred, unverified-method statement. A future successful recovery must establish counts/population or a valid publisher rate field.
+- NCVS actual historical violent/reported-rate estimates are in cv24at01.csv, Appendix table 1 for Figure 1. Kept Figure 1 conceptual attribution, added exact filename, excluded the publisher's missing 2006 values, and documented the rounded-rate ratio discrepancy. Property gaps reflect cached error pages, not proven absence of publisher tables. Added explicit 2013/2022/2023 edition URLs and overlapping-year checks.
+- Jail named exception expanded from 11 points (2013–2023) to 12 (2012–2023), using ji22st Table 1 and exact overlaps. Replaced source-budget speculation with file-recovery evidence.
+- Correctional supervision uses the current 2003–2023 vintage. Older overlap revisions prevent accepting the 2002 extension; both supposed 2021 ZIPs are login HTML. Recovery audit also records the 2020 revision omitted from the initial draft discussion.
+- Capital-punishment NCJ identifier changed from 311040 to 310309, as both cached tables state. Added the explicit exclusion of 160 military executions during 1930–1961.
+- BOP and USSC annualRule now explicitly says fiscal year. USSC historical URLs use the actual cached canonical archive/sourcebook-YYYY paths, not guessed sourcebook-YYYY paths. Added 2005 guideline and 2018 presentation/variable breaks rather than the draft's unqualified “none known.”
+- Gallup notes no longer claim every observation is an October telephone poll. The last dated observation is selected for each year. The cached trend table does not establish a dated mode transition, so no phone-to-web date is invented.
+- All four GSS sources now say “Computed from.” Added the 2021 and later mode seam, valid-response denominator and rounding. Confirmed COURTS target 2 from embedded labels; excluded OWNGUN 3=refused.
+- FTC draft's claim that category histories do not exist was false: Number_of_Reports_by_Type supplies both histories. Added reporting/contributor and nonexclusive-category caveats.
+- IC3 draft's “11 editions” and unqualified overlap-equality/milestone claims were incorrect. All 15 own editions from 2011–2025 are read. Conflicting retrospective extensions are rejected and documented. Added correct edition list, precision-specific overlap checks, specific table choices, nominal-dollar caveat, and the adjusted/reported-loss seam. Latest loss is the publisher's 20.877 billion, not 20.9.
+
+Detailed values and file evidence are in mismatches.md and recovery.md. sources.json seals every consumed raw file with URL, read date, and hash; fetched is explicitly the build time, not a new network retrieval.

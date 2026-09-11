@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "key": "identityTheftReports",
+    "name": "Identity theft reports",
+    "unit": "reports",
+    "source": "Federal Trade Commission, Consumer Sentinel Network Data Book 2024",
+    "sourceUrl": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "online",
+    "note": "Annual report count by type, 2001–2024, from 2024_CSN_Number_of_Reports_by_Type.csv. Not unique victims or a population incidence rate. Multiple report types can apply; category totals need not equal the unduplicated combined count.",
+    "breaks": "Contributing organizations, public awareness, and classifications change over time. National Do Not Call Registry complaints excluded; reporting volume is not underlying crime incidence.",
+    "method": "2024_CSN_Number_of_Reports_by_Type.csv: Year, Identity Theft.",
+    "bounds": [
+      0,
+      10000000
+    ],
+    "coverage": "2001–2024",
+    "fetched": "2026-09-11T08:29:13.821Z",
+    "sourceRead": "2026-09-10"
+  },
+  "data": {
+    "2001": 86250,
+    "2002": 161977,
+    "2003": 215240,
+    "2004": 246909,
+    "2005": 255687,
+    "2006": 246214,
+    "2007": 259314,
+    "2008": 314587,
+    "2009": 278360,
+    "2010": 251074,
+    "2011": 279191,
+    "2012": 369958,
+    "2013": 290098,
+    "2014": 332545,
+    "2015": 490085,
+    "2016": 398356,
+    "2017": 370915,
+    "2018": 444338,
+    "2019": 649390,
+    "2020": 1388532,
+    "2021": 1434477,
+    "2022": 1107004,
+    "2023": 1036855,
+    "2024": 1135291
+  }
+}

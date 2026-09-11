@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "key": "ic3Complaints",
+    "name": "Internet crime complaints (IC3)",
+    "unit": "complaints",
+    "source": "FBI Internet Crime Complaint Center (IC3), Annual Report",
+    "sourceUrl": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
+    "historicalSourceUrls": [
+      "https://www.ic3.gov/AnnualReport/Reports/2011_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2012_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2013_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2014_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2015_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2016_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2017_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2018_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2019_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2020_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2021_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2022_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2023_IC3Report.pdf",
+      "https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "annual (calendar year, publisher)",
+    "class": "online",
+    "note": "Each 2011–2025 annual report supplies its own national total; 2015 uses the national totals row. No interpolation. Later 2021–2023 chart overlaps are asserted equal, losses at the chart's 0.1-billion precision. Earlier retrospective charts conflict (2001=50,412 in 2011 versus 49,711 in 2025; 2004 differs between 2011/2013; 2012 losses differ in 2012/2013; 2016 losses differ in 2016/2019). These rejected historical extensions are documented in work/mismatches.md. The supposed 2010 PDF is HTML and pdftotext exits 1. Coverage is 2011–2025, not the draft's claimed milestones.",
+    "breaks": "Voluntary IC3 reporting and awareness change over time; totals are not population incidence. Older reports call losses adjusted (large claimed losses reviewed); later reports use reported/potential losses, with a 2016-era definition/presentation seam. Nominal dollars, not inflation adjusted. Edition-specific rounding varies.",
+    "method": "Each 2011–2025 edition's own annual count; 2015 national totals row. Later 2021–2023 five-year chart overlaps asserted equal. Earlier milestone charts excluded after conflicting retrospective counts were found.",
+    "bounds": [
+      0,
+      2000000
+    ],
+    "coverage": "2011–2025",
+    "fetched": "2026-09-11T08:29:13.821Z",
+    "sourceRead": "2026-09-10"
+  },
+  "data": {
+    "2011": 314246,
+    "2012": 289874,
+    "2013": 262813,
+    "2014": 269422,
+    "2015": 288012,
+    "2016": 298728,
+    "2017": 301580,
+    "2018": 351937,
+    "2019": 467361,
+    "2020": 791790,
+    "2021": 847376,
+    "2022": 800944,
+    "2023": 880418,
+    "2024": 859532,
+    "2025": 1008597
+  }
+}

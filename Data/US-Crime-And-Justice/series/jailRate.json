@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "key": "jailRate",
+    "unit": "persons held in local jail per 100,000 U.S. residents",
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "response",
+    "name": "Jail incarceration rate",
+    "source": "Bureau of Justice Statistics, Annual Survey of Jails / Census of Jails",
+    "sourceUrl": "https://bjs.ojp.gov/document/ji23st.zip",
+    "historicalSourceUrls": [
+      "https://bjs.ojp.gov/document/ji22st.zip"
+    ],
+    "note": "Midyear persons held in local jail per 100,000 U.S. residents. Exception: 12 annual points, 2012–2023, the recoverable rate history in this cache. ji22st Table 1 adds 2012=237 to ji23st Table 1; all 2013–2022 overlapping rates match exactly. Cached ji17st–ji21st ZIP paths are BJS Page not found HTML; unzip exits 9. Thus the prior 11-point exception was too narrow. 2019 Census of Jails is a complete enumeration; 2020–2021 declines reflect pandemic-era population changes.",
+    "breaks": "2019 Census of Jails (complete enumeration) replaces the sample-based Annual Survey of Jails for that year only; 2020-2021 COVID-era population decline is a real population shift, not a methodology break.",
+    "method": "ji22stt01.csv column 8 and ji23stt01.csv column 7; 2013–2022 overlap asserted equal.",
+    "bounds": [
+      0,
+      1000
+    ],
+    "coverage": "2012–2023",
+    "fetched": "2026-09-11T08:29:13.821Z",
+    "sourceRead": "2026-09-10"
+  },
+  "data": {
+    "2012": 237,
+    "2013": 231,
+    "2014": 234,
+    "2015": 227,
+    "2016": 229,
+    "2017": 229,
+    "2018": 226,
+    "2019": 224,
+    "2020": 166,
+    "2021": 192,
+    "2022": 199,
+    "2023": 198
+  }
+}

@@ -1,0 +1,13 @@
+1 | import { mkdir, writeFile, appendFile } from "node:fs/promises";
+2 | import { dirname, resolve } from "node:path";
+3 | export type Annual = Record<string, number>;
+4 | export const ROOT = resolve(import.meta.dir, "..");
+5 | export function invariant(ok: unknown, message: string): asserts ok { if (!ok) throw new Error(`InvariantViolation: ${message}`); }
+                                                                                             ^
+error: InvariantViolation: unknown --only selection unknown
+      at invariant (./lib/io.ts:5:90)
+      at ./update.ts:22:29
+
+Bun v1.3.6 (macOS arm64)
+
+exit=1

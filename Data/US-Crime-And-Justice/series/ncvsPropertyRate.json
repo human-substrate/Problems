@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "key": "ncvsPropertyRate",
+    "unit": "victimizations per 1,000 households",
+    "source": "Bureau of Justice Statistics, National Crime Victimization Survey",
+    "sourceUrl": "https://bjs.ojp.gov/document/cv24.zip",
+    "historicalSourceUrls": [
+      "https://bjs.ojp.gov/document/cv13.zip",
+      "https://bjs.ojp.gov/document/cv22.zip",
+      "https://bjs.ojp.gov/document/cv23.zip"
+    ],
+    "goodDirection": "down",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "experienced",
+    "name": "Property victimization (NCVS)",
+    "note": "Property victimizations per 1,000 households. cv13 Figure 1 supplies 1993–2013; cv22/cv23/cv24 Table 2 supplies 2018–2024, with every overlapping year asserted equal. The two disjoint blocks have no overlap and retain the 2014–2017 gap. Cached cv14–cv21 ZIP paths contain BJS error HTML, not usable tables; this is a cache-recovery gap, not evidence the publisher never released the data. The 2006 value (169) is retained as published in cv13 but is not comparable to other years.",
+    "breaks": "Disjoint edition blocks 1993–2013 and 2018–2024; 2014–2017 absent. 2006 not comparable; 2016 sample redesign; 2017 methodology change; 2024 split-sample design. Burglary/trespassing terminology changed; total property measure retained.",
+    "method": "cv13f01.csv property column; cv22/cv23/cv24 Table 2 total property rate columns. Every overlapping year must match exactly; disjoint 1993–2013 and 2018–2024 blocks retain a four-year gap.",
+    "bounds": [
+      0,
+      500
+    ],
+    "coverage": "1993–2024",
+    "fetched": "2026-09-11T08:29:13.821Z",
+    "sourceRead": "2026-09-10"
+  },
+  "data": {
+    "1993": 351.8,
+    "1994": 341.2,
+    "1995": 315.5,
+    "1996": 289.3,
+    "1997": 267.1,
+    "1998": 237.1,
+    "1999": 210.6,
+    "2000": 190.4,
+    "2001": 177.7,
+    "2002": 168.2,
+    "2003": 173.4,
+    "2004": 167.5,
+    "2005": 159.5,
+    "2006": 169,
+    "2007": 154.9,
+    "2008": 142.6,
+    "2009": 132.6,
+    "2010": 125.4,
+    "2011": 138.7,
+    "2012": 155.8,
+    "2013": 131.4,
+    "2018": 108.2,
+    "2019": 101.4,
+    "2020": 94.5,
+    "2021": 90.3,
+    "2022": 101.9,
+    "2023": 102.2,
+    "2024": 97.6
+  }
+}

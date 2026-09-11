@@ -1,0 +1,8 @@
+PASS overlap NCVS property 2022/2023: 2019,2020,2021,2022
+PASS overlap NCVS property 2022-2023/2024: 2020,2021,2022,2023
+PASS ncvsViolentRate: 1993–2024 (31 points), latest 23.3
+PASS ncvsReportedShare: 1993–2024 (31 points), latest 48.1
+PASS ncvsPropertyRate: 1993–2024 (28 points), latest 97.6
+wrote 3 series; index 19; deferred 4; errors 0
+
+exit=0

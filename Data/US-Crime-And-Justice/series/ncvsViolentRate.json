@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "key": "ncvsViolentRate",
+    "unit": "victimizations per 1,000 persons age 12 or older",
+    "source": "Bureau of Justice Statistics, National Crime Victimization Survey",
+    "sourceUrl": "https://bjs.ojp.gov/document/cv24.zip",
+    "historicalSourceUrls": [
+      "https://bjs.ojp.gov/library/publications/list?series_filter=Criminal%20Victimization"
+    ],
+    "goodDirection": "down",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "experienced",
+    "name": "Violent victimization (NCVS)",
+    "note": "Rate of violent victimization (rape/sexual assault, robbery, aggravated assault, simple assault) from the BJS National Crime Victimization Survey, a self-report survey of a nationally representative household sample; does not require the crime to have been reported to police. 2006 NCVS estimates are not comparable to other years (BJS data-collection change); 2016 sample redesign and a 2017 methodology change; 2024 used a split-sample design testing new methods. Self-report survey, not police-reported. Actual source: cv24at01.csv, Appendix table 1 estimates for Figure 1. 2006 is -- and omitted.",
+    "breaks": "2006 NCVS estimates are not comparable to other years (BJS data-collection change); 2016 sample redesign and a 2017 methodology change; 2024 used a split-sample design testing new methods. Self-report survey, not police-reported.",
+    "method": "cv24at01.csv: Year and total violent Rate (column 1); 2006 is publisher -- and omitted.",
+    "bounds": [
+      0,
+      150
+    ],
+    "coverage": "1993–2024",
+    "fetched": "2026-09-11T08:29:13.821Z",
+    "sourceRead": "2026-09-10"
+  },
+  "data": {
+    "1993": 79.8,
+    "1994": 80,
+    "1995": 70.7,
+    "1996": 64.7,
+    "1997": 61.1,
+    "1998": 54.1,
+    "1999": 47.2,
+    "2000": 37.5,
+    "2001": 32.6,
+    "2002": 32.1,
+    "2003": 32.1,
+    "2004": 27.8,
+    "2005": 28.4,
+    "2007": 27.2,
+    "2008": 25.3,
+    "2009": 22.3,
+    "2010": 19.3,
+    "2011": 22.6,
+    "2012": 26.1,
+    "2013": 23.2,
+    "2014": 20.1,
+    "2015": 18.6,
+    "2016": 19.7,
+    "2017": 20.6,
+    "2018": 23.2,
+    "2019": 21,
+    "2020": 16.4,
+    "2021": 16.5,
+    "2022": 23.5,
+    "2023": 22.5,
+    "2024": 23.3
+  }
+}

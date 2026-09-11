@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "key": "correctionalSupervisionRate",
+    "unit": "persons under adult correctional supervision per 100,000 adult U.S. residents",
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "response",
+    "name": "Adults under correctional supervision",
+    "source": "Bureau of Justice Statistics, Correctional Populations in the United States",
+    "sourceUrl": "https://bjs.ojp.gov/document/cpus23st.zip",
+    "historicalSourceUrls": [
+      "https://bjs.ojp.gov/library/publications/list?series_filter=Correctional%20Populations%20in%20the%20United%20States"
+    ],
+    "note": "Total persons supervised by adult correctional systems (probation, parole, prison, or local jail) per 100,000 adult U.S. residents, from Correctional Populations in the United States, 2023 - Statistical Tables (NCJ 310413), Appendix table 1. Rates are rounded by the publisher to the nearest 10. BJS states 2022 and 2023 total-correctional and community-supervision rates are not directly comparable to earlier years because of expanded probation-agency reporting and a January-1 proxy used for the 2022 probation count. Only the current 2003–2023 vintage is shipped. The 2022 edition's 2021=2090 and 2022=2060 disagree with the 2023 edition's 2100 for both, so its 2002 extension is rejected rather than accepting a conflicting stitch. Both supposed 2021 ZIP files are login HTML, not statistical tables.",
+    "breaks": "2022-2023: probation reporting methods and coverage changed for some agencies, and the 2022 probation population uses a January 1, 2023 proxy for the December 31, 2022 count; BJS states these two years are not directly comparable to earlier years for total-correctional and community-supervision rates.",
+    "method": "cpus23stat01.csv Year and Total under supervision; use this single current-vintage history because the 2022 edition has revised overlap values.",
+    "bounds": [
+      0,
+      10000
+    ],
+    "coverage": "2003–2023",
+    "fetched": "2026-09-11T08:29:13.821Z",
+    "sourceRead": "2026-09-10"
+  },
+  "data": {
+    "2003": 3150,
+    "2004": 3170,
+    "2005": 3160,
+    "2006": 3190,
+    "2007": 3210,
+    "2008": 3160,
+    "2009": 3100,
+    "2010": 3000,
+    "2011": 2930,
+    "2012": 2880,
+    "2013": 2830,
+    "2014": 2790,
+    "2015": 2720,
+    "2016": 2640,
+    "2017": 2590,
+    "2018": 2520,
+    "2019": 2480,
+    "2020": 2140,
+    "2021": 2100,
+    "2022": 2100,
+    "2023": 2100
+  }
+}

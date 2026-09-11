@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "key": "batteryCapacity",
+    "name": "Battery storage capacity",
+    "unit": "GW",
+    "class": "grid",
+    "source": "U.S. Energy Information Administration, Monthly Energy Review",
+    "sourceUrl": "https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=BTGBPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc",
+    "note": "MSN BTGBPUS; publisher annual row (MER YYYY13). Original unit: Million Kilowatts. Converted only by the declared unit scale. Exception: battery storage is a recent instrument; 2010–2025, at least 10 annual points. By-source capacity begins in 1989.",
+    "breaks": "Exception: battery storage is a recent instrument; 2010–2025, at least 10 annual points. By-source capacity begins in 1989.",
+    "cadence": "annual",
+    "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
+    "goodDirection": "neutral",
+    "coverage": "2010–2025",
+    "fetched": "2026-09-11T21:19:58.421Z"
+  },
+  "data": {
+    "2010": 0.028,
+    "2011": 0.068,
+    "2012": 0.142,
+    "2013": 0.146,
+    "2014": 0.156,
+    "2015": 0.292,
+    "2016": 0.559,
+    "2017": 0.665,
+    "2018": 0.852,
+    "2019": 1.015,
+    "2020": 1.508,
+    "2021": 4.747,
+    "2022": 8.98,
+    "2023": 15.995,
+    "2024": 27.02,
+    "2025": 42.795
+  }
+}

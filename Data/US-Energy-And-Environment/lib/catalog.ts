@@ -1,0 +1,73 @@
+import type { SeriesMeta, SeriesClass } from "./meta.ts";
+export type Spec = { group: string; name: string; unit: string; class: SeriesClass; bounds: [number, number]; breaks: string; sample?: [string, number, number] };
+const stable = "No discrete break identified in Lane 4; publisher revisions may revise the full historical series.";
+const definitions: [string, string, string, string, SeriesClass, number, number, string?, [string, number, number]?][] = [
+  ["crudeProduction","eia","Crude oil production","thousand barrels/day","production",0,30000,stable,["2025",13586,0]],
+  ["gasProduction","eia","Natural gas marketed production","billion cubic feet","production",0,100000,stable,["2025",43229,0]],
+  ["coalProduction","eia","Coal production","thousand short tons","production",0,2000000,stable,["2025",528423,0]],
+  ["petroleumNetImports","eia","Petroleum net imports","thousand barrels/day","production",-20000,30000,"Negative values mean net exports; net exporter since 2020.",["2025",-2798,0]],
+  ["refineryInput","eia","Refinery crude input","thousand barrels/day","production",0,30000,stable,["2025",16371,0]],
+  ["strategicReserve","eia","Strategic Petroleum Reserve","million barrels","production",0,1000,stable,["2025",413.5,0]],
+  ["provedOilReserves","eia","Proved crude oil reserves","million barrels","production",0,100000,"Two-year publication lag; Lane 4 series ends in 2021. Later observations are excluded by this dataset's specified coverage.",["2021",41151,0]],
+  ["rigCount","eia","Rotary rig count","rigs","production",0,10000,"EIA republishes Baker Hughes rig counts; Baker Hughes is the measurement origin.",["2025",561,0]],
+  ["generationTotal","eia","Total electricity generation","GWh","generation",0,10000000,stable,["2025",4429502,0]],
+  ["genCoal","eia","Coal electricity generation","GWh","generation",0,5000000],
+  ["genGas","eia","Natural gas electricity generation","GWh","generation",0,5000000],
+  ["genNuclear","eia","Nuclear electricity generation","GWh","generation",0,2000000,stable,["2025",784781,0]],
+  ["genHydro","eia","Hydroelectric generation","GWh","generation",0,1000000],
+  ["genWind","eia","Wind electricity generation","GWh","generation",0,2000000,"Wind series begins in 1983; earlier observations excluded."],
+  ["genSolar","eia","Solar electricity generation","GWh","generation",0,2000000,"Solar begins in 1984; small-scale PV is included from 2014, a coverage break.",["2025",295671,0]],
+  ["capacityTotal","eia","Total generating capacity","GW","grid",0,5000,"By-source capacity begins in 1989; total capacity has earlier coverage.",["2025",1279.2,0]],
+  ["batteryCapacity","eia","Battery storage capacity","GW","grid",0,1000,"Exception: battery storage is a recent instrument; 2010–2025, at least 10 annual points. By-source capacity begins in 1989.",["2025",42.8,0]],
+  ["nuclearReactors","eia","Operable nuclear reactors","reactors","grid",0,200,"EIA operable reactors differ from NRC operating reactors; the definitions must not be interchanged.",["2025",94,0]],
+  ["nuclearCapacityFactor","eia","Nuclear capacity factor","percent","generation",0,100,stable,["2025",91,0]],
+  ["salesResidential","eia","Residential electricity sales","GWh","generation",0,5000000,stable,["2025",1514993,0]],
+  ["salesCommercial","eia","Commercial electricity sales","GWh","generation",0,5000000],
+  ["salesIndustrial","eia","Industrial electricity sales","GWh","generation",0,5000000],
+  ["heatingDegreeDays","eia","Heating degree days","degree days","climate",0,10000,"Population weights re-based each census; weight changes affect comparability.",["2025",4021,0]],
+  ["coolingDegreeDays","eia","Cooling degree days","degree days","climate",0,10000,"Population weights re-based each census; weight changes affect comparability.",["2025",1540,0]],
+  ["energyPerCapita","eia","Energy consumption per capita","million Btu/person","production",0,1000,stable,["2025",282,0]],
+  ["energyIntensity","eia","Energy intensity","thousand Btu/real dollar","production",0,100,stable,["2025",4.04,0]],
+  ["co2PerCapita","eia","Energy CO2 per capita","metric tons/person","atmosphere",0,50,stable,["2025",14.3,0]],
+  ["energyIndependence","eia","Energy production/consumption","ratio","production",0,3,stable,["2025",1.11,0]],
+  ["electricityCo2Intensity","eia","Electricity CO2 intensity","metric tons/MWh","atmosphere",0,3,stable,["2025",0.347,0.005]],
+  ["co2Concentration","gml","Mauna Loa atmospheric CO2","ppm","atmosphere",250,600,"Maunakea measurements substituted during 2022–23 after the Mauna Loa eruption.",["2025",427.35,0]],
+  ["co2Growth","gml","Global atmospheric CO2 growth","ppm/year","atmosphere",-5,10,stable,["2025",2.06,0]],
+  ["methaneConcentration","gml","Global atmospheric methane","ppb","atmosphere",1000,3000,stable,["2025",1935.9,0]],
+  ["greenhouseGasIndex","gml","Annual Greenhouse Gas Index","1990 = 1","atmosphere",0,3,stable,["2024",1.538,0]],
+  ["globalTemperature","ncei","Global land/ocean temperature anomaly","°C vs 1901–2000","climate",-3,5,stable,["2025",1.12,0]],
+  ["precipitation","ncei","Contiguous US precipitation","inches","climate",0,100,stable,["2025",29.25,0]],
+  ["seaLevel","star","Global mean sea level","mm, publisher reference","climate",-200,500,"Inter-mission offsets exist across satellite altimeter generations; the reference-series baseline is retained.",["2024",81.9,0.1]], // 2024 read directly from the STAR CSV (mean of the year's observations); Lane 4's 2025 figure was a partial-year read the parser drops
+  ["arcticSeaIce","nsidc","Arctic September sea ice extent","million km²","climate",0,20,"Source dataset version switched in 2025; this run uses the specified v4.0 file throughout.",["2025",4.75,0]],
+  ["wildfireAcres","nifc","Wildfire acres burned","acres","hazards",0,30000000,"Pre-1983 records are not comparable; series starts in 1983.",["2025",5131474,0]],
+  ["namedStorms","nhc","Atlantic named storms","storms","hazards",0,100,"Pre-1966 pre-satellite and pre-1944 pre-reconnaissance eras undercount storms.",["2024",18,0]],
+  ["tornadoes","spc","US tornadoes","tornadoes","hazards",0,5000,"2007 Enhanced Fujita scale change and Doppler-era detection improvements affect comparability."],
+  ["disasterDeclarations","fema","Major disaster declarations","declarations","hazards",0,1000,"Stafford Act 1988 baseline; COVID-19 caused a 2020 anomaly. Fiscal years use FEMA fyDeclared."],
+  ["billionDollarDisasters","billions","Billion-dollar disasters","events","hazards",0,100,"Product retired in 2025; record ends in 2024. No successor data appended (rule 9)."],
+  ["billionDollarCost","billions","Billion-dollar disaster cost","billion CPI-adjusted dollars","hazards",0,1000,"Product retired in 2025; record ends in 2024. No successor data appended (rule 9)."],
+  ["vehicleMiles","fhwa","Vehicle miles traveled","million vehicle miles","transport",0,10000000,"2007–09 HPMS resubmission is a break; specified coverage is 1980–2023.",["2023",3246817,0]],
+  ["emissionsSo2","nei","SO2 emissions excluding wildfires","thousand short tons","pollution",0,100000,"EQUATES methodology 2002–19; 2020–25 include interpolated/projected estimates. 2020, 2021, 2022, 2023, 2024, and 2025 are in the interpolated/projected period; the workbook methodology reproduced in the note identifies edition-specific assignments."],
+  ["emissionsNox","nei","NOx emissions excluding wildfires","thousand short tons","pollution",0,100000,"EQUATES methodology 2002–19; 2020–25 include interpolated/projected estimates. 2020, 2021, 2022, 2023, 2024, and 2025 are in the interpolated/projected period; the workbook methodology reproduced in the note identifies edition-specific assignments."],
+  ["emissionsPm25","nei","PM2.5 emissions excluding wildfires","thousand short tons","pollution",0,100000,"EQUATES methodology 2002–19; 2020–25 include interpolated/projected estimates. 2020, 2021, 2022, 2023, 2024, and 2025 are in the interpolated/projected period; the workbook methodology reproduced in the note identifies edition-specific assignments."],
+  ["emissionsVoc","nei","VOC emissions excluding wildfires","thousand short tons","pollution",0,100000,"EQUATES methodology 2002–19; 2020–25 include interpolated/projected estimates. 2020, 2021, 2022, 2023, 2024, and 2025 are in the interpolated/projected period; the workbook methodology reproduced in the note identifies edition-specific assignments."],
+  ["unhealthyAqiDays","aqs","Unhealthy-or-worse AQI days across ten metros","metro-days","pollution",0,3660,"2024 PM2.5 AQI breakpoint revision changes category thresholds; fixed ten-metro 2020 Census population ranking; changes in monitoring availability affect counts."],
+];
+export const SPECS: Record<string, Spec> = Object.fromEntries(definitions.map(([key,group,name,unit,cl,lo,hi,breaks,sample]) => [key,{group,name,unit,class:cl,bounds:[lo,hi],breaks:breaks??stable,sample}]));
+export function metadata(key: string, source: string, sourceUrl: string, method: string, annualRule = "Publisher annual calendar-year observation; incomplete current years excluded."): SeriesMeta {
+  const s = SPECS[key];
+  return {name:s.name, unit:s.unit, class:s.class, source, sourceUrl, note:`${method} ${s.breaks}`, breaks:s.breaks, cadence:"annual", annualRule, goodDirection:"neutral"};
+}
+export const CUTS: [string,string][] = [
+  ["New-vehicle fuel economy","Deferred: full-trend CSV needs browser-free verification."],
+  ["EV share / charging ports","Deferred: scripted access blocked in Lane 4; manufacturer origin and station/port seam."],
+  ["Pipeline mileage / incidents","Deferred: PHMSA scripted access blocked in Lane 4; 2010 form change."],
+  ["Transmission line miles","Cut, rule 4: no consistent public annual series; EIA-411 discontinued."],
+  ["Grid SAIDI/SAIFI","Deferred: 2013–2024 gives twelve years; customer weighting and IEEE-1366 methods need resolution."],
+  ["Interconnection queue","Deferred: LBNL scripted access blocked in Lane 4."],
+  ["Data-center electricity load","Cut, rule 3: projections only, no historical series."],
+  ["Nitrous oxide","Cut by Lane 4 rule 3 disposition: no additional long-run story beyond CO2/CH4."],
+  ["EPA GHG inventory","Cut this run, rule 6: edition recalculation and draft/final status."],
+  ["National mean PM2.5","Deferred: EPA fixed-site completeness rule must be replicated."],
+  ["Population above NAAQS","Cut, rule 6: changing standards and latest-year-only coverage."],
+  ["TRI / drinking-water violations","Cut, rules 6/4: chemical-list and reporting seams."],
+];

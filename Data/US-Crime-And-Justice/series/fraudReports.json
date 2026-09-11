@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "key": "fraudReports",
+    "name": "Fraud reports",
+    "unit": "reports",
+    "source": "Federal Trade Commission, Consumer Sentinel Network Data Book 2024",
+    "sourceUrl": "https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip",
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "annual (publisher)",
+    "class": "online",
+    "note": "Annual report count by type, 2001–2024, from 2024_CSN_Number_of_Reports_by_Type.csv. Not unique victims or a population incidence rate. Multiple report types can apply; category totals need not equal the unduplicated combined count.",
+    "breaks": "Contributing organizations, public awareness, and classifications change over time. National Do Not Call Registry complaints excluded; reporting volume is not underlying crime incidence.",
+    "method": "2024_CSN_Number_of_Reports_by_Type.csv: Year, Fraud; not the combined Report_Count table.",
+    "bounds": [
+      0,
+      10000000
+    ],
+    "coverage": "2001–2024",
+    "fetched": "2026-09-11T08:29:13.821Z",
+    "sourceRead": "2026-09-10"
+  },
+  "data": {
+    "2001": 137306,
+    "2002": 242783,
+    "2003": 331366,
+    "2004": 410298,
+    "2005": 437585,
+    "2006": 423672,
+    "2007": 505563,
+    "2008": 620832,
+    "2009": 708781,
+    "2010": 820072,
+    "2011": 1041517,
+    "2012": 1112693,
+    "2013": 1159115,
+    "2014": 1526365,
+    "2015": 1165393,
+    "2016": 1228865,
+    "2017": 1310003,
+    "2018": 1523295,
+    "2019": 1897238,
+    "2020": 2467103,
+    "2021": 3041971,
+    "2022": 2572424,
+    "2023": 2621649,
+    "2024": 2600678
+  }
+}

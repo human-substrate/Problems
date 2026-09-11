@@ -1,10 +1,8 @@
 // xlsx.ts — minimal .xlsx reader (zip of XML) with no dependencies: sheet names + rows by sheet name.
 // Returns each row as { A: "…", B: "…" } keyed by column letter; shared strings resolved; numbers as strings.
+import {command} from "./io.ts";
 async function member(zip: string, name: string): Promise<string> {
-  const p = Bun.spawn(["unzip", "-p", zip, name], { stdout: "pipe", stderr: "pipe" });
-  const txt = await new Response(p.stdout).text();
-  if ((await p.exited) !== 0) throw new Error(`unzip ${name} from ${zip} failed`);
-  return txt;
+  return command(["unzip", "-p", zip, name]);
 }
 const unesc = (s: string) => s.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&apos;/g, "'");
 export async function sheetNames(zip: string): Promise<string[]> {
@@ -20,7 +18,11 @@ export async function sheetRows(zip: string, sheet?: string | number): Promise<R
   if (!pick) throw new Error(`sheet ${sheet} not in [${sheets.map((s) => s.name).join(", ")}]`);
   let path = target(pick.rid)!; path = path.startsWith("/") ? path.slice(1) : `xl/${path}`;
   let strings: string[] = [];
-  try { const ss = await member(zip, "xl/sharedStrings.xml"); strings = [...ss.matchAll(/<si>([\s\S]*?)<\/si>/g)].map((m) => unesc(m[1].replace(/<[^>]+>/g, ""))); } catch {}
+  try { const ss = await member(zip, "xl/sharedStrings.xml"); strings = [...ss.matchAll(/<si>([\s\S]*?)<\/si>/g)].map((m) => unesc(m[1].replace(/<[^>]+>/g, ""))); } catch (error) {
+    // sharedStrings is optional for workbooks containing only inline strings.
+    const members = await command(["unzip", "-Z1", zip]);
+    if (members.split(/\r?\n/).includes("xl/sharedStrings.xml")) throw error;
+  }
   const xml = await member(zip, path);
   const rows: Record<string, string>[] = [];
   for (const r of xml.matchAll(/<row[^>]*>([\s\S]*?)<\/row>/g)) {
