@@ -3,7 +3,7 @@
     "key": "childrenWithTwoParents",
     "name": "Children living with two parents",
     "unit": "percent of children under 18",
-    "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+    "source": "computed from the U.S. Census Bureau historical family and living-arrangement tables (counts divided within the same table)",
     "sourceUrl": "https://www2.census.gov/programs-surveys/demo/tables/families/time-series/children/ch1.xls",
     "goodDirection": "neutral",
     "cadence": "annual",

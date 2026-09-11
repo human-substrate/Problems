@@ -18,6 +18,6 @@ export async function buildNcei(p:Pipeline):Promise<void> {
   for(const[key,url]of Object.entries(sources)) await p.run(key,async()=>{
     const text=await getText(url,"csv");
     invariant(key!=="globalTemperature"||/1901.*2000/.test(text),"Global temperature reference period 1901–2000 not verified in response");
-    await p.save({key,data:parseCag(text),bounds:SPECS[key].bounds,meta:metadata(key,"NOAA NCEI Climate at a Glance",url,"12-month period ending December; global land/ocean anomaly against 1901–2000 or contiguous US precipitation total.")});
+    await p.save({key,data:parseCag(text),bounds:SPECS[key].bounds,meta:metadata(key,"NOAA NCEI Climate at a Glance",url,key==="globalTemperature"?"12-month period ending December; global land and ocean surface temperature anomaly against the 1901–2000 average.":"12-month period ending December; contiguous United States precipitation total in inches.")});
   });
 }

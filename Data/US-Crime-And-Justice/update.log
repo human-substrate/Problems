@@ -235,3 +235,77 @@ PASS burglaryRate: 2000–2024 (25 points), latest 232
 PASS robberyRate: 2000–2024 (25 points), latest 61.7
 PASS aggravatedAssaultRate: 2000–2024 (25 points), latest 257.5
 wrote 4 series; index 23; deferred 0; errors 0
+2026-09-11T21:59:15.813Z --only fbi,ncvs
+PASS motorVehicleTheftRate: 2000–2024 (25 points), latest 257.9
+PASS burglaryRate: 2000–2024 (25 points), latest 232
+PASS robberyRate: 2000–2024 (25 points), latest 61.7
+PASS aggravatedAssaultRate: 2000–2024 (25 points), latest 257.5
+PASS ncvsViolentRate: 1993–2024 (31 points), latest 23.3
+PASS ncvsReportedShare: 1993–2024 (31 points), latest 48.1
+PASS ncvsPropertyRate: 1993–2024 (28 points), latest 97.6
+wrote 7 series; index 23; deferred 0; errors 0
+2026-09-11T22:00:58.865Z --only ncvs,fbi
+DEFERRED aggravatedAssaultRate: Error: InvariantViolation: https://api.usa.gov/crime/fbi/cde/summarized/national/aggravated-assault?from=01-2000&to=12-2025: LIVE HTTP 429 Too Many Requests; body: {
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later or contact us for assistance: https://api.usa.gov:443"
+  }
+}
+PASS motorVehicleTheftRate: 2000–2025 (26 points), latest 201.1
+PASS burglaryRate: 2000–2025 (26 points), latest 196.1
+PASS robberyRate: 2000–2025 (26 points), latest 50.2
+PASS ncvsViolentRate: 1993–2024 (31 points), latest 23.3
+PASS ncvsReportedShare: 1993–2024 (31 points), latest 48.1
+PASS ncvsPropertyRate: 1993–2024 (31 points), latest 97.6
+wrote 6 series; index 22; deferred 1; errors 0
+2026-09-11T22:01:33.286Z --only aggravatedAssaultRate
+DEFERRED aggravatedAssaultRate: Error: InvariantViolation: https://api.usa.gov/crime/fbi/cde/summarized/national/aggravated-assault?from=01-2000&to=12-2025: LIVE HTTP 429 Too Many Requests; body: {
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later or contact us for assistance: https://api.usa.gov:443"
+  }
+}
+wrote 0 series; index 22; deferred 1; errors 0
+2026-09-11T22:53:00.393Z --only aggravatedAssaultRate
+DEFERRED aggravatedAssaultRate: Error: InvariantViolation: https://api.usa.gov/crime/fbi/cde/summarized/national/aggravated-assault?from=01-2000&to=12-2025: LIVE HTTP 429 Too Many Requests; body: {
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later or contact us for assistance: https://api.usa.gov:443"
+  }
+}
+wrote 0 series; index 22; deferred 1; errors 0
+2026-09-11T23:01:09.033Z --only corrections,gss,ic3
+FAIL corrections: Error: InvariantViolation: jailRate: insufficient annual points
+PASS gssFearWalking: 1973–2024 (30 points), latest 32.8
+PASS gssFavorDeathPenalty: 1974–2024 (33 points), latest 62.1
+PASS gssCourtsNotHarsh: 1972–2024 (34 points), latest 59.2
+PASS gssGunInHome: 1973–2024 (30 points), latest 38.8
+PASS ic3Complaints: 2011–2025 (15 points), latest 1008597
+PASS ic3Losses: 2011–2025 (15 points), latest 20.877
+wrote 6 series; index 22; deferred 1; errors 1
+2026-09-11T23:01:15.394Z --only corrections
+FAIL corrections: Error: InvariantViolation: jailRate: insufficient annual points
+wrote 0 series; index 22; deferred 1; errors 1
+2026-09-11T23:01:29.835Z --only corrections
+PASS jailRate: 2012–2024 (13 points), latest 194
+PASS correctionalSupervisionRate: 2003–2023 (21 points), latest 2100
+wrote 2 series; index 22; deferred 1; errors 0
+2026-09-11T23:01:37.917Z --only aggravatedAssaultRate
+DEFERRED aggravatedAssaultRate: Error: InvariantViolation: https://api.usa.gov/crime/fbi/cde/summarized/national/aggravated-assault?from=01-2000&to=12-2025: LIVE HTTP 429 Too Many Requests; body: {
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later or contact us for assistance: https://api.usa.gov:443"
+  }
+}
+wrote 0 series; index 22; deferred 1; errors 0
+2026-09-11T23:06:37.354Z --only aggravatedAssaultRate
+DEFERRED aggravatedAssaultRate: Error: InvariantViolation: https://api.usa.gov/crime/fbi/cde/summarized/national/aggravated-assault?from=01-2000&to=12-2025: LIVE HTTP 429 Too Many Requests; body: {
+  "error": {
+    "code": "OVER_RATE_LIMIT",
+    "message": "You have exceeded your rate limit. Try again later or contact us for assistance: https://api.usa.gov:443"
+  }
+}
+wrote 0 series; index 22; deferred 1; errors 0
+2026-09-11T23:07:05.621Z --only aggravatedAssaultRate
+PASS aggravatedAssaultRate: 2000–2024 (25 points), latest 257.5
+wrote 1 series; index 23; deferred 0; errors 0

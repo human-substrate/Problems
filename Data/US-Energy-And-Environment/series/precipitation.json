@@ -6,13 +6,13 @@
     "class": "climate",
     "source": "NOAA NCEI Climate at a Glance",
     "sourceUrl": "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/time-series/110/pcp/12/12/1895-2025.csv",
-    "note": "12-month period ending December; global land/ocean anomaly against 1901–2000 or contiguous US precipitation total. No discrete break identified in Lane 4; publisher revisions may revise the full historical series.",
-    "breaks": "No discrete break identified in Lane 4; publisher revisions may revise the full historical series.",
+    "note": "12-month period ending December; contiguous United States precipitation total in inches. None known; publisher revisions may revise the full history.",
+    "breaks": "none known; publisher revisions may revise the full history.",
     "cadence": "annual",
     "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
     "goodDirection": "neutral",
     "coverage": "1895–2025",
-    "fetched": "2026-09-11T21:19:58.421Z"
+    "fetched": "2026-09-11T21:58:42.952Z"
   },
   "data": {
     "1895": 27.53,

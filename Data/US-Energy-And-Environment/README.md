@@ -87,7 +87,7 @@ Primary publishers only. Calendar years except FEMA fiscal-year numbers; degree-
 | [Global land/ocean temperature anomaly](series/globalTemperature.json) | 1.12 °C vs 1901–2000 (2025) | -0.15 °C vs 1901–2000 (1850) | 1850–2025; 176 points | NOAA NCEI Climate at a Glance |
 | [Heating degree days](series/heatingDegreeDays.json) | 4,021 degree days (2025) | 4,933 degree days (1949) | 1949–2025; 77 points | U.S. Energy Information Administration, Monthly Energy Review |
 | [Contiguous US precipitation](series/precipitation.json) | 29.25 inches (2025) | 27.53 inches (1895) | 1895–2025; 131 points | NOAA NCEI Climate at a Glance |
-| [Global mean sea level](series/seaLevel.json) | 81.887162 mm, publisher reference (2024) | -19.405 mm, publisher reference (1993) | 1993–2024; 32 points | computed from NOAA STAR satellite altimetry |
+| [Global mean sea level](series/seaLevel.json) | 81.887162 mm above the satellite-era reference mean (NOAA STAR sea level anomaly) (2024) | -19.405 mm above the satellite-era reference mean (NOAA STAR sea level anomaly) (1993) | 1993–2024; 32 points | computed from NOAA STAR satellite altimetry |
 
 ## Natural hazards and declarations
 
@@ -96,7 +96,7 @@ Primary publishers only. Calendar years except FEMA fiscal-year numbers; degree-
 | [Billion-dollar disaster cost](series/billionDollarCost.json) | 182.7136 billion CPI-adjusted dollars (2024) | 45.6738 billion CPI-adjusted dollars (1980) | 1980–2024; 44 points | computed from NOAA NCEI billion-dollar disaster individual event records |
 | [Billion-dollar disasters](series/billionDollarDisasters.json) | 27 events (2024) | 3 events (1980) | 1980–2024; 44 points | computed from NOAA NCEI billion-dollar disaster individual event records |
 | [Major disaster declarations](series/disasterDeclarations.json) | 61 declarations (2025) | 10 declarations (1953) | 1953–2025; 73 points | computed from OpenFEMA Disaster Declarations Summaries |
-| [Atlantic named storms](series/namedStorms.json) | 13 storms (2025) | 6 storms (1851) | 1851–2025; 175 points | computed from NOAA NHC Atlantic HURDAT2 |
+| [Atlantic tropical storms and hurricanes](series/namedStorms.json) | 13 systems reaching tropical-storm strength (≥34 kt) (2025) | 6 systems reaching tropical-storm strength (≥34 kt) (1851) | 1851–2025; 175 points | computed from NOAA NHC Atlantic HURDAT2 |
 | [US tornadoes](series/tornadoes.json) | 1,765 tornadoes (2024) | 200 tornadoes (1950) | 1950–2024; 75 points | computed from NOAA Storm Prediction Center tornado records |
 | [Wildfire acres burned](series/wildfireAcres.json) | 5,131,474 acres (2025) | 1,323,666 acres (1983) | 1983–2025; 43 points | National Interagency Fire Center |
 

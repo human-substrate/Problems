@@ -9,7 +9,7 @@
     "cadence": "annual",
     "annualRule": "publisher survey/census year; sparse historical observations retained",
     "class": "living",
-    "breaks": "2014 ASEC questionnaire redesign; decennial population-control revisions (the publisher's lettered r rows, taken over the original); 2021 appears twice in the tables (the later-method row is taken); 2025 uses Vintage-2025 population controls; 2019 onward includes same-sex married couples.",
+    "breaks": "Discontinued after 2006 when the CPS began measuring cohabitation directly; decennial population-control revisions (the publisher's lettered r rows, taken over the original).",
     "note": "Indirect Partners of Opposite Sex Sharing Living Quarters classification; adults need not identify as unmarried partners. Decennial 1960/1970 and annual 1977–2006 observations, including three earlier annual observations present in the source beyond the requested 1980 start. Discontinued in 2007 when CPS measured cohabitation directly. Paired with cohabitingCouples, never joined; the direct measure's householder restriction changed in 2007.",
     "coverage": "1960–2006",
     "fetched": "2026-09-11T21:49:24.465Z"

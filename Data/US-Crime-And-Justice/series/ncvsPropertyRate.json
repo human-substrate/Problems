@@ -16,13 +16,13 @@
     "name": "Property victimization (NCVS)",
     "note": "Property victimizations per 1,000 households. cv13 Figure 1 supplies 1993–2013; cv22/cv23/cv24 Table 2 supplies 2018–2024, with every overlapping year asserted equal. The two disjoint blocks have no overlap and retain the 2014–2017 gap. Cached cv14–cv21 ZIP paths contain BJS error HTML, not usable tables; this is a cache-recovery gap, not evidence the publisher never released the data. The 2006 value (169) is retained as published in cv13 but is not comparable to other years.",
     "breaks": "Disjoint edition blocks 1993–2013 and 2018–2024; 2014–2017 absent. 2006 not comparable; 2016 sample redesign; 2017 methodology change; 2024 split-sample design. Burglary/trespassing terminology changed; total property measure retained.",
-    "method": "cv13f01.csv property column; cv22/cv23/cv24 Table 2 total property rate columns. Every overlapping year must match exactly; disjoint 1993–2013 and 2018–2024 blocks retain a four-year gap.",
+    "method": "cv13f01.csv property column for 1993–2013; the Criminal Victimization 2018 bulletin's Table 3 for 2014–2018; cv22/cv23/cv24 Table 2 total property rate columns for 2018–2024. Every overlapping year across editions must match exactly (2018 across cv18/cv22; 2019–2023 across cv22/cv23/cv24). 2006 is omitted as not comparable, the same rule as the violent series.",
     "bounds": [
       0,
       500
     ],
     "coverage": "1993–2024",
-    "fetched": "2026-09-11T08:29:13.821Z",
+    "fetched": "2026-09-11T22:00:58.865Z",
     "sourceRead": "2026-09-10"
   },
   "data": {
@@ -39,7 +39,6 @@
     "2003": 173.4,
     "2004": 167.5,
     "2005": 159.5,
-    "2006": 169,
     "2007": 154.9,
     "2008": 142.6,
     "2009": 132.6,
@@ -47,6 +46,10 @@
     "2011": 138.7,
     "2012": 155.8,
     "2013": 131.4,
+    "2014": 118.1,
+    "2015": 110.7,
+    "2016": 118.6,
+    "2017": 108.4,
     "2018": 108.2,
     "2019": 101.4,
     "2020": 94.5,

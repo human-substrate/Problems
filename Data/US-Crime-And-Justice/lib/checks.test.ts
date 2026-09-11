@@ -4,7 +4,7 @@ const data = async (key: string): Promise<Record<string, number>> => (await Bun.
 test("NCVS violent: 2024 appendix table 1", async () => { const d = await data("ncvsViolentRate"); expect(d[2024]).toBe(23.3); expect(d[1993]).toBe(79.8); });
 test("NCVS property: 2024 table 2", async () => { expect((await data("ncvsPropertyRate"))[2024]).toBe(97.6); });
 test("NCVS reported share: ratio of rounded appendix rates", async () => { expect((await data("ncvsReportedShare"))[2024]).toBe(48.1); });
-test("Jail: 2023 table 1", async () => { expect((await data("jailRate"))[2023]).toBe(198); });
+test("Jail: 2024 table 1, newest edition wins", async () => { const d = await data("jailRate"); expect(d[2024]).toBe(194); expect(d[2023]).toBe(197); expect(d[2012]).toBe(237); });
 test("Correctional supervision: 2023 appendix table 1", async () => { expect((await data("correctionalSupervisionRate"))[2023]).toBe(2100); });
 test("Executions: 2023 appendix table 4", async () => { const d = await data("executions"); expect(d[1930]).toBe(155); expect(d[2023]).toBe(24); });
 test("Death row: 2023 appendix table 1", async () => { expect((await data("deathRowPopulation"))[2023]).toBe(2192); });

@@ -6,7 +6,7 @@ import { xlsRows } from "./xls.ts";
 const source2025 = "https://www2.census.gov/programs-surveys/popest/tables/2020-2025/national/asrh/nc-est2025-agesex.xlsx";
 const source2020 = "https://www2.census.gov/programs-surveys/popest/tables/2010-2020/intercensal/national/asrh/nc-est2020int-agesex.xlsx";
 const source2010 = "https://www2.census.gov/programs-surveys/popest/tables/2000-2010/intercensal/national/us-est00int-01.xls";
-const extension = "The 1970–1999 extension is deferred: the historical Census workbooks cover resident population plus armed forces overseas, or single-year ages without a published median, so they are not joined (evidence in work/population-report.md).";
+const extension = "The 1970–1999 extension is deferred: the historical Census workbooks cover resident population plus armed forces overseas, or single-year ages without a published median, so they are not joined.";
 type PopulationTable = { rows: Row[]; total: Row; older: Row; median: Row };
 function table(rows: Row[], olderFormat: boolean, title: string): PopulationTable {
   invariant(rows.length > 30 && rows.length < 200 && (rows[1]?.A ?? "").includes(title), `Population workbook missing title or invalid row count: ${title}`);
@@ -54,8 +54,8 @@ export async function buildPopulation(p: Pipeline): Promise<void> {
       invariant(Object.keys(data).length === 26, `${key}: expected 26 annual observations`);
       const meta: SeriesMeta = {
         name: share ? "Resident population age 65 and older" : "Median age of the resident population", unit: share ? "%" : "years",
-        source: "U.S. Census Bureau, Population Estimates Program", sourceUrl: source2025, historicalSourceUrls: [source2010, source2020],
-        note: `${share ? "Computed from all-sexes age-65-and-older counts divided by all-sexes total resident population." : "Published all-sexes median age, rounded to two decimals; the 2000–2010 workbook carries additional underlying precision."} Vintage list: 2000–2010 intercensal estimates for 2000–2009; 2010–2020 intercensal estimates for 2010–2019; Vintage 2025 estimates for 2020–2025. Newer vintage wins at 2010 and 2020. A22 compares April 1 census/base observations at the same dates, allowing 0.3 years or 0.2 percentage points. ${extension}`,
+        source: share ? "computed from U.S. Census Bureau Population Estimates Program age-group counts (65 and older divided by total)" : "U.S. Census Bureau, Population Estimates Program", sourceUrl: source2025, historicalSourceUrls: [source2010, source2020],
+        note: `${share ? "Computed from all-sexes age-65-and-older counts divided by all-sexes total resident population." : "Published all-sexes median age, rounded to two decimals; the 2000–2010 workbook carries additional underlying precision."} Vintage list: 2000–2010 intercensal estimates for 2000–2009; 2010–2020 intercensal estimates for 2010–2019; Vintage 2025 estimates for 2020–2025. Newer vintage wins at 2010 and 2020. ${extension}`,
         goodDirection: "neutral", cadence: "annual", annualRule: "July 1 resident population estimate; one observation per calendar year.", class: "population",
         breaks: "Intercensal/vintage splice at 2010 and 2020; census-base revisions can change estimates. July annual estimates are not replaced by April census/base observations.",
       };

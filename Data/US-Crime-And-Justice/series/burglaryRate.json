@@ -3,7 +3,7 @@
     "key": "burglaryRate",
     "name": "Burglary",
     "unit": "reported offenses per 100,000 people covered by reporting agencies",
-    "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
+    "source": "computed from FBI Crime Data Explorer monthly participating-agency offense counts, per 100,000 covered population (not the FBI's estimated national rate)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [
       "https://api.usa.gov/crime/fbi/cde/summarized/national/burglary"
@@ -12,15 +12,15 @@
     "cadence": "annual",
     "annualRule": "annual (sum of twelve monthly actual counts / December population × 100,000)",
     "class": "reported",
-    "note": "The monthly rates field is the FBI’s own monthly per-100,000 figure and is not summed here. Payload horizon and population coverage are recorded when built. Only complete calendar years are included. Denominator: the population covered by agencies that reported that month, the FBI's own basis for its CDE rates, so this line is not the same construct as the estimated national rates (violent, property, homicide) beside it, which the FBI estimates for the whole population. Agency coverage of the U.S. population ranged 74.1–98.4% across 2000–2024 (74.1–79.1% during the 2021 NIBRS transition); the monthly coverage map is kept in work/coverage-burglaryRate.json. Data horizon: 08/2026.",
+    "note": "Annual rate computed here as the sum of twelve monthly reported offense counts divided by the December population covered by reporting agencies, times 100,000; the FBI's own displayed annual rate can differ from this figure. Only complete calendar years are included. Denominator: the population covered by agencies that reported that month, the FBI's own basis for its CDE rates, so this line is not the same construct as the estimated national rates (violent, property, homicide) beside it, which the FBI estimates for the whole population. Agency coverage of the U.S. population ranged 74.1–98.4% across 2000–2024 (74.1–79.1% during the 2021 NIBRS transition).",
     "breaks": "2021 SRS→NIBRS-only transition changed agency participation and estimation. The 2013 federal rape/sexual-assault definition change is not a direct definition change for this non-rape offense. FBI’s 2013 Rape Addendum describes changes to rape, sodomy and sexual assault with an object, not these offense definitions: https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/rape-addendum.",
     "method": "Sum all twelve monthly offenses.actuals[United States Offenses] counts for each calendar year, divide by that year's December populations.participated_population[United States] (the population covered by reporting agencies, the FBI's own denominator: the twelve monthly offenses.rates values sum to this figure within rounding), then multiply by 100,000; round to one decimal. Drop incomplete years; never sum monthly rates.",
     "bounds": [
       0,
       10000
     ],
-    "coverage": "2000–2024",
-    "fetched": "2026-09-11T21:53:59.500Z",
+    "coverage": "2000–2025",
+    "fetched": "2026-09-11T22:00:58.865Z",
     "sourceRead": "2026-09-10"
   },
   "data": {
@@ -48,6 +48,7 @@
     "2021": 257.4,
     "2022": 275.3,
     "2023": 253,
-    "2024": 232
+    "2024": 232,
+    "2025": 196.1
   }
 }

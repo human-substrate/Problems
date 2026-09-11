@@ -530,7 +530,7 @@ monitoringthefuture.org (403 to every fetcher) · www.cdc.gov, wonder.cdc.gov, s
 - **Unit:** percent agreeing the lot of the average person is getting worse
 - **Coverage:** 1973–1994
 - **Method:** variable ANOMIA5: 1 of valid codes 1/2, weight WTSSPS
-- **Note:** In spite of what some people say, the lot (situation/condition) of the average man is getting worse, not better — do you agree or disagree? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.
+- **Note:** What people believe: In spite of what some people say, the lot (situation/condition) of the average man is getting worse, not better — do you agree or disagree? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.
 
 ### Marriage Is Very Happy (`gssMarriageVeryHappy`)
 
@@ -557,7 +557,7 @@ monitoringthefuture.org (403 to every fetcher) · www.cdc.gov, wonder.cdc.gov, s
 - **Unit:** percent saying most people try to be fair (vs. would take advantage)
 - **Coverage:** 1972–2024
 - **Method:** variable FAIR: 2 of valid codes 1/2/3, weight WTSSPS
-- **Note:** Do you think most people would try to take advantage of you if they got a chance, or would they try to be fair? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.
+- **Note:** What people believe: Do you think most people would try to take advantage of you if they got a chance, or would they try to be fair? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.
 
 ### People Try to Be Helpful (`gssPeopleHelpful`)
 
@@ -566,7 +566,7 @@ monitoringthefuture.org (403 to every fetcher) · www.cdc.gov, wonder.cdc.gov, s
 - **Unit:** percent saying most people try to be helpful (vs. looking out for themselves)
 - **Coverage:** 1972–2024
 - **Method:** variable HELPFUL: 1 of valid codes 1/2/3, weight WTSSPS
-- **Note:** Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.
+- **Note:** What people believe: Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.
 
 ### Hard Work Gets You Ahead (`hardWorkGetsAhead`)
 

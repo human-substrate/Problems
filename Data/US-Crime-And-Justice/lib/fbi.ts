@@ -13,7 +13,7 @@ export function annualize(payload:any):Annual {
   const populations=payload?.populations?.participated_population?.['United States'];
   invariant(counts&&populations,'CDE: missing actuals or population maps');
   const data:Annual={};
-  for(let year=2000;year<=2024;year++){
+  for(let year=2000;year<=2025;year++){
     const months=Array.from({length:12},(_,i)=>`${String(i+1).padStart(2,'0')}-${year}`);
     if(!months.every(m=>Object.hasOwn(counts,m)&&Number.isFinite(numeric(counts[m]))))continue;
     const values=months.map(m=>numeric(counts[m])),population=numeric(populations[`12-${year}`]);
@@ -27,7 +27,7 @@ async function source(offense:string):Promise<string>{
   const path=`.cache/cde-${offense}.json`;
   const manifest=await Bun.file(`${ROOT}/sources.json`).json();
   if(manifest.files[path]&&await Bun.file(`${ROOT}/${path}`).exists())return path;
-  const url=`https://api.usa.gov/crime/fbi/cde/summarized/national/${offense}?from=01-2000&to=12-2024`;
+  const url=`https://api.usa.gov/crime/fbi/cde/summarized/national/${offense}?from=01-2000&to=12-2025`;
   const key=process.env.FBI_API_KEY||'DEMO_KEY';
   let response:Response;
   try { response=await fetch(`${url}&API_KEY=${encodeURIComponent(key)}`,{signal:AbortSignal.timeout(30000)}); }
@@ -54,7 +54,7 @@ export async function fbi(defer:(key:string,error:string)=>void):Promise<Result[
       const covVals=Object.values(coverage as Record<string,number>).map(Number).filter(Number.isFinite);
       const cov2021=Object.entries(coverage as Record<string,number>).filter(([m])=>m.endsWith("-2021")).map(([,v])=>Number(v));
       await write(`work/coverage-${key}.json`,JSON.stringify({maxDataDate:horizon,percentOfPopulationCoverage:coverage},null,1));
-      META[key].note=`${baseNotes[key]} Denominator: the population covered by agencies that reported that month, the FBI's own basis for its CDE rates, so this line is not the same construct as the estimated national rates (violent, property, homicide) beside it, which the FBI estimates for the whole population. Agency coverage of the U.S. population ranged ${Math.min(...covVals).toFixed(1)}–${Math.max(...covVals).toFixed(1)}% across 2000–2024 (${cov2021.length?Math.min(...cov2021).toFixed(1)+"–"+Math.max(...cov2021).toFixed(1)+"% during the 2021 NIBRS transition":"2021 not reported"}); the monthly coverage map is kept in work/coverage-${key}.json. Data horizon: ${horizon}.`;
+      META[key].note=`${baseNotes[key]} Denominator: the population covered by agencies that reported that month, the FBI's own basis for its CDE rates, so this line is not the same construct as the estimated national rates (violent, property, homicide) beside it, which the FBI estimates for the whole population. Agency coverage of the U.S. population ranged ${Math.min(...covVals).toFixed(1)}–${Math.max(...covVals).toFixed(1)}% across 2000–2024 (${cov2021.length?Math.min(...cov2021).toFixed(1)+"–"+Math.max(...cov2021).toFixed(1)+"% during the 2021 NIBRS transition":"2021 not reported"})`;
       const expected=key==='robberyRate'?60.6:key==='aggravatedAssaultRate'?256.1:undefined;
       if(expected!==undefined&&data[2024]!==expected){
         const row=`| FBI ${key}, 2024 | ${expected} | ${path}: sum of twelve actuals / December participated population × 100,000, rounded to one decimal = ${data[2024]??'missing (incomplete year)'}. Preserve source calculation; do not substitute candidate value. |`;
@@ -63,7 +63,19 @@ export async function fbi(defer:(key:string,error:string)=>void):Promise<Result[
         console.warn(`MISMATCH ${key} 2024: candidate ${expected}, computed ${data[2024]}; recorded in work/mismatches.md`);
       }
       results.push({key,data,bounds:[0,10000],method});
-    }catch(e){defer(key,String(e));}
+    }catch(e){
+      // A rate-limited refetch (HTTP 429 on DEMO_KEY) is transient: keep the last good build of this series rather than dropping it from the index.
+      const prior=Bun.file(`${ROOT}/series/${key}.json`);
+      if(/HTTP 429/.test(String(e))&&await prior.exists()){
+        const s=await prior.json();
+        invariant(s?._meta?.key===key&&Object.keys(s.data??{}).length>=15,`${key}: prior build unusable`);
+        META[key].note=s._meta.note;
+        console.warn(`RETAINED ${key}: refetch rate-limited (HTTP 429); prior build ${s._meta.coverage} kept`);
+        results.push({key,data:s.data,bounds:[0,10000],method:"prior build retained after a rate-limited refetch"});
+        continue;
+      }
+      defer(key,String(e));
+    }
   }
   return results;
 }

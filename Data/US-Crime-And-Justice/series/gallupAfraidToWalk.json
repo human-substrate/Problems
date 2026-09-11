@@ -10,7 +10,7 @@
     "source": "Gallup, Crime",
     "sourceUrl": "https://news.gallup.com/poll/1603/crime.aspx",
     "note": "What people believe: Gallup poll asking whether the respondent would be afraid to walk alone at night within a mile of their home. Value is percent saying yes. Last dated poll in each calendar year; older observations are not all October. What people believe, not measured crime incidence. The cached trend page does not establish a dated mode transition for these specific items.",
-    "breaks": "Irregular polling years and dates; survey mode and question-order effects may affect comparisons. The cached table does not document a specific phone-to-web transition date; none is invented.",
+    "breaks": "none known that is dated: irregular polling years and dates, and survey mode and question-order effects may affect comparisons; Gallup's table does not date its phone-to-web transition.",
     "method": "Gallup Crime > Walk Alone Table: Yes column. Newest-first dated table: last poll in each year; no averaging or interpolation.",
     "bounds": [
       0,

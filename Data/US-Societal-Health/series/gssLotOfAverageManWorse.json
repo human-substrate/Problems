@@ -9,11 +9,11 @@
       "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip"
     ],
     "goodDirection": "down",
-    "note": "In spite of what some people say, the lot (situation/condition) of the average man is getting worse, not better — do you agree or disagree? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.",
+    "note": "What people believe: In spite of what some people say, the lot (situation/condition) of the average man is getting worse, not better — do you agree or disagree? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.",
     "method": "variable ANOMIA5: 1 of valid codes 1/2, weight WTSSPS",
     "breaks": "item retired from the GSS after 1994; 2021 web-mode transition does not apply",
     "coverage": "1973–1994",
-    "fetched": "2026-09-11T21:31:37.623Z"
+    "fetched": "2026-09-11T21:59:18.807Z"
   },
   "data": {
     "1973": 55.3,

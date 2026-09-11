@@ -1,8 +1,8 @@
 {
   "_meta": {
     "key": "namedStorms",
-    "name": "Atlantic named storms",
-    "unit": "storms",
+    "name": "Atlantic tropical storms and hurricanes",
+    "unit": "systems reaching tropical-storm strength (≥34 kt)",
     "class": "hazards",
     "source": "computed from NOAA NHC Atlantic HURDAT2",
     "sourceUrl": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-02272026.txt",
@@ -12,7 +12,7 @@
     "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
     "goodDirection": "neutral",
     "coverage": "1851–2025",
-    "fetched": "2026-09-11T21:29:37.756Z"
+    "fetched": "2026-09-11T21:58:42.952Z"
   },
   "data": {
     "1851": 6,

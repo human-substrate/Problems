@@ -3,7 +3,7 @@
     "key": "oneParentFamilies",
     "name": "One-parent families with own children under 18",
     "unit": "percent of families with own children under 18",
-    "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+    "source": "computed from the U.S. Census Bureau historical family and living-arrangement tables (counts divided within the same table)",
     "sourceUrl": "https://www2.census.gov/programs-surveys/demo/tables/families/time-series/families/fm1.xls",
     "goodDirection": "neutral",
     "cadence": "annual",

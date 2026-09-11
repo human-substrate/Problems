@@ -9,7 +9,7 @@
     "unit": "percent of adults who say they have a gun in their home",
     "source": "Computed from NORC General Social Survey cumulative public microdata, 1972–2024",
     "sourceUrl": "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip",
-    "note": "What people believe: GSS variable OWNGUN, \"Do you have a gun in your home?\" (self-reported). Value is the weighted percent answering yes (code 1), weight WTSSPS. Years with fewer than 200 weighted responses are dropped. Share is weighted target / weighted valid responses ×100, rounded to one decimal; missing responses excluded. 2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously. Embedded OWNGUN code 3 is refused, excluded from the denominator; only codes 1/2 are valid.",
+    "note": "Self-reported household fact, not a belief: GSS variable OWNGUN, \"Do you have a gun in your home?\". Value is the weighted percent answering yes (code 1), weight WTSSPS. Years with fewer than 200 weighted responses are dropped. Share is weighted target / weighted valid responses ×100, rounded to one decimal; missing responses excluded. 2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously. Embedded OWNGUN code 3 is refused, excluded from the denominator; only codes 1/2 are valid.",
     "breaks": "2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously.",
     "method": "OWNGUN: embedded label 1=yes; valid 1,2; 100 × sum(WTSSPS for target) / sum(WTSSPS for valid responses), one decimal; weighted denominator >=200. Missing/nonpositive weights and invalid responses excluded.",
     "bounds": [
@@ -17,7 +17,7 @@
       100
     ],
     "coverage": "1973–2024",
-    "fetched": "2026-09-11T08:29:13.821Z",
+    "fetched": "2026-09-11T23:01:09.033Z",
     "sourceRead": "2026-09-10"
   },
   "data": {

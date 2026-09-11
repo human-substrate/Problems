@@ -10,7 +10,7 @@
     "annualRule": "annual (publisher)",
     "class": "online",
     "note": "Annual report count by type, 2001–2024, from 2024_CSN_Number_of_Reports_by_Type.csv. Not unique victims or a population incidence rate. Multiple report types can apply; category totals need not equal the unduplicated combined count.",
-    "breaks": "Contributing organizations, public awareness, and classifications change over time. National Do Not Call Registry complaints excluded; reporting volume is not underlying crime incidence.",
+    "breaks": "none known that is dated: contributing organizations, public awareness, and classifications change over time. National Do Not Call Registry complaints excluded; reporting volume is not underlying crime incidence.",
     "method": "2024_CSN_Number_of_Reports_by_Type.csv: Year, Identity Theft.",
     "bounds": [
       0,

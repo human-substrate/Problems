@@ -1512,9 +1512,9 @@
       "sha256": "beade8d7e36b7fbfbb29f5d21768e43129f0612fc644dda16253691b07574a58"
     },
     ".cache/cv17.zip": {
-      "url": "https://bjs.ojp.gov/document/cv17.zip",
-      "read": "2026-09-10",
-      "sha256": "5dbf33ffe77fbcb6b13f72fdece366f405a42ae75f12404827d63525b87923f8"
+      "url": "https://bjs.ojp.gov/sites/g/files/xyckuh236/files/media/document/cv17.zip",
+      "read": "2026-09-11",
+      "sha256": "b818bfd932339a5b5804751bd990bf41668ccba03f6c20b954ef8aaa9beeacbd"
     },
     ".cache/cpus19st.zip": {
       "url": "https://bjs.ojp.gov/document/cpus19st.zip",
@@ -1622,29 +1622,159 @@
       "sha256": "2b34ad21edaabd41ade8fbbe41572ecc69795384b49dc734e8af8b8a02c02fcd"
     },
     ".cache/cv18.zip": {
-      "url": "https://bjs.ojp.gov/document/cv18.zip",
-      "read": "2026-09-10",
-      "sha256": "e9ec0611c1a29a272d8f14d08d81d9cee51f6aee37939a519e20b86b24e4e4dc"
+      "url": "https://bjs.ojp.gov/sites/g/files/xyckuh236/files/media/document/cv18.zip",
+      "read": "2026-09-11",
+      "sha256": "583b0de2f79be6b656a1be153690b17f37a3a12609af47763bc627e92bb0983e"
+    },
+    ".cache/cv18/cv18t03.csv": {
+      "url": "https://bjs.ojp.gov/sites/g/files/xyckuh236/files/media/document/cv18.zip",
+      "read": "2026-09-11",
+      "sha256": "338b2df428d13b37ea299af2bfd6378574f1cc620668034e08932f2d96918c28"
+    },
+    ".cache/cv17/cv17t03.csv": {
+      "url": "https://bjs.ojp.gov/sites/g/files/xyckuh236/files/media/document/cv17.zip",
+      "read": "2026-09-11",
+      "sha256": "7b0f51a331a0220856b93ed30cdec06898c93dc0b9d6c261e62414a40428839b"
     },
     ".cache/cde-motor-vehicle-theft.json": {
-      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/motor-vehicle-theft?from=01-2000&to=12-2024",
+      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/motor-vehicle-theft?from=01-2000&to=12-2025",
       "read": "2026-09-11",
-      "sha256": "ae6fd4aeb3dd3e4d5b34b828caf457841ab041b02143816fe7baf313f871085e"
+      "sha256": "5325927372e9a21b70383a0a12e408ec98881aa8ec1277826cf6116d6777da59"
     },
     ".cache/cde-burglary.json": {
-      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/burglary?from=01-2000&to=12-2024",
+      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/burglary?from=01-2000&to=12-2025",
       "read": "2026-09-11",
-      "sha256": "a33f2a790151090578fae9a569818b9f65f9b731dfb8d680198190b43a5bb91e"
+      "sha256": "62cf7cc8f62c50dcce66c269c894cb86a2dbaa7620e0591cb7b75a33e4bcbb34"
     },
     ".cache/cde-robbery.json": {
-      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/robbery?from=01-2000&to=12-2024",
+      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/robbery?from=01-2000&to=12-2025",
       "read": "2026-09-11",
-      "sha256": "f13bad9b819fc27dbe296606b576a183fbbd51f356b85908b42a1c6efd5abbf1"
+      "sha256": "8a47306e7283285c81708d0ad0e0d1d45f0ef4f5ac5e69283ffa43d6d87d3ba6"
     },
-    ".cache/cde-aggravated-assault.json": {
-      "url": "https://api.usa.gov/crime/fbi/cde/summarized/national/aggravated-assault?from=01-2000&to=12-2024",
+    ".cache/ji24st.zip": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
       "read": "2026-09-11",
-      "sha256": "d17e9f93309af9a2484682abd8d437018553e1f39c7a876ec9d190f25cba1f0e"
+      "sha256": "3006064e4bb708bee40ea802f1077a42b41654cfb11c8cea8434205dbc45bd84"
+    },
+    ".cache/ji24st/ji24stt22.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "2b724e06c08d1fdf630392d2f8771373436ce163ef0af2aadcc024120b7ce986"
+    },
+    ".cache/ji24st/ji24stt23.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "52f4c8659a38d12c5ce1f79c1821715b425e8233912ddd5a9c49f58014aaa5bb"
+    },
+    ".cache/ji24st/ji24stt09.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "aafec8833792cfbed0f3ca13f64748fa56a2ce74e3341ccce2f5476f65dff70a"
+    },
+    ".cache/ji24st/ji24stt21.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "d26689e48e151a053467b23d040aa8bb8d36bf977b4f2ca2eaf4820538d6c7d2"
+    },
+    ".cache/ji24st/ji24stt20.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "4a72864e952bf865a85b411a7c4e8b19a660d65a54b6f378e3b4b5b409363303"
+    },
+    ".cache/ji24st/ji24stt08.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "e0b8bd82218ca6518dea2a57a728e8f9e8d2205f1adc001d663d31376f4dd0f2"
+    },
+    ".cache/ji24st/ji24stt24.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "d9e5750c2a2f84ff4f6b564f6ec80d6823fe20b8f490407034fe048e55ce8a75"
+    },
+    ".cache/ji24st/ji24stt18.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "986cc5169414d2a9fdabc3a5d1beadf65a755b0ee01d7e1fe4505409930cec9e"
+    },
+    ".cache/ji24st/ji24stt19.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "27f06b6cc4f27beb21940778628d7f1354969c136dc3461754f5b4935c58db81"
+    },
+    ".cache/ji24st/ji24stt03.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "81de10910d10d971a57b6a5e044d4a19d50fd643e9a7be253d2d83612d9dcadd"
+    },
+    ".cache/ji24st/ji24stt17.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "7699ac7cd4dea00cead4269813421452046f156718161eb4982948400f49f2ac"
+    },
+    ".cache/ji24st/ji24stt16.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "263d2aaeb3cb00df22ba79464948849bbbc1d85b64da29276d505c2e39cd19bd"
+    },
+    ".cache/ji24st/ji24stt02.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "737071990be7182f0205bc3566ae4c3927fc7ce8767a1eaca46824c59542509e"
+    },
+    ".cache/ji24st/ji24stt14.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "bbd5c33f40de17a8e78e81c1b19b9c1ba306334b32f56ea1522e7725ec368e34"
+    },
+    ".cache/ji24st/ji24stt01.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "8f5c46d1d7329cb60141236ec7d52cab161f8f3322bcfc984a9e4bee01da3b2d"
+    },
+    ".cache/ji24st/ji24stt15.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "7db0ee3fb0c8ee1d2dc9abfc03388bdbc6a18a881de9b09b28265412b54034eb"
+    },
+    ".cache/ji24st/ji24stt11.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "523489ce96e2d7ce4df90b3fd222fb379624b9228d2e62c56bdf7ef3141e83c7"
+    },
+    ".cache/ji24st/ji24stt05.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "3be5be7a40826d6e9658c137fe54b0fbd6c264b4f4ec333df777ea668cdb5f88"
+    },
+    ".cache/ji24st/ji24stt04.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "73139f66a70107f85ae435b703d101fa9c4ad75b2d614b144a5137db58b20b6a"
+    },
+    ".cache/ji24st/ji24stt10.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "fb3c37b69ca03b1d85ef1628a9d681433e73ebb074b20e43bbc4b4651c01ff1a"
+    },
+    ".cache/ji24st/ji24stt06.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "2fccdafa54dd6603f9cd55187312618490784de8eca8855bcd50dfbc99281f79"
+    },
+    ".cache/ji24st/ji24stt12.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "1ec412a2811dbf081e656d97918fae0f01cc17e44f5191542964d63eacc6f39f"
+    },
+    ".cache/ji24st/ji24stt13.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "e880e1afe5d44d62610dded57dfe259cd15e1006b354b83f0f4c57d355a878ef"
+    },
+    ".cache/ji24st/ji24stt07.csv": {
+      "url": "https://bjs.ojp.gov/document/ji24st.zip",
+      "read": "2026-09-11",
+      "sha256": "3412997b1faa394239663e5136faf48dc57ad38fd2848e73c2171a0ee6e70272"
     }
   }
 }

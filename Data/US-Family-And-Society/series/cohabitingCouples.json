@@ -9,7 +9,7 @@
     "cadence": "annual",
     "annualRule": "publisher survey/census year; sparse historical observations retained",
     "class": "living",
-    "breaks": "2014 ASEC questionnaire redesign; decennial population-control revisions (the publisher's lettered r rows, taken over the original); 2021 appears twice in the tables (the later-method row is taken); 2025 uses Vintage-2025 population controls; 2019 onward includes same-sex married couples.",
+    "breaks": "2014 ASEC questionnaire redesign; decennial population-control revisions (the publisher's lettered r rows, taken over the original); 2021 appears twice in the tables (the later-method row is taken); before 2007 restricted to couples with a householder partner.",
     "note": "Direct relationship measure, 1996–2023. Before 2007 restricted to couples with a householder partner; all opposite-sex unmarried couples included from 2007. Paired with POSSLQ, never joined to it. The publisher file ends in 2023.",
     "coverage": "1996–2023",
     "fetched": "2026-09-11T21:49:24.465Z"

@@ -5,8 +5,8 @@
     "unit": "births",
     "source": "CDC/NCHS, Births and General Fertility Rates: United States, extended by NVSR 75-2 Table 1",
     "sourceUrl": "https://data.cdc.gov/resource/e6fc-ccez.json?$limit=1000",
-    "note": "1909–2018 from the primary CDC open-data annual live-birth counts; 2010–2018 overlap confirmed identical against NVSR 75-2 Table 1 (checked in at data/nchs/, cdc.gov returns HTTP 403 to every scripted fetch), which then extends the series 2019–2024. Historical early-year values are published rounded estimates, not fabricated precision. No provisional monthly estimates are spliced into this final annual series.",
-    "breaks": "Historical birth-registration completeness and geographic coverage change; early counts are rounded estimates.",
+    "note": "1909–2018 from the primary CDC open-data annual live-birth counts; 2010–2018 overlap confirmed identical against NVSR 75-2 Table 1 (archived copy in data/nchs/), which then extends the series 2019–2024. Historical early-year values are published rounded estimates, not fabricated precision. No provisional monthly estimates are spliced into this final annual series.",
+    "breaks": "The birth-registration area reached all states in 1933; earlier counts cover a growing registration area and are rounded estimates.",
     "historicalSourceUrls": [
       "https://www.cdc.gov/nchs/data/nvsr/nvsr75/nvsr75-02.pdf"
     ],

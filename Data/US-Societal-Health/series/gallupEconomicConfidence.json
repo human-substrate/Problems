@@ -3,14 +3,14 @@
     "key": "gallupEconomicConfidence",
     "name": "Gallup Economic Confidence Index",
     "unit": "index, net percent (can range roughly -100 to +100)",
-    "source": "Gallup, Gallup Economic Confidence Index",
+    "source": "computed from Gallup Economic Confidence Index monthly readings (annual mean)",
     "sourceUrl": "https://datawrapper.dwcdn.net/6VwvN/4/dataset.csv",
     "historicalSourceUrls": [
       "https://datawrapper.dwcdn.net/y7uQi/2/dataset.csv",
       "https://datawrapper.dwcdn.net/6VwvN/4/dataset.csv"
     ],
     "goodDirection": "up",
-    "note": "Gallup's Economic Confidence Index is the average of two components: current conditions (% excellent or good minus % poor) and economic outlook (% getting better minus % getting worse), net positive minus negative. Gallup does not publish the verbatim question wording on this chart; this paraphrase follows its title and description (6VwvN/6). Annual mean of published monthly values; multiple polls within a month are averaged before averaging months. Historical coverage is irregular and missing months are not interpolated. All overlapping readings must agree exactly. The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.",
+    "note": "Gallup's Economic Confidence Index is the average of two components: current conditions (% excellent or good minus % poor) and economic outlook (% getting better minus % getting worse), net positive minus negative. Gallup does not publish the verbatim question wording on this chart; this paraphrase follows its title and description (6VwvN/6). Annual mean of published monthly values; multiple polls within a month are averaged before averaging months. Historical coverage is irregular and missing months are not interpolated. The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.",
     "method": "Datawrapper y7uQi/2 + 6VwvN/4, named column Index / Economic Confidence Index; exact overlap checks, mean within month then mean of published months per year",
     "partialYear": 2026,
     "partialThrough": "2026-04",

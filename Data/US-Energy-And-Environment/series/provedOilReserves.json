@@ -6,13 +6,13 @@
     "class": "production",
     "source": "U.S. Energy Information Administration, crude oil proved reserves",
     "sourceUrl": "https://api.eia.gov/v2/petroleum/crd/pres/data/?frequency=annual&data%5B0%5D=value&facets%5Bseries%5D%5B%5D=RCRR01NUS_1&facets%5Bduoarea%5D%5B%5D=NUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc",
-    "note": "Series RCRR01NUS_1; national duoarea NUS; publisher annual observations through 2021. Original unit: MMBBL. Converted only by the declared unit scale. Two-year publication lag; Lane 4 series ends in 2021. Later observations are excluded by this dataset's specified coverage.",
-    "breaks": "Two-year publication lag; Lane 4 series ends in 2021. Later observations are excluded by this dataset's specified coverage.",
+    "note": "Series RCRR01NUS_1; national duoarea NUS; publisher annual observations through 2021. Original unit: MMBBL. Converted only by the declared unit scale. Two-year publication lag: EIA's latest published annual reserves estimate is 2021 (live check 2026-09-11), so the series ends there and extends when EIA publishes.",
+    "breaks": "Two-year publication lag: EIA's latest published annual reserves estimate is 2021 (live check 2026-09-11), so the series ends there and extends when EIA publishes.",
     "cadence": "annual",
     "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
     "goodDirection": "neutral",
     "coverage": "1899–2021",
-    "fetched": "2026-09-11T21:19:58.421Z"
+    "fetched": "2026-09-11T21:58:42.952Z"
   },
   "data": {
     "1899": 2500,

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T21:49:53.550Z",
+  "generated": "2026-09-11T21:59:18.807Z",
   "series": {
     "alcoholPerCapita": {
       "name": "Alcohol Consumption per Capita",
@@ -363,42 +363,42 @@
       "unit": "percent of employed adults very satisfied with their job",
       "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1972–2024",
-      "fetched": "2026-09-11T21:31:37.623Z"
+      "fetched": "2026-09-11T21:59:18.807Z"
     },
     "gssLotOfAverageManWorse": {
       "name": "Average Person's Lot Is Getting Worse",
       "unit": "percent agreeing the lot of the average person is getting worse",
       "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1973–1994",
-      "fetched": "2026-09-11T21:31:37.623Z"
+      "fetched": "2026-09-11T21:59:18.807Z"
     },
     "gssMarriageVeryHappy": {
       "name": "Marriage Is Very Happy",
       "unit": "percent of married adults who say their marriage is very happy",
       "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1973–2024",
-      "fetched": "2026-09-11T21:31:37.623Z"
+      "fetched": "2026-09-11T21:59:18.807Z"
     },
     "gssNotTooHappy": {
       "name": "Not Too Happy",
       "unit": "percent of adults who say they are not too happy",
       "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1972–2024",
-      "fetched": "2026-09-11T21:31:37.623Z"
+      "fetched": "2026-09-11T21:59:18.807Z"
     },
     "gssPeopleFair": {
       "name": "People Try to Be Fair",
       "unit": "percent saying most people try to be fair (vs. would take advantage)",
       "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1972–2024",
-      "fetched": "2026-09-11T21:31:37.623Z"
+      "fetched": "2026-09-11T21:59:18.807Z"
     },
     "gssPeopleHelpful": {
       "name": "People Try to Be Helpful",
       "unit": "percent saying most people try to be helpful (vs. looking out for themselves)",
       "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1972–2024",
-      "fetched": "2026-09-11T21:31:37.623Z"
+      "fetched": "2026-09-11T21:59:18.807Z"
     },
     "hardWorkGetsAhead": {
       "name": "Hard Work Gets You Ahead",

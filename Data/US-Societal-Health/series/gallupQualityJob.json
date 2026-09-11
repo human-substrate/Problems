@@ -3,14 +3,14 @@
     "key": "gallupQualityJob",
     "name": "Good Time to Find a Quality Job",
     "unit": "percent saying now is a good time to find a quality job",
-    "source": "Gallup, Good Time to Find a Quality Job",
+    "source": "computed from Gallup Good Time to Find a Quality Job monthly readings (annual mean)",
     "sourceUrl": "https://datawrapper.dwcdn.net/gZ2wl/4/dataset.csv",
     "historicalSourceUrls": [
       "https://datawrapper.dwcdn.net/8YPmK/1/dataset.csv",
       "https://datawrapper.dwcdn.net/gZ2wl/4/dataset.csv"
     ],
     "goodDirection": "up",
-    "note": "\"Thinking about the job situation in America today, would you say that it is now a good time or a bad time to find a quality job?\" Question wording from the chart metadata (gZ2wl/9). Annual mean of published monthly values; multiple polls within a month are averaged before averaging months. Recent polling is roughly quarterly, not monthly; unpublished months are absent, never interpolated. All overlapping readings must agree exactly. The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.",
+    "note": "\"Thinking about the job situation in America today, would you say that it is now a good time or a bad time to find a quality job?\" Question wording from the chart metadata (gZ2wl/9). Annual mean of published monthly values; multiple polls within a month are averaged before averaging months. Recent polling is roughly quarterly, not monthly; unpublished months are absent, never interpolated. The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.",
     "method": "Datawrapper 8YPmK/1 + gZ2wl/4, named column % Good time / % Good time; exact overlap checks, mean within month then mean of published months per year",
     "partialYear": 2026,
     "partialThrough": "2026-04",

@@ -25,7 +25,7 @@
     "cadence": "annual",
     "annualRule": "annual (calendar year, publisher)",
     "class": "online",
-    "note": "Each 2011–2025 annual report supplies its own national total; 2015 uses the national totals row. No interpolation. Later 2021–2023 chart overlaps are asserted equal, losses at the chart's 0.1-billion precision. Earlier retrospective charts conflict (2001=50,412 in 2011 versus 49,711 in 2025; 2004 differs between 2011/2013; 2012 losses differ in 2012/2013; 2016 losses differ in 2016/2019). These rejected historical extensions are documented in work/mismatches.md. The supposed 2010 PDF is HTML and pdftotext exits 1. Coverage is 2011–2025, not the draft's claimed milestones.",
+    "note": "Each 2011–2025 annual report supplies its own national total; 2015 uses the national totals row. No interpolation. Later 2021–2023 chart overlaps are asserted equal, losses at the chart's 0.1-billion precision. Earlier retrospective charts conflict (2001=50,412 in 2011 versus 49,711 in 2025; 2004 differs between 2011/2013; 2012 losses differ in 2012/2013; 2016 losses differ in 2016/2019). The 2010 report file is not a readable PDF, so 2010 is absent.",
     "breaks": "Voluntary IC3 reporting and awareness change over time; totals are not population incidence. Older reports call losses adjusted (large claimed losses reviewed); later reports use reported/potential losses, with a 2016-era definition/presentation seam. Nominal dollars, not inflation adjusted. Edition-specific rounding varies.",
     "method": "Each 2011–2025 edition's own annual count; 2015 national totals row. Later 2021–2023 five-year chart overlaps asserted equal. Earlier milestone charts excluded after conflicting retrospective counts were found.",
     "bounds": [
@@ -33,7 +33,7 @@
       2000000
     ],
     "coverage": "2011–2025",
-    "fetched": "2026-09-11T08:29:13.821Z",
+    "fetched": "2026-09-11T23:01:09.033Z",
     "sourceRead": "2026-09-10"
   },
   "data": {

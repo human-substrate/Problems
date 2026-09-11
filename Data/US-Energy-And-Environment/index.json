@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T21:49:21.102Z",
+  "generated": "2026-09-11T21:58:42.952Z",
   "dataset": "US-Energy-And-Environment",
   "series": {
     "arcticSeaIce": {
@@ -406,13 +406,13 @@
       "class": "climate",
       "source": "NOAA NCEI Climate at a Glance",
       "sourceUrl": "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/globe/land_ocean/12/12/1850-2025.csv",
-      "note": "12-month period ending December; global land/ocean anomaly against 1901–2000 or contiguous US precipitation total. No discrete break identified in Lane 4; publisher revisions may revise the full historical series.",
+      "note": "12-month period ending December; global land and ocean surface temperature anomaly against the 1901–2000 average. No discrete break identified in Lane 4; publisher revisions may revise the full historical series.",
       "breaks": "No discrete break identified in Lane 4; publisher revisions may revise the full historical series.",
       "cadence": "annual",
       "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
       "goodDirection": "neutral",
       "coverage": "1850–2025",
-      "fetched": "2026-09-11T21:19:58.421Z"
+      "fetched": "2026-09-11T21:58:42.952Z"
     },
     "greenhouseGasIndex": {
       "name": "Annual Greenhouse Gas Index",
@@ -457,8 +457,8 @@
       "fetched": "2026-09-11T21:19:58.421Z"
     },
     "namedStorms": {
-      "name": "Atlantic named storms",
-      "unit": "storms",
+      "name": "Atlantic tropical storms and hurricanes",
+      "unit": "systems reaching tropical-storm strength (≥34 kt)",
       "class": "hazards",
       "source": "computed from NOAA NHC Atlantic HURDAT2",
       "sourceUrl": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-02272026.txt",
@@ -468,7 +468,7 @@
       "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
       "goodDirection": "neutral",
       "coverage": "1851–2025",
-      "fetched": "2026-09-11T21:29:37.756Z"
+      "fetched": "2026-09-11T21:58:42.952Z"
     },
     "nuclearCapacityFactor": {
       "name": "Nuclear capacity factor",
@@ -518,13 +518,13 @@
       "class": "climate",
       "source": "NOAA NCEI Climate at a Glance",
       "sourceUrl": "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/time-series/110/pcp/12/12/1895-2025.csv",
-      "note": "12-month period ending December; global land/ocean anomaly against 1901–2000 or contiguous US precipitation total. No discrete break identified in Lane 4; publisher revisions may revise the full historical series.",
+      "note": "12-month period ending December; contiguous United States precipitation total in inches. No discrete break identified in Lane 4; publisher revisions may revise the full historical series.",
       "breaks": "No discrete break identified in Lane 4; publisher revisions may revise the full historical series.",
       "cadence": "annual",
       "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
       "goodDirection": "neutral",
       "coverage": "1895–2025",
-      "fetched": "2026-09-11T21:19:58.421Z"
+      "fetched": "2026-09-11T21:58:42.952Z"
     },
     "provedOilReserves": {
       "name": "Proved crude oil reserves",
@@ -532,13 +532,13 @@
       "class": "production",
       "source": "U.S. Energy Information Administration, crude oil proved reserves",
       "sourceUrl": "https://api.eia.gov/v2/petroleum/crd/pres/data/?frequency=annual&data%5B0%5D=value&facets%5Bseries%5D%5B%5D=RCRR01NUS_1&facets%5Bduoarea%5D%5B%5D=NUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc",
-      "note": "Series RCRR01NUS_1; national duoarea NUS; publisher annual observations through 2021. Original unit: MMBBL. Converted only by the declared unit scale. Two-year publication lag; Lane 4 series ends in 2021. Later observations are excluded by this dataset's specified coverage.",
-      "breaks": "Two-year publication lag; Lane 4 series ends in 2021. Later observations are excluded by this dataset's specified coverage.",
+      "note": "Series RCRR01NUS_1; national duoarea NUS; publisher annual observations through 2021. Original unit: MMBBL. Converted only by the declared unit scale. Two-year publication lag: EIA's latest published annual reserves estimate is 2021 (live check 2026-09-11), so the series ends there and extends when EIA publishes.",
+      "breaks": "Two-year publication lag: EIA's latest published annual reserves estimate is 2021 (live check 2026-09-11), so the series ends there and extends when EIA publishes.",
       "cadence": "annual",
       "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
       "goodDirection": "neutral",
       "coverage": "1899–2021",
-      "fetched": "2026-09-11T21:19:58.421Z"
+      "fetched": "2026-09-11T21:58:42.952Z"
     },
     "refineryInput": {
       "name": "Refinery crude input",
@@ -612,7 +612,7 @@
     },
     "seaLevel": {
       "name": "Global mean sea level",
-      "unit": "mm, publisher reference",
+      "unit": "mm above the satellite-era reference mean (NOAA STAR sea level anomaly)",
       "class": "climate",
       "source": "computed from NOAA STAR satellite altimetry",
       "sourceUrl": "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_ref_90.csv",
@@ -622,7 +622,7 @@
       "annualRule": "Calendar-year mean of subannual observations; at least ten observations required. The latest year is excluded until it meets the full-year coverage requirement.",
       "goodDirection": "neutral",
       "coverage": "1993–2024",
-      "fetched": "2026-09-11T21:27:18.413Z"
+      "fetched": "2026-09-11T21:58:42.952Z"
     },
     "strategicReserve": {
       "name": "Strategic Petroleum Reserve",
@@ -719,13 +719,13 @@
       "class": "transport",
       "source": "Federal Highway Administration, Highway Statistics 2023",
       "sourceUrl": "https://www.fhwa.dot.gov/policyinformation/statistics/2023/xls/vm202.xls",
-      "note": "VM-202 all-motor-vehicles total, million vehicle miles; years 1980–2023 from one workbook edition. Grand-total column identified uniquely by the 2023 sample of 3,246,817 (±1) and held fixed across years. 2007–09 HPMS resubmission is a break; specified coverage is 1980–2023.",
-      "breaks": "2007–09 HPMS resubmission is a break; specified coverage is 1980–2023.",
+      "note": "VM-202 all-motor-vehicles total, million vehicle miles; years 1980–2023 from one workbook edition. Grand-total column identified uniquely by the 2023 sample of 3,246,817 (±1) and held fixed across years. 2007–09 HPMS resubmission is a break. Highway Statistics 2023 is the latest edition FHWA has published (the 2024 workbook does not exist yet), so the series ends at 2023 and extends with the next edition.",
+      "breaks": "2007–09 HPMS resubmission is a break. Highway Statistics 2023 is the latest edition FHWA has published (the 2024 workbook does not exist yet), so the series ends at 2023 and extends with the next edition.",
       "cadence": "annual",
       "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
       "goodDirection": "neutral",
       "coverage": "1980–2023",
-      "fetched": "2026-09-11T21:19:58.421Z"
+      "fetched": "2026-09-11T21:58:42.952Z"
     },
     "wildfireAcres": {
       "name": "Wildfire acres burned",

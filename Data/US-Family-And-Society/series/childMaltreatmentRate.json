@@ -6,7 +6,7 @@
     "source": "ACF Children's Bureau, Child Maltreatment / NCANDS",
     "sourceUrl": "https://acf.gov/sites/default/files/documents/cb/cm2023.pdf",
     "note": "Federal fiscal years. Unique-count child victims per 1,000 children in reporting states. CM2009 Table 3-7 (2005–09), CM2013 Table 3-3 (2009–13), CM2017 Table 3-4 (2013–17), CM2019 Table 3-4 (2015–19), CM2023 Table 3-3 (2019–23). Newest edition wins each overlap. Revisions are material: 2013 rate 9.1 in CM2013 becomes 8.8 in CM2017; 2019 rate 8.9 in CM2019 becomes 9.2 in CM2023. Published reports describe resubmissions, changing reporting coverage and state definitions; this is administrative surveillance, not a constant-definition prevalence estimate.",
-    "breaks": "Reporting-state coverage, state statutes, resubmissions and retrospective revisions vary; unique-count rates throughout.",
+    "breaks": "none known that is dated: reporting-state coverage, state statutes, resubmissions and retrospective revisions vary; unique-count rates throughout.",
     "historicalSourceUrls": [
       "https://acf.gov/sites/default/files/documents/cb/cm2009.pdf",
       "https://acf.gov/sites/default/files/documents/cb/cm2013.pdf",

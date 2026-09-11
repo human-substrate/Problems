@@ -9,7 +9,7 @@
     "unit": "percent of adults who say local courts do not deal harshly enough with criminals",
     "source": "Computed from NORC General Social Survey cumulative public microdata, 1972–2024",
     "sourceUrl": "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip",
-    "note": "What people believe: GSS variable COURTS, \"In general, do you think the courts in this area deal too harshly or not harshly enough with criminals?\" Value is the weighted percent answering not harshly enough (code 2 in this file's value labels), weight WTSSPS. The build dispatch for this dataset stated code 1 for this response; the .dta file's own embedded value labels were read directly and show 1=too harshly, 2=not harshly enough, 3=about right, so code 2 is used here and that correction is recorded for the record. Years with fewer than 200 weighted responses are dropped. Share is weighted target / weighted valid responses ×100, rounded to one decimal; missing responses excluded. 2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously.",
+    "note": "What people believe: GSS variable COURTS, \"In general, do you think the courts in this area deal too harshly or not harshly enough with criminals?\" Value is the weighted percent answering not harshly enough (code 2 in this file's value labels), weight WTSSPS. The .dta file's embedded value labels show 1=too harshly, 2=not harshly enough, 3=about right. Years with fewer than 200 weighted responses are dropped. Share is weighted target / weighted valid responses ×100, rounded to one decimal; missing responses excluded. 2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously.",
     "breaks": "2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously.",
     "method": "COURTS: embedded label 2=not harshly enough; valid 1,2,3; 100 × sum(WTSSPS for target) / sum(WTSSPS for valid responses), one decimal; weighted denominator >=200. Missing/nonpositive weights and invalid responses excluded.",
     "bounds": [
@@ -17,7 +17,7 @@
       100
     ],
     "coverage": "1972–2024",
-    "fetched": "2026-09-11T08:29:13.821Z",
+    "fetched": "2026-09-11T23:01:09.033Z",
     "sourceRead": "2026-09-10"
   },
   "data": {

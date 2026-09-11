@@ -3,7 +3,7 @@ export const META: Record<string, SeriesMeta> = {
   "motorVehicleTheftRate": {
     "name": "Motor vehicle theft",
     "unit": "reported offenses per 100,000 people covered by reporting agencies",
-    "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
+    "source": "computed from FBI Crime Data Explorer monthly participating-agency offense counts, per 100,000 covered population (not the FBI's estimated national rate)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [
       "https://api.usa.gov/crime/fbi/cde/summarized/national/motor-vehicle-theft"
@@ -12,13 +12,13 @@ export const META: Record<string, SeriesMeta> = {
     "cadence": "annual",
     "annualRule": "annual (sum of twelve monthly actual counts / December population × 100,000)",
     "class": "reported",
-    "note": "The monthly rates field is the FBI’s own monthly per-100,000 figure and is not summed here. Payload horizon and population coverage are recorded when built. Only complete calendar years are included.",
+    "note": "Annual rate computed here as the sum of twelve monthly reported offense counts divided by the December population covered by reporting agencies, times 100,000; the FBI's own displayed annual rate can differ from this figure. Only complete calendar years are included.",
     "breaks": "2021 SRS→NIBRS-only transition changed agency participation and estimation. The 2013 federal rape/sexual-assault definition change is not a direct definition change for this non-rape offense. FBI’s 2013 Rape Addendum describes changes to rape, sodomy and sexual assault with an object, not these offense definitions: https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/rape-addendum."
   },
   "burglaryRate": {
     "name": "Burglary",
     "unit": "reported offenses per 100,000 people covered by reporting agencies",
-    "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
+    "source": "computed from FBI Crime Data Explorer monthly participating-agency offense counts, per 100,000 covered population (not the FBI's estimated national rate)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [
       "https://api.usa.gov/crime/fbi/cde/summarized/national/burglary"
@@ -27,13 +27,13 @@ export const META: Record<string, SeriesMeta> = {
     "cadence": "annual",
     "annualRule": "annual (sum of twelve monthly actual counts / December population × 100,000)",
     "class": "reported",
-    "note": "The monthly rates field is the FBI’s own monthly per-100,000 figure and is not summed here. Payload horizon and population coverage are recorded when built. Only complete calendar years are included.",
+    "note": "Annual rate computed here as the sum of twelve monthly reported offense counts divided by the December population covered by reporting agencies, times 100,000; the FBI's own displayed annual rate can differ from this figure. Only complete calendar years are included.",
     "breaks": "2021 SRS→NIBRS-only transition changed agency participation and estimation. The 2013 federal rape/sexual-assault definition change is not a direct definition change for this non-rape offense. FBI’s 2013 Rape Addendum describes changes to rape, sodomy and sexual assault with an object, not these offense definitions: https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/rape-addendum."
   },
   "robberyRate": {
     "name": "Robbery",
     "unit": "reported offenses per 100,000 people covered by reporting agencies",
-    "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
+    "source": "computed from FBI Crime Data Explorer monthly participating-agency offense counts, per 100,000 covered population (not the FBI's estimated national rate)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [
       "https://api.usa.gov/crime/fbi/cde/summarized/national/robbery"
@@ -42,13 +42,13 @@ export const META: Record<string, SeriesMeta> = {
     "cadence": "annual",
     "annualRule": "annual (sum of twelve monthly actual counts / December population × 100,000)",
     "class": "reported",
-    "note": "The monthly rates field is the FBI’s own monthly per-100,000 figure and is not summed here. Payload horizon and population coverage are recorded when built. Only complete calendar years are included.",
+    "note": "Annual rate computed here as the sum of twelve monthly reported offense counts divided by the December population covered by reporting agencies, times 100,000; the FBI's own displayed annual rate can differ from this figure. Only complete calendar years are included.",
     "breaks": "2021 SRS→NIBRS-only transition changed agency participation and estimation. The 2013 federal rape/sexual-assault definition change is not a direct definition change for this non-rape offense. FBI’s 2013 Rape Addendum describes changes to rape, sodomy and sexual assault with an object, not these offense definitions: https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/rape-addendum."
   },
   "aggravatedAssaultRate": {
     "name": "Aggravated assault",
     "unit": "reported offenses per 100,000 people covered by reporting agencies",
-    "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
+    "source": "computed from FBI Crime Data Explorer monthly participating-agency offense counts, per 100,000 covered population (not the FBI's estimated national rate)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [
       "https://api.usa.gov/crime/fbi/cde/summarized/national/aggravated-assault"
@@ -57,7 +57,7 @@ export const META: Record<string, SeriesMeta> = {
     "cadence": "annual",
     "annualRule": "annual (sum of twelve monthly actual counts / December population × 100,000)",
     "class": "reported",
-    "note": "The monthly rates field is the FBI’s own monthly per-100,000 figure and is not summed here. Payload horizon and population coverage are recorded when built. Only complete calendar years are included.",
+    "note": "Annual rate computed here as the sum of twelve monthly reported offense counts divided by the December population covered by reporting agencies, times 100,000; the FBI's own displayed annual rate can differ from this figure. Only complete calendar years are included.",
     "breaks": "2021 SRS→NIBRS-only transition changed agency participation and estimation. The 2013 federal rape/sexual-assault definition change is not a direct definition change for this non-rape offense. FBI’s 2013 Rape Addendum describes changes to rape, sodomy and sexual assault with an object, not these offense definitions: https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/rape-addendum."
   },
   "ncvsViolentRate": {
@@ -115,11 +115,12 @@ export const META: Record<string, SeriesMeta> = {
     "class": "response",
     "name": "Jail incarceration rate",
     "source": "Bureau of Justice Statistics, Annual Survey of Jails / Census of Jails",
-    "sourceUrl": "https://bjs.ojp.gov/document/ji23st.zip",
+    "sourceUrl": "https://bjs.ojp.gov/document/ji24st.zip",
     "historicalSourceUrls": [
+      "https://bjs.ojp.gov/document/ji23st.zip",
       "https://bjs.ojp.gov/document/ji22st.zip"
     ],
-    "note": "Midyear persons held in local jail per 100,000 U.S. residents. Exception: 12 annual points, 2012–2023, the recoverable rate history in this cache. ji22st Table 1 adds 2012=237 to ji23st Table 1; all 2013–2022 overlapping rates match exactly. Cached ji17st–ji21st ZIP paths are BJS Page not found HTML; unzip exits 9. Thus the prior 11-point exception was too narrow. 2019 Census of Jails is a complete enumeration; 2020–2021 declines reflect pandemic-era population changes.",
+    "note": "Midyear persons held in local jail per 100,000 U.S. residents. 13 annual points, 2012–2024, the rate history BJS publishes in its Jail Inmates tables: the 2024 edition (Table 1, 2014–2024) is taken first, the 2023 edition adds 2013, and the 2022 edition adds 2012=237. On overlapping years the newest edition wins; the 2024 edition revised 2021–2023 down by one point each (192→191, 199→198, 198→197). BJS no longer serves the 2017–2021 edition files. 2019 and 2024 are Census of Jails complete enumerations; 2020–2021 declines reflect pandemic-era population changes.",
     "breaks": "2019 Census of Jails (complete enumeration) replaces the sample-based Annual Survey of Jails for that year only; 2020-2021 COVID-era population decline is a real population shift, not a methodology break."
   },
   "correctionalSupervisionRate": {
@@ -220,7 +221,7 @@ export const META: Record<string, SeriesMeta> = {
     "source": "Gallup, Crime",
     "sourceUrl": "https://news.gallup.com/poll/1603/crime.aspx",
     "note": "What people believe: Gallup poll asking, \"Is there more crime in the U.S. than there was a year ago, or less?\" Value is the percent saying more. Last dated poll in each calendar year; older observations are not all October. What people believe, not measured crime incidence. The cached trend page does not establish a dated mode transition for these specific items.",
-    "breaks": "Irregular polling years and dates; survey mode and question-order effects may affect comparisons. The cached table does not document a specific phone-to-web transition date; none is invented."
+    "breaks": "none known that is dated: irregular polling years and dates, and survey mode and question-order effects may affect comparisons; Gallup's table does not date its phone-to-web transition."
   },
   "gallupAfraidToWalk": {
     "goodDirection": "neutral",
@@ -232,7 +233,7 @@ export const META: Record<string, SeriesMeta> = {
     "source": "Gallup, Crime",
     "sourceUrl": "https://news.gallup.com/poll/1603/crime.aspx",
     "note": "What people believe: Gallup poll asking whether the respondent would be afraid to walk alone at night within a mile of their home. Value is percent saying yes. Last dated poll in each calendar year; older observations are not all October. What people believe, not measured crime incidence. The cached trend page does not establish a dated mode transition for these specific items.",
-    "breaks": "Irregular polling years and dates; survey mode and question-order effects may affect comparisons. The cached table does not document a specific phone-to-web transition date; none is invented."
+    "breaks": "none known that is dated: irregular polling years and dates, and survey mode and question-order effects may affect comparisons; Gallup's table does not date its phone-to-web transition."
   },
   "gssFearWalking": {
     "goodDirection": "neutral",
@@ -267,7 +268,7 @@ export const META: Record<string, SeriesMeta> = {
     "unit": "percent of adults who say local courts do not deal harshly enough with criminals",
     "source": "Computed from NORC General Social Survey cumulative public microdata, 1972–2024",
     "sourceUrl": "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip",
-    "note": "What people believe: GSS variable COURTS, \"In general, do you think the courts in this area deal too harshly or not harshly enough with criminals?\" Value is the weighted percent answering not harshly enough (code 2 in this file's value labels), weight WTSSPS. The build dispatch for this dataset stated code 1 for this response; the .dta file's own embedded value labels were read directly and show 1=too harshly, 2=not harshly enough, 3=about right, so code 2 is used here and that correction is recorded for the record. Years with fewer than 200 weighted responses are dropped. Share is weighted target / weighted valid responses ×100, rounded to one decimal; missing responses excluded. 2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously.",
+    "note": "What people believe: GSS variable COURTS, \"In general, do you think the courts in this area deal too harshly or not harshly enough with criminals?\" Value is the weighted percent answering not harshly enough (code 2 in this file's value labels), weight WTSSPS. The .dta file's embedded value labels show 1=too harshly, 2=not harshly enough, 3=about right. Years with fewer than 200 weighted responses are dropped. Share is weighted target / weighted valid responses ×100, rounded to one decimal; missing responses excluded. 2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously.",
     "breaks": "2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously."
   },
   "gssGunInHome": {
@@ -279,7 +280,7 @@ export const META: Record<string, SeriesMeta> = {
     "unit": "percent of adults who say they have a gun in their home",
     "source": "Computed from NORC General Social Survey cumulative public microdata, 1972–2024",
     "sourceUrl": "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip",
-    "note": "What people believe: GSS variable OWNGUN, \"Do you have a gun in your home?\" (self-reported). Value is the weighted percent answering yes (code 1), weight WTSSPS. Years with fewer than 200 weighted responses are dropped. Share is weighted target / weighted valid responses ×100, rounded to one decimal; missing responses excluded. 2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously. Embedded OWNGUN code 3 is refused, excluded from the denominator; only codes 1/2 are valid.",
+    "note": "Self-reported household fact, not a belief: GSS variable OWNGUN, \"Do you have a gun in your home?\". Value is the weighted percent answering yes (code 1), weight WTSSPS. Years with fewer than 200 weighted responses are dropped. Share is weighted target / weighted valid responses ×100, rounded to one decimal; missing responses excluded. 2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously. Embedded OWNGUN code 3 is refused, excluded from the denominator; only codes 1/2 are valid.",
     "breaks": "2021 pandemic push-to-web collection; 2022/2024 mixed-mode compared with earlier in-person surveys. Ballot rotation and skipped survey years cause gaps; interpret cross-mode changes cautiously."
   },
   "ic3Complaints": {
@@ -307,7 +308,7 @@ export const META: Record<string, SeriesMeta> = {
     "cadence": "annual",
     "annualRule": "annual (calendar year, publisher)",
     "class": "online",
-    "note": "Each 2011–2025 annual report supplies its own national total; 2015 uses the national totals row. No interpolation. Later 2021–2023 chart overlaps are asserted equal, losses at the chart's 0.1-billion precision. Earlier retrospective charts conflict (2001=50,412 in 2011 versus 49,711 in 2025; 2004 differs between 2011/2013; 2012 losses differ in 2012/2013; 2016 losses differ in 2016/2019). These rejected historical extensions are documented in work/mismatches.md. The supposed 2010 PDF is HTML and pdftotext exits 1. Coverage is 2011–2025, not the draft's claimed milestones.",
+    "note": "Each 2011–2025 annual report supplies its own national total; 2015 uses the national totals row. No interpolation. Later 2021–2023 chart overlaps are asserted equal, losses at the chart's 0.1-billion precision. Earlier retrospective charts conflict (2001=50,412 in 2011 versus 49,711 in 2025; 2004 differs between 2011/2013; 2012 losses differ in 2012/2013; 2016 losses differ in 2016/2019). The 2010 report file is not a readable PDF, so 2010 is absent.",
     "breaks": "Voluntary IC3 reporting and awareness change over time; totals are not population incidence. Older reports call losses adjusted (large claimed losses reviewed); later reports use reported/potential losses, with a 2016-era definition/presentation seam. Nominal dollars, not inflation adjusted. Edition-specific rounding varies."
   },
   "ic3Losses": {
@@ -335,7 +336,7 @@ export const META: Record<string, SeriesMeta> = {
     "cadence": "annual",
     "annualRule": "annual (calendar year, publisher)",
     "class": "online",
-    "note": "Each 2011–2025 annual report supplies its own national total; 2015 uses the national totals row. No interpolation. Later 2021–2023 chart overlaps are asserted equal, losses at the chart's 0.1-billion precision. Earlier retrospective charts conflict (2001=50,412 in 2011 versus 49,711 in 2025; 2004 differs between 2011/2013; 2012 losses differ in 2012/2013; 2016 losses differ in 2016/2019). These rejected historical extensions are documented in work/mismatches.md. The supposed 2010 PDF is HTML and pdftotext exits 1. Coverage is 2011–2025, not the draft's claimed milestones. 2015 national totals row is $1,070,711,522; the age table differs and is not substituted. 2016/2017/2018 panels publish $1.33/$1.42/$2.71 billion. 2020 summary publishes $4.2 billion and 2022 chart $10.3 billion, more specific than overview lower-bound wording. 2025 headline is $20.877 billion, rather than rounding to the brief's $20.9 billion.",
+    "note": "Each 2011–2025 annual report supplies its own national total; 2015 uses the national totals row. No interpolation. Later 2021–2023 chart overlaps are asserted equal, losses at the chart's 0.1-billion precision. Earlier retrospective charts conflict (2001=50,412 in 2011 versus 49,711 in 2025; 2004 differs between 2011/2013; 2012 losses differ in 2012/2013; 2016 losses differ in 2016/2019). The 2010 report file is not a readable PDF, so 2010 is absent. 2015 national totals row is $1,070,711,522; the age table differs and is not substituted. 2016/2017/2018 panels publish $1.33/$1.42/$2.71 billion. 2020 summary publishes $4.2 billion and 2022 chart $10.3 billion, more specific than overview lower-bound wording. 2025 headline is $20.877 billion.",
     "breaks": "Voluntary IC3 reporting and awareness change over time; totals are not population incidence. Older reports call losses adjusted (large claimed losses reviewed); later reports use reported/potential losses, with a 2016-era definition/presentation seam. Nominal dollars, not inflation adjusted. Edition-specific rounding varies."
   },
   "fraudReports": {
@@ -348,7 +349,7 @@ export const META: Record<string, SeriesMeta> = {
     "annualRule": "annual (publisher)",
     "class": "online",
     "note": "Annual report count by type, 2001–2024, from 2024_CSN_Number_of_Reports_by_Type.csv. Not unique victims or a population incidence rate. Multiple report types can apply; category totals need not equal the unduplicated combined count.",
-    "breaks": "Contributing organizations, public awareness, and classifications change over time. National Do Not Call Registry complaints excluded; reporting volume is not underlying crime incidence."
+    "breaks": "none known that is dated: contributing organizations, public awareness, and classifications change over time. National Do Not Call Registry complaints excluded; reporting volume is not underlying crime incidence."
   },
   "identityTheftReports": {
     "name": "Identity theft reports",
@@ -360,7 +361,7 @@ export const META: Record<string, SeriesMeta> = {
     "annualRule": "annual (publisher)",
     "class": "online",
     "note": "Annual report count by type, 2001–2024, from 2024_CSN_Number_of_Reports_by_Type.csv. Not unique victims or a population incidence rate. Multiple report types can apply; category totals need not equal the unduplicated combined count.",
-    "breaks": "Contributing organizations, public awareness, and classifications change over time. National Do Not Call Registry complaints excluded; reporting volume is not underlying crime incidence."
+    "breaks": "none known that is dated: contributing organizations, public awareness, and classifications change over time. National Do Not Call Registry complaints excluded; reporting volume is not underlying crime incidence."
   }
 };
 export const KEYS = Object.keys(META);

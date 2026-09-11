@@ -146,3 +146,142 @@ EIA rows: Monthly Energy Review codes via the EIA v2 API (free key) or the keyle
 | National mean PM2.5 | EPA AQS site-level annual files | 2000–2025 | — | EPA's headline uses a fixed site set | **DEFERRED** — our computed mean will not match EPA's chart; needs the site-completeness rule first |
 | People in counties above NAAQS | EPA air-quality summary | latest year only | 2024 ≈ 109 M | NAAQS levels change | **CUT** rule 6 — the standard moves under the series |
 | TRI releases; drinking-water violations | EPA TRI / ECHO | 1987→ / 1993→ | — | chemical-list and reporting seams | **CUT** rule 6/4 |
+
+## Shipped (generated 2026-09-11 from the datasets; the tables above describe the publisher, this table describes what usstats.io carries)
+
+Coverage here is what shipped after the build; where it is shorter than the publisher coverage above, the series note names why (a login-walled older edition, a checked-in file, a rule-3 exception).
+
+| Dataset | Key | Shipped coverage | Points | Source URL |
+|---|---|---|---|---|
+| Crime-And-Justice | aggravatedAssaultRate | 2000–2024 | 25 | https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend |
+| Crime-And-Justice | burglaryRate | 2000–2024 | 25 | https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend |
+| Crime-And-Justice | correctionalSupervisionRate | 2003–2023 | 21 | https://bjs.ojp.gov/document/cpus23st.zip |
+| Crime-And-Justice | deathRowPopulation | 1953–2023 | 71 | https://bjs.ojp.gov/document/cp23st.zip |
+| Crime-And-Justice | executions | 1930–2023 | 94 | https://bjs.ojp.gov/document/cp23st.zip |
+| Crime-And-Justice | federalOffendersSentenced | 2002–2025 | 24 | https://www.ussc.gov/research/sourcebook-2025 |
+| Crime-And-Justice | federalPrisonPopulation | 1980–2025 | 46 | https://www.bop.gov/about/statistics/raw_stats/BOP_pastPopulationTotals.csv |
+| Crime-And-Justice | fraudReports | 2001–2024 | 24 | https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip |
+| Crime-And-Justice | gallupAfraidToWalk | 1965–2025 | 41 | https://news.gallup.com/poll/1603/crime.aspx |
+| Crime-And-Justice | gallupMoreCrime | 1989–2025 | 32 | https://news.gallup.com/poll/1603/crime.aspx |
+| Crime-And-Justice | gssCourtsNotHarsh | 1972–2024 | 34 | https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip |
+| Crime-And-Justice | gssFavorDeathPenalty | 1974–2024 | 33 | https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip |
+| Crime-And-Justice | gssFearWalking | 1973–2024 | 30 | https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip |
+| Crime-And-Justice | gssGunInHome | 1973–2024 | 30 | https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip |
+| Crime-And-Justice | ic3Complaints | 2011–2025 | 15 | https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf |
+| Crime-And-Justice | ic3Losses | 2011–2025 | 15 | https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf |
+| Crime-And-Justice | identityTheftReports | 2001–2024 | 24 | https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip |
+| Crime-And-Justice | jailRate | 2012–2023 | 12 | https://bjs.ojp.gov/document/ji23st.zip |
+| Crime-And-Justice | motorVehicleTheftRate | 2000–2024 | 25 | https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend |
+| Crime-And-Justice | ncvsPropertyRate | 1993–2024 | 28 | https://bjs.ojp.gov/document/cv24.zip |
+| Crime-And-Justice | ncvsReportedShare | 1993–2024 | 31 | https://bjs.ojp.gov/document/cv24.zip |
+| Crime-And-Justice | ncvsViolentRate | 1993–2024 | 31 | https://bjs.ojp.gov/document/cv24.zip |
+| Crime-And-Justice | robberyRate | 2000–2024 | 25 | https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend |
+| Family-And-Society | adultsMarried | 1950–2025 | 38 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/marital/ms1.xls |
+| Family-And-Society | atusChildcare | 2003–2025 | 22 | https://api.bls.gov/publicAPI/v1/timeseries/data/TUU10101AA01010710 |
+| Family-And-Society | atusSleep | 2003–2025 | 22 | https://api.bls.gov/publicAPI/v1/timeseries/data/TUU10101AA01000247 |
+| Family-And-Society | atusSocializing | 2003–2025 | 22 | https://api.bls.gov/publicAPI/v1/timeseries/data/TUU10101AA01013951 |
+| Family-And-Society | atusTelevision | 2003–2025 | 22 | https://api.bls.gov/publicAPI/v1/timeseries/data/TUU10101AA01014236 |
+| Family-And-Society | births | 1909–2024 | 116 | https://data.cdc.gov/resource/e6fc-ccez.json?$limit=1000 |
+| Family-And-Society | borderEnforcementActions | 1925–2023 | 99 | https://ohss.dhs.gov/system/files/2026-08/2026_0806_ohss_yearbook_enforcement_fy2023.xlsx |
+| Family-And-Society | childMaltreatmentRate | 2005–2023 | 19 | https://acf.gov/sites/default/files/documents/cb/cm2023.pdf |
+| Family-And-Society | childlessWomen40to44 | 1976–2024 | 28 | https://www2.census.gov/programs-surveys/demo/tables/fertility/time-series/his-cps/h1.xlsx |
+| Family-And-Society | childrenWithTwoParents | 1960–2025 | 59 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/children/ch1.xls |
+| Family-And-Society | cohabitingCouples | 1996–2023 | 28 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/adults/uc1.xls |
+| Family-And-Society | cohabitingCouplesPosslq | 1960–2006 | 32 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/adults/uc1.xls |
+| Family-And-Society | foreignBornShareDecennial | 1850–2000 | 16 | https://www2.census.gov/library/working-papers/2006/demo/pop-twps0081/tab01.xls |
+| Family-And-Society | fosterCareChildren | 2009–2025 | 17 | https://acf.gov/sites/default/files/documents/cb/2025-afcars-dashboard-printable.pdf |
+| Family-And-Society | gssAttendWeekly | 1972–2024 | 35 | https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip |
+| Family-And-Society | gssNoReligion | 1972–2024 | 35 | https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip |
+| Family-And-Society | gssSocialFriends | 1974–2024 | 29 | https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip |
+| Family-And-Society | householdSize | 1940–2025 | 80 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/households/hh6.xls |
+| Family-And-Society | marriedCoupleHouseholds | 1940–2025 | 80 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/households/hh1.xls |
+| Family-And-Society | meanAgeFirstBirth | 1970–2024 | 46 | https://www.cdc.gov/nchs/data/nvsr/nvsr75/nvsr75-02.pdf |
+| Family-And-Society | medianAge | 2000–2025 | 26 | https://www2.census.gov/programs-surveys/popest/tables/2020-2025/national/asrh/nc-est2025-agesex.xlsx |
+| Family-And-Society | medianAgeFirstMarriageMen | 1890–2025 | 85 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/marital/ms2.xls |
+| Family-And-Society | medianAgeFirstMarriageWomen | 1890–2025 | 85 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/marital/ms2.xls |
+| Family-And-Society | moversShare | 1948–2023 | 68 | https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/time-series/historic/hst_mig_a_1.xlsx |
+| Family-And-Society | naturalizations | 1907–2023 | 117 | https://ohss.dhs.gov/system/files/2025-07/2025_0725_plcy_yearbook_naturalizations_fy2023.xlsx |
+| Family-And-Society | oneParentFamilies | 1950–2025 | 76 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/families/fm1.xls |
+| Family-And-Society | onePersonHouseholds | 1960–2025 | 66 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/households/hh4.xls |
+| Family-And-Society | permanentResidents | 1820–2023 | 204 | https://ohss.dhs.gov/sites/default/files/2024-09/2024_0906_ohss_yearbook_lawful_permanent_residents_fy2023_0.xlsx |
+| Family-And-Society | population65Share | 2000–2025 | 26 | https://www2.census.gov/programs-surveys/popest/tables/2020-2025/national/asrh/nc-est2025-agesex.xlsx |
+| Family-And-Society | youngAdultsWithParents | 1960–2025 | 46 | https://www2.census.gov/programs-surveys/demo/tables/families/time-series/adults/ad1.xls |
+| Family-And-Society | foreignBornShare | DEFERRED | — | No CENSUS_API_KEY found via `has CENSUS_API_KEY` (returned CENSUS_API_KEY no); environment key absent. Annual ACS B05002_013E / B05002_001E … |
+| Family-And-Society | mothersLaborForce | DEFERRED | — | Error: InvariantViolation: HTTP 403 https://www.bls.gov/opub/reports/womens-databook/2022/home.htm: <!DOCTYPE HTML>
+<html lang="en-us">     … |
+| Family-And-Society | abortionRate | DEFERRED | — | Error: InvariantViolation: HTTP 403 https://www.cdc.gov/mmwr/volumes/73/ss/ss7307a1.htm: <HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><B… |
+| Energy-And-Environment | arcticSeaIce | 1979–2025 | 47 | https://noaadata.apps.nsidc.org/NOAA/G02135/north/monthly/data/N_09_extent_v4.0.csv |
+| Energy-And-Environment | batteryCapacity | 2010–2025 | 16 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=BTGBPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | billionDollarCost | 1980–2024 | 44 | https://www.ncei.noaa.gov/access/billions/events-US-1980-2024.csv |
+| Energy-And-Environment | billionDollarDisasters | 1980–2024 | 44 | https://www.ncei.noaa.gov/access/billions/events-US-1980-2024.csv |
+| Energy-And-Environment | capacityTotal | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=ELGBPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | co2Concentration | 1959–2025 | 67 | https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.csv |
+| Energy-And-Environment | co2Growth | 1959–2025 | 67 | https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_gr_gl.csv |
+| Energy-And-Environment | co2PerCapita | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=CDTPRUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | coalProduction | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=CLPRPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | coolingDegreeDays | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=ZWCDPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | crudeProduction | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=PAPRPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | disasterDeclarations | 1953–2025 | 73 | https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries |
+| Energy-And-Environment | electricityCo2Intensity | 1973–2025 | 53 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=TXEIEUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | emissionsNox | 1970–2025 | 40 | https://www.epa.gov/system/files/other-files/2026-09/national_tier1_caps_04sep2026.xlsx |
+| Energy-And-Environment | emissionsPm25 | 2002–2025 | 24 | https://www.epa.gov/system/files/other-files/2026-09/national_tier1_caps_04sep2026.xlsx |
+| Energy-And-Environment | emissionsSo2 | 1970–2025 | 40 | https://www.epa.gov/system/files/other-files/2026-09/national_tier1_caps_04sep2026.xlsx |
+| Energy-And-Environment | emissionsVoc | 1970–2025 | 40 | https://www.epa.gov/system/files/other-files/2026-09/national_tier1_caps_04sep2026.xlsx |
+| Energy-And-Environment | energyIndependence | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=TEPRBUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | energyIntensity | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=TETGRUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | energyPerCapita | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=TETPRUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | gasProduction | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=NGMPPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | genCoal | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=CLETPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | genGas | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=NGETPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | genHydro | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=HVETPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | genNuclear | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=NUETPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | genSolar | 1984–2025 | 42 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=SOETPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | genWind | 1983–2025 | 43 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=WYETPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | generationTotal | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=ELETPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | globalTemperature | 1850–2025 | 176 | https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/globe/land_ocean/12/12/1850-2025.csv |
+| Energy-And-Environment | greenhouseGasIndex | 1979–2024 | 46 | https://gml.noaa.gov/aggi/AGGI_Table.csv |
+| Energy-And-Environment | heatingDegreeDays | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=ZWHDPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | methaneConcentration | 1984–2025 | 42 | https://gml.noaa.gov/webdata/ccgg/trends/ch4/ch4_annmean_gl.csv |
+| Energy-And-Environment | namedStorms | 1851–2025 | 175 | https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-02272026.txt |
+| Energy-And-Environment | nuclearCapacityFactor | 1973–2025 | 53 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=NUCASUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | nuclearReactors | 1957–2025 | 69 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=NUOUPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | petroleumNetImports | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=PANIPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | precipitation | 1895–2025 | 131 | https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/time-series/110/pcp/12/12/1895-2025.csv |
+| Energy-And-Environment | provedOilReserves | 1899–2021 | 123 | https://api.eia.gov/v2/petroleum/crd/pres/data/?frequency=annual&data%5B0%5D=value&facets%5Bseries%5D%5B%5D=RCRR01NUS_1&facets%5Bduoarea%5D%5B%5D=NUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | refineryInput | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=CORIPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | rigCount | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=OGNRPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | salesCommercial | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=ESCCPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | salesIndustrial | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=ESICPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | salesResidential | 1949–2025 | 77 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=ESRCPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | seaLevel | 1993–2024 | 32 | https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_ref_90.csv |
+| Energy-And-Environment | strategicReserve | 1977–2025 | 49 | https://api.eia.gov/v2/total-energy/data/?frequency=annual&data%5B0%5D=value&facets%5Bmsn%5D%5B%5D=COSQPUS&length=5000&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc |
+| Energy-And-Environment | tornadoes | 1950–2024 | 75 | https://www.spc.noaa.gov/wcm/data/1950-2025_actual_tornadoes.csv |
+| Energy-And-Environment | unhealthyAqiDays | 1980–2025 | 46 | https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_cbsa_2025.zip |
+| Energy-And-Environment | vehicleMiles | 1980–2023 | 44 | https://www.fhwa.dot.gov/policyinformation/statistics/2023/xls/vm202.xls |
+| Energy-And-Environment | wildfireAcres | 1983–2025 | 43 | https://www.nifc.gov/fire-information/statistics/wildfires |
+| Societal-Health | antidepressantUse | 2010–2018 | 5 | https://www.cdc.gov/nchs/data/databriefs/db377-tables-508.pdf#4 |
+| Societal-Health | brfssFrequentMentalDistress | 2019–2024 | 6 | https://data.cdc.gov/resource/dttw-5yxu.json |
+| Societal-Health | consumerSentiment | 1961–2026 | 66 | https://www.sca.isr.umich.edu/files/tbyics.csv |
+| Societal-Health | gallupEconomicConfidence | 1996–2026 | 31 | https://datawrapper.dwcdn.net/6VwvN/4/dataset.csv |
+| Societal-Health | gallupFinancesBetter | 2001–2025 | 25 | https://datawrapper.dwcdn.net/w92AE/1/dataset.csv |
+| Societal-Health | gallupMentalHealthExcellent | 2001–2025 | 25 | https://datawrapper.dwcdn.net/f9It9/6/dataset.csv |
+| Societal-Health | gallupPersonalLifeSatisfied | 1979–2025 | 36 | https://news.gallup.com/poll/655493/new-low-satisfied-personal-life.aspx |
+| Societal-Health | gallupPersonalLifeVerySatisfied | 2001–2025 | 19 | https://news.gallup.com/poll/655493/new-low-satisfied-personal-life.aspx |
+| Societal-Health | gallupQualityJob | 2001–2026 | 26 | https://datawrapper.dwcdn.net/gZ2wl/4/dataset.csv |
+| Societal-Health | gssJobVerySatisfied | 1972–2024 | 35 | https://gss.norc.org/get-the-data/stata.html |
+| Societal-Health | gssLotOfAverageManWorse | 1973–1994 | 15 | https://gss.norc.org/get-the-data/stata.html |
+| Societal-Health | gssMarriageVeryHappy | 1973–2024 | 34 | https://gss.norc.org/get-the-data/stata.html |
+| Societal-Health | gssNotTooHappy | 1972–2024 | 35 | https://gss.norc.org/get-the-data/stata.html |
+| Societal-Health | gssPeopleFair | 1972–2024 | 30 | https://gss.norc.org/get-the-data/stata.html |
+| Societal-Health | gssPeopleHelpful | 1972–2024 | 30 | https://gss.norc.org/get-the-data/stata.html |
+| Societal-Health | nhisPsychologicalDistress | 1998–2016 | 6 | https://www.cdc.gov/nchs/data/hus/2017/046.pdf |
+| Societal-Health | nsduhAdolescentDepression | 2004–2025 | 21 | https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health |
+| Societal-Health | nsduhAdultDepression | 2005–2025 | 20 | https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health |
+| Societal-Health | nsduhAnyMentalIllness | 2008–2025 | 17 | https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health |
+| Societal-Health | nsduhSeriousMentalIllness | 2008–2025 | 17 | https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health |
+| Societal-Health | shedCover400 | 2013–2025 | 13 | https://www.federalreserve.gov/publications/files/2025-report-economic-well-being-us-households-202605.pdf |
+| Societal-Health | shedDoingOkay | 2013–2025 | 13 | https://www.federalreserve.gov/publications/files/2025-report-economic-well-being-us-households-202605.pdf |
+| Societal-Health | yrbsConsideredSuicide | 2013–2023 | 6 | https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf |
+| Societal-Health | yrbsPersistentSadness | 2013–2023 | 6 | https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf |

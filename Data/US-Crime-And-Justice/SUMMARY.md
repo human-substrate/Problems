@@ -6,9 +6,9 @@
 
 | Series | Latest | Unit | Coverage | Class |
 |---|---:|---|---|---|
-| [Motor vehicle theft](series/motorVehicleTheftRate.json) | 257.9 (2024) | reported offenses per 100,000 people covered by reporting agencies | 2000–2024 · 25 points | reported |
-| [Burglary](series/burglaryRate.json) | 232 (2024) | reported offenses per 100,000 people covered by reporting agencies | 2000–2024 · 25 points | reported |
-| [Robbery](series/robberyRate.json) | 61.7 (2024) | reported offenses per 100,000 people covered by reporting agencies | 2000–2024 · 25 points | reported |
+| [Motor vehicle theft](series/motorVehicleTheftRate.json) | 201.1 (2025) | reported offenses per 100,000 people covered by reporting agencies | 2000–2025 · 26 points | reported |
+| [Burglary](series/burglaryRate.json) | 196.1 (2025) | reported offenses per 100,000 people covered by reporting agencies | 2000–2025 · 26 points | reported |
+| [Robbery](series/robberyRate.json) | 50.2 (2025) | reported offenses per 100,000 people covered by reporting agencies | 2000–2025 · 26 points | reported |
 | [Aggravated assault](series/aggravatedAssaultRate.json) | 257.5 (2024) | reported offenses per 100,000 people covered by reporting agencies | 2000–2024 · 25 points | reported |
 
 ## Experienced crime — NCVS
@@ -16,14 +16,14 @@
 | Series | Latest | Unit | Coverage | Class |
 |---|---:|---|---|---|
 | [Violent victimization (NCVS)](series/ncvsViolentRate.json) | 23.3 (2024) | victimizations per 1,000 persons age 12 or older | 1993–2024 · 31 points | experienced |
-| [Property victimization (NCVS)](series/ncvsPropertyRate.json) | 97.6 (2024) | victimizations per 1,000 households | 1993–2024 · 28 points | experienced |
+| [Property victimization (NCVS)](series/ncvsPropertyRate.json) | 97.6 (2024) | victimizations per 1,000 households | 1993–2024 · 31 points | experienced |
 | [Violent victimizations reported to police (share)](series/ncvsReportedShare.json) | 48.1 (2024) | percent of violent victimizations reported to police | 1993–2024 · 31 points | experienced |
 
 ## Justice-system response
 
 | Series | Latest | Unit | Coverage | Class |
 |---|---:|---|---|---|
-| [Jail incarceration rate](series/jailRate.json) | 198 (2023) | persons held in local jail per 100,000 U.S. residents | 2012–2023 · 12 points | response |
+| [Jail incarceration rate](series/jailRate.json) | 194 (2024) | persons held in local jail per 100,000 U.S. residents | 2012–2024 · 13 points | response |
 | [Adults under correctional supervision](series/correctionalSupervisionRate.json) | 2100 (2023) | persons under adult correctional supervision per 100,000 adult U.S. residents | 2003–2023 · 21 points | response |
 | [Executions](series/executions.json) | 24 (2023) | executions | 1930–2023 · 94 points | response |
 | [Persons under sentence of death](series/deathRowPopulation.json) | 2192 (2023) | persons | 1953–2023 · 71 points | response |
@@ -62,4 +62,4 @@ NCVS reported share is computed from rounded rates and can differ from BJS's dir
 |---|---|
 
 
-Build: 2026-09-11T21:53:59.500Z.
+Build: 2026-09-11T23:07:05.621Z.

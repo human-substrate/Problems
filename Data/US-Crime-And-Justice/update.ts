@@ -27,7 +27,7 @@ function log(s:string){logs.push(scrub(s));console.log(scrub(s));}
 async function run(group:string,fn:()=>Promise<void>){try{await fn();}catch(e){errors[group]=scrub(String(e));log(`FAIL ${group}: ${errors[group]}`);}}
 async function save(r:Result){
   const m=META[r.key],ys=Object.keys(r.data).sort();invariant(m,`${r.key}: missing metadata`);
-  invariant(ys.length>=15||(/Exception: 12 annual points/.test(m.note)&&ys.length===12),`${r.key}: insufficient annual points`);
+  invariant(ys.length>=15||(/13 annual points, 2012–2024/.test(m.note)&&ys.length===13),`${r.key}: insufficient annual points`);
   invariant(m.breaks.trim().length>0&&r.method.length>0,`${r.key}: missing breaks/method`);
   invariant(!r.key.startsWith("gss")&&!r.key.startsWith("ncvsReported")||/computed from/i.test(m.source),`${r.key}: computed source label`);
   for(const y of ys)invariant(/^\d{4}$/.test(y)&&Number.isFinite(r.data[y])&&r.data[y]>=r.bounds[0]&&r.data[y]<=r.bounds[1],`${r.key} ${y}: outside bounds [${r.bounds}]`);

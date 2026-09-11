@@ -317,9 +317,9 @@ Generated from stored provenance; dates below are actual fetch timestamps, not t
 - Unit: °C vs 1901–2000
 - Coverage: 1850–2025
 - Annual rule: Publisher annual calendar-year observation; incomplete current years excluded.
-- Method and caveats: 12-month period ending December; global land/ocean anomaly against 1901–2000 or contiguous US precipitation total. No discrete break identified in Lane 4; publisher revisions may revise the full historical series.
+- Method and caveats: 12-month period ending December; global land and ocean surface temperature anomaly against the 1901–2000 average. No discrete break identified in Lane 4; publisher revisions may revise the full historical series.
 - Breaks: No discrete break identified in Lane 4; publisher revisions may revise the full historical series.
-- Fetched: 2026-09-11T21:19:58.421Z
+- Fetched: 2026-09-11T21:58:42.952Z
 
 ## Annual Greenhouse Gas Index (greenhouseGasIndex)
 
@@ -354,16 +354,16 @@ Generated from stored provenance; dates below are actual fetch timestamps, not t
 - Breaks: No discrete break identified in Lane 4; publisher revisions may revise the full historical series.
 - Fetched: 2026-09-11T21:19:58.421Z
 
-## Atlantic named storms (namedStorms)
+## Atlantic tropical storms and hurricanes (namedStorms)
 
 - Publisher: computed from NOAA NHC Atlantic HURDAT2
 - Source: <https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-02272026.txt>
-- Unit: storms
+- Unit: systems reaching tropical-storm strength (≥34 kt)
 - Coverage: 1851–2025
 - Annual rule: Publisher annual calendar-year observation; incomplete current years excluded.
 - Method and caveats: Count each unique AL storm header once when peak track maximum sustained wind (field 7) is at least 34 knots; season from storm ID. Includes systems that reached 34 knots but were never named operationally (every pre-1950 storm, the 2005 unnamed subtropical storm, and Tropical Depression Twenty-Two of 2005 after reanalysis), so a season can exceed the named-storm count in NHC's summary: 2005 is 29 here against 28 there. Pre-1966 pre-satellite and pre-1944 pre-reconnaissance eras undercount storms.
 - Breaks: Pre-1966 pre-satellite and pre-1944 pre-reconnaissance eras undercount storms.
-- Fetched: 2026-09-11T21:29:37.756Z
+- Fetched: 2026-09-11T21:58:42.952Z
 
 ## Nuclear capacity factor (nuclearCapacityFactor)
 
@@ -405,9 +405,9 @@ Generated from stored provenance; dates below are actual fetch timestamps, not t
 - Unit: inches
 - Coverage: 1895–2025
 - Annual rule: Publisher annual calendar-year observation; incomplete current years excluded.
-- Method and caveats: 12-month period ending December; global land/ocean anomaly against 1901–2000 or contiguous US precipitation total. No discrete break identified in Lane 4; publisher revisions may revise the full historical series.
+- Method and caveats: 12-month period ending December; contiguous United States precipitation total in inches. No discrete break identified in Lane 4; publisher revisions may revise the full historical series.
 - Breaks: No discrete break identified in Lane 4; publisher revisions may revise the full historical series.
-- Fetched: 2026-09-11T21:19:58.421Z
+- Fetched: 2026-09-11T21:58:42.952Z
 
 ## Proved crude oil reserves (provedOilReserves)
 
@@ -416,9 +416,9 @@ Generated from stored provenance; dates below are actual fetch timestamps, not t
 - Unit: million barrels
 - Coverage: 1899–2021
 - Annual rule: Publisher annual calendar-year observation; incomplete current years excluded.
-- Method and caveats: Series RCRR01NUS_1; national duoarea NUS; publisher annual observations through 2021. Original unit: MMBBL. Converted only by the declared unit scale. Two-year publication lag; Lane 4 series ends in 2021. Later observations are excluded by this dataset's specified coverage.
-- Breaks: Two-year publication lag; Lane 4 series ends in 2021. Later observations are excluded by this dataset's specified coverage.
-- Fetched: 2026-09-11T21:19:58.421Z
+- Method and caveats: Series RCRR01NUS_1; national duoarea NUS; publisher annual observations through 2021. Original unit: MMBBL. Converted only by the declared unit scale. Two-year publication lag: EIA's latest published annual reserves estimate is 2021 (live check 2026-09-11), so the series ends there and extends when EIA publishes.
+- Breaks: Two-year publication lag: EIA's latest published annual reserves estimate is 2021 (live check 2026-09-11), so the series ends there and extends when EIA publishes.
+- Fetched: 2026-09-11T21:58:42.952Z
 
 ## Refinery crude input (refineryInput)
 
@@ -479,12 +479,12 @@ Generated from stored provenance; dates below are actual fetch timestamps, not t
 
 - Publisher: computed from NOAA STAR satellite altimetry
 - Source: <https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_ref_90.csv>
-- Unit: mm, publisher reference
+- Unit: mm above the satellite-era reference mean (NOAA STAR sea level anomaly)
 - Coverage: 1993–2024
 - Annual rule: Calendar-year mean of subannual observations; at least ten observations required. The latest year is excluded until it meets the full-year coverage requirement.
 - Method and caveats: Each published observation is the mean of the altimeter missions reporting on that date (TOPEX/Poseidon, Jason-1, Jason-2, Jason-3, Sentinel-6MF overlap at handovers); the annual value is the arithmetic mean of a calendar year's observations, 1993 onward; original reference baseline retained, no rebasing. Inter-mission offsets exist across satellite altimeter generations; the reference-series baseline is retained.
 - Breaks: Inter-mission offsets exist across satellite altimeter generations; the reference-series baseline is retained.
-- Fetched: 2026-09-11T21:27:18.413Z
+- Fetched: 2026-09-11T21:58:42.952Z
 
 ## Strategic Petroleum Reserve (strategicReserve)
 
@@ -526,9 +526,9 @@ Generated from stored provenance; dates below are actual fetch timestamps, not t
 - Unit: million vehicle miles
 - Coverage: 1980–2023
 - Annual rule: Publisher annual calendar-year observation; incomplete current years excluded.
-- Method and caveats: VM-202 all-motor-vehicles total, million vehicle miles; years 1980–2023 from one workbook edition. Grand-total column identified uniquely by the 2023 sample of 3,246,817 (±1) and held fixed across years. 2007–09 HPMS resubmission is a break; specified coverage is 1980–2023.
-- Breaks: 2007–09 HPMS resubmission is a break; specified coverage is 1980–2023.
-- Fetched: 2026-09-11T21:19:58.421Z
+- Method and caveats: VM-202 all-motor-vehicles total, million vehicle miles; years 1980–2023 from one workbook edition. Grand-total column identified uniquely by the 2023 sample of 3,246,817 (±1) and held fixed across years. 2007–09 HPMS resubmission is a break. Highway Statistics 2023 is the latest edition FHWA has published (the 2024 workbook does not exist yet), so the series ends at 2023 and extends with the next edition.
+- Breaks: 2007–09 HPMS resubmission is a break. Highway Statistics 2023 is the latest edition FHWA has published (the 2024 workbook does not exist yet), so the series ends at 2023 and extends with the next edition.
+- Fetched: 2026-09-11T21:58:42.952Z
 
 ## Wildfire acres burned (wildfireAcres)
 

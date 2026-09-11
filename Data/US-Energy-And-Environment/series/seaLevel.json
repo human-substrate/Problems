@@ -2,17 +2,17 @@
   "_meta": {
     "key": "seaLevel",
     "name": "Global mean sea level",
-    "unit": "mm, publisher reference",
+    "unit": "mm above the satellite-era reference mean (NOAA STAR sea level anomaly)",
     "class": "climate",
     "source": "computed from NOAA STAR satellite altimetry",
     "sourceUrl": "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_ref_90.csv",
-    "note": "Each published observation is the mean of the altimeter missions reporting on that date (TOPEX/Poseidon, Jason-1, Jason-2, Jason-3, Sentinel-6MF overlap at handovers); the annual value is the arithmetic mean of a calendar year's observations, 1993 onward; original reference baseline retained, no rebasing. Inter-mission offsets exist across satellite altimeter generations; the reference-series baseline is retained.",
-    "breaks": "Inter-mission offsets exist across satellite altimeter generations; the reference-series baseline is retained.",
+    "note": "Each published observation is the mean of the altimeter missions reporting on that date (TOPEX/Poseidon, Jason-1, Jason-2, Jason-3, Sentinel-6MF overlap at handovers); the annual value is the arithmetic mean of a calendar year's observations, 1993 onward; original reference baseline retained, no rebasing. Inter-mission offsets across satellite altimeter generations (TOPEX/Poseidon from 1993, Jason-1 2002, Jason-2 2008, Jason-3 2016, Sentinel-6 2021); the reference-series baseline is retained.",
+    "breaks": "Inter-mission offsets across satellite altimeter generations (TOPEX/Poseidon from 1993, Jason-1 2002, Jason-2 2008, Jason-3 2016, Sentinel-6 2021); the reference-series baseline is retained.",
     "cadence": "annual",
     "annualRule": "Calendar-year mean of subannual observations; at least ten observations required. The latest year is excluded until it meets the full-year coverage requirement.",
     "goodDirection": "neutral",
     "coverage": "1993–2024",
-    "fetched": "2026-09-11T21:27:18.413Z"
+    "fetched": "2026-09-11T21:58:42.952Z"
   },
   "data": {
     "1993": -19.405,

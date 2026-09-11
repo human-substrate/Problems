@@ -19,7 +19,7 @@ export async function buildNei(p:Pipeline):Promise<void>{
     }
     const evidence=editionNotes.join("\n");invariant(/interpolat|project/i.test(evidence),"NEI edition estimation notes missing");
     await Bun.write(new URL("../work/nei-edition-notes.txt",import.meta.url),evidence);
-    const meta=metadata(key,"U.S. EPA National Emissions Inventory trends",url,`Pollutant-specific worksheet, Total without wildfires row, annual year columns. EPA's own estimates throughout: 1970–2001 five-yearly then annual NEI/trends values, 2002–2019 EQUATES-modeled, and the years after the latest full NEI (2020 onward) interpolated or projected by EPA; no interpolation performed here. The workbook's edition notes are retained in work/nei-edition-notes.txt.`);
+    const meta=metadata(key,"U.S. EPA National Emissions Inventory trends",url,`Pollutant-specific worksheet, Total without wildfires row, annual year columns. EPA's own estimates throughout: ${key==="emissionsPm25"?"EPA publishes no PM2.5 total without wildfires before 2002, so this line begins in 2002;":"1970–2001 five-yearly then annual NEI/trends values,"} 2002–2019 EQUATES-modeled, and the years after the latest full NEI (2020 onward) interpolated or projected by EPA; no interpolation performed here.`);
     await p.save({key,data,bounds:SPECS[key].bounds,meta});
   });
 }

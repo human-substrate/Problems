@@ -8,19 +8,20 @@
     "class": "response",
     "name": "Jail incarceration rate",
     "source": "Bureau of Justice Statistics, Annual Survey of Jails / Census of Jails",
-    "sourceUrl": "https://bjs.ojp.gov/document/ji23st.zip",
+    "sourceUrl": "https://bjs.ojp.gov/document/ji24st.zip",
     "historicalSourceUrls": [
+      "https://bjs.ojp.gov/document/ji23st.zip",
       "https://bjs.ojp.gov/document/ji22st.zip"
     ],
-    "note": "Midyear persons held in local jail per 100,000 U.S. residents. Exception: 12 annual points, 2012–2023, the recoverable rate history in this cache. ji22st Table 1 adds 2012=237 to ji23st Table 1; all 2013–2022 overlapping rates match exactly. Cached ji17st–ji21st ZIP paths are BJS Page not found HTML; unzip exits 9. Thus the prior 11-point exception was too narrow. 2019 Census of Jails is a complete enumeration; 2020–2021 declines reflect pandemic-era population changes.",
+    "note": "Midyear persons held in local jail per 100,000 U.S. residents. 13 annual points, 2012–2024, the rate history BJS publishes in its Jail Inmates tables: the 2024 edition (Table 1, 2014–2024) is taken first, the 2023 edition adds 2013, and the 2022 edition adds 2012=237. On overlapping years the newest edition wins; the 2024 edition revised 2021–2023 down by one point each (192→191, 199→198, 198→197). BJS no longer serves the 2017–2021 edition files. 2019 and 2024 are Census of Jails complete enumerations; 2020–2021 declines reflect pandemic-era population changes.",
     "breaks": "2019 Census of Jails (complete enumeration) replaces the sample-based Annual Survey of Jails for that year only; 2020-2021 COVID-era population decline is a real population shift, not a methodology break.",
-    "method": "ji22stt01.csv column 8 and ji23stt01.csv column 7; 2013–2022 overlap asserted equal.",
+    "method": "ji24stt01.csv column 7 (2014–2024, newest wins), ji23stt01.csv column 7 adds 2013, ji22stt01.csv column 8 adds 2012; 2013–2022 overlap of the 2022/2023 editions asserted equal; 2024 edition revises 2021–2023 by one point each.",
     "bounds": [
       0,
       1000
     ],
-    "coverage": "2012–2023",
-    "fetched": "2026-09-11T08:29:13.821Z",
+    "coverage": "2012–2024",
+    "fetched": "2026-09-11T23:01:29.835Z",
     "sourceRead": "2026-09-10"
   },
   "data": {
@@ -33,8 +34,9 @@
     "2018": 226,
     "2019": 224,
     "2020": 166,
-    "2021": 192,
-    "2022": 199,
-    "2023": 198
+    "2021": 191,
+    "2022": 198,
+    "2023": 197,
+    "2024": 194
   }
 }

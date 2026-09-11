@@ -6,13 +6,13 @@
     "class": "transport",
     "source": "Federal Highway Administration, Highway Statistics 2023",
     "sourceUrl": "https://www.fhwa.dot.gov/policyinformation/statistics/2023/xls/vm202.xls",
-    "note": "VM-202 all-motor-vehicles total, million vehicle miles; years 1980–2023 from one workbook edition. Grand-total column identified uniquely by the 2023 sample of 3,246,817 (±1) and held fixed across years. 2007–09 HPMS resubmission is a break; specified coverage is 1980–2023.",
-    "breaks": "2007–09 HPMS resubmission is a break; specified coverage is 1980–2023.",
+    "note": "VM-202 all-motor-vehicles total, million vehicle miles; years 1980–2023 from one workbook edition. Grand-total column identified uniquely by the 2023 sample of 3,246,817 (±1) and held fixed across years. 2007–09 HPMS resubmission is a break. Highway Statistics 2023 is the latest edition FHWA has published (the 2024 workbook does not exist yet), so the series ends at 2023 and extends with the next edition.",
+    "breaks": "2007–09 HPMS resubmission is a break. Highway Statistics 2023 is the latest edition FHWA has published (the 2024 workbook does not exist yet), so the series ends at 2023 and extends with the next edition.",
     "cadence": "annual",
     "annualRule": "Publisher annual calendar-year observation; incomplete current years excluded.",
     "goodDirection": "neutral",
     "coverage": "1980–2023",
-    "fetched": "2026-09-11T21:19:58.421Z"
+    "fetched": "2026-09-11T21:58:42.952Z"
   },
   "data": {
     "1980": 1527295,
