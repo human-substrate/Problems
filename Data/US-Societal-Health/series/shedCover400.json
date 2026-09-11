@@ -8,8 +8,9 @@
     "goodDirection": "up",
     "note": "Annual SHED, a nationally representative online survey of US adults. Could pay a $400 emergency expense with cash or its cash equivalent, without borrowing or selling something. Named exception to the >=15-year minimum: SHED began in 2013, so this edition has 13 annual points through 2025. The 2020 survey was fielded in November, later than the usual timing, which may affect year-over-year comparability; no direction of bias is assumed.",
     "method": "PDF page 50, heading-verified figure; pdftotext -tsv numeric labels matched to nearest year-axis x-coordinate",
+    "breaks": "2020 survey fielded in November instead of October",
     "coverage": "2013–2025",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "2013": 50,

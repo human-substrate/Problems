@@ -69,7 +69,7 @@ Rules this dataset runs on:
 |---|---|---|---|---|
 | [Median age at first marriage, men](series/medianAgeFirstMarriageMen.json) | 30.8 yrs (2025) | 26.1 yrs (1890) | 1890–2025 · 85 pts | U.S. Census Bureau, historical family and living-arrangement tables |
 | [Median age at first marriage, women](series/medianAgeFirstMarriageWomen.json) | 28.4 yrs (2025) | 22 yrs (1890) | 1890–2025 · 85 pts | U.S. Census Bureau, historical family and living-arrangement tables |
-| [Married population aged 15 and older](series/adultsMarried.json) | 50.42% (2025) | 66.64% (1950) | 1950–2025 · 38 pts | U.S. Census Bureau, historical family and living-arrangement tables |
+| [Married population aged 15 and older](series/adultsMarried.json) | 50.42% (2025) | 66.64% (1950) | 1950–2025 · 38 pts | computed from the U.S. Census Bureau historical family and living-arrangement tables (counts divided within the same table) |
 
 ### Households & living arrangements
 
@@ -80,7 +80,7 @@ Rules this dataset runs on:
 | [Average household size](series/householdSize.json) | 2.5 (2025) | 3.67 (1940) | 1940–2025 · 80 pts | U.S. Census Bureau, historical family and living-arrangement tables |
 | [Children living with two parents](series/childrenWithTwoParents.json) | 70.4% (2025) | 87.68% (1960) | 1960–2025 · 59 pts | U.S. Census Bureau, historical family and living-arrangement tables |
 | [One-parent families with own children under 18](series/oneParentFamilies.json) | 30.51% (2025) | 7.38% (1950) | 1950–2025 · 76 pts | U.S. Census Bureau, historical family and living-arrangement tables |
-| [Adults aged 25–34 living with parents](series/youngAdultsWithParents.json) | 16.45% (2025) | 9.06% (1960) | 1960–2025 · 46 pts | U.S. Census Bureau, historical family and living-arrangement tables |
+| [Adults aged 25–34 living with parents](series/youngAdultsWithParents.json) | 16.45% (2025) | 9.06% (1960) | 1960–2025 · 46 pts | computed from the U.S. Census Bureau historical family and living-arrangement tables (counts divided within the same table) |
 | [Unmarried opposite-sex couples, direct measure](series/cohabitingCouples.json) | 9,481k (2023) | 2,858k (1996) | 1996–2023 · 28 pts | U.S. Census Bureau, historical family and living-arrangement tables |
 | [Opposite-sex adults sharing living quarters, POSSLQ](series/cohabitingCouplesPosslq.json) | 5,368k (2006) | 439k (1960) | 1960–2006 · 32 pts | U.S. Census Bureau, historical family and living-arrangement tables |
 
@@ -104,9 +104,9 @@ Rules this dataset runs on:
 
 | Series | Latest | First | Coverage | Publisher |
 |---|---|---|---|---|
-| [Attend religious services nearly weekly or more](series/gssAttendWeekly.json) | 25.62% (2024) | 40.42% (1972) | 1972–2024 · 35 pts | NORC General Social Survey |
-| [No religious preference](series/gssNoReligion.json) | 25.66% (2024) | 5.49% (1972) | 1972–2024 · 35 pts | NORC General Social Survey |
-| [Social evenings with friends at least several times a month](series/gssSocialFriends.json) | 36.44% (2024) | 42.41% (1974) | 1974–2024 · 29 pts | NORC General Social Survey |
+| [Attend religious services nearly weekly or more](series/gssAttendWeekly.json) | 25.62% (2024) | 40.42% (1972) | 1972–2024 · 35 pts | computed from the NORC General Social Survey cumulative microdata (WTSSPS-weighted shares) |
+| [No religious preference](series/gssNoReligion.json) | 25.66% (2024) | 5.49% (1972) | 1972–2024 · 35 pts | computed from the NORC General Social Survey cumulative microdata (WTSSPS-weighted shares) |
+| [Social evenings with friends at least several times a month](series/gssSocialFriends.json) | 36.44% (2024) | 42.41% (1974) | 1974–2024 · 29 pts | computed from the NORC General Social Survey cumulative microdata (WTSSPS-weighted shares) |
 
 ### Immigration
 

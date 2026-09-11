@@ -3,7 +3,7 @@
     "key": "adultsMarried",
     "name": "Married population aged 15 and older",
     "unit": "percent",
-    "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+    "source": "computed from the U.S. Census Bureau historical family and living-arrangement tables (counts divided within the same table)",
     "sourceUrl": "https://www2.census.gov/programs-surveys/demo/tables/families/time-series/marital/ms1.xls",
     "goodDirection": "neutral",
     "cadence": "annual",
@@ -12,7 +12,7 @@
     "breaks": "CPS ASEC control and questionnaire seams, and the later-method duplicate-year selection, are documented once in METHODOLOGY.md.",
     "note": "Computed from married men plus married women divided by total men plus total women, all races, aged 15 and older. Includes spouse absent and separated. Same-sex married couples included since 2019.",
     "coverage": "1950–2025",
-    "fetched": "2026-09-11T02:23:47.946Z"
+    "fetched": "2026-09-11T21:32:41.214Z"
   },
   "data": {
     "1950": 66.64,

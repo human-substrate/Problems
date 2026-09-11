@@ -14,8 +14,9 @@
     "goodDirection": "down",
     "note": "SAMHSA's National Survey on Drug Use and Health, adolescents aged 12–17. 2004–2019 from the 2019 detailed tables' trend Table 11.2B; 2021 onward from the 2022/2024/2025 detailed tables. There is NO 2020 value: the 2020 survey was disrupted by the pandemic and SAMHSA says it is not comparable, and the 2021 redesign (web mode, new questions, new weighting) started a new baseline — SAMHSA advises against comparing 2021+ with earlier years, so the 2020 gap is a seam, not a missing year. Where a later release revised a year (2024 appears in both the 2024 and 2025 tables) the newer release wins.",
     "method": "2019 Table 11.2B (2004–2019), TOTAL row; 2022/2024/2025 Tables 7.21B/7.3B/7.3B, TOTAL row, first two percentage columns (Total for adults; Had MDE for adolescents), newer release wins",
+    "breaks": "2021 multimode redesign; 2020 collection disrupted",
     "coverage": "2004–2025",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "2004": 9,

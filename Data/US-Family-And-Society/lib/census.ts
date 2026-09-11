@@ -60,7 +60,7 @@ export async function buildCensus(p:Pipeline):Promise<void>{
       if(spec.key==="youngAdultsWithParents"&&row.C==="N"&&row.G==="N") continue; // AD1 publishes no parent counts for 1982.
       data[year]=spec.value(row);
     }
-    const meta:SeriesMeta={name:spec.name,unit:spec.unit,source:"U.S. Census Bureau, historical family and living-arrangement tables",sourceUrl:BASE+spec.file,goodDirection:"neutral",cadence:"annual",annualRule:"publisher survey/census year; sparse historical observations retained",class:"living",breaks:CPS,note:spec.note};
+    const meta:SeriesMeta={name:spec.name,unit:spec.unit,source:(["adultsMarried","youngAdultsWithParents"].includes(spec.key)?"computed from the U.S. Census Bureau historical family and living-arrangement tables (counts divided within the same table)":"U.S. Census Bureau, historical family and living-arrangement tables"),sourceUrl:BASE+spec.file,goodDirection:"neutral",cadence:"annual",annualRule:"publisher survey/census year; sparse historical observations retained",class:"living",breaks:CPS,note:spec.note};
     await p.save({key:spec.key,data,meta,bounds:spec.bounds});
   });
   await p.run("childlessWomen40to44",async()=>{

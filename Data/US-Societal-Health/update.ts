@@ -47,7 +47,29 @@ type Meta = {
   note: string; goodDirection: "up" | "down" | "neutral"; method: string; partialYear?: number; partialThrough?: string;
 };
 const written: Record<string, { years: number; first: number; last: number; latest: number }> = {};
+// v9 (2026-09-11): every v9 series names its methodology breaks (A9) and every share we compute from
+// microdata says so in its source (A25). Applied at save time so the table-driven groups stay compact;
+// pre-v9 series are untouched (no entry here, no change).
+const V9_BREAKS: Record<string, string> = {
+  consumerSentiment: "1978 monthly collection; later transition from telephone to web interviewing",
+  gallupEconomicConfidence: "2008–2017 daily tracking, monthly polling again from 2017",
+  gallupQualityJob: "none known", gallupFinancesBetter: "none known", gallupMentalHealthExcellent: "none known (telephone throughout)",
+  gallupPersonalLifeSatisfied: "2001 very/somewhat split introduced", gallupPersonalLifeVerySatisfied: "2001 very/somewhat split introduced",
+  gssMarriageVeryHappy: "2021 web-mode transition; ballot rotation gaps", gssJobVerySatisfied: "2021 web-mode transition; ballot rotation gaps",
+  gssPeopleHelpful: "2021 web-mode transition; ballot rotation gaps", gssPeopleFair: "2021 web-mode transition; ballot rotation gaps",
+  gssLotOfAverageManWorse: "item retired from the GSS after 1994; 2021 web-mode transition does not apply", gssNotTooHappy: "2021 web-mode transition; ballot rotation gaps",
+  shedDoingOkay: "2020 survey fielded in November instead of October", shedCover400: "2020 survey fielded in November instead of October",
+  nsduhAnyMentalIllness: "2021 multimode redesign; 2020 collection disrupted", nsduhSeriousMentalIllness: "2021 multimode redesign; 2020 collection disrupted",
+  nsduhAdultDepression: "2021 multimode redesign; 2020 collection disrupted", nsduhAdolescentDepression: "2021 multimode redesign; 2020 collection disrupted",
+  brfssFrequentMentalDistress: "2011 raking and cell-phone sampling; pre-2011 not comparable; CDC state median, not population-weighted",
+  yrbsPersistentSadness: "biennial; 2021 fielded in fall 2021", yrbsConsideredSuicide: "biennial; 2021 fielded in fall 2021",
+  nhisPsychologicalDistress: "2019 NHIS redesign; K6 not collected 2019, 2020, 2022; ends at the 2015–2016 pool",
+  antidepressantUse: "population break: 2002–2006 cycles cover ages 12+, 2010–2018 adults 18+; 2019–2020 cycle incomplete; NHIS 2023 item is a different instrument, never stitched",
+};
+const V9_COMPUTED = new Set(["gssMarriageVeryHappy", "gssJobVerySatisfied", "gssPeopleHelpful", "gssPeopleFair", "gssLotOfAverageManWorse", "gssNotTooHappy"]);
 async function save(key: string, meta: Meta, data: Record<string, number>, bounds: [number, number], min = 10) {
+  if (V9_BREAKS[key]) (meta as Meta & { breaks?: string }).breaks = V9_BREAKS[key];
+  if (V9_COMPUTED.has(key) && !/computed from/i.test(meta.source)) meta.source = `computed from ${meta.source}`;
   const years = Object.keys(data).map(Number).sort((a, b) => a - b);
   invariant(years.length >= min, `${key}: only ${years.length} years (min ${min})`);
   for (const y of years) invariant(data[y] >= bounds[0] && data[y] <= bounds[1], `${key} ${y}: ${data[y]} outside [${bounds}]`);

@@ -13,8 +13,9 @@
     "method": "tbyics.csv, ICS_ALL by YYYY; tbmics.csv current-year monthly mean only when that year is absent from the annual file",
     "partialYear": 2026,
     "partialThrough": "2026-08",
+    "breaks": "1978 monthly collection; later transition from telephone to web interviewing",
     "coverage": "1961–2026",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "1961": 91.5,

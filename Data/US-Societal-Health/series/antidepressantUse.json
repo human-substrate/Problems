@@ -11,8 +11,9 @@
     "goodDirection": "neutral",
     "note": "Sparse survey cycles keyed to cycle END year, a named exception to usual annual density expectations; no interpolation. Seven points across approximately 20 years. The early 1999–2002 and 2003–2006 pools cover ages 12 and over; the 2009–2010 through 2017–2018 cycles cover ages 18 and over. This is a genuine population break at the 2006→2010 gap, not a directly comparable change. Later db283 pools are excluded because they overlap db377's cycles. The early PDF is SHA256-verified against data/cdc/READ.md. Antidepressant use alone does not distinguish treatment access from illness prevalence.",
     "method": "db283 Figure 4, PDF page 4, TSV chart coordinates, middle of three sex-specific labels per early cycle; db377 Figure 4 companion data table, Both sexes intersections by TSV coordinates",
+    "breaks": "population break: 2002–2006 cycles cover ages 12+, 2010–2018 adults 18+; 2019–2020 cycle incomplete; NHIS 2023 item is a different instrument, never stitched",
     "coverage": "2002–2018",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "2002": 7.7,

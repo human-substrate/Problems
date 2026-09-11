@@ -8,8 +8,9 @@
     "goodDirection": "down",
     "note": "Felt so sad or hopeless almost every day for at least two weeks in a row during the past year that they stopped doing some usual activities. National Total estimates, all high school students, rounded to whole percentages by the publisher. Biennial cadence is expected, not a gap; named exception to annual coverage expectations. Six survey readings from 2013 through 2023 are the full Total trend rows published in this PDF; no earlier years are inferred and no intervening years are interpolated. The checked-in publisher PDF is verified against data/cdc/READ.md before parsing.",
     "method": "SHA256-verified cached PDF; pdftotext -layout, printed page 54 Progress at a Glance for Mental Health and Suicidal Thoughts and Behaviors, indicator row and six Total columns",
+    "breaks": "biennial; 2021 fielded in fall 2021",
     "coverage": "2013–2023",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "2013": 30,

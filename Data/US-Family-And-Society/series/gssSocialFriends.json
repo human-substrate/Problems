@@ -3,7 +3,7 @@
     "key": "gssSocialFriends",
     "name": "Social evenings with friends at least several times a month",
     "unit": "percent of valid weighted adult responses",
-    "source": "NORC General Social Survey",
+    "source": "computed from the NORC General Social Survey cumulative microdata (WTSSPS-weighted shares)",
     "sourceUrl": "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip",
     "goodDirection": "neutral",
     "cadence": "annual",
@@ -12,7 +12,7 @@
     "breaks": "2021 push-to-web pandemic design; 2022 and 2024 mixed mode differ from historical in-person interviews.",
     "note": "Computed from cumulative Stata public microdata, WTSSPS-weighted numerator divided by valid weighted denominator, minimum 200 weighted responses per year. SOCFREND positive codes 1,2,3 (almost daily; once or twice a week; several times a month); valid codes 1,2,3,4,5,6,7. Missing years are not interpolated. SOCFREND concerns evenings with friends outside the neighborhood.",
     "coverage": "1974–2024",
-    "fetched": "2026-09-11T02:23:47.946Z"
+    "fetched": "2026-09-11T21:32:14.167Z"
   },
   "data": {
     "1974": 42.41,

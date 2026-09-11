@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T03:11:37.082Z",
+  "generated": "2026-09-11T21:31:37.623Z",
   "series": {
     "alcoholPerCapita": {
       "name": "Alcohol Consumption per Capita",
@@ -13,7 +13,7 @@
       "unit": "percent of persons, age population changes",
       "source": "NCHS, NHANES, Data Briefs 283 and 377",
       "coverage": "2002–2018",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "appcBranchesPhone": {
       "name": "Can Name All Three Branches (phone era)",
@@ -62,7 +62,7 @@
       "unit": "percent of adults, median across states and DC",
       "source": "CDC, BRFSS Prevalence and Trends Data",
       "coverage": "2019–2024",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "childPoverty": {
       "name": "Child Poverty Rate",
@@ -167,7 +167,7 @@
       "unit": "index, 1966 Q1 = 100",
       "source": "University of Michigan Surveys of Consumers",
       "coverage": "1961–2026",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "creditCardDelinquency": {
       "name": "Credit Card Delinquency Rate",
@@ -244,14 +244,14 @@
       "unit": "index, net percent (can range roughly -100 to +100)",
       "source": "Gallup, Gallup Economic Confidence Index",
       "coverage": "1996–2026",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gallupFinancesBetter": {
       "name": "Personal Finances Getting Better (Gallup)",
       "unit": "percent saying their financial situation is getting better",
       "source": "Gallup, Personal Finances Getting Better (Gallup)",
       "coverage": "2001–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gallupLabor": {
       "name": "Confidence in Organized Labor",
@@ -272,7 +272,7 @@
       "unit": "percent of adults rating their own mental health excellent",
       "source": "Gallup, Rate Their Mental Health Excellent",
       "coverage": "2001–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gallupMilitary": {
       "name": "Confidence in the Military",
@@ -293,14 +293,14 @@
       "unit": "percent satisfied",
       "source": "Gallup, Mood of the Nation",
       "coverage": "1979–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gallupPersonalLifeVerySatisfied": {
       "name": "Very Satisfied With Personal Life",
       "unit": "percent very satisfied",
       "source": "Gallup, Mood of the Nation",
       "coverage": "2001–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gallupPolice": {
       "name": "Confidence in the Police",
@@ -328,7 +328,7 @@
       "unit": "percent saying now is a good time to find a quality job",
       "source": "Gallup, Good Time to Find a Quality Job",
       "coverage": "2001–2026",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gallupReligion": {
       "name": "Confidence in Organized Religion",
@@ -361,44 +361,44 @@
     "gssJobVerySatisfied": {
       "name": "Very Satisfied With Job",
       "unit": "percent of employed adults very satisfied with their job",
-      "source": "NORC General Social Survey (cumulative file 1972–2024)",
+      "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1972–2024",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gssLotOfAverageManWorse": {
       "name": "Average Person's Lot Is Getting Worse",
       "unit": "percent agreeing the lot of the average person is getting worse",
-      "source": "NORC General Social Survey (cumulative file 1972–2024)",
+      "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1973–1994",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gssMarriageVeryHappy": {
       "name": "Marriage Is Very Happy",
       "unit": "percent of married adults who say their marriage is very happy",
-      "source": "NORC General Social Survey (cumulative file 1972–2024)",
+      "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1973–2024",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gssNotTooHappy": {
       "name": "Not Too Happy",
       "unit": "percent of adults who say they are not too happy",
-      "source": "NORC General Social Survey (cumulative file 1972–2024)",
+      "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1972–2024",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gssPeopleFair": {
       "name": "People Try to Be Fair",
       "unit": "percent saying most people try to be fair (vs. would take advantage)",
-      "source": "NORC General Social Survey (cumulative file 1972–2024)",
+      "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1972–2024",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "gssPeopleHelpful": {
       "name": "People Try to Be Helpful",
       "unit": "percent saying most people try to be helpful (vs. looking out for themselves)",
-      "source": "NORC General Social Survey (cumulative file 1972–2024)",
+      "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
       "coverage": "1972–2024",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "hardWorkGetsAhead": {
       "name": "Hard Work Gets You Ahead",
@@ -510,35 +510,35 @@
       "unit": "percent of adults aged 18 and over, age-adjusted",
       "source": "NCHS, Health, United States 2017, Table 46",
       "coverage": "1998–2016",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "nsduhAdolescentDepression": {
       "name": "Adolescent Major Depressive Episode, Past Year",
       "unit": "percent of adolescents aged 12–17",
       "source": "SAMHSA, National Survey on Drug Use and Health",
       "coverage": "2004–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "nsduhAdultDepression": {
       "name": "Adult Major Depressive Episode, Past Year",
       "unit": "percent of adults aged 18 or older",
       "source": "SAMHSA, National Survey on Drug Use and Health",
       "coverage": "2005–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "nsduhAnyMentalIllness": {
       "name": "Any Mental Illness, Past Year",
       "unit": "percent of adults aged 18 or older",
       "source": "SAMHSA, National Survey on Drug Use and Health",
       "coverage": "2008–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "nsduhSeriousMentalIllness": {
       "name": "Serious Mental Illness, Past Year",
       "unit": "percent of adults aged 18 or older",
       "source": "SAMHSA, National Survey on Drug Use and Health",
       "coverage": "2008–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "optimismFutureLife": {
       "name": "Optimistic About Life in 5 Years",
@@ -615,14 +615,14 @@
       "unit": "percent of adults",
       "source": "Federal Reserve Board, Survey of Household Economics and Decisionmaking",
       "coverage": "2013–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "shedDoingOkay": {
       "name": "Doing at Least Okay Financially",
       "unit": "percent of adults",
       "source": "Federal Reserve Board, Survey of Household Economics and Decisionmaking",
       "coverage": "2013–2025",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "snapShare": {
       "name": "On Food Stamps (SNAP)",
@@ -748,14 +748,14 @@
       "unit": "percent of high school students",
       "source": "CDC, Youth Risk Behavior Survey Data Summary & Trends Report 2013–2023",
       "coverage": "2013–2023",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     },
     "yrbsPersistentSadness": {
       "name": "Persistent Feelings of Sadness or Hopelessness (YRBS)",
       "unit": "percent of high school students",
       "source": "CDC, Youth Risk Behavior Survey Data Summary & Trends Report 2013–2023",
       "coverage": "2013–2023",
-      "fetched": "2026-09-11T03:11:37.082Z"
+      "fetched": "2026-09-11T21:31:37.623Z"
     }
   }
 }

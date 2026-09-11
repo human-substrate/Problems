@@ -1,16 +1,16 @@
 {
- "generated": "2026-09-11T02:23:47.946Z",
+ "generated": "2026-09-11T21:32:41.214Z",
  "dataset": "US-Family-And-Society",
  "series": {
   "adultsMarried": {
    "name": "Married population aged 15 and older",
    "unit": "percent",
-   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "source": "computed from the U.S. Census Bureau historical family and living-arrangement tables (counts divided within the same table)",
    "cadence": "annual",
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1950–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:32:41.214Z"
   },
   "births": {
    "name": "Live births",
@@ -105,32 +105,32 @@
   "gssAttendWeekly": {
    "name": "Attend religious services nearly weekly or more",
    "unit": "percent of valid weighted adult responses",
-   "source": "NORC General Social Survey",
+   "source": "computed from the NORC General Social Survey cumulative microdata (WTSSPS-weighted shares)",
    "cadence": "annual",
    "annualRule": "survey year; unsurveyed years omitted",
    "class": "religion",
    "coverage": "1972–2024",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:32:14.167Z"
   },
   "gssNoReligion": {
    "name": "No religious preference",
    "unit": "percent of valid weighted adult responses",
-   "source": "NORC General Social Survey",
+   "source": "computed from the NORC General Social Survey cumulative microdata (WTSSPS-weighted shares)",
    "cadence": "annual",
    "annualRule": "survey year; unsurveyed years omitted",
    "class": "religion",
    "coverage": "1972–2024",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:32:14.167Z"
   },
   "gssSocialFriends": {
    "name": "Social evenings with friends at least several times a month",
    "unit": "percent of valid weighted adult responses",
-   "source": "NORC General Social Survey",
+   "source": "computed from the NORC General Social Survey cumulative microdata (WTSSPS-weighted shares)",
    "cadence": "annual",
    "annualRule": "survey year; unsurveyed years omitted",
    "class": "religion",
    "coverage": "1974–2024",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:32:14.167Z"
   },
   "householdSize": {
    "name": "Average household size",
@@ -255,12 +255,12 @@
   "youngAdultsWithParents": {
    "name": "Adults aged 25–34 living with parents",
    "unit": "percent",
-   "source": "U.S. Census Bureau, historical family and living-arrangement tables",
+   "source": "computed from the U.S. Census Bureau historical family and living-arrangement tables (counts divided within the same table)",
    "cadence": "annual",
    "annualRule": "publisher survey/census year; sparse historical observations retained",
    "class": "living",
    "coverage": "1960–2025",
-   "fetched": "2026-09-11T02:23:47.946Z"
+   "fetched": "2026-09-11T21:32:41.214Z"
   }
  }
 }

@@ -172,12 +172,12 @@ Rules this dataset runs on:
 | [Satisfied With Personal Life](series/gallupPersonalLifeSatisfied.json) | 81% (2025) | 79% (1979) | 1979–2025 · 36 pts | Gallup, Mood of the Nation |
 | [Very Satisfied With Personal Life](series/gallupPersonalLifeVerySatisfied.json) | 44% (2025) | 55% (2001) | 2001–2025 · 19 pts | Gallup, Mood of the Nation |
 | [Good Time to Find a Quality Job](series/gallupQualityJob.json) | 35.5% (2026) | 27.8% (2001) | 2001–2026 · 26 pts | Gallup, Good Time to Find a Quality Job |
-| [Very Satisfied With Job](series/gssJobVerySatisfied.json) | 44.8% (2024) | 48.9% (1972) | 1972–2024 · 35 pts | NORC General Social Survey (cumulative file 1972–2024) |
-| [Average Person's Lot Is Getting Worse](series/gssLotOfAverageManWorse.json) | 68.6% (1994) | 55.3% (1973) | 1973–1994 · 15 pts | NORC General Social Survey (cumulative file 1972–2024) |
-| [Marriage Is Very Happy](series/gssMarriageVeryHappy.json) | 60.8% (2024) | 67.9% (1973) | 1973–2024 · 34 pts | NORC General Social Survey (cumulative file 1972–2024) |
-| [Not Too Happy](series/gssNotTooHappy.json) | 20.4% (2024) | 16.5% (1972) | 1972–2024 · 35 pts | NORC General Social Survey (cumulative file 1972–2024) |
-| [People Try to Be Fair](series/gssPeopleFair.json) | 41.6% (2024) | 60.3% (1972) | 1972–2024 · 30 pts | NORC General Social Survey (cumulative file 1972–2024) |
-| [People Try to Be Helpful](series/gssPeopleHelpful.json) | 37.9% (2024) | 46.8% (1972) | 1972–2024 · 30 pts | NORC General Social Survey (cumulative file 1972–2024) |
+| [Very Satisfied With Job](series/gssJobVerySatisfied.json) | 44.8% (2024) | 48.9% (1972) | 1972–2024 · 35 pts | computed from NORC General Social Survey (cumulative file 1972–2024) |
+| [Average Person's Lot Is Getting Worse](series/gssLotOfAverageManWorse.json) | 68.6% (1994) | 55.3% (1973) | 1973–1994 · 15 pts | computed from NORC General Social Survey (cumulative file 1972–2024) |
+| [Marriage Is Very Happy](series/gssMarriageVeryHappy.json) | 60.8% (2024) | 67.9% (1973) | 1973–2024 · 34 pts | computed from NORC General Social Survey (cumulative file 1972–2024) |
+| [Not Too Happy](series/gssNotTooHappy.json) | 20.4% (2024) | 16.5% (1972) | 1972–2024 · 35 pts | computed from NORC General Social Survey (cumulative file 1972–2024) |
+| [People Try to Be Fair](series/gssPeopleFair.json) | 41.6% (2024) | 60.3% (1972) | 1972–2024 · 30 pts | computed from NORC General Social Survey (cumulative file 1972–2024) |
+| [People Try to Be Helpful](series/gssPeopleHelpful.json) | 37.9% (2024) | 46.8% (1972) | 1972–2024 · 30 pts | computed from NORC General Social Survey (cumulative file 1972–2024) |
 | [Math Score, Age 13 (NAEP LTT)](series/lttMath13.json) | 270.7% (2023) | 264.1% (1978) | 1978–2023 · 13 pts | NCES, National Assessment of Educational Progress |
 | [Math Score, Age 9 (NAEP LTT)](series/lttMath9.json) | 233.9% (2022) | 218.6% (1978) | 1978–2022 · 13 pts | NCES, National Assessment of Educational Progress |
 | [Reading Score, Age 13 (NAEP LTT)](series/lttReading13.json) | 255.7% (2023) | 255.2% (1971) | 1971–2023 · 15 pts | NCES, National Assessment of Educational Progress |

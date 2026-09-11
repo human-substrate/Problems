@@ -14,8 +14,9 @@
     "method": "Datawrapper 8YPmK/1 + gZ2wl/4, named column % Good time / % Good time; exact overlap checks, mean within month then mean of published months per year",
     "partialYear": 2026,
     "partialThrough": "2026-04",
+    "breaks": "none known",
     "coverage": "2001–2026",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "2001": 27.8,

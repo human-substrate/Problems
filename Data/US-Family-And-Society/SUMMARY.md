@@ -17,7 +17,7 @@
 | **Mean age of mother at first live birth** | **27.6 yrs** (2024) | the highest of 46 readings since 1970 | CDC/NCHS, National Vital Statistics Reports (mean age of mother, by live-birth order) |
 | **Children in foster care on September 30** | **331,747** (2025) | 15 of 17 readings since 2009 were higher | ACF Children's Bureau, AFCARS |
 | **Child maltreatment victims** | **7.4 per 1,000** (2023) | the lowest of 19 readings since 2005 | ACF Children's Bureau, Child Maltreatment / NCANDS |
-| **Attend religious services nearly weekly or more** | **25.62%** (2024) | 32 of 35 readings since 1972 were higher | NORC General Social Survey |
+| **Attend religious services nearly weekly or more** | **25.62%** (2024) | 32 of 35 readings since 1972 were higher | computed from the NORC General Social Survey cumulative microdata (WTSSPS-weighted shares) |
 | **Persons obtaining lawful permanent resident status** | **1,172,910** (2023) | 7 of 204 readings since 1820 were higher | DHS Office of Homeland Security Statistics, 2023 Yearbook Table 1 |
 | **Median age of the resident population** | **39.4 yrs** (2025) | the highest of 26 readings since 2000 | U.S. Census Bureau, Population Estimates Program |
 

@@ -14,8 +14,9 @@
     "method": "Datawrapper y7uQi/2 + 6VwvN/4, named column Index / Economic Confidence Index; exact overlap checks, mean within month then mean of published months per year",
     "partialYear": 2026,
     "partialThrough": "2026-04",
+    "breaks": "2008–2017 daily tracking, monthly polling again from 2017",
     "coverage": "1996–2026",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "1996": 13.8,

@@ -8,8 +8,9 @@
     "goodDirection": "down",
     "note": "Mental health not good on 14 or more of the past 30 days. CDC's own published median across all states and DC (not a population-weighted national average; BRFSS does not publish one in this table). This resource starts in 2019, with six annual readings through 2024 in the verified edition, a named short-coverage exception. Pre-2019 coverage, including 2011–2018, needs annual XPT microdata and _LLCPWT weighting not currently read by this pipeline; those years are omitted, not interpolated.",
     "method": "Socrata Healthy Days / 14+ days when mental health not good; discover and validate median location, select Overall breakout, check distinct-year coverage",
+    "breaks": "2011 raking and cell-phone sampling; pre-2011 not comparable; CDC state median, not population-weighted",
     "coverage": "2019–2024",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "2019": 13.8,

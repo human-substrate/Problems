@@ -3,7 +3,7 @@
     "key": "gssJobVerySatisfied",
     "name": "Very Satisfied With Job",
     "unit": "percent of employed adults very satisfied with their job",
-    "source": "NORC General Social Survey (cumulative file 1972–2024)",
+    "source": "computed from NORC General Social Survey (cumulative file 1972–2024)",
     "sourceUrl": "https://gss.norc.org/get-the-data/stata.html",
     "historicalSourceUrls": [
       "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip"
@@ -11,8 +11,9 @@
     "goodDirection": "up",
     "note": "On the whole, how satisfied are you with the work you do — would you say you are very satisfied, moderately satisfied, a little dissatisfied, or very dissatisfied? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.",
     "method": "variable SATJOB: 1 of valid codes 1/2/3/4, weight WTSSPS",
+    "breaks": "2021 web-mode transition; ballot rotation gaps",
     "coverage": "1972–2024",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "1972": 48.9,

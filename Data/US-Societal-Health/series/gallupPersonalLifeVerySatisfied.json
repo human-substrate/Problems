@@ -8,8 +8,9 @@
     "goodDirection": "up",
     "note": "Personal-life satisfaction from Gallup's annual January Mood of the Nation survey. The overall satisfied series and the very-satisfied series measure different response thresholds; the very-satisfied split begins in 2001. Earlier overall readings are irregular; missing years are not interpolated. Where a year has multiple readings, the first published table row is retained.",
     "method": "HTML table captioned \"Record-Low 44% of Americans Are &#39;Very Satisfied&#39; With Their Personal Life\", column \"% Very satisfied\"; first reading per year",
+    "breaks": "2001 very/somewhat split introduced",
     "coverage": "2001–2025",
-    "fetched": "2026-09-11T03:11:37.082Z"
+    "fetched": "2026-09-11T21:31:37.623Z"
   },
   "data": {
     "2001": 55,
