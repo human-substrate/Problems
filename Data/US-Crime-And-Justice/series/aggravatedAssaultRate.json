@@ -2,7 +2,7 @@
   "_meta": {
     "key": "aggravatedAssaultRate",
     "name": "Aggravated assault",
-    "unit": "reported offenses per 100,000 population",
+    "unit": "reported offenses per 100,000 people covered by reporting agencies",
     "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [
@@ -12,7 +12,7 @@
     "cadence": "annual",
     "annualRule": "annual (sum of twelve monthly actual counts / December population × 100,000)",
     "class": "reported",
-    "note": "The monthly rates field is the FBI’s own monthly per-100,000 figure and is not summed here. Payload horizon and population coverage are recorded when built. Only complete calendar years are included. Agency coverage of the U.S. population ranged 74.1–98.4% across 2000–2024 (74.1–79.1% during the 2021 NIBRS transition); the monthly coverage map is kept in work/coverage-aggravatedAssaultRate.json. Data horizon: 08/2026.",
+    "note": "The monthly rates field is the FBI’s own monthly per-100,000 figure and is not summed here. Payload horizon and population coverage are recorded when built. Only complete calendar years are included. Denominator: the population covered by agencies that reported that month, the FBI's own basis for its CDE rates, so this line is not the same construct as the estimated national rates (violent, property, homicide) beside it, which the FBI estimates for the whole population. Agency coverage of the U.S. population ranged 74.1–98.4% across 2000–2024 (74.1–79.1% during the 2021 NIBRS transition); the monthly coverage map is kept in work/coverage-aggravatedAssaultRate.json. Data horizon: 08/2026.",
     "breaks": "2021 SRS→NIBRS-only transition changed agency participation and estimation. The 2013 federal rape/sexual-assault definition change is not a direct definition change for this non-rape offense. FBI’s 2013 Rape Addendum describes changes to rape, sodomy and sexual assault with an object, not these offense definitions: https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/rape-addendum.",
     "method": "Sum all twelve monthly offenses.actuals[United States Offenses] counts for each calendar year, divide by that year's December populations.participated_population[United States] (the population covered by reporting agencies, the FBI's own denominator: the twelve monthly offenses.rates values sum to this figure within rounding), then multiply by 100,000; round to one decimal. Drop incomplete years; never sum monthly rates.",
     "bounds": [
@@ -20,7 +20,7 @@
       10000
     ],
     "coverage": "2000–2024",
-    "fetched": "2026-09-11T21:49:18.364Z",
+    "fetched": "2026-09-11T21:53:59.500Z",
     "sourceRead": "2026-09-10"
   },
   "data": {

@@ -2,7 +2,7 @@ export type SeriesMeta = { name: string; unit: string; source: string; sourceUrl
 export const META: Record<string, SeriesMeta> = {
   "motorVehicleTheftRate": {
     "name": "Motor vehicle theft",
-    "unit": "reported offenses per 100,000 population",
+    "unit": "reported offenses per 100,000 people covered by reporting agencies",
     "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [
@@ -17,7 +17,7 @@ export const META: Record<string, SeriesMeta> = {
   },
   "burglaryRate": {
     "name": "Burglary",
-    "unit": "reported offenses per 100,000 population",
+    "unit": "reported offenses per 100,000 people covered by reporting agencies",
     "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [
@@ -32,7 +32,7 @@ export const META: Record<string, SeriesMeta> = {
   },
   "robberyRate": {
     "name": "Robbery",
-    "unit": "reported offenses per 100,000 population",
+    "unit": "reported offenses per 100,000 people covered by reporting agencies",
     "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [
@@ -47,7 +47,7 @@ export const META: Record<string, SeriesMeta> = {
   },
   "aggravatedAssaultRate": {
     "name": "Aggravated assault",
-    "unit": "reported offenses per 100,000 population",
+    "unit": "reported offenses per 100,000 people covered by reporting agencies",
     "source": "FBI, Crime Data Explorer (UCR/NIBRS summarized national estimates)",
     "sourceUrl": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend",
     "historicalSourceUrls": [

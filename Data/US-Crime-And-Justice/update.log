@@ -229,3 +229,9 @@ PASS burglaryRate: 2000–2024 (25 points), latest 232
 PASS robberyRate: 2000–2024 (25 points), latest 61.7
 PASS aggravatedAssaultRate: 2000–2024 (25 points), latest 257.5
 wrote 4 series; index 23; deferred 0; errors 0
+2026-09-11T21:53:59.500Z --only fbi
+PASS motorVehicleTheftRate: 2000–2024 (25 points), latest 257.9
+PASS burglaryRate: 2000–2024 (25 points), latest 232
+PASS robberyRate: 2000–2024 (25 points), latest 61.7
+PASS aggravatedAssaultRate: 2000–2024 (25 points), latest 257.5
+wrote 4 series; index 23; deferred 0; errors 0

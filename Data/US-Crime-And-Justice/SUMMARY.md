@@ -6,10 +6,10 @@
 
 | Series | Latest | Unit | Coverage | Class |
 |---|---:|---|---|---|
-| [Motor vehicle theft](series/motorVehicleTheftRate.json) | 257.9 (2024) | reported offenses per 100,000 population | 2000–2024 · 25 points | reported |
-| [Burglary](series/burglaryRate.json) | 232 (2024) | reported offenses per 100,000 population | 2000–2024 · 25 points | reported |
-| [Robbery](series/robberyRate.json) | 61.7 (2024) | reported offenses per 100,000 population | 2000–2024 · 25 points | reported |
-| [Aggravated assault](series/aggravatedAssaultRate.json) | 257.5 (2024) | reported offenses per 100,000 population | 2000–2024 · 25 points | reported |
+| [Motor vehicle theft](series/motorVehicleTheftRate.json) | 257.9 (2024) | reported offenses per 100,000 people covered by reporting agencies | 2000–2024 · 25 points | reported |
+| [Burglary](series/burglaryRate.json) | 232 (2024) | reported offenses per 100,000 people covered by reporting agencies | 2000–2024 · 25 points | reported |
+| [Robbery](series/robberyRate.json) | 61.7 (2024) | reported offenses per 100,000 people covered by reporting agencies | 2000–2024 · 25 points | reported |
+| [Aggravated assault](series/aggravatedAssaultRate.json) | 257.5 (2024) | reported offenses per 100,000 people covered by reporting agencies | 2000–2024 · 25 points | reported |
 
 ## Experienced crime — NCVS
 
@@ -62,4 +62,4 @@ NCVS reported share is computed from rounded rates and can differ from BJS's dir
 |---|---|
 
 
-Build: 2026-09-11T21:49:18.364Z.
+Build: 2026-09-11T21:53:59.500Z.
