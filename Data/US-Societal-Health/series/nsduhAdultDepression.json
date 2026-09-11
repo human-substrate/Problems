@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "key": "nsduhAdultDepression",
+    "name": "Adult Major Depressive Episode, Past Year",
+    "unit": "percent of adults aged 18 or older",
+    "source": "SAMHSA, National Survey on Drug Use and Health",
+    "sourceUrl": "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health",
+    "historicalSourceUrls": [
+      "https://www.samhsa.gov/data/sites/default/files/reports/rpt29394/NSDUHDetailedTabs2019/NSDUHDetailedTabs2019.zip",
+      "https://www.samhsa.gov/data/sites/default/files/reports/rpt42728/NSDUHDetailedTabs2022/NSDUHDetailedTabs2022/2022-nsduh-detailed-tables.zip",
+      "https://www.samhsa.gov/data/sites/default/files/reports/rpt56484/NSDUHDetailedTabs2024/NSDUHDetailedTabs2024/2024-nsduh-detailed-tables-072325.zip",
+      "https://www.samhsa.gov/data/sites/default/files/reports/rpt57152/2025-nsduh-detailed-tables/2025-nsduh-detailed-tables.zip"
+    ],
+    "goodDirection": "down",
+    "note": "SAMHSA's National Survey on Drug Use and Health, adults aged 18 or older. 2005–2019 from the 2019 detailed tables' trend Table 10.32B; 2021 onward from the 2022/2024/2025 detailed tables. There is NO 2020 value: the 2020 survey was disrupted by the pandemic and SAMHSA says it is not comparable, and the 2021 redesign (web mode, new questions, new weighting) started a new baseline — SAMHSA advises against comparing 2021+ with earlier years, so the 2020 gap is a seam, not a missing year. Where a later release revised a year (2024 appears in both the 2024 and 2025 tables) the newer release wins.",
+    "method": "2019 Table 10.32B (2005–2019), TOTAL row; 2022/2024/2025 Tables 6.37B/6.39B/6.43B, TOTAL row, first two percentage columns (Total for adults; Had MDE for adolescents), newer release wins",
+    "coverage": "2005–2025",
+    "fetched": "2026-09-11T03:11:37.082Z"
+  },
+  "data": {
+    "2005": 6.6,
+    "2006": 6.5,
+    "2007": 6.7,
+    "2008": 6.5,
+    "2009": 6.6,
+    "2010": 6.8,
+    "2011": 6.6,
+    "2012": 6.9,
+    "2013": 6.7,
+    "2014": 6.6,
+    "2015": 6.7,
+    "2016": 6.7,
+    "2017": 7.1,
+    "2018": 7.2,
+    "2019": 7.8,
+    "2021": 8.5,
+    "2022": 8.8,
+    "2023": 8.5,
+    "2024": 8.2,
+    "2025": 7.4
+  }
+}

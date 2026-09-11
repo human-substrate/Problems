@@ -43,3 +43,6 @@ export function numeric(raw: string | undefined, label: string): number {
   invariant(raw !== undefined && /^-?\d[\d,]*(\.\d+)?$/.test(raw.trim()), `${label}: invalid numeric cell ${JSON.stringify(raw)}`);
   return Number(raw.replaceAll(",", ""));
 }
+export async function sha256Hex(path: string): Promise<string> {
+  return new Bun.CryptoHasher("sha256").update(await Bun.file(path).arrayBuffer()).digest("hex");
+}

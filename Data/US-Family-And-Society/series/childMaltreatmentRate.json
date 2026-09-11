@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "key": "childMaltreatmentRate",
+    "name": "Child maltreatment victims",
+    "unit": "victims per 1,000 children",
+    "source": "ACF Children's Bureau, Child Maltreatment / NCANDS",
+    "sourceUrl": "https://acf.gov/sites/default/files/documents/cb/cm2023.pdf",
+    "note": "Federal fiscal years. Unique-count child victims per 1,000 children in reporting states. CM2009 Table 3-7 (2005–09), CM2013 Table 3-3 (2009–13), CM2017 Table 3-4 (2013–17), CM2019 Table 3-4 (2015–19), CM2023 Table 3-3 (2019–23). Newest edition wins each overlap. Revisions are material: 2013 rate 9.1 in CM2013 becomes 8.8 in CM2017; 2019 rate 8.9 in CM2019 becomes 9.2 in CM2023. Published reports describe resubmissions, changing reporting coverage and state definitions; this is administrative surveillance, not a constant-definition prevalence estimate.",
+    "breaks": "Reporting-state coverage, state statutes, resubmissions and retrospective revisions vary; unique-count rates throughout.",
+    "historicalSourceUrls": [
+      "https://acf.gov/sites/default/files/documents/cb/cm2009.pdf",
+      "https://acf.gov/sites/default/files/documents/cb/cm2013.pdf",
+      "https://acf.gov/sites/default/files/documents/cb/cm2017.pdf",
+      "https://acf.gov/sites/default/files/documents/cb/cm2019.pdf"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "One reported observation per calendar year, or federal fiscal year where specified.",
+    "class": "births",
+    "coverage": "2005–2023",
+    "fetched": "2026-09-11T02:23:47.946Z"
+  },
+  "data": {
+    "2005": 10.9,
+    "2006": 11,
+    "2007": 9.6,
+    "2008": 9.5,
+    "2009": 9.3,
+    "2010": 9.3,
+    "2011": 9.2,
+    "2012": 9.1,
+    "2013": 8.8,
+    "2014": 9.1,
+    "2015": 9.2,
+    "2016": 9.1,
+    "2017": 9.1,
+    "2018": 9.2,
+    "2019": 9.2,
+    "2020": 8.3,
+    "2021": 8.1,
+    "2022": 7.6,
+    "2023": 7.4
+  }
+}

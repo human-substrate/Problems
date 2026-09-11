@@ -1,6 +1,6 @@
 # US Societal Health
 
-**89 long-run annual US series on happiness and optimism, trust in people and institutions, substance use, health access, and household financial stress — every value from its primary publisher, in one machine-readable place.**
+**108 long-run annual US series on happiness and optimism, trust in people and institutions, substance use, health access, and household financial stress — every value from its primary publisher, in one machine-readable place.**
 
 Companion to [US-Common-Metrics](../US-Common-Metrics/) (economic indicators) and [US-National-Debt](../US-National-Debt/). Powers the societal-health sections of the live almanac **https://usstats.io** (each row there links to a page with the full series and these sources).
 
@@ -67,7 +67,7 @@ Rules this dataset runs on:
 | [Life Is Exciting](series/lifeExciting.json) | 37.3% (2024) | 46.5% (1973) | 1973–2024 · 30 pts | NORC General Social Survey (cumulative file 1972–2024) |
 | [Rate Their Current Life Highly](series/lifeRatedHigh.json) | 61.6% (2026) | 64.6% (2009) | 2009–2026 · 18 pts | Gallup National Health and Well-Being Index |
 | [Optimistic About Life in 5 Years](series/optimismFutureLife.json) | 59.7% (2026) | 63% (2009) | 2009–2026 · 18 pts | Gallup National Health and Well-Being Index |
-| [Satisfied With How Things Are Going in the U.S.](series/satisfiedWithCountry.json) | 25% (2026) | 19% (1979) | 1979–2026 · 47 pts | Gallup, Satisfaction With the United States |
+| [Satisfied With How Things Are Going in the U.S.](series/satisfiedWithCountry.json) | 24.5% (2026) | 19% (1979) | 1979–2026 · 47 pts | Gallup, Satisfaction With the United States |
 | [Satisfied With Finances](series/satisfiedFinances.json) | 22.6% (2024) | 33.1% (1972) | 1972–2024 · 35 pts | NORC General Social Survey (cumulative file 1972–2024) |
 | [Finances Getting Better](series/financesBetter.json) | 31.4% (2024) | 43.5% (1972) | 1972–2024 · 35 pts | NORC General Social Survey (cumulative file 1972–2024) |
 | [Better Off Than a Year Ago](series/betterOffThanYearAgo.json) | 21% (2025) | 36% (1978) | 1978–2025 · 48 pts | University of Michigan Surveys of Consumers, Table 6 |
@@ -146,7 +146,7 @@ Rules this dataset runs on:
 
 | Series | Latest | First | Coverage | Publisher |
 |---|---|---|---|---|
-| [Credit Card Delinquency Rate](series/creditCardDelinquency.json) | 2.92% (2026) | 5.35% (1991) | 1991–2026 · 36 pts | Federal Reserve Board via FRED (DRCCLACBS) |
+| [Credit Card Delinquency Rate](series/creditCardDelinquency.json) | 2.88% (2026) | 5.35% (1991) | 1991–2026 · 36 pts | Federal Reserve Board via FRED (DRCCLACBS) |
 | [Credit Card Serious Delinquency](series/creditCardSeriousDelinquency.json) | 13.02% (2026) | 8.91% (2003) | 2003–2026 · 24 pts | Federal Reserve Bank of New York, Household Debt and Credit Report (Consumer Credit Panel/Equifax) |
 | [Consumer Bankruptcies](series/bankruptcies.json) | 501.6% (2025) | 2299.4% (2003) | 2003–2025 · 23 pts | Federal Reserve Bank of New York, Household Debt and Credit Report (Consumer Credit Panel/Equifax) |
 | [Prime-Age Employment Rate](series/primeAgeEmployment.json) | 80.6% (2026) | 63% (1948) | 1948–2026 · 79 pts | BLS Current Population Survey via FRED (LNS12300060) |
@@ -159,15 +159,25 @@ Rules this dataset runs on:
 
 | Series | Latest | First | Coverage | Publisher |
 |---|---|---|---|---|
+| [Antidepressant Use in the Past Month (NHANES)](series/antidepressantUse.json) | 13.8% (2018) | 7.7% (2002) | 2002–2018 · 7 pts | NCHS, NHANES, Data Briefs 283 and 377 |
 | [Can Name All Three Branches (phone era)](series/appcBranchesPhone.json) | 47% (2022) | 33% (2006) | 2006–2022 · 12 pts | Annenberg Public Policy Center, Constitution Day Civics Survey |
 | [Can Name All Three Branches of Government](series/appcBranchesWeb.json) | 70% (2025) | 72% (2022) | 2022–2025 · 4 pts | Annenberg Public Policy Center, Constitution Day Civics Survey |
 | [Books Read per Year](series/booksPerYear.json) | 12.6% (2021) | 15.3% (1990) | 1990–2021 · 7 pts | Gallup |
+| [Frequent Mental Distress (BRFSS State Median)](series/brfssFrequentMentalDistress.json) | 15.6% (2024) | 13.8% (2019) | 2019–2024 · 6 pts | CDC, BRFSS Prevalence and Trends Data |
 | [Consumer Sentiment Index (University of Michigan)](series/consumerSentiment.json) | 52.2% (2026) | 91.5% (1961) | 1961–2026 · 66 pts | University of Michigan Surveys of Consumers |
 | [Firearm Deaths](series/firearmDeaths.json) | 12.6% (2025) | 13.1% (1970) | 1970–2025 · 45 pts | CDC/NCHS Health, United States 2017 Table 31; CDC Injury Center firearm mortality (NVSS) |
 | [Gallup Economic Confidence Index](series/gallupEconomicConfidence.json) | -26.3% (2026) | 13.8% (1996) | 1996–2026 · 31 pts | Gallup, Gallup Economic Confidence Index |
 | [Personal Finances Getting Better (Gallup)](series/gallupFinancesBetter.json) | 38% (2025) | 59% (2001) | 2001–2025 · 25 pts | Gallup, Personal Finances Getting Better (Gallup) |
 | [Rate Their Mental Health Excellent](series/gallupMentalHealthExcellent.json) | 29% (2025) | 43% (2001) | 2001–2025 · 25 pts | Gallup, Rate Their Mental Health Excellent |
+| [Satisfied With Personal Life](series/gallupPersonalLifeSatisfied.json) | 81% (2025) | 79% (1979) | 1979–2025 · 36 pts | Gallup, Mood of the Nation |
+| [Very Satisfied With Personal Life](series/gallupPersonalLifeVerySatisfied.json) | 44% (2025) | 55% (2001) | 2001–2025 · 19 pts | Gallup, Mood of the Nation |
 | [Good Time to Find a Quality Job](series/gallupQualityJob.json) | 35.5% (2026) | 27.8% (2001) | 2001–2026 · 26 pts | Gallup, Good Time to Find a Quality Job |
+| [Very Satisfied With Job](series/gssJobVerySatisfied.json) | 44.8% (2024) | 48.9% (1972) | 1972–2024 · 35 pts | NORC General Social Survey (cumulative file 1972–2024) |
+| [Average Person's Lot Is Getting Worse](series/gssLotOfAverageManWorse.json) | 68.6% (1994) | 55.3% (1973) | 1973–1994 · 15 pts | NORC General Social Survey (cumulative file 1972–2024) |
+| [Marriage Is Very Happy](series/gssMarriageVeryHappy.json) | 60.8% (2024) | 67.9% (1973) | 1973–2024 · 34 pts | NORC General Social Survey (cumulative file 1972–2024) |
+| [Not Too Happy](series/gssNotTooHappy.json) | 20.4% (2024) | 16.5% (1972) | 1972–2024 · 35 pts | NORC General Social Survey (cumulative file 1972–2024) |
+| [People Try to Be Fair](series/gssPeopleFair.json) | 41.6% (2024) | 60.3% (1972) | 1972–2024 · 30 pts | NORC General Social Survey (cumulative file 1972–2024) |
+| [People Try to Be Helpful](series/gssPeopleHelpful.json) | 37.9% (2024) | 46.8% (1972) | 1972–2024 · 30 pts | NORC General Social Survey (cumulative file 1972–2024) |
 | [Math Score, Age 13 (NAEP LTT)](series/lttMath13.json) | 270.7% (2023) | 264.1% (1978) | 1978–2023 · 13 pts | NCES, National Assessment of Educational Progress |
 | [Math Score, Age 9 (NAEP LTT)](series/lttMath9.json) | 233.9% (2022) | 218.6% (1978) | 1978–2022 · 13 pts | NCES, National Assessment of Educational Progress |
 | [Reading Score, Age 13 (NAEP LTT)](series/lttReading13.json) | 255.7% (2023) | 255.2% (1971) | 1971–2023 · 15 pts | NCES, National Assessment of Educational Progress |
@@ -176,12 +186,21 @@ Rules this dataset runs on:
 | [Geography Knowledge (NAEP)](series/naepGeography.json) | 258.4% (2018) | 259.7% (1994) | 1994–2018 · 5 pts | NCES, National Assessment of Educational Progress |
 | [U.S. History Knowledge (NAEP)](series/naepHistory.json) | 258.4% (2022) | 259.3% (1994) | 1994–2022 · 7 pts | NCES, National Assessment of Educational Progress |
 | [Science Knowledge (NAEP)](series/naepScience.json) | 149.9% (2024) | 150% (2009) | 2009–2024 · 5 pts | NCES, National Assessment of Educational Progress |
+| [Serious Psychological Distress (NHIS)](series/nhisPsychologicalDistress.json) | 3.6% (2016) | 3.2% (1998) | 1998–2016 · 6 pts | NCHS, Health, United States 2017, Table 46 |
+| [Adolescent Major Depressive Episode, Past Year](series/nsduhAdolescentDepression.json) | 15.1% (2025) | 9% (2004) | 2004–2025 · 21 pts | SAMHSA, National Survey on Drug Use and Health |
+| [Adult Major Depressive Episode, Past Year](series/nsduhAdultDepression.json) | 7.4% (2025) | 6.6% (2005) | 2005–2025 · 20 pts | SAMHSA, National Survey on Drug Use and Health |
+| [Any Mental Illness, Past Year](series/nsduhAnyMentalIllness.json) | 20.6% (2025) | 17.7% (2008) | 2008–2025 · 17 pts | SAMHSA, National Survey on Drug Use and Health |
+| [Serious Mental Illness, Past Year](series/nsduhSeriousMentalIllness.json) | 6.9% (2025) | 3.7% (2008) | 2008–2025 · 17 pts | SAMHSA, National Survey on Drug Use and Health |
 | [Read a Book Last Year (any format)](series/pewReadBook.json) | 75% (2025) | 78% (2011) | 2011–2025 · 9 pts | Pew Research Center |
 | [Read Any Book Last Year](series/readAnyBook.json) | 48.5% (2022) | 56.6% (2002) | 2002–2022 · 5 pts | National Endowment for the Arts, Survey of Public Participation in the Arts (with the Census Bureau) |
 | [Read on an Average Day](series/readingParticipation.json) | 16.1% (2025) | 26.3% (2003) | 2003–2025 · 22 pts | BLS American Time Use Survey (series TUU30105AA01006315) |
 | [Time Spent Reading](series/readingTime.json) | 16.2% (2025) | 21.6% (2003) | 2003–2025 · 22 pts | BLS American Time Use Survey (series TUU10101AA01006315) |
+| [Could Cover a $400 Emergency Expense](series/shedCover400.json) | 63% (2025) | 50% (2013) | 2013–2025 · 13 pts | Federal Reserve Board, Survey of Household Economics and Decisionmaking |
+| [Doing at Least Okay Financially](series/shedDoingOkay.json) | 73% (2025) | 62% (2013) | 2013–2025 · 13 pts | Federal Reserve Board, Survey of Household Economics and Decisionmaking |
 | [Teen Birth Rate](series/teenBirthRate.json) | 12.6% (2024) | 89.1% (1960) | 1960–2024 · 65 pts | CDC/NCHS National Vital Statistics System (Health, United States + Data Query System) |
 | [Vocabulary Test Score](series/wordsum.json) | 6.33% (2024) | 5.94% (1974) | 1974–2024 · 25 pts | NORC General Social Survey (cumulative file 1972–2024) |
+| [Seriously Considered Attempting Suicide (YRBS)](series/yrbsConsideredSuicide.json) | 20% (2023) | 17% (2013) | 2013–2023 · 6 pts | CDC, Youth Risk Behavior Survey Data Summary & Trends Report 2013–2023 |
+| [Persistent Feelings of Sadness or Hopelessness (YRBS)](series/yrbsPersistentSadness.json) | 40% (2023) | 30% (2013) | 2013–2023 · 6 pts | CDC, Youth Risk Behavior Survey Data Summary & Trends Report 2013–2023 |
 
 ## Not included, and why
 
@@ -206,4 +225,4 @@ See [source.md](source.md). Publishers: NORC (GSS), Gallup, University of Michig
 
 ---
 
-*Last regenerated 2026-09-10 by `docs.ts`.*
+*Last regenerated 2026-09-11 by `docs.ts`.*

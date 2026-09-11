@@ -1,11 +1,13 @@
-import { command, download, getJSON, getText, invariant, numeric, type Annual } from "./io.ts";
+import { command, download, getJSON, getText, invariant, numeric, sha256Hex, DIR, type Annual } from "./io.ts";
 import type { Pipeline, SeriesMeta } from "./meta.ts";
 import { sheetRows } from "./xlsx.ts";
+import { join } from "node:path";
 
 const ACF = "https://acf.gov/sites/default/files/documents/cb/";
 const birthsUrl = "https://data.cdc.gov/resource/e6fc-ccez.json?$limit=1000";
 const fosterUrls = [ACF + "trends_fostercare_adoption_09thru18.pdf", ACF + "trends_fostercare_adoption_10thru19.pdf", ACF + "national-afcars-data-2013-2022.xlsx", ACF + "2025-afcars-dashboard-printable.pdf"];
 const maltreatmentYears = [2009, 2013, 2017, 2019, 2023];
+const NCHS = join(DIR, "data", "nchs");
 // Re-derived from the actual source tables; differences are edition revisions, not equality failures.
 const overlapFixtures: Record<string, Record<string, [number, number]>> = {
   AFCARS2019: { 2010: [411000, 407000], 2011: [397000, 392000], 2012: [396000, 392000], 2013: [400000, 396000], 2014: [414000, 411000], 2015: [427000, 421000], 2016: [434000, 430000], 2017: [441000, 437000], 2018: [437000, 435000] },
@@ -13,6 +15,8 @@ const overlapFixtures: Record<string, Record<string, [number, number]>> = {
   AFCARS2025: { 2020: [407000, 407332], 2021: [392000, 391641], 2022: [369000, 368530] },
   CM2009: {}, CM2013: { 2009: [9.3, 9.3] }, CM2017: { 2013: [9.1, 8.8] },
   CM2019: { 2015: [9.2, 9.2], 2016: [9.1, 9.1], 2017: [9.1, 9.1] }, CM2023: { 2019: [8.9, 9.2] },
+  MAFB2023: {}, MAFB2024: { 2016: [26.6, 26.6], 2017: [26.8, 26.8], 2018: [26.9, 26.9], 2019: [27.0, 27.0], 2020: [27.1, 27.1], 2021: [27.3, 27.3], 2022: [27.4, 27.4], 2023: [27.5, 27.5] },
+  BIRTHS2024: { 2010: [3999386, 3999386], 2011: [3953590, 3953590], 2012: [3952841, 3952841], 2013: [3932181, 3932181], 2014: [3988076, 3988076], 2015: [3978497, 3978497], 2016: [3945875, 3945875], 2017: [3855500, 3855500], 2018: [3791712, 3791712] },
 };
 
 async function pdfText(url: string, name: string): Promise<string> {
@@ -22,6 +26,61 @@ async function pdfText(url: string, name: string): Promise<string> {
   const text = await command(["pdftotext", "-layout", path, "-"]);
   invariant(text.length > 2000 && text.includes("\f"), `${url}: missing PDF pages or truncated extraction`);
   return text;
+}
+
+/**
+ * cdc.gov returns HTTP 403 to every scripted fetch of these NVSR/data-brief reports (browser UA included).
+ * They were read once through a real Chrome session and checked in at data/nchs/, with the read date and
+ * sha256 recorded in data/nchs/READ.md. Every parse re-verifies the hash first and refuses to run on a
+ * mismatch, so a silently-edited or silently-stale checked-in file can never pass as the primary source.
+ */
+async function checkedInText(name: string): Promise<string> {
+  const readme = await Bun.file(join(NCHS, "READ.md")).text();
+  const row = readme.match(new RegExp(`\\|\\s*${name.replace(/\./g, "\\.")}\\s*\\|[^|]*\\|[^|]*\\|\\s*([0-9a-f]{64})\\s*\\|`));
+  invariant(row, `${name}: no data/nchs/READ.md entry with a 64-hex-char sha256`);
+  const path = join(NCHS, name);
+  const actual = await sha256Hex(path);
+  invariant(actual === row[1], `${name}: sha256 mismatch against data/nchs/READ.md (actual=${actual} expected=${row[1]}); the checked-in file changed under the pipeline`);
+  const bytes = await Bun.file(path).arrayBuffer();
+  invariant(Buffer.from(bytes).subarray(0, 4).toString() === "%PDF", `${name}: expected PDF`);
+  const text = await command(["pdftotext", "-layout", path, "-"]);
+  invariant(text.length > 2000 && text.includes("\f"), `${name}: missing PDF pages or truncated extraction`);
+  console.log(`PASS checked-in ${name}: sha256=${actual} matches data/nchs/READ.md`);
+  return text;
+}
+
+/** Splits a leader-dotted table row ("2024. . . . 29.7 27.6 ...") into [year, ...numericCells], or null for a non-data line. */
+function numericRow(line: string): string[] | null {
+  const m = line.match(/^\s*(\d{4})\.?\s*(.*)$/);
+  if (!m) return null;
+  const rest = m[2].split(/\s+/).filter((t) => t.length > 0 && !/^\.+$/.test(t));
+  return rest.length > 0 ? [m[1], ...rest] : null;
+}
+
+/** The text strictly between the first match of `start` and the next match of `end` after it. */
+function betweenMarkers(text: string, start: RegExp, end: RegExp): string {
+  const s = text.match(start);
+  invariant(s && s.index !== undefined, `missing start marker ${start}`);
+  const rest = text.slice(s.index! + s[0].length);
+  const e = rest.match(end);
+  invariant(e && e.index !== undefined, `missing end marker ${end} after ${start}`);
+  return rest.slice(0, e.index);
+}
+
+/** Reads one numeric column (by position after the year) from a sliced table block, asserting full annual coverage. */
+function parseYearColumn(block: string, column: number, fieldsExpected: number, first: number, last: number, label: string): Annual {
+  const data: Annual = {};
+  for (const line of block.split("\n")) {
+    const row = numericRow(line);
+    if (!row) continue; // Header, note and blank lines do not start with a 4-digit year.
+    const year = Number(row[0]);
+    if (year < first || year > last) continue; // Race/origin-specific rows outside the requested window are excluded by the caller's end marker, not here.
+    invariant(row.length === fieldsExpected, `${label} ${row[0]}: expected ${fieldsExpected} fields, got ${row.length} (${row.join("|")})`);
+    invariant(data[row[0]] === undefined, `${label} ${row[0]}: duplicate year`);
+    data[row[0]] = numeric(row[column], `${label} ${row[0]}`);
+  }
+  invariant(Object.keys(data).length === last - first + 1, `${label}: expected ${last - first + 1} annual observations (${first}-${last}), got ${Object.keys(data).length}`);
+  return data;
 }
 
 function meta(name: string, unit: string, source: string, sourceUrl: string, note: string, breaks: string, historicalSourceUrls?: string[]): SeriesMeta {
@@ -134,9 +193,52 @@ async function buildBirths(p: Pipeline): Promise<void> {
     invariant(data[record.year] === undefined, "CDC births: duplicate year");
     data[record.year] = numeric(record.birth_number, "CDC annual births");
   }
+  const contiguousCDC = Object.keys(data).map(Number).sort((a, b) => a - b);
+  invariant(contiguousCDC.length === contiguousCDC.at(-1)! - contiguousCDC[0] + 1, "CDC births: non-contiguous annual coverage");
+
+  const text75 = await checkedInText("nvsr75-02.pdf");
+  const block = betweenMarkers(text75, /Table 1\. Births and birth rates: United States, 2010–2024, and by race and Hispanic origin of mother: United States,[\s\S]*?All races and origins\d?/, /Non-Hispanic, single race\d?/);
+  const nvsr2024 = parseYearColumn(block, 1, 4, 2010, 2024, "NVSR75-2 births");
+  mergeEdition(data, nvsr2024, "BIRTHS2024");
   const years = Object.keys(data).map(Number).sort((a, b) => a - b);
-  invariant(years.length === years.at(-1)! - years[0] + 1, "CDC births: non-contiguous annual coverage");
-  await p.save({ key: "births", data, bounds: [1000000, 6000000], meta: meta("Live births", "births", "CDC/NCHS, Births and General Fertility Rates: United States", birthsUrl, "Primary CDC open-data annual live-birth counts; current recoverable table spans 1909–2018. Historical early-year values are published rounded estimates, not fabricated precision. Requested later NVSR75-02 and NVSR74-09 PDFs returned HTTP403 Access Denied with a browser User-Agent; 2019–2024 extension is deferred until an accessible primary final-count table is available. No provisional monthly estimates are spliced into this final annual series.", "Historical birth-registration completeness and geographic coverage change; early counts are rounded estimates." ) });
+  invariant(years.length === years.at(-1)! - years[0] + 1, "Births: non-contiguous annual coverage after the NVSR75-2 extension");
+  invariant(data["2024"] === 3628934, `NVSR75-2 births anchor mismatch: 2024=${data["2024"]}`);
+  console.log(`PASS anchor births NVSR75-2 2024: actual=${data["2024"]} expected=3628934`);
+
+  await p.save({ key: "births", data, bounds: [1000000, 6000000], meta: meta("Live births", "births", "CDC/NCHS, Births and General Fertility Rates: United States, extended by NVSR 75-2 Table 1", birthsUrl, "1909–2018 from the primary CDC open-data annual live-birth counts; 2010–2018 overlap confirmed identical against NVSR 75-2 Table 1 (checked in at data/nchs/, cdc.gov returns HTTP 403 to every scripted fetch), which then extends the series 2019–2024. Historical early-year values are published rounded estimates, not fabricated precision. No provisional monthly estimates are spliced into this final annual series.", "Historical birth-registration completeness and geographic coverage change; early counts are rounded estimates.", ["https://www.cdc.gov/nchs/data/nvsr/nvsr75/nvsr75-02.pdf"]) });
+}
+
+async function buildMeanAgeFirstBirth(p: Pipeline): Promise<void> {
+  const text1970 = await checkedInText("nvsr51_01.pdf");
+  const block1970 = betweenMarkers(text1970, /Table 1\. Mean age of mother and absolute change by live birth order: United States, 1970–2000/, /Absolute change 1970–2000/);
+  const data = parseYearColumn(block1970, 2, 7, 1970, 2000, "NVSR51-1");
+  invariant(data["1970"] === 21.4 && data["2000"] === 24.9, `NVSR51-1 anchor mismatch: 1970=${data["1970"]} 2000=${data["2000"]}`);
+  console.log(`PASS anchor meanAgeFirstBirth NVSR51-1 1970: actual=${data["1970"]} expected=21.4`);
+  console.log(`PASS anchor meanAgeFirstBirth NVSR51-1 2000: actual=${data["2000"]} expected=24.9`);
+
+  const text2023 = await checkedInText("nvsr74-09.pdf");
+  const block2023 = betweenMarkers(text2023, /Table 1\. Mean age, by birth order: United States, 2016–2023/, /SOURCE: National Center for Health Statistics, National Vital Statistics System, natality data file\./);
+  mergeEdition(data, parseYearColumn(block2023, 2, 5, 2016, 2023, "NVSR74-9"), "MAFB2023");
+
+  const text2024 = await checkedInText("nvsr75-02.pdf");
+  const block2024 = betweenMarkers(text2024, /Table 4\. Mean age of mother, by live-birth order: United States, 2010–2024, and by race and Hispanic origin of[\s\S]*?All races and origins\d?/, /Non-Hispanic, single race\d?/);
+  mergeEdition(data, parseYearColumn(block2024, 2, 10, 2010, 2024, "NVSR75-2 mean age"), "MAFB2024");
+
+  invariant(Object.keys(data).length === 46, `meanAgeFirstBirth: expected 46 annual observations (1970-2000 plus 2010-2024), got ${Object.keys(data).length}`);
+  invariant(data["2024"] === 27.6, `NVSR75-2 mean-age anchor mismatch: 2024=${data["2024"]}`);
+  console.log(`PASS anchor meanAgeFirstBirth NVSR75-2 2024: actual=${data["2024"]} expected=27.6`);
+
+  await p.save({
+    key: "meanAgeFirstBirth", data, bounds: [15, 40],
+    meta: meta(
+      "Mean age of mother at first live birth", "years",
+      "CDC/NCHS, National Vital Statistics Reports (mean age of mother, by live-birth order)",
+      "https://www.cdc.gov/nchs/data/nvsr/nvsr75/nvsr75-02.pdf",
+      "Mean (not median) age at first live birth, all races and origins; the arithmetic average computed directly from the frequency of first births by age of mother. Edition list, newest wins on overlap: NVSR 51-1 Table 1 (1970–2000); NVSR 74-9 Table 1 (2016–2023, identical to the 2024 edition on every overlapping year, so no revision); NVSR 75-2 Table 4 (2010–2024). 2001–2009 could not be recovered: the only checked-in source covering that span, NCHS Data Brief 232, reports the trend only as a line chart plus three narrative anchor values (2000, 2009, 2014), not a machine-readable annual table; no value was read off the chart or interpolated. cdc.gov returns HTTP 403 Access Denied to every scripted fetch of these reports (browser User-Agent included); all four PDFs were read once through a real Chrome session and are checked in at data/nchs/, with sha256 verified against data/nchs/READ.md before every parse.",
+      "2001–2009 gap: Data Brief 232 for that window is chart-only, not machine-readable. Reports before 2016 do not carry the same race/Hispanic-origin breakout as 2016 onward.",
+      ["https://www.cdc.gov/nchs/data/nvsr/nvsr51/nvsr51_01.pdf", "https://www.cdc.gov/nchs/data/databriefs/db232.pdf", "https://www.cdc.gov/nchs/data/nvsr/nvsr74/nvsr74-09.pdf"],
+    ),
+  });
 }
 
 async function inaccessibleCDC(p: Pipeline, key: string, urls: string[]): Promise<void> {
@@ -151,7 +253,7 @@ async function inaccessibleCDC(p: Pipeline, key: string, urls: string[]): Promis
 }
 
 export async function buildBirthsWelfare(p: Pipeline): Promise<void> {
-  await p.run("meanAgeFirstBirth", () => inaccessibleCDC(p, "meanAgeFirstBirth", ["https://www.cdc.gov/nchs/data/nvsr/nvsr51/nvsr51_01.pdf", "https://www.cdc.gov/nchs/data/databriefs/db232.pdf", "https://www.cdc.gov/nchs/data/nvsr/nvsr74/nvsr74-09.pdf", "https://www.cdc.gov/nchs/data/nvsr/nvsr75/nvsr75-02.pdf", "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/51_01.pdf", "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/nvsr75_02.pdf"]));
+  await p.run("meanAgeFirstBirth", () => buildMeanAgeFirstBirth(p));
   await p.run("births", () => buildBirths(p));
   await p.run("abortionRate", () => inaccessibleCDC(p, "abortionRate", ["https://www.cdc.gov/mmwr/volumes/73/ss/ss7307a1.htm"]));
   await p.run("fosterCareChildren", () => buildFoster(p));

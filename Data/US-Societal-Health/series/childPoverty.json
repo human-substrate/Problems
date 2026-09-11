@@ -12,7 +12,7 @@
     "note": "Official poverty measure, all people under 18, all races (Table 3, column 'Percent in poverty'). Census footnotes the 2013 redesigned income questions, 2017 processing change, and 1987/1992 weighting changes; where a year appears twice the row on the newer basis is used.",
     "method": "hstpov3.xlsx sheet pov03, 'All Races' block, column E",
     "coverage": "1959–2024",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1959": 27.3,

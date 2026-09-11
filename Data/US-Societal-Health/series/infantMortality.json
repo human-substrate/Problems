@@ -13,7 +13,7 @@
     "note": "Deaths under age one per 1,000 live births, final data. Spliced from three NCHS publications on data.cdc.gov: the historical table (1915–2013), Health, United States infant mortality by maternal characteristics (2014–2016), and the Data Query System series (2017 onward); overlapping years agree. 1915–1932 cover the death-registration states only, not the whole country.",
     "method": "epev-k6ss (type=Infant) + nfuu-hu6j (All mothers, unit 1) + j7ym-uwqy (Total/All mothers/All infant deaths)",
     "coverage": "1915–2024",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1915": 99.9,

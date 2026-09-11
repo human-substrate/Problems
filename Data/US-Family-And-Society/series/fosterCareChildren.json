@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "key": "fosterCareChildren",
+    "name": "Children in foster care on September 30",
+    "unit": "children",
+    "source": "ACF Children's Bureau, AFCARS",
+    "sourceUrl": "https://acf.gov/sites/default/files/documents/cb/2025-afcars-dashboard-printable.pdf",
+    "note": "Federal fiscal-year end counts, 2009–2025. Later source editions replace overlapping earlier counts; trends spreadsheets round to thousands, dashboard counts do not. Sources: FY2009–18 trends, FY2010–19 trends, FY2013–22 workbook, preliminary FY2025 dashboard (February 27, 2026). Coverage before 2009 was not recovered: attempted trends_fostercare_adoption_00thru09.pdf returned HTTP 404. The AFCARS 2020 rule begins FY2023 collection and changes reporting population; the dashboard says pre-2023 counts should be considered separate. Washington first reported under the new rule in FY2025 and Wyoming in FY2024, affecting increases. FY2025 preliminary.",
+    "breaks": "FY2023 AFCARS 2020 rule and changed reporting population; Wyoming added FY2024, Washington FY2025; revised/rounded historical counts.",
+    "historicalSourceUrls": [
+      "https://acf.gov/sites/default/files/documents/cb/trends_fostercare_adoption_09thru18.pdf",
+      "https://acf.gov/sites/default/files/documents/cb/trends_fostercare_adoption_10thru19.pdf",
+      "https://acf.gov/sites/default/files/documents/cb/national-afcars-data-2013-2022.xlsx"
+    ],
+    "goodDirection": "neutral",
+    "cadence": "annual",
+    "annualRule": "One reported observation per calendar year, or federal fiscal year where specified.",
+    "class": "births",
+    "provisional": [
+      2025
+    ],
+    "coverage": "2009–2025",
+    "fetched": "2026-09-11T02:23:47.946Z"
+  },
+  "data": {
+    "2009": 423000,
+    "2010": 407000,
+    "2011": 392000,
+    "2012": 392000,
+    "2013": 396000,
+    "2014": 411000,
+    "2015": 421000,
+    "2016": 430000,
+    "2017": 437000,
+    "2018": 437000,
+    "2019": 426000,
+    "2020": 407332,
+    "2021": 391641,
+    "2022": 368530,
+    "2023": 339309,
+    "2024": 327364,
+    "2025": 331747
+  }
+}

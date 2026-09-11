@@ -12,7 +12,7 @@
     "note": "Taken all together, how would you say things are these days — would you say that you are very happy, pretty happy, or not too happy? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.",
     "method": "variable HAPPY: 1 of valid codes 1/2/3, weight WTSSPS",
     "coverage": "1972–2024",
-    "fetched": "2026-08-31T20:22:21.007Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1972": 30.3,

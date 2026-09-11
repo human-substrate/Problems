@@ -12,7 +12,7 @@
     "note": "\"Do you think that a year from now you will be better off financially, or worse off, or just about the same as now?\" Annual figures as published by the Survey Research Center (monthly survey, ~500–1,000 interviews). The survey moved online through 2017–2024, which Michigan documents as a level effect.",
     "method": "POST mine.php table=8 qorm=Y, column \"Better Off\"",
     "coverage": "1978–2025",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1978": 27,

@@ -12,7 +12,7 @@
     "note": "Same question as appcBranchesWeb, asked by telephone (RDD/CATI, ~1,000–1,400 adults) from 2006 through 2022. The series ends in 2022 when APPC moved to its online panel; APPC's 2022 parallel run (47% phone vs 72% online) measured a ~25-point mode effect, which is why the eras are separate series. Not asked 2007–2010 or 2012.",
     "method": "transcribed from the CIVI3/CIVI4 summary table, p.2 of APPC's September 2022 appendix PDF (read 2026-08-31)",
     "coverage": "2006–2022",
-    "fetched": "2026-08-31T20:21:01.514Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "2006": 33,

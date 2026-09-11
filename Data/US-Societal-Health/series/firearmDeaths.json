@@ -12,7 +12,7 @@
     "note": "Deaths from firearm injuries of all intents (homicide, suicide, unintentional, legal intervention, undetermined) per 100,000 residents, crude rate, from NVSS death certificates. 1970 and 1980–2016 from Health, United States 2017 Table 31 ('All ages, crude'); 2019 onward from the CDC Injury Center's national firearm-mortality series (also crude). NCHS dropped the table after the 2017 edition and no public machine path carries 2017–2018, so those two years are a gap, shown as a gap. The latest year is provisional until NCHS finalizes it.",
     "method": "Table031.xlsx row 'All ages, crude' + t6u2-f84c intent FA_Deaths type year",
     "coverage": "1970–2025",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1970": 13.1,

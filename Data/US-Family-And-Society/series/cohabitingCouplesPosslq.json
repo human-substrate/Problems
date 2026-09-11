@@ -10,9 +10,9 @@
     "annualRule": "publisher survey/census year; sparse historical observations retained",
     "class": "living",
     "breaks": "CPS ASEC control and questionnaire seams, and the later-method duplicate-year selection, are documented once in METHODOLOGY.md.",
-    "note": "Indirect Partners of Opposite Sex Sharing Living Quarters classification; adults need not identify as unmarried partners. Decennial 1960/1970 and annual 1980–2006 observations. Discontinued in 2007 when CPS measured cohabitation directly. Paired with cohabitingCouples, never joined; the direct measure's householder restriction changed in 2007.",
+    "note": "Indirect Partners of Opposite Sex Sharing Living Quarters classification; adults need not identify as unmarried partners. Decennial 1960/1970 and annual 1977–2006 observations, including three earlier annual observations present in the source beyond the requested 1980 start. Discontinued in 2007 when CPS measured cohabitation directly. Paired with cohabitingCouples, never joined; the direct measure's householder restriction changed in 2007.",
     "coverage": "1960–2006",
-    "fetched": "2026-09-10T20:26:53.353Z"
+    "fetched": "2026-09-11T02:23:47.946Z"
   },
   "data": {
     "1960": 439,

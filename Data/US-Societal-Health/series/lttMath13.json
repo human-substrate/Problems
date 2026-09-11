@@ -12,7 +12,7 @@
     "note": "NAEP Long-Term Trend mathematics, age 13, from the 1978-anchored instrument (1973 is extrapolated and not API-served; same 2004 format seam). 2023 (270.7) is the lowest since the 1990s after the 285 peak of 2012. The 0–500-scale NAEP Long-Term Trend and 0–300-scale main assessments are NCES's national probability samples; values are national public+private averages for all students.",
     "method": "NAEP Data Service API, Program=LTT&subject=MAT&cohort=2&subscale=MRPSCT, year tokens 1978R1,1982R1,1986R1,1990R1,1992R1,1994R1,1996R1,1999R1,2004R3,2008R3,2012R3,2020R3,2023R3 (suffixed tokens are the pre-accommodations samples), 999-sentinel values dropped",
     "coverage": "1978–2023",
-    "fetched": "2026-08-31T20:21:01.514Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1978": 264.1,

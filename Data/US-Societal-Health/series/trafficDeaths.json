@@ -12,7 +12,7 @@
     "note": "Deaths within 30 days of a crash per 100 million vehicle miles. FARS since 1975; earlier years are NHTSA-adjusted historical summaries. The latest year is NHTSA's Annual Report File and can be revised.",
     "method": "Fatalities and Fatality Rates.xlsx, 'Fatality Rate per 100 Million VMT' columns",
     "coverage": "1921–2024",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1921": 24.08,

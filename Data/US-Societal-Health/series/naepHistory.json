@@ -12,7 +12,7 @@
     "note": "NAEP U.S. History, grade 8, average scale score. 1994 is the accommodations-not-permitted sample (NCES footnotes it on the same trend line — the one comparability break). Scores rose to a 2014 peak (267.5) then fell below the 1994 level by 2022. Next assessment 2030 per the NAGB schedule. The 0–500-scale NAEP Long-Term Trend and 0–300-scale main assessments are NCES's national probability samples; values are national public+private averages for all students.",
     "method": "NAEP Data Service API, subject=history&grade=8&subscale=HRPCM, year tokens 1994R2,2001,2006,2010,2014,2018,2022 (suffixed tokens are the pre-accommodations samples), 999-sentinel values dropped",
     "coverage": "1994–2022",
-    "fetched": "2026-08-31T20:21:01.514Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1994": 259.3,

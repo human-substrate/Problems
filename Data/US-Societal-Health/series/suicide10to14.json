@@ -12,7 +12,7 @@
     "note": "Suicide deaths (ICD-10 U03, X60–X84, Y87.0; ICD-8/9 equivalents before 1999) per 100,000 resident population aged 10-14, crude rate. 1950–2018 from the Health, United States 2019 table (1950/1960/1970 then annual from 1980), 2018 onward from the NCHS Data Query System table built from CDC WONDER; the 2018 overlap agrees. The all-ages, age-adjusted series is a separate row.",
     "method": "9j2v-jamp (stub_name Age, '10-14 years', crude) + w26f-tf3h (group 'Age group', '10-14 years')",
     "coverage": "1950–2024",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1950": 0.3,

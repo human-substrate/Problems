@@ -10,10 +10,10 @@
       "https://data.cdc.gov/d/gj3i-hsbz"
     ],
     "goodDirection": "down",
-    "note": "NHIS, all ages, crude percent, as published in Health, United States. The series ENDS AT 2019: the NHIS questionnaire was redesigned that year and NCHS has not carried this item forward on the new basis. The closest replacement item, asked of adults 18+ since 2019 (\"did not take medication as prescribed to save money\"), runs 2019 9.6%, 2020 8.3%, 2021 6.8%, 2022 6.8%, 2023 7.8%, 2024 7.8% — a different question, shown here in the note rather than spliced onto the chart.",
+    "note": "NHIS, all ages, crude percent, as published in Health, United States. The series ENDS AT 2019: the NHIS questionnaire was redesigned that year and NCHS has not carried this item forward on the new basis. The closest replacement item, asked of adults 18+ since 2019 (\"did not take medication as prescribed to save money\"), runs 2019 9.6%, 2020 8.3%, 2021 6.8%, 2022 6.8%, 2023 7.8%, 2024 7.8%, 2025 7.6% — a different question, shown here in the note rather than spliced onto the chart.",
     "method": "SODA p4r5-qsgs, subtopic 'Nonreceipt of needed prescription drugs due to cost', group Total, crude",
     "coverage": "1997–2019",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1997": 4.8,

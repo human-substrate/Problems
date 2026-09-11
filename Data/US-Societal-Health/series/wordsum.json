@@ -12,7 +12,7 @@
     "note": "WORDSUM: a ten-item multiple-choice vocabulary test administered in the GSS since 1974 with unchanged words — the longest-running repeated knowledge measure of US adults. Value is the weighted mean number correct (0–10). NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. The 2022/2024 upticks sit on that mode seam. Years with fewer than 200 weighted responses are dropped.",
     "method": "variable WORDSUM: weighted mean of valid scores 0–10, weight WTSSPS",
     "coverage": "1974–2024",
-    "fetched": "2026-08-31T20:22:21.007Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1974": 5.94,

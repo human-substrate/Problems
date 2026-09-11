@@ -15,7 +15,7 @@
     "note": "SAMHSA's National Survey on Drug Use and Health, people aged 12 or older. 2002–2019 from the 2019 detailed tables' trend tables; 2021 onward from each year's Table 1.1B. There is NO 2020 value: the 2020 survey was disrupted by the pandemic and SAMHSA says it is not comparable, and the 2021 redesign (web mode, new questions) started a new baseline — SAMHSA advises against comparing 2021+ with earlier years, so the 2020 gap is a seam, not a missing year. Where a later release re-weighted a year (2024 appears in both the 2024 and 2025 tables) the newer release wins.",
     "method": "2019 Table 7.2B (2002–2019) + Table 1.1B of the 2022/2024/2025 detailed tables, 'Marijuana' row, past-year columns",
     "coverage": "2002–2025",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "2002": 11,

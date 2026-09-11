@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "key": "yrbsPersistentSadness",
+    "name": "Persistent Feelings of Sadness or Hopelessness (YRBS)",
+    "unit": "percent of high school students",
+    "source": "CDC, Youth Risk Behavior Survey Data Summary & Trends Report 2013–2023",
+    "sourceUrl": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+    "goodDirection": "down",
+    "note": "Felt so sad or hopeless almost every day for at least two weeks in a row during the past year that they stopped doing some usual activities. National Total estimates, all high school students, rounded to whole percentages by the publisher. Biennial cadence is expected, not a gap; named exception to annual coverage expectations. Six survey readings from 2013 through 2023 are the full Total trend rows published in this PDF; no earlier years are inferred and no intervening years are interpolated. The checked-in publisher PDF is verified against data/cdc/READ.md before parsing.",
+    "method": "SHA256-verified cached PDF; pdftotext -layout, printed page 54 Progress at a Glance for Mental Health and Suicidal Thoughts and Behaviors, indicator row and six Total columns",
+    "coverage": "2013–2023",
+    "fetched": "2026-09-11T03:11:37.082Z"
+  },
+  "data": {
+    "2013": 30,
+    "2015": 30,
+    "2017": 31,
+    "2019": 37,
+    "2021": 42,
+    "2023": 40
+  }
+}

@@ -12,7 +12,7 @@
     "note": "\"How would you describe your own mental health or emotional wellbeing at this time? Would you say it is — excellent, good, only fair or poor?\" Question wording from the chart metadata (f9It9/8); only Excellent, not Excellent/Good. Annual published observations. The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.",
     "method": "Datawrapper f9It9/6, named column % Excellent; latest published poll per year",
     "coverage": "2001–2025",
-    "fetched": "2026-09-10T20:25:51.860Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "2001": 43,

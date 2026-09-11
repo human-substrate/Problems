@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "key": "gssPeopleHelpful",
+    "name": "People Try to Be Helpful",
+    "unit": "percent saying most people try to be helpful (vs. looking out for themselves)",
+    "source": "NORC General Social Survey (cumulative file 1972–2024)",
+    "sourceUrl": "https://gss.norc.org/get-the-data/stata.html",
+    "historicalSourceUrls": [
+      "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip"
+    ],
+    "goodDirection": "up",
+    "note": "Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.",
+    "method": "variable HELPFUL: 1 of valid codes 1/2/3, weight WTSSPS",
+    "coverage": "1972–2024",
+    "fetched": "2026-09-11T03:11:37.082Z"
+  },
+  "data": {
+    "1972": 46.8,
+    "1973": 47.3,
+    "1975": 56.9,
+    "1976": 42.2,
+    "1978": 57.8,
+    "1980": 47.9,
+    "1983": 57.7,
+    "1984": 52.5,
+    "1986": 56.1,
+    "1987": 46.7,
+    "1988": 49.1,
+    "1989": 50,
+    "1990": 50.6,
+    "1991": 48.8,
+    "1993": 50.6,
+    "1994": 45.6,
+    "1996": 43,
+    "1998": 46.8,
+    "2000": 46,
+    "2002": 47.4,
+    "2004": 49.1,
+    "2006": 42.9,
+    "2008": 45.3,
+    "2010": 46.4,
+    "2012": 46.2,
+    "2014": 46.6,
+    "2016": 46.8,
+    "2018": 47.9,
+    "2022": 43,
+    "2024": 37.9
+  }
+}

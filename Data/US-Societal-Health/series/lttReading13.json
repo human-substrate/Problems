@@ -12,7 +12,7 @@
     "note": "NAEP Long-Term Trend reading, age 13, from the same 1971-anchored instrument as the age-9 series (same R1→R3 format seam at 2004). The 2023 score (255.7) is back at the 1971 level after a 2012 peak. Age 17 was last assessed in 2012 and is not carried here. The 0–500-scale NAEP Long-Term Trend and 0–300-scale main assessments are NCES's national probability samples; values are national public+private averages for all students.",
     "method": "NAEP Data Service API, Program=LTT&subject=RED&cohort=2&subscale=RRPSCT, year tokens 1971R1,1975R1,1980R1,1984R1,1988R1,1990R1,1992R1,1994R1,1996R1,1999R1,2004R3,2008R3,2012R3,2020R3,2023R3 (suffixed tokens are the pre-accommodations samples), 999-sentinel values dropped",
     "coverage": "1971–2023",
-    "fetched": "2026-08-31T20:21:01.514Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1971": 255.2,

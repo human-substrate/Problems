@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "key": "brfssFrequentMentalDistress",
+    "name": "Frequent Mental Distress (BRFSS State Median)",
+    "unit": "percent of adults, median across states and DC",
+    "source": "CDC, BRFSS Prevalence and Trends Data",
+    "sourceUrl": "https://data.cdc.gov/resource/dttw-5yxu.json",
+    "goodDirection": "down",
+    "note": "Mental health not good on 14 or more of the past 30 days. CDC's own published median across all states and DC (not a population-weighted national average; BRFSS does not publish one in this table). This resource starts in 2019, with six annual readings through 2024 in the verified edition, a named short-coverage exception. Pre-2019 coverage, including 2011–2018, needs annual XPT microdata and _LLCPWT weighting not currently read by this pipeline; those years are omitted, not interpolated.",
+    "method": "Socrata Healthy Days / 14+ days when mental health not good; discover and validate median location, select Overall breakout, check distinct-year coverage",
+    "coverage": "2019–2024",
+    "fetched": "2026-09-11T03:11:37.082Z"
+  },
+  "data": {
+    "2019": 13.8,
+    "2020": 13.2,
+    "2021": 14.6,
+    "2022": 15.9,
+    "2023": 15.4,
+    "2024": 15.6
+  }
+}

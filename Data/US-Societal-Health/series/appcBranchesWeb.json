@@ -13,7 +13,7 @@
     "note": "\"Would you mind naming any of them, the three branches of government?\" — percent of all respondents naming executive, legislative, and judicial, from APPC's annual Constitution Day survey (SSRS Opinion Panel, self-administered online, fielded each August–September). The survey moved from telephone to this online panel: APPC's own 2022 parallel run measured 72% online against 47% by phone (~25-point mode effect) and says the online years \"will not be presented as part of a historical trend\" with the phone years — so the phone era is a separate line (appcBranchesPhone) and the two are never joined. The 2022 value here is that parallel online reading.",
     "method": "transcribed from APPC topline PDFs (read 2026-08-31): 2023 topline CIVI4 table (2023 + 2022 online panel), 2025 topline 'Number of Branches Correctly Recalled' table (2024, 2025)",
     "coverage": "2022–2025",
-    "fetched": "2026-08-31T20:21:01.514Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "2022": 72,

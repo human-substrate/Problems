@@ -12,7 +12,7 @@
     "note": "Live births to women aged 15–19 per 1,000 women in that age group. 1960–2018 from the Health, United States table of birth rates by age of mother; 2016 onward from the NCHS Data Query System; the three overlap years agree exactly. The 1991 peak (61.8) and the steady fall since are as published.",
     "method": "e8kx-wbww (All Races, 15-19 Years) + daba-4vfq (subgroup '15-19 years', Demographic Characteristic)",
     "coverage": "1960–2024",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1960": 89.1,

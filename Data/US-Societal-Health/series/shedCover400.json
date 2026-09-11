@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "key": "shedCover400",
+    "name": "Could Cover a $400 Emergency Expense",
+    "unit": "percent of adults",
+    "source": "Federal Reserve Board, Survey of Household Economics and Decisionmaking",
+    "sourceUrl": "https://www.federalreserve.gov/publications/files/2025-report-economic-well-being-us-households-202605.pdf",
+    "goodDirection": "up",
+    "note": "Annual SHED, a nationally representative online survey of US adults. Could pay a $400 emergency expense with cash or its cash equivalent, without borrowing or selling something. Named exception to the >=15-year minimum: SHED began in 2013, so this edition has 13 annual points through 2025. The 2020 survey was fielded in November, later than the usual timing, which may affect year-over-year comparability; no direction of bias is assumed.",
+    "method": "PDF page 50, heading-verified figure; pdftotext -tsv numeric labels matched to nearest year-axis x-coordinate",
+    "coverage": "2013–2025",
+    "fetched": "2026-09-11T03:11:37.082Z"
+  },
+  "data": {
+    "2013": 50,
+    "2014": 53,
+    "2015": 54,
+    "2016": 56,
+    "2017": 59,
+    "2018": 61,
+    "2019": 63,
+    "2020": 64,
+    "2021": 68,
+    "2022": 63,
+    "2023": 63,
+    "2024": 63,
+    "2025": 63
+  }
+}

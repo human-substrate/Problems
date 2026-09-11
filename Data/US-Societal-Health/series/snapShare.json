@@ -13,7 +13,7 @@
     "note": "Average monthly SNAP (food stamp) participants in each federal fiscal year, divided by the calendar-year average resident population. Both numbers are published; the ratio is the only arithmetic. Participation rises in recessions and with eligibility expansions (2009 ARRA; pandemic emergency allotments 2020–2023).",
     "method": "snap-annualsummary xlsx column B (thousands) ÷ FRED POPTHM annual mean (thousands) × 100",
     "coverage": "1969–2025",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1969": 1.4,

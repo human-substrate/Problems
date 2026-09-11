@@ -17,7 +17,7 @@
 | **Alcohol Consumption per Capita** | **2.48 gal** (2023) | 23 of 93 readings since 1850 were higher | NIAAA Surveillance Report #122, Table 1 |
 | **Couldn't Afford Prescriptions** | **5.6%** (2019) | 12 of 23 readings since 1997 were higher | CDC/NCHS Health, United States (National Health Interview Survey), via Data Query System |
 | **Suicide Rate, Ages 15–24** | **13.2%** (2024) | 9 of 48 readings since 1950 were higher | CDC/NCHS National Vital Statistics System (Health, United States + Data Query System) |
-| **Credit Card Delinquency Rate** | **2.92%** (2026) | 23 of 36 readings since 1991 were higher | Federal Reserve Board via FRED (DRCCLACBS) |
+| **Credit Card Delinquency Rate** | **2.88%** (2026) | 23 of 36 readings since 1991 were higher | Federal Reserve Board via FRED (DRCCLACBS) |
 | **Infant Mortality** | **5.5%** (2024) | 107 of 110 readings since 1915 were higher | CDC/NCHS National Vital Statistics System (via data.cdc.gov) |
 
 **One-liner:** Americans report less happiness, less trust, and more worry than at any point in these series.
@@ -28,7 +28,7 @@
 
 ## Quick Context
 
-89 annual national US series on the non-economic side of how the country is doing: happiness and optimism, trust in people and institutions, substance use, health access, and household financial stress. Every value is read from the organization that produces it (NORC, Gallup, Michigan, SAMHSA, NIAAA, CDC/NCHS, …), the GSS items directly from NORC's public microdata. Nothing is interpolated or smoothed; where a survey skipped a year the series skips it too.
+108 annual national US series on the non-economic side of how the country is doing: happiness and optimism, trust in people and institutions, substance use, health access, and household financial stress. Every value is read from the organization that produces it (NORC, Gallup, Michigan, SAMHSA, NIAAA, CDC/NCHS, …), the GSS items directly from NORC's public microdata. Nothing is interpolated or smoothed; where a survey skipped a year the series skips it too.
 
 Confidence: **Very High (95%+)** for published agency/survey figures copied as-is; **High (85–94%)** for the GSS items, which are computed here from the microdata with NORC's weight (the computation is reproducible by `update.ts` and was cross-checked against an independent computation to the decimal).
 
@@ -55,7 +55,7 @@ Confidence: **Very High (95%+)** for published agency/survey figures copied as-i
 | Monitoring the Future (via NCHS) | annual | ~1 year |
 | NIAAA per-capita alcohol | annual report each spring | ~16 months |
 
-Last regenerated: 2026-09-10.
+Last regenerated: 2026-09-11.
 
 ---
 
@@ -63,4 +63,4 @@ Last regenerated: 2026-09-10.
 
 | Date | Change | Reason |
 |------|--------|--------|
-| 2026-08-21 | Dataset created with 89 series | Powers the Happiness & Outlook, Trust & Institutions, and Substance Use sections of https://usstats.io |
+| 2026-08-21 | Dataset created with 108 series | Powers the Happiness & Outlook, Trust & Institutions, and Substance Use sections of https://usstats.io |

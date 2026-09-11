@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "key": "nhisPsychologicalDistress",
+    "name": "Serious Psychological Distress (NHIS)",
+    "unit": "percent of adults aged 18 and over, age-adjusted",
+    "source": "NCHS, Health, United States 2017, Table 46",
+    "sourceUrl": "https://www.cdc.gov/nchs/data/hus/2017/046.pdf",
+    "goodDirection": "down",
+    "note": "Serious psychological distress in the past 30 days (K6 score >= 13), civilian noninstitutionalized adults aged 18 and over, age-adjusted to the 2000 standard population. Six selected two-year pooled estimates, keyed by pool end year; missing pools are not interpolated. Named sparse-series exception to the >=15-year filter: the PDF publishes six pools spanning 1997–2016. The series ends at 2015–16, the last pre-2019 pool in this table. NHIS was redesigned in 2019; K6 was not collected in 2019/2020/2022 NHIS, and no post-redesign observations are appended. The table cautions that moving the questions in 2013 may affect comparability. The checked-in publisher PDF is verified against data/cdc/READ.md before parsing.",
+    "method": "SHA256-verified cached PDF; pdftotext -layout, Table 46 first '18 years and over, age-adjusted3,4' row, columns matched to published two-year survey periods by end year",
+    "coverage": "1998–2016",
+    "fetched": "2026-09-11T03:11:37.082Z"
+  },
+  "data": {
+    "1998": 3.2,
+    "2000": 2.6,
+    "2002": 3.1,
+    "2005": 3,
+    "2011": 3.3,
+    "2016": 3.6
+  }
+}

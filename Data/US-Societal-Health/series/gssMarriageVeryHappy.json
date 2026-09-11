@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "key": "gssMarriageVeryHappy",
+    "name": "Marriage Is Very Happy",
+    "unit": "percent of married adults who say their marriage is very happy",
+    "source": "NORC General Social Survey (cumulative file 1972–2024)",
+    "sourceUrl": "https://gss.norc.org/get-the-data/stata.html",
+    "historicalSourceUrls": [
+      "https://gss.norc.org/content/dam/gss/get-the-data/documents/stata/GSS_stata.zip"
+    ],
+    "goodDirection": "up",
+    "note": "Taking all things together, how would you describe your marriage? Would you say that your marriage is very happy, pretty happy, or not too happy? NORC General Social Survey cumulative file, computed here from the public microdata: weighted (WTSSPS, NORC's post-stratification weight available for every year 1972–2024) share of valid responses. 2021 moved to a push-to-web design during the pandemic and 2022/2024 are mixed-mode; NORC advises caution comparing 2021+ with the in-person years, so treat 2021 as a seam. Years with fewer than 200 weighted responses are dropped.",
+    "method": "variable HAPMAR: 1 of valid codes 1/2/3, weight WTSSPS",
+    "coverage": "1973–2024",
+    "fetched": "2026-09-11T03:11:37.082Z"
+  },
+  "data": {
+    "1973": 67.9,
+    "1974": 69,
+    "1975": 68.2,
+    "1976": 66.4,
+    "1977": 66.2,
+    "1978": 64.8,
+    "1980": 68.4,
+    "1982": 64.8,
+    "1983": 63.6,
+    "1984": 66,
+    "1985": 55.8,
+    "1986": 63.4,
+    "1987": 66,
+    "1988": 61.8,
+    "1989": 60.2,
+    "1990": 64.8,
+    "1991": 63.7,
+    "1993": 60.7,
+    "1994": 60.5,
+    "1996": 61.7,
+    "1998": 63.7,
+    "2000": 62.7,
+    "2002": 59.8,
+    "2004": 60.8,
+    "2006": 61.4,
+    "2008": 62.2,
+    "2010": 62.1,
+    "2012": 65.4,
+    "2014": 60.4,
+    "2016": 60.5,
+    "2018": 64,
+    "2021": 60.7,
+    "2022": 60.4,
+    "2024": 60.8
+  }
+}

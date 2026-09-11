@@ -10,12 +10,12 @@ Build a new Substrate dataset at `~/Projects/substrate/Data/US-Family-And-Societ
 Every recovered measure is reproducible from its primary publisher, with instrument boundaries visible and failures isolated. Missing evidence never becomes invented data.
 
 ## Claims and falsifiers
-- [ ] C1: Reader reproduces source cells. Falsifier: `bun test lib/xls.test.ts` fails.
-- [ ] C2: Every requested key is shipped or explicitly deferred with evidence. Falsifier: `bun test lib/checks.test.ts` inventory check fails.
-- [ ] C3: Saved series satisfy metadata, bounds and coverage contract. Falsifier: `bun test lib/checks.test.ts` contract check fails.
-- [ ] C4: Pipeline and docs regenerate. Falsifier: `bun update.ts` or `bun docs.ts` fails.
-- [ ] C5: Primary-source anchors and applicable overlaps hold. Falsifier: anchor/overlap tests fail.
-- [ ] C6: Work stays in this directory with zero dependencies and no home paths. Falsifier: static verification fails.
+- [x] C1: Reader reproduces source cells. Falsifier: `bun test lib/xls.test.ts` fails.
+- [x] C2: Every requested key is shipped or explicitly deferred with evidence. Falsifier: `bun test lib/checks.test.ts` inventory check fails.
+- [x] C3: Saved series satisfy metadata, bounds and coverage contract. Falsifier: `bun test lib/checks.test.ts` contract check fails.
+- [x] C4: Pipeline and docs regenerate. Falsifier: `bun update.ts` or `bun docs.ts` fails.
+- [x] C5: Primary-source anchors and applicable overlaps hold. Falsifier: anchor/overlap tests fail.
+- [x] C6: Work stays in this directory with zero dependencies and no home paths. Falsifier: static verification fails.
 
 ## Anti-claims
 No interpolation, fabricated values, silent source loss, merged incompatible instruments, writes outside this dataset, or git commands.

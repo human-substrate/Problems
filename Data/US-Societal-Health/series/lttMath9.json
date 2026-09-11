@@ -12,7 +12,7 @@
     "note": "NAEP Long-Term Trend mathematics, age 9. The API-served series begins 1978 (NCES reports 1973 as an extrapolated point, not served). Same R1→R3 format seam at 2004 as the reading series. The 2020→2022 drop (241.4→233.9) erased two decades of gains. The 0–500-scale NAEP Long-Term Trend and 0–300-scale main assessments are NCES's national probability samples; values are national public+private averages for all students.",
     "method": "NAEP Data Service API, Program=LTT&subject=MAT&cohort=1&subscale=MRPSCT, year tokens 1978R1,1982R1,1986R1,1990R1,1992R1,1994R1,1996R1,1999R1,2004R3,2008R3,2012R3,2020R3,2022R3 (suffixed tokens are the pre-accommodations samples), 999-sentinel values dropped",
     "coverage": "1978–2022",
-    "fetched": "2026-08-31T20:21:01.514Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1978": 218.6,

@@ -12,7 +12,7 @@
     "note": "NAEP Long-Term Trend reading, age 9 — the same instrument design maintained since 1971 expressly to measure trend. Through 1999 the original format (R1 sample); from 2004 the revised format with accommodations (R3), NCES's bridge study linking the two — the one seam. The 2020→2022 drop (219.7→214.6) is the largest on record. The 0–500-scale NAEP Long-Term Trend and 0–300-scale main assessments are NCES's national probability samples; values are national public+private averages for all students.",
     "method": "NAEP Data Service API, Program=LTT&subject=RED&cohort=1&subscale=RRPSCT, year tokens 1971R1,1975R1,1980R1,1984R1,1988R1,1990R1,1992R1,1994R1,1996R1,1999R1,2004R3,2008R3,2012R3,2020R3,2022R3 (suffixed tokens are the pre-accommodations samples), 999-sentinel values dropped",
     "coverage": "1971–2022",
-    "fetched": "2026-08-31T20:21:01.514Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1971": 207.6,

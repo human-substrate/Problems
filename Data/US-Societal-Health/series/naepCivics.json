@@ -12,7 +12,7 @@
     "note": "NAEP Civics, grade 8, average scale score. Assessed 1998, 2006, 2010, 2014, 2018, 2022 (an irregular ~4–8-year cadence, drawn as a connected trend the way NCES charts it). The 2026 assessment was administered; results are expected summer 2027. Grades 4 and 12 were also assessed through 2010; grade 8 carries the trend. The 0–500-scale NAEP Long-Term Trend and 0–300-scale main assessments are NCES's national probability samples; values are national public+private averages for all students.",
     "method": "NAEP Data Service API, subject=civics&grade=8&subscale=CIVRP, year tokens 1998,2006,2010,2014,2018,2022 (suffixed tokens are the pre-accommodations samples), 999-sentinel values dropped",
     "coverage": "1998–2022",
-    "fetched": "2026-08-31T20:21:01.514Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1998": 150,

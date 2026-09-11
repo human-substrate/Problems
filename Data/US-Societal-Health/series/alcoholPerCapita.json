@@ -12,7 +12,7 @@
     "note": "Apparent consumption: beverage sales and tax data converted to gallons of pure ethanol (beer + wine + spirits) divided by the population aged 14 and older (15 and older before 1970). NIAAA's Alcohol Epidemiologic Data System; a new surveillance report each spring with a ~16-month lag.",
     "method": "pdftotext -layout, Table 1 rows, 'All beverages' column",
     "coverage": "1850–2023",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1850": 2.1,

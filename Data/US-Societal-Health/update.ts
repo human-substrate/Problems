@@ -154,6 +154,42 @@ await run("gss", async () => {
   }
 });
 
+const GSS_ITEMS_V9: { key: string; v: string; pos: number[]; valid: number[]; name: string; unit: string; dir: Meta["goodDirection"]; q: string }[] = [
+  { key: "gssMarriageVeryHappy", v: "hapmar", pos: [1], valid: [1, 2, 3], name: "Marriage Is Very Happy", unit: "percent of married adults who say their marriage is very happy", dir: "up", q: "Taking all things together, how would you describe your marriage? Would you say that your marriage is very happy, pretty happy, or not too happy?" },
+  { key: "gssJobVerySatisfied", v: "satjob", pos: [1], valid: [1, 2, 3, 4], name: "Very Satisfied With Job", unit: "percent of employed adults very satisfied with their job", dir: "up", q: "On the whole, how satisfied are you with the work you do — would you say you are very satisfied, moderately satisfied, a little dissatisfied, or very dissatisfied?" },
+  { key: "gssPeopleHelpful", v: "helpful", pos: [1], valid: [1, 2, 3], name: "People Try to Be Helpful", unit: "percent saying most people try to be helpful (vs. looking out for themselves)", dir: "up", q: "Would you say that most of the time people try to be helpful, or that they are mostly just looking out for themselves?" },
+  { key: "gssPeopleFair", v: "fair", pos: [2], valid: [1, 2, 3], name: "People Try to Be Fair", unit: "percent saying most people try to be fair (vs. would take advantage)", dir: "up", q: "Do you think most people would try to take advantage of you if they got a chance, or would they try to be fair?" },
+  { key: "gssLotOfAverageManWorse", v: "anomia5", pos: [1], valid: [1, 2], name: "Average Person's Lot Is Getting Worse", unit: "percent agreeing the lot of the average person is getting worse", dir: "down", q: "In spite of what some people say, the lot (situation/condition) of the average man is getting worse, not better — do you agree or disagree?" },
+  { key: "gssNotTooHappy", v: "happy", pos: [3], valid: [1, 2, 3], name: "Not Too Happy", unit: "percent of adults who say they are not too happy", dir: "down", q: "Taken all together, how would you say things are these days — would you say that you are very happy, pretty happy, or not too happy?" },
+];
+await run("gss-v9-happiness", async () => {
+  const zip = await download(GSS_ZIP, "GSS_stata.zip");
+  const dta = join(CACHE, "GSS_stata", "gss7224_r3a.dta");
+  if (!existsSync(dta)) await sh(["unzip", "-o", "-q", zip, "GSS_stata/gss7224_r3a.dta", "-d", CACHE]);
+  const vars = ["year", "wtssps", ...GSS_ITEMS_V9.map((i) => i.v)];
+  const acc: Record<string, Record<string, { pos: number; all: number }>> = {};
+  for (const it of GSS_ITEMS_V9) acc[it.key] = {};
+  await readDta(dta, vars, (r) => {
+    const y = String(r.year), w = r.wtssps;
+    if (w === null || w <= 0) return;
+    for (const it of GSS_ITEMS_V9) {
+      const v = r[it.v];
+      if (v === null || !it.valid.includes(v)) continue;
+      const a = (acc[it.key][y] ??= { pos: 0, all: 0 });
+      a.all += w; if (it.pos.includes(v)) a.pos += w;
+    }
+  });
+  for (const it of GSS_ITEMS_V9) {
+    const data: Record<string, number> = {};
+    for (const [y, a] of Object.entries(acc[it.key])) if (a.all >= 200) data[y] = round(100 * a.pos / a.all);
+    await save(it.key, {
+      name: it.name, unit: it.unit, source: "NORC General Social Survey (cumulative file 1972–2024)", sourceUrl: GSS_PAGE,
+      historicalSourceUrls: [GSS_ZIP], goodDirection: it.dir,
+      note: `${it.q} ${GSS_NOTE} Years with fewer than 200 weighted responses are dropped.`, method: `variable ${it.v.toUpperCase()}: ${it.pos.join("/")} of valid codes ${it.valid.join("/")}, weight WTSSPS`,
+    }, data, [0, 100]);
+  }
+});
+
 // ================= Gallup (published trend tables; read from the page HTML) =================
 const G1597 = "https://news.gallup.com/poll/1597/confidence-institutions.aspx";
 const GALLUP_CONF: { key: string; caption: RegExp; name: string; dir: Meta["goodDirection"] }[] = [
@@ -368,6 +404,33 @@ await run("nsduh", async () => {
   const note = "SAMHSA's National Survey on Drug Use and Health, people aged 12 or older. 2002–2019 from the 2019 detailed tables' trend tables; 2021 onward from each year's Table 1.1B. There is NO 2020 value: the 2020 survey was disrupted by the pandemic and SAMHSA says it is not comparable, and the 2021 redesign (web mode, new questions) started a new baseline — SAMHSA advises against comparing 2021+ with earlier years, so the 2020 gap is a seam, not a missing year. Where a later release re-weighted a year (2024 appears in both the 2024 and 2025 tables) the newer release wins.";
   await save("marijuanaPastYear", { name: "Marijuana Use, Past Year", unit: "percent of people 12+ who used marijuana in the past year", source: "SAMHSA, National Survey on Drug Use and Health", sourceUrl: "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health", historicalSourceUrls: Object.values(NSDUH), goodDirection: "neutral", note, method: "2019 Table 7.2B (2002–2019) + Table 1.1B of the 2022/2024/2025 detailed tables, 'Marijuana' row, past-year columns" }, py, [0, 100]);
   await save("marijuanaPastMonth", { name: "Marijuana Use, Past Month", unit: "percent of people 12+ who used marijuana in the past 30 days", source: "SAMHSA, National Survey on Drug Use and Health", sourceUrl: "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health", historicalSourceUrls: Object.values(NSDUH), goodDirection: "neutral", note, method: "2019 Table 7.3B (2002–2019) + Table 1.1B of the 2022/2024/2025 detailed tables, 'Marijuana' row, past-month columns" }, pm, [0, 100]);
+});
+
+await run("nsduh-mental-health", async () => {
+  const s10 = await nsduhHtml(NSDUH.t2019, "nsduh-2019.zip", /Sect10pe2019\.htm$/i);
+  const s11 = await nsduhHtml(NSDUH.t2019, "nsduh-2019.zip", /Sect11pe2019\.htm$/i);
+  const items = [
+    { key: "nsduhAnyMentalIllness", name: "Any Mental Illness, Past Year", population: "adults aged 18 or older", start: 2008, html: s10, table: "10.1B", tables: ["6.1B", "6.1B", "6.1B"], section: 6 },
+    { key: "nsduhSeriousMentalIllness", name: "Serious Mental Illness, Past Year", population: "adults aged 18 or older", start: 2008, html: s10, table: "10.3B", tables: ["6.4B", "6.4B", "6.2B"], section: 6 },
+    { key: "nsduhAdultDepression", name: "Adult Major Depressive Episode, Past Year", population: "adults aged 18 or older", start: 2005, html: s10, table: "10.32B", tables: ["6.37B", "6.39B", "6.43B"], section: 6 },
+    { key: "nsduhAdolescentDepression", name: "Adolescent Major Depressive Episode, Past Year", population: "adolescents aged 12–17", start: 2004, html: s11, table: "11.2B", tables: ["7.21B", "7.3B", "7.3B"], section: 7 },
+  ];
+  for (const it of items) {
+    const data: Record<string, number> = {};
+    const old = nsduhRow(nsduhTable(it.html, new RegExp(`Table ${it.table.replace(".", "\\.")} `)), "TOTAL", 2020 - it.start);
+    old.forEach((v, i) => { data[String(it.start + i)] = v; });
+    // Total/Had MDE are the first two columns; later columns are sex, impairment or treatment subgroups.
+    const releases = [[NSDUH.t2022, "nsduh-2022.zip", [2021, 2022]], [NSDUH.t2024, "nsduh-2024.zip", [2023, 2024]], [NSDUH.t2025, "nsduh-2025.zip", [2024, 2025]]] as const;
+    for (const [i, [url, name, years]] of releases.entries()) {
+      const html = await nsduhHtml(url, name, new RegExp(`sect${it.section}pe.*\\.htm$`, "i"));
+      const cells = nsduhTable(html, new RegExp(`Table ${it.tables[i].replace(".", "\\.")} `));
+      const v = nsduhRow(cells, "TOTAL", 2);
+      years.forEach((y, j) => { data[String(y)] = v[j]; });
+    }
+    const note = `SAMHSA's National Survey on Drug Use and Health, ${it.population}. ${it.start}–2019 from the 2019 detailed tables' trend Table ${it.table}; 2021 onward from the 2022/2024/2025 detailed tables. There is NO 2020 value: the 2020 survey was disrupted by the pandemic and SAMHSA says it is not comparable, and the 2021 redesign (web mode, new questions, new weighting) started a new baseline — SAMHSA advises against comparing 2021+ with earlier years, so the 2020 gap is a seam, not a missing year. Where a later release revised a year (2024 appears in both the 2024 and 2025 tables) the newer release wins.`;
+    const modelNote = it.start === 2008 ? " AMI and SMI are predictive-model estimates, not direct diagnoses. The 2025 release updated the mental illness model to align with DSM-5 and revised 2024 estimates; the 2023–2024 transition also crosses that model seam." : "";
+    await save(it.key, { name: it.name, unit: `percent of ${it.population}`, source: "SAMHSA, National Survey on Drug Use and Health", sourceUrl: "https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health", historicalSourceUrls: Object.values(NSDUH), goodDirection: "down", note: note + modelNote, method: `2019 Table ${it.table} (${it.start}–2019), TOTAL row; 2022/2024/2025 Tables ${it.tables.join("/")}, TOTAL row, first two percentage columns (Total for adults; Had MDE for adolescents), newer release wins` }, data, [0, 100]);
+  }
 });
 
 // ================= household financial health (Fed/FRED, NY Fed, USDA, Census) =================
@@ -810,6 +873,214 @@ await run("gallup-dw", async () => {
       method: `Datawrapper ${sp.files.join(" + ")}, named column ${sp.columns.join(" / ")}; ${sp.monthly ? "exact overlap checks, mean within month then mean of published months per year" : "latest published poll per year"}`, partialYear: partialThrough ? ty : undefined, partialThrough,
     }, annual, sp.bounds, 15);
   }
+});
+
+// ================= NHIS serious psychological distress (pre-redesign pools) =================
+await run("nhis-distress", async () => {
+  const pdf = join(DIR, "data/cdc/hus2017-046.pdf");
+  const readme = await readFile(join(DIR, "data/cdc/READ.md"), "utf8");
+  const expected = readme.match(/\| hus2017-046\.pdf \|[^\n]*\| ([a-f0-9]{64}) \|/)?.[1];
+  const hash = new Bun.CryptoHasher("sha256").update(await readFile(pdf)).digest("hex");
+  invariant(expected && hash === expected, `NHIS Table 46: SHA256 mismatch: ${hash}, expected ${expected}`);
+  const txt = await sh(["pdftotext", "-layout", pdf, "-"]);
+  invariant(txt.startsWith("Table 46. Serious psychological distress"), "NHIS: Table 46 heading not found");
+  const header = txt.match(/^\s*Characteristic\s+([^\n]+)$/m)?.[1];
+  invariant(header, "NHIS Table 46: survey periods not found");
+  const periods = [...header.matchAll(/((?:19|20)\d{2})[–-]((?:19|20)\d{2})/g)];
+  const row = txt.match(/^18 years and over, age-adjusted3,4\s+((?:\d+\.\d+\s+){5}\d+\.\d+)\s*$/m);
+  invariant(row && periods.length === 6, "NHIS Table 46: expected six age-adjusted pooled estimates");
+  const values = row[1].trim().split(/\s+/).map(Number);
+  const data: Record<string, number> = {};
+  periods.forEach((p, i) => {
+    invariant(Number(p[2]) === Number(p[1]) + 1 && Number(p[2]) < 2019, `NHIS Table 46: invalid pre-redesign pool ${p[0]}`);
+    invariant(!(p[2] in data), `NHIS Table 46: duplicate pool ${p[0]}`);
+    data[p[2]] = values[i];
+  });
+  invariant(data["1998"] === 3.2 && data["2016"] === 3.6 && Math.max(...Object.keys(data).map(Number)) === 2016, "NHIS Table 46: endpoint checks failed");
+  await save("nhisPsychologicalDistress", {
+    name: "Serious Psychological Distress (NHIS)", unit: "percent of adults aged 18 and over, age-adjusted", source: "NCHS, Health, United States 2017, Table 46", sourceUrl: "https://www.cdc.gov/nchs/data/hus/2017/046.pdf", goodDirection: "down",
+    note: "Serious psychological distress in the past 30 days (K6 score >= 13), civilian noninstitutionalized adults aged 18 and over, age-adjusted to the 2000 standard population. Six selected two-year pooled estimates, keyed by pool end year; missing pools are not interpolated. Named sparse-series exception to the >=15-year filter: the PDF publishes six pools spanning 1997–2016. The series ends at 2015–16, the last pre-2019 pool in this table. NHIS was redesigned in 2019; K6 was not collected in 2019/2020/2022 NHIS, and no post-redesign observations are appended. The table cautions that moving the questions in 2013 may affect comparability. The checked-in publisher PDF is verified against data/cdc/READ.md before parsing.",
+    method: "SHA256-verified cached PDF; pdftotext -layout, Table 46 first '18 years and over, age-adjusted3,4' row, columns matched to published two-year survey periods by end year",
+  }, data, [0, 100], 6);
+});
+
+// ================= YRBS mental health (biennial) =================
+await run("yrbs", async () => {
+  const pdf = join(DIR, "data/cdc/yrbs-dstr-2023.pdf");
+  const readme = await readFile(join(DIR, "data/cdc/READ.md"), "utf8");
+  const expected = readme.match(/\| yrbs-dstr-2023\.pdf \|[^\n]*\| ([a-f0-9]{64}) \|/)?.[1];
+  const hash = new Bun.CryptoHasher("sha256").update(await readFile(pdf)).digest("hex");
+  invariant(expected && hash === expected, `YRBS: SHA256 mismatch: ${hash}, expected ${expected}`);
+  const txt = await sh(["pdftotext", "-layout", pdf, "-"]);
+  const table = txt.split("\f").find((p) => p.includes("PROGRESS AT A GLANCE FOR") && p.includes("MENTAL HEALTH AND SUICIDAL"));
+  invariant(table, "YRBS: mental health Progress at a Glance table not found");
+  const header = table.match(/\b2013\s+2015\s+2017\s+2019\s+2021\s+2023\b/);
+  invariant(header && /Total\s+Total\s+Total\s+Total\s+Total\s+Total/.test(table), "YRBS: six biennial Total columns not found");
+  const years = header[0].split(/\s+/);
+  for (const sp of [
+    { key: "yrbsPersistentSadness", name: "Persistent Feelings of Sadness or Hopelessness (YRBS)", row: /Experienced persistent feelings of\s+((?:\d+\s+){5}\d+)\s+sadness or hopelessness/, checks: { "2013": 30, "2021": 42, "2023": 40 }, definition: "Felt so sad or hopeless almost every day for at least two weeks in a row during the past year that they stopped doing some usual activities." },
+    { key: "yrbsConsideredSuicide", name: "Seriously Considered Attempting Suicide (YRBS)", row: /Seriously considered attempting\s+((?:\d+\s+){5}\d+)\s+suicide/, checks: { "2023": 20 }, definition: "Seriously considered attempting suicide during the past year." },
+  ]) {
+    const row = table.match(sp.row);
+    invariant(row, `YRBS ${sp.key}: Total row not found`);
+    const values = row[1].trim().split(/\s+/).map(Number);
+    invariant(values.length === years.length, `YRBS ${sp.key}: column count mismatch`);
+    const data: Record<string, number> = {};
+    years.forEach((y, i) => { data[y] = values[i]; });
+    for (const [y, v] of Object.entries(sp.checks)) invariant(data[y] === v, `YRBS ${sp.key} ${y}: sample check failed`);
+    await save(sp.key, {
+      name: sp.name, unit: "percent of high school students", source: "CDC, Youth Risk Behavior Survey Data Summary & Trends Report 2013–2023", sourceUrl: "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf", goodDirection: "down",
+      note: `${sp.definition} National Total estimates, all high school students, rounded to whole percentages by the publisher. Biennial cadence is expected, not a gap; named exception to annual coverage expectations. Six survey readings from 2013 through 2023 are the full Total trend rows published in this PDF; no earlier years are inferred and no intervening years are interpolated. The checked-in publisher PDF is verified against data/cdc/READ.md before parsing.`,
+      method: "SHA256-verified cached PDF; pdftotext -layout, printed page 54 Progress at a Glance for Mental Health and Suicidal Thoughts and Behaviors, indicator row and six Total columns",
+    }, data, [0, 100], 6);
+  }
+});
+
+// ---------- PDF coordinates (chart labels are not in chronological text order) ----------
+type PdfWord = { left: number; top: number; text: string };
+async function tsvWords(pdf: string, page: number): Promise<PdfWord[]> {
+  const tsv = await sh(["pdftotext", "-tsv", "-f", String(page), "-l", String(page), pdf, "-"]);
+  return tsv.split(/\r?\n/).slice(1).flatMap((line) => {
+    const c = line.split("\t"), text = c.slice(11).join("\t").trim();
+    const left = Number(c[6]), top = Number(c[7]);
+    return c[0] === "5" && text && !/^###/.test(text) && Number.isFinite(left) && Number.isFinite(top) ? [{ left, top, text }] : [];
+  });
+}
+async function figurePage(pdf: string, heading: RegExp): Promise<number> {
+  const pages = (await sh(["pdftotext", "-layout", pdf, "-"])).split("\f");
+  const hits = pages.flatMap((p, i) => heading.test(p) ? [i + 1] : []);
+  invariant(hits.length === 1, `${pdf.split("/").pop()}: expected one figure heading, found pages ${hits}`);
+  console.log(`${pdf.split("/").pop()}: figure confirmed on PDF page ${hits[0]}`);
+  return hits[0];
+}
+
+// ================= Gallup personal-life satisfaction =================
+await run("gallup-topline", async () => {
+  const url = "https://news.gallup.com/poll/655493/new-low-satisfied-personal-life.aspx";
+  const tabs = htmlTables(await getText(url));
+  for (const sp of [
+    { key: "gallupPersonalLifeSatisfied", name: "Satisfied With Personal Life", caption: /Americans.*Satisfaction With Their Personal Life and the U\.S\., 1979[-–]2025/i, checks: { "1982": 75, "2025": 81 }, unit: "percent satisfied" },
+    { key: "gallupPersonalLifeVerySatisfied", name: "Very Satisfied With Personal Life", caption: /Record-Low 44%.*Very Satisfied.*Personal Life/i, checks: { "2001": 55, "2020": 65, "2025": 44 }, unit: "percent very satisfied" },
+  ]) {
+    const t = tabs.find((x) => sp.caption.test(x.caption));
+    invariant(t, `Gallup personal life: missing ${sp.key} table`);
+    const data = yearSeries(t.rows.slice(1), 1);
+    for (const [y, v] of Object.entries(sp.checks)) invariant(data[y] === v, `${sp.key} ${y}: sample check failed`);
+    await save(sp.key, {
+      name: sp.name, unit: sp.unit, source: "Gallup, Mood of the Nation", sourceUrl: url, goodDirection: "up",
+      note: "Personal-life satisfaction from Gallup's annual January Mood of the Nation survey. The overall satisfied series and the very-satisfied series measure different response thresholds; the very-satisfied split begins in 2001. Earlier overall readings are irregular; missing years are not interpolated. Where a year has multiple readings, the first published table row is retained.",
+      method: `HTML table captioned "${t.caption}", column "${t.rows[0][1]}"; first reading per year`,
+    }, data, [0, 100], 15);
+  }
+});
+
+// ================= Federal Reserve SHED =================
+await run("fed-shed", async () => {
+  const url = "https://www.federalreserve.gov/publications/files/2025-report-economic-well-being-us-households-202605.pdf";
+  const pdf = await download(url, "shed-2025.pdf");
+  for (const sp of [
+    { key: "shedDoingOkay", name: "Doing at Least Okay Financially", heading: /Figure\s+1\.\s+Doing okay or living comfortably financially/i, checks: { "2013": 62, "2019": 75, "2021": 78, "2025": 73 }, definition: "Combines the living comfortably and doing okay response categories." },
+    { key: "shedCover400", name: "Could Cover a $400 Emergency Expense", heading: /Figure\s+24\.\s+[\s\S]{0,180}?(?:\$400|400)/i, checks: { "2013": 50, "2019": 63, "2021": 68, "2025": 63 }, definition: "Could pay a $400 emergency expense with cash or its cash equivalent, without borrowing or selling something." },
+  ]) {
+    const page = await figurePage(pdf, sp.heading), words = await tsvWords(pdf, page);
+    const yearWords = words.filter((w) => /^20\d\d$/.test(w.text));
+    const axes = yearWords.map((w) => yearWords.filter((x) => Math.abs(x.top - w.top) < 2)).filter((row) => row.length === 13);
+    invariant(axes.length > 0, `${sp.key}: 13-year chart axis not found`);
+    const axis = axes[0].sort((a, b) => a.left - b.left);
+    invariant(axis.every((w, i) => Number(w.text) === 2013 + i), `${sp.key}: expected 2013–2025 axis`);
+    const titles = words.filter((w) => w.text === "Figure" && w.top < axis[0].top);
+    invariant(titles.length, `${sp.key}: chart title not found above axis`);
+    const top = Math.max(...titles.map((w) => w.top));
+    const data: Record<string, number> = {};
+    for (const w of words.filter((w) => /^\d{1,3}%?$/.test(w.text) && w.top > top + 20 && w.top < axis[0].top - 5)) {
+      const nearest = [...axis].sort((a, b) => Math.abs(a.left - w.left) - Math.abs(b.left - w.left))[0];
+      if (Math.abs(nearest.left - w.left) > 20) continue;
+      invariant(!(nearest.text in data), `${sp.key}: ambiguous labels for ${nearest.text}`);
+      data[nearest.text] = Number(w.text.replace("%", ""));
+    }
+    invariant(Object.keys(data).length === 13, `${sp.key}: expected 13 chart values`);
+    for (const [y, v] of Object.entries(sp.checks)) invariant(data[y] === v, `${sp.key} ${y}: sample check failed`);
+    await save(sp.key, {
+      name: sp.name, unit: "percent of adults", source: "Federal Reserve Board, Survey of Household Economics and Decisionmaking", sourceUrl: url, goodDirection: "up",
+      note: `Annual SHED, a nationally representative online survey of US adults. ${sp.definition} Named exception to the >=15-year minimum: SHED began in 2013, so this edition has 13 annual points through 2025. The 2020 survey was fielded in November, later than the usual timing, which may affect year-over-year comparability; no direction of bias is assumed.`,
+      method: `PDF page ${page}, heading-verified figure; pdftotext -tsv numeric labels matched to nearest year-axis x-coordinate`,
+    }, data, [0, 100], 13);
+  }
+});
+
+// ================= BRFSS Healthy Days (published state median) =================
+await run("brfss", async () => {
+  const url = "https://data.cdc.gov/resource/dttw-5yxu.json";
+  const where = "topic='Healthy Days' AND response='14+ days when mental health not good'";
+  const query = (params: Record<string, string>) => `${url}?${new URLSearchParams(params)}`;
+  const locations = await getJSON<{ locationdesc: string }[]>(query({ "$select": "distinct locationdesc", "$where": where, "$limit": "5000" }));
+  const location = locations.filter((r) => /^All States and DC \(median\)/.test(r.locationdesc));
+  invariant(location.length === 1 && location[0].locationdesc === "All States and DC (median) **", "BRFSS: published median location label changed");
+  const filtered = `${where} AND locationdesc='${location[0].locationdesc}'`;
+  const years = await getJSON<{ year: string }[]>(query({ "$select": "distinct year", "$where": filtered, "$order": "year", "$limit": "5000" }));
+  const rows = await getJSON<{ year: string; data_value: string; break_out: string; break_out_category: string }[]>(query({ "$where": filtered, "$limit": "50000" }));
+  invariant(rows.length < 50000, "BRFSS: response may be truncated");
+  const data: Record<string, number> = {};
+  for (const r of rows.filter((r) => r.break_out === "Overall" && r.break_out_category === "Overall")) {
+    invariant(/^20\d\d$/.test(r.year) && r.data_value?.trim() && Number.isFinite(Number(r.data_value)), `BRFSS: invalid estimate for ${r.year}`);
+    invariant(!(r.year in data), `BRFSS: duplicate Overall row for ${r.year}`);
+    data[r.year] = Number(r.data_value);
+  }
+  invariant(years.length >= 6 && years[0].year === "2019" && years.every((r) => r.year in data), "BRFSS: distinct-year coverage differs from Overall estimates");
+  invariant(data["2019"] === 13.8 && data["2024"] === 15.6, "BRFSS: sample checks failed");
+  await save("brfssFrequentMentalDistress", {
+    name: "Frequent Mental Distress (BRFSS State Median)", unit: "percent of adults, median across states and DC", source: "CDC, BRFSS Prevalence and Trends Data", sourceUrl: url, goodDirection: "down",
+    note: "Mental health not good on 14 or more of the past 30 days. CDC's own published median across all states and DC (not a population-weighted national average; BRFSS does not publish one in this table). This resource starts in 2019, with six annual readings through 2024 in the verified edition, a named short-coverage exception. Pre-2019 coverage, including 2011–2018, needs annual XPT microdata and _LLCPWT weighting not currently read by this pipeline; those years are omitted, not interpolated.",
+    method: "Socrata Healthy Days / 14+ days when mental health not good; discover and validate median location, select Overall breakout, check distinct-year coverage",
+  }, data, [0, 100], 6);
+});
+
+// ================= NHANES antidepressant use (non-overlapping survey cycles) =================
+await run("nhanes-antidepressant", async () => {
+  const pdf = join(DIR, "data/cdc/db283.pdf");
+  const readme = await readFile(join(DIR, "data/cdc/READ.md"), "utf8");
+  const expected = readme.match(/\| db283\.pdf \|[^\n]*\| ([a-f0-9]{64}) \|/)?.[1];
+  const hash = new Bun.CryptoHasher("sha256").update(await readFile(pdf)).digest("hex");
+  invariant(expected && hash === expected, `NHANES db283: SHA256 mismatch: ${hash}, expected ${expected}`);
+  const page = await figurePage(pdf, /Figure\s+4\.\s+Trends in antidepressant use among persons aged 12 and over/i);
+  const words = await tsvWords(pdf, page);
+  const cycles = words.filter((w) => /^(?:19|20)\d\d[–-](?:19|20)\d\d$/.test(w.text));
+  const axis = cycles.filter((w) => cycles.filter((x) => Math.abs(x.top - w.top) < 2).length === 4).sort((a, b) => a.left - b.left);
+  invariant(axis.length === 4 && words.some((w) => w.text === "Both"), "NHANES db283: four-cycle Both sexes chart not found");
+  const data: Record<string, number> = {};
+  for (const cycle of axis.slice(0, 2)) {
+    const labels = words.filter((w) => /^\d+\.\d+$/.test(w.text) && w.top < cycle.top && w.top > cycle.top - 250 && Math.abs(w.left - cycle.left) < 30).sort((a, b) => a.top - b.top);
+    invariant(labels.length === 3, `NHANES db283 ${cycle.text}: expected female, both sexes, male labels`);
+    data[cycle.text.slice(-4)] = Number(labels[1].text);
+  }
+  invariant(data["2002"] === 7.7 && data["2006"] === 10.2, "NHANES db283: early-cycle checks failed");
+  const url = "https://www.cdc.gov/nchs/data/databriefs/db377-tables-508.pdf#4";
+  const localOnly = process.argv.includes("--local-only");
+  if (!localOnly) {
+    const recent = await download(url, "db377-tables-508.pdf");
+    const recentPage = await figurePage(recent, /(?:Data table for [Ff]igure|Figure)\s+4[.:]?\s+[\s\S]{0,100}?[Tt]rend/);
+    const table = (await sh(["pdftotext", "-layout", recent, "-"])).split("\f")[recentPage - 1].split(/\r?\n/).map((line) => line.trim());
+    const both = table.flatMap((line, i) => /^Both sexes$/.test(line) ? [i] : []);
+    invariant(both.length === 1, "NHANES db377: unique Both sexes header not found");
+    const checks: Record<string, number> = { "2010": 10.6, "2012": 12.7, "2014": 14.7, "2016": 12.6, "2018": 13.8 };
+    const recentData: Record<string, number> = {};
+    for (const line of table.slice(both[0] + 1)) {
+      const row = line.match(/^(20\d\d)[–-](20\d\d)\s+[\d,]+\s+([\d.]+)\s+[\d.]+\s*$/);
+      if (!row) break;
+      const y = row[2];
+      invariant(!(y in recentData), `NHANES db377: duplicate cycle ${y}`);
+      recentData[y] = Number(row[3]);
+    }
+    invariant(Object.keys(recentData).length === 5, "NHANES db377: expected five Both sexes rows");
+    for (const [y, v] of Object.entries(checks)) invariant(recentData[y] === v, `NHANES db377 ${y}: sample check failed`);
+    Object.assign(data, recentData);
+  }
+  await save("antidepressantUse", {
+    name: "Antidepressant Use in the Past Month (NHANES)", unit: "percent of persons, age population changes", source: "NCHS, NHANES, Data Briefs 283 and 377", sourceUrl: localOnly ? "https://www.cdc.gov/nchs/data/databriefs/db283.pdf" : url,
+    historicalSourceUrls: ["https://www.cdc.gov/nchs/data/databriefs/db283.pdf"], goodDirection: "neutral",
+    note: `Sparse survey cycles keyed to cycle END year, a named exception to usual annual density expectations; no interpolation. ${localOnly ? "Partial local-only output: two points, 1999–2002 and 2003–2006, ages 12 and over. The five recent cycles are omitted because --local-only was requested; run without that flag to fetch the companion table." : "Seven points across approximately 20 years. The early 1999–2002 and 2003–2006 pools cover ages 12 and over; the 2009–2010 through 2017–2018 cycles cover ages 18 and over. This is a genuine population break at the 2006→2010 gap, not a directly comparable change."} Later db283 pools are excluded because they overlap db377's cycles. The early PDF is SHA256-verified against data/cdc/READ.md. Antidepressant use alone does not distinguish treatment access from illness prevalence.`,
+    method: `db283 Figure 4, PDF page ${page}, TSV chart coordinates, middle of three sex-specific labels per early cycle; ${localOnly ? "explicit local-only partial output" : "db377 Figure 4 companion data table, Both sexes intersections by TSV coordinates"}`,
+  }, data, [0, 100], localOnly ? 2 : 7);
 });
 
 // ================= index + log =================

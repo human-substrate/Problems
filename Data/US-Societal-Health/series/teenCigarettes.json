@@ -12,7 +12,7 @@
     "note": "Monitoring the Future's annual national school survey of 12th graders (roughly 12,000–15,000 students), past-30-day prevalence, crude percent, as republished by NCHS in Health, United States. MTF itself began in 1975; the NCHS mirror starts in 1980. The 2020 survey was cut short by COVID (smaller sample); MTF reports no series break.",
     "method": "SODA https://data.cdc.gov/resource/mtgp-t7vw.json where group='Grade level' and subgroup='12th grade' and subtopic='Cigarettes'",
     "coverage": "1980–2024",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1980": 30.5,

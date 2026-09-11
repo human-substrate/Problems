@@ -9,7 +9,7 @@
     "note": "Number of consumers with a new bankruptcy notation on their credit file, summed across the four quarters of each year, from the New York Fed Consumer Credit Panel. The spike and collapse around October 2005 is the BAPCPA bankruptcy-reform filing rush. Only full years are included. US Courts' Table F-2 filing counts are the administrative alternative; this panel series is used because it is one machine-readable file back to 2003.",
     "method": "HHD_C_Report_2026Q2.xlsx sheet \"Page 17 Data\" column bankruptcy, annual sum of quarters (full years only)",
     "coverage": "2003–2025",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "2003": 2299.4,

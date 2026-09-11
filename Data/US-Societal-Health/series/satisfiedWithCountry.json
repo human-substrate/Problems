@@ -9,9 +9,9 @@
     "note": "\"In general, are you satisfied or dissatisfied with the way things are going in the United States at this time?\" Annual value is the plain average of every Gallup reading that year (monthly since 2001; one to four readings a year in the 1980s and 1990s, none in 1980). Gallup publishes the readings, not the annual average — the averaging is the only arithmetic here.",
     "method": "table \"Satisfaction With the United States > Satisfaction U.S. Table\", mean of \"Satisfied\" per calendar year",
     "partialYear": 2026,
-    "partialThrough": "2026-07",
+    "partialThrough": "2026-08",
     "coverage": "1979–2026",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1979": 19,
@@ -60,6 +60,6 @@
     "2023": 19.4,
     "2024": 21.7,
     "2025": 30.1,
-    "2026": 25
+    "2026": 24.5
   }
 }

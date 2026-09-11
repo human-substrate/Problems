@@ -12,7 +12,7 @@
     "note": "\"Would you say that you (and your family living there) are better off or worse off financially than you were a year ago?\" Annual figures as published by the Survey Research Center. Same web-transition caveat as the expectations series.",
     "method": "POST mine.php table=6 qorm=Y, column \"Better\"",
     "coverage": "1978–2025",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "1978": 36,

@@ -12,7 +12,7 @@
     "note": "People with no health insurance coverage at the time of the survey, all ages, from the 1-year ACS. The ACS health-insurance question began in 2008; 2020 has no standard estimate (Census released experimental data only for the pandemic year) and is left blank. The CPS series reaches back to 1987 but was redesigned in 2013 and is not spliced in.",
     "method": "hic04_acs.xlsx, 'United States' / '.Uninsured' row, Percent column per year",
     "coverage": "2008–2024",
-    "fetched": "2026-08-24T16:21:54.867Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "2008": 14.6,

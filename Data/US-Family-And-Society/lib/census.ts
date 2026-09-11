@@ -11,7 +11,7 @@ const SPECS:LivingSpec[]=[
 {key:"medianAgeFirstMarriageMen",file:"marital/ms2.xls",name:"Median age at first marriage, men",unit:"years",markers:["MS-2.","Men's median"],value:r=>n(r,"B"),note:"Decennial observations before 1947 and annual CPS thereafter; same-sex marriages included from 2019.",bounds:[15,45]},
 {key:"medianAgeFirstMarriageWomen",file:"marital/ms2.xls",name:"Median age at first marriage, women",unit:"years",markers:["MS-2.","Women's median"],value:r=>n(r,"C"),note:"Decennial observations before 1947 and annual CPS thereafter; same-sex marriages included from 2019.",bounds:[15,45]},
 {key:"adultsMarried",file:"marital/ms1.xls",name:"Married population aged 15 and older",unit:"percent",markers:["MS-1.","Married1"],section:".All races",value:r=>{const total=n(r,"B")+n(r,"J"),married=n(r,"C")+n(r,"K");invariant(total>0&&married<=total,"MS1 invalid married counts");return round(100*married/total);},note:"Computed from married men plus married women divided by total men plus total women, all races, aged 15 and older. Includes spouse absent and separated. Same-sex married couples included since 2019.",bounds:[0,100]},
-{key:"marriedCoupleHouseholds",file:"households/hh1.xls",name:"Married-couple households",unit:"percent of households",markers:["HH-1.","Married couples","Total households"],value:r=>share(r,"D","B"),note:"Computed from married-couple households divided by all households. Counts use householder person weights, not the Housing Vacancy Survey housing-unit weights.",bounds:[0,100]},
+{key:"marriedCoupleHouseholds",file:"households/hh1.xls",name:"Married-couple households",unit:"percent of households",markers:["HH-1.","Married couples","Total households"],value:r=>share(r,"D","B"),note:"Computed from married-couple households divided by all households. Counts use householder person weights, not the Housing Vacancy Survey housing-unit weights. HH-1 lists 1980, 1984, 1988, 1993, 2011 and 2021 twice: a footnote-lettered row (1980r, 1984b, 1988a, 1993r) or 'r'-suffixed row (2011r, 2021r) plus a plain row for the same year. The lettered/r-suffixed row is always the later-method value — HH-1's own footnotes read 'a Data based on 1988 revised processing', 'b Incorporates Hispanic-origin population controls', 'r Revised based on population from the most recent decennial census' — so it is selected deterministically over the plain row (annualRows in lib/census.ts).",bounds:[0,100]},
 {key:"onePersonHouseholds",file:"households/hh4.xls",name:"One-person households",unit:"percent of households",markers:["HH-4.","One","All households"],value:r=>share(r,"C","B"),note:"Computed from one-person households divided by all households; uses person-weighted CPS household estimates.",bounds:[0,100]},
 {key:"householdSize",file:"households/hh6.xls",name:"Average household size",unit:"people per household",markers:["HH-6.","Average population per household"],value:r=>n(r,"C"),note:"Publisher average population per household, all households; not average family size.",bounds:[1,6]},
 {key:"childrenWithTwoParents",file:"children/ch1.xls",name:"Children living with two parents",unit:"percent of children under 18",markers:["CH-1.","Two parents","Total children under 18"],value:r=>share(r,"C","B"),note:"Computed from two-parent children divided by children under 18 in table scope. Excludes child householders, subfamily reference persons and spouses. In 2007 take 2007y (PELNMOM/PELNDAD, identifying both cohabiting parents), never 2007x (A_PARENT); gender-neutral PEPAR1/PEPAR2 pointers from 2019.",bounds:[0,100]},
@@ -31,7 +31,15 @@ export function annualRows(rows:Row[],section?:string):Map<string,Row> {
     if(!year) continue; // Headings, source notes and blank rows are not observations.
     const previous=selected.get(year);
     if(previous) {
-      const preferred=(value:string)=> /2007y/.test(value)?3:/\d{4}(?:[a-z], )?r(?:\b|,)/.test(value)?2:/^1988a$/.test(value)?1:0;
+      // Publisher footnote letters (a-z) each mark a specific methodology revision for that row (e.g. HH-1's
+      // "a  Data based on 1988 revised processing.", "b  Incorporates Hispanic-origin population controls.",
+      // "r  Revised based on population from the most recent decennial census."). Every such lettered row is the
+      // later-method value, comparable forward to subsequent years; the unlettered row beside it is the
+      // as-originally-published value, comparable backward. The "r" suffix (optionally combined with one other
+      // letter, e.g. "2021z, r") is Census's own explicit revision marker and outranks a bare letter; CH-1's 2007
+      // is the one hand-documented exception, where "y" (PELNMOM/PELNDAD) is chosen over "x" (A_PARENT) by name
+      // because neither is a population-control revision.
+      const preferred=(value:string)=> /2007y/.test(value)?3:/\d{4}(?:[a-z], )?r(?:\b|,)/.test(value)?2:/^\d{4}[a-z]$/.test(value)?1:0;
       const oldRank=preferred(previous.A??""),newRank=preferred(row.A??"");
       invariant(oldRank!==newRank,`Unresolved duplicate year ${year}: ${previous.A} / ${row.A}`);
       if(newRank>oldRank) selected.set(year,row);

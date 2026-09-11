@@ -12,7 +12,7 @@
     "breaks": "CPS ASEC control and questionnaire seams, and the later-method duplicate-year selection, are documented once in METHODOLOGY.md.",
     "note": "Computed from one-person households divided by all households; uses person-weighted CPS household estimates.",
     "coverage": "1960–2025",
-    "fetched": "2026-09-10T20:26:53.353Z"
+    "fetched": "2026-09-11T02:23:47.946Z"
   },
   "data": {
     "1960": 13.1,

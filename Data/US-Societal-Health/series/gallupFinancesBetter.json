@@ -12,7 +12,7 @@
     "note": "\"Right now, do you think that your financial situation as a whole is getting better or getting worse?\" Question wording from the chart title (w92AE/2). The latest poll in each calendar year is kept, matching the dataset's yearSeries convention. This is Gallup's question, distinct from the NORC GSS financesBetter series. The sourceUrl is the pinned Datawrapper CSV because the chart metadata's source-url is empty; pinned versions are retained for reproducibility and may lag the current chart.",
     "method": "Datawrapper w92AE/1, named column Getting better; latest published poll per year",
     "coverage": "2001–2025",
-    "fetched": "2026-09-10T20:25:51.860Z"
+    "fetched": "2026-09-11T03:11:37.082Z"
   },
   "data": {
     "2001": 59,
